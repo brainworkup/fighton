@@ -1,0 +1,832 @@
+---
+title: "Neuropsychology"
+subtitle: "Psychiatry Grand Rounds Nov 2021"  
+author: 
+  - "Joey Trampush"
+  - "Second person"
+institute: "USC Keck School of Medicine"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      ratio: '16:9'
+      countIncrementalSlides: true
+      slideNumberFormat: '%current%'
+      includePresenterNotes: yes
+    self_contained: yes      
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width = 9, 
+  fig.height = 3.5,
+  #fig.asp = 0.618, 
+  fig.retina = 3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = FALSE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE,
+  dev = "svg"
+)
+```
+
+```{r xaringan-themer, include=FALSE}
+library(xaringan)
+library(xaringanExtra)
+library(xaringanBuilder)
+library(xaringanthemer)
+library(rmarkdown)
+library(revealjs)
+library(blogdown)
+library(dataui)
+library(reactable)
+library(tidyverse)
+library(highcharter)
+library(htmlwidgets)
+library(widgetframe)
+library(crosstalk)
+library(manipulateWidget)
+library(tibble)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF"
+)
+style_mono_accent(
+  base_color = "#690f0d",               # bright red
+  inverse_background_color = "#002B36", # dark dark blue
+  inverse_header_color = "#31b09e",     # light aqua green
+  inverse_text_color = "#FFFFFF",       # white
+  title_slide_background_color = "var(--base)",
+  text_font_google = google_font("Sen"),
+  header_font_google = google_font("NATS")
+)
+```
+
+```{r xaringan-extra}
+xaringanExtra::use_panelset()
+xaringanExtra::use_broadcast()
+xaringanExtra::use_tile_view()
+xaringanExtra::use_editable(expires = 1)
+xaringanExtra::use_animate_css()
+xaringanExtra::use_tachyons()
+#xaringanExtra::use_slide_tone()
+xaringanExtra::use_scribble()
+xaringanExtra::use_webcam()
+xaringanExtra::use_clipboard()
+htmltools::tagList(
+  xaringanExtra::use_clipboard(
+    button_text = "<i class=\"fa fa-clipboard\"></i>",
+    success_text = "<i class=\"fa fa-check\" style=\"color: #90BE6D\"></i>",
+    error_text = "<i class=\"fa fa-times-circle\" style=\"color: #F94144\"></i>"
+  ),
+  rmarkdown::html_dependency_font_awesome()
+)
+xaringanExtra::style_panelset_tabs(font_family = "inherit")
+xaringanExtra::use_freezeframe()
+xaringanExtra::use_fit_screen()
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
+)
+xaringanExtra::use_progress_bar(color = "#0051BA", location = "top")
+xaringanExtra::use_logo(
+  image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png"
+)
+```
+
+```{r}
+xaringanExtra::use_share_again()
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter", "linkedin", "pocket")
+)
+xaringanExtra::embed_xaringan(url = "share-again.html", ratio = "4:3")
+```
+
+
+## Typography
+
+Text can be **bold**, _italic_, ~~strikethrough~~, or `inline code`.
+
+[Link to another slide](#colors).
+
+### Lorem Ipsum
+
+Dolor imperdiet nostra sapien scelerisque praesent curae metus facilisis dignissim tortor. 
+Lacinia neque mollis nascetur neque urna velit bibendum. 
+Himenaeos suspendisse leo varius mus risus sagittis aliquet venenatis duis nec.
+
+- Dolor cubilia nostra nunc sodales
+
+- Consectetur aliquet mauris blandit
+
+- Ipsum dis nec porttitor urna sed
+
+---
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+The only way to write good code is to write tons of bad code first. 
+Feeling shame about bad code stops you from getting to good code
+
+.tr[
+— Hadley Wickham
+]]
+
+---
+name: colors
+
+## Colors
+
+.left-column[
+Text color
+
+[Link Color](#3)
+
+**Bold Color**
+
+_Italic Color_
+
+`Inline Code`
+]
+
+.right-column[
+Lorem ipsum dolor sit amet, [consectetur adipiscing elit (link)](#3), 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Erat nam at lectus urna.
+Pellentesque elit ullamcorper **dignissim cras tincidunt (bold)** lobortis feugiat. 
+_Eros donec ac odio tempor_ orci dapibus ultrices. 
+Id porta nibh venenatis cras sed felis eget velit aliquet.
+Aliquam id diam maecenas ultricies mi.
+Enim sit amet 
+`code_color("inline")`
+venenatis urna cursus eget nunc scelerisque viverra.
+]
+
+---
+
+# Big Topic or Inverse Slides `#`
+
+## Slide Headings `##`
+
+### Sub-slide Headings `###`
+
+#### Bold Call-Out `####`
+
+This is a normal paragraph text. Only use header levels 1-4.
+
+##### Possible, but not recommended `#####`
+
+###### Definitely don't use h6 `######`
+
+---
+
+# Left-Column Headings
+
+.left-column[
+## First
+
+## Second
+
+## Third
+]
+
+.right-column[
+Dolor quis aptent mus a dictum ultricies egestas.
+
+Amet egestas neque tempor fermentum proin massa!
+
+Dolor elementum fermentum pharetra lectus arcu pulvinar.
+]
+
+---
+class: inverse center middle
+
+# Topic Changing Interstitial
+
+--
+
+```
+class: inverse center middle
+```
+
+---
+layout: true
+
+## Blocks
+
+---
+
+### Blockquote
+
+> This is a blockquote following a header.
+>
+> When something is important enough, you do it even if the odds are not in your favor.
+
+---
+
+### Code Blocks
+
+#### R Code
+
+```{r eval=FALSE}
+ggplot(gapminder) +
+  aes(x = gdpPercap, y = lifeExp, size = pop, color = country) +
+  geom_point() +
+  facet_wrap(~year)
+```
+
+#### JavaScript
+
+```js
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+```
+
+---
+
+### More R Code
+
+```{r eval=FALSE}
+dplyr::starwars %>% dplyr::slice_sample(n = 4)
+```
+
+---
+
+```{r message=TRUE, eval=requireNamespace("cli", quietly = TRUE)}
+cli::cli_alert_success("It worked!")
+```
+
+--
+
+```{r message=TRUE}
+message("Just a friendly message")
+```
+
+--
+
+```{r warning=TRUE}
+warning("This could be bad...")
+```
+
+--
+
+```{r error=TRUE}
+stop("I hope you're sitting down for this")
+```
+
+
+---
+layout: true
+
+## Tables
+
+---
+exclude: `r if (requireNamespace("tibble", quietly=TRUE)) "false" else "true"`
+
+```{r eval=requireNamespace("tibble", quietly=TRUE)}
+tibble::as_tibble(mtcars)
+```
+
+---
+
+```{r}
+knitr::kable(head(mtcars), format = 'html')
+```
+
+---
+exclude: `r if (requireNamespace("DT", quietly=TRUE)) "false" else "true"`
+
+```{r eval=requireNamespace("DT", quietly=TRUE)}
+DT::datatable(head(mtcars), fillContainer = FALSE, options = list(pageLength = 4))
+```
+
+---
+layout: true
+
+## Lists
+
+---
+
+.pull-left[
+#### Here is an unordered list:
+
+*   Item foo
+*   Item bar
+*   Item baz
+*   Item zip
+]
+
+.pull-right[
+
+#### And an ordered list:
+
+1.  Item one
+1.  Item two
+1.  Item three
+1.  Item four
+]
+
+---
+
+### And a nested list:
+
+- level 1 item
+  - level 2 item
+  - level 2 item
+    - level 3 item
+    - level 3 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+
+---
+
+### Nesting an ol in ul in an ol
+
+- level 1 item (ul)
+  1. level 2 item (ol)
+  1. level 2 item (ol)
+    - level 3 item (ul)
+    - level 3 item (ul)
+- level 1 item (ul)
+  1. level 2 item (ol)
+  1. level 2 item (ol)
+    - level 3 item (ul)
+    - level 3 item (ul)
+  1. level 4 item (ol)
+  1. level 4 item (ol)
+    - level 3 item (ul)
+    - level 3 item (ul)
+- level 1 item (ul)
+
+---
+layout: true
+
+## Plots
+
+---
+
+```{r plot-example, eval=requireNamespace("ggplot2", quietly=TRUE)}
+library(ggplot2)
+(g <- ggplot(mpg) + aes(hwy, cty, color = class) + geom_point())
+```
+
+---
+
+```{r plot-example-themed, eval=requireNamespace("ggplot2", quietly=TRUE)}
+g + xaringanthemer::theme_xaringan(text_font_size = 16, title_font_size = 18) +
+  ggtitle("A Plot About Cars")
+```
+
+---
+layout: false
+
+## Square image
+
+<center><img src="https://octodex.github.com/images/labtocat.png" height="400px" /></center>
+
+.footnote[GitHub Octocat]
+
+---
+
+### Wide image
+
+![](https://guides.github.com/activities/hello-world/branching.png)
+
+.footnote[Wide images scale to 100% slide width]
+
+---
+
+## Two images
+
+.pull-left[
+![](https://octodex.github.com/images/motherhubbertocat.png)
+]
+
+.pull-right[
+![](https://octodex.github.com/images/dinotocat.png)
+]
+
+---
+
+### Definition lists can be used with HTML syntax.
+
+<dl>
+<dt>Name</dt>
+<dd>Godzilla</dd>
+<dt>Born</dt>
+<dd>1952</dd>
+<dt>Birthplace</dt>
+<dd>Japan</dd>
+<dt>Color</dt>
+<dd>Green</dd>
+</dl>
+
+---
+class: center, middle
+
+# Thanks!
+
+Slides created via the R packages:
+
+[**xaringan**](https://github.com/yihui/xaringan)<br>
+[gadenbuie/xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
+
+The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
+
+---
+class: animated slideInRight fadeOutLeft
+
+# remark.js
+
+You can see an introduction of remark.js from [its homepage](https://remarkjs.com). You should read the [remark.js Wiki](https://github.com/gnab/remark/wiki) at least once to know how to
+
+- create a new slide (Markdown syntax<sup>*</sup> and slide properties);
+
+- format a slide (e.g. text alignment);
+
+- configure the slideshow;
+
+- and use the presentation (keyboard shortcuts).
+
+It is important to be familiar with remark.js before you can understand the options in **xaringan**.
+
+.footnote[[*] It is different with Pandoc's Markdown! It is limited but should be enough for presentation purposes. Come on... You do not need a slide for the Table of Contents! Well, the Markdown support in remark.js [may be improved](https://github.com/gnab/remark/issues/142) in the future.]
+
+---
+class: middle left
+
+# Distribution of Scores: Population-level Interpretation
+
+```{r gauss-plot1, fig.cap='Statistical classification of neuropsychological test scores in the general population.', fig.width=4, fig.height=4, out.width = "50%"}
+knitr::include_graphics("plot_narrow.png", auto_pdf = TRUE)
+```
+
+---
+class: middle center
+
+# Distribution of Scores: Clinical Interpretation
+
+```{r gauss-plot2, fig.cap='General clinical interpretation of performance for individual test scores and broader neuropsychological domains.', fig.width=4, fig.height=4, out.width = "50%"}
+knitr::include_graphics("plot_broad.png", auto_pdf = TRUE)
+```
+
+---
+
+# Neuropsych Drilldown: z-Scores (M = 0, SD = 1)
+
+```{r}
+patient <- "Biggie"
+```
+
+```{r drillz-data}
+library(readr)
+library(dplyr)
+neurocog <- read_csv("neurocog.csv")
+```
+
+```{r drillz-data-tidy}
+library(highcharter)
+ncogz <- neurocog %>%
+  group_by(domain) %>%
+  summarize(zMean = mean(z)
+  )
+
+ncogz <- arrange(ncogz, desc(zMean))
+
+## Level 1
+ncogL1statusz <- tibble(
+  name = ncogz$domain,
+  y = ncogz$zMean,
+  drilldown = tolower(name)
+  )
+ncogL1statusz$y <- round(ncogL1statusz$y, 1)
+
+## Level 2
+ncogL2drillz <- lapply(unique(neurocog$domain), function(x_level) {
+  ncog2z <- subset(neurocog, neurocog$domain %in% x_level)
+  ncog2z <- ncog2z %>%
+    group_by(subdomain) %>%
+    summarize(zMean = mean(z))
+  ncog2z <- arrange(ncog2z, desc(zMean)) ### CHECK
+  ncogL2zstatus <- tibble(name = ncog2z$subdomain, y = ncog2z$zMean, drilldown = tolower(paste(x_level, name, sep = "_")))
+  list(id = tolower(x_level), type = "column", data = list_parse(ncogL2zstatus))
+})
+
+## Level 3
+ncogL3drillz <- lapply(unique(neurocog$domain), function(x_level) {
+  ncog2z <- subset(neurocog, neurocog$domain %in% x_level)
+  lapply(unique(ncog2z$subdomain), function(y_level) {
+    ncog3z <- subset(ncog2z, ncog2z$subdomain %in% y_level)
+    # ncog3 <- ncog2[ncog2$subdomain == y_level,]
+    ncog3z <- ncog3z %>%
+      group_by(narrow) %>%
+      summarize(zMean = mean(z))
+    ncog3z <- arrange(ncog3z, desc(zMean))
+    ncogL3zstatus <- tibble(name = ncog3z$narrow, y = ncog3z$zMean, drilldown = tolower(paste(x_level, y_level, name, sep = "_")))
+    list(id = tolower(paste(x_level, y_level, sep = "_")), type = "column", data = list_parse(ncogL3zstatus))
+  })
+}) %>% unlist(recursive = FALSE)
+
+## Level 4
+ncogL4drillz <- lapply(unique(neurocog$domain), function(x_level) {
+  ncog2z <- subset(neurocog, neurocog$domain %in% x_level)
+  # ncog2 <- neurocog[neurocog$domain == x_level,]
+  lapply(unique(ncog2z$subdomain), function(y_level) {
+    ncog3z <- subset(ncog2z, ncog2z$subdomain %in% y_level)
+    # ncog3 <- ncog2[ncog2$subdomain == y_level,]
+    lapply(unique(ncog3z$narrow), function(z_level) {
+      ncog4z <- subset(ncog3z, ncog3z$narrow %in% z_level)
+      # ncog4 <- ncog3[ncog3$narrow == z_level,]
+      ncog4z <- ncog4z %>%
+        group_by(scale) %>%
+        summarize(zMean = mean(z))
+      ncog4z <- arrange(ncog4z, desc(zMean))
+      ncogL4zstatus <- tibble(name = ncog4z$scale, y = ncog4z$zMean)
+      list(id = tolower(paste(x_level, y_level, z_level, sep = "_")), type = "column", data = list_parse2(ncogL4zstatus))
+    })
+  }) %>% unlist(recursive = FALSE)
+}) %>% unlist(recursive = FALSE)
+```
+
+```{r drillz-tooltip, fig.cap='Drilldown Neuropsych Testing zScores', out.width = "100%"}
+ncogL1statusz <- ncogL1statusz %>%
+  dplyr::mutate(
+    rangez = case_when(
+      y >= 2.0 ~ "Exceptionally High",
+      y %in% 1.3:1.9 ~ "Above Average",
+      y %in% 0.7:1.2 ~ "High-Average",
+      y %in% -0.7:0.6 ~ "Average",
+      y %in% -1.3:-0.6 ~ "Low-Average",
+      y %in% -2.0:-1.4 ~ "Below Average",
+      y < -2.0 ~ "Exceptionally Low"
+    )
+  )
+
+x <- c("Name", "Score", "Range")
+y <- c("{point.name}", "{point.y}", "{point.rangez}")
+tt <- tooltip_table(x, y)
+```
+
+```{r drillz-plot}
+library(htmlwidgets)
+library(widgetframe)
+library(crosstalk)
+library(manipulateWidget)
+frameWidget(
+  highchart() %>%
+    hc_title(text = "biggie",
+             style = list(fontSize = "15px")) %>%
+    hc_add_series(
+      ncogL1statusz,
+      type = "bar",
+      name = "Neuropsychological Test Scores",
+      hcaes(
+        x = name,
+        y = y,
+        color = c(
+          "#058DC7",
+          "#50B432",
+          "#DDDF00",
+          "#24CBE5",
+          "#64E572",
+          "#FF9655"
+        )
+      )
+    ) %>%
+    hc_xAxis(
+      type = "category",
+      title = list(text = "Domain"),
+      categories = .$name
+    ) %>%
+    hc_yAxis(
+      title = list(text = "z-score"),
+      labels = list(format = "{value}")
+    ) %>%
+    hc_tooltip(
+      pointFormat = tt,
+      useHTML = TRUE,
+      valueDecimals = 0
+    ) %>%
+    hc_plotOptions(
+      series = list(
+        colorByPoint = TRUE,
+        allowPointSelect = TRUE,
+        dataLabels = TRUE
+      )
+    ) %>%
+    hc_drilldown(
+      allowPointDrilldown = TRUE,
+      series = c(ncogL2drillz, ncogL3drillz, ncogL4drillz)
+    )
+)
+```
+
+---
+
+# Neuropsych Drilldown: Percentiles
+
+```{r}
+library(highcharter)
+library(tidyverse)
+library(htmlwidgets)
+library(widgetframe)
+colors <-
+  c(
+    "#058DC7",
+    "#50B432",
+    "#ED561B",
+    "#DDDF00",
+    "#24CBE5",
+    "#64E572"
+  )
+# colors <-
+#   c(
+#     "#058DC7",
+#     "#50B432",
+#     "#ED561B",
+#     "#DDDF00",
+#     "#24CBE5",
+#     "#64E572",
+#     "#FF9655",
+#     "#FFF263",
+#     "#6AF9C4"
+#   )
+```
+
+
+```{r}
+# percentiles
+ncog <- neurocog %>%
+  group_by(domain) %>%
+  summarize(Pct = mean(percentile)
+  )
+
+ncog <- arrange(ncog, desc(Pct))
+
+## Level 1
+ncogL1status <- tibble(
+  name = ncog$domain,
+  y = as.integer(ncog$Pct),
+  drilldown = tolower(name))
+# ncogL1status$y <- as.integer(ncogL1status$y)
+
+## Level 2
+ncogL2drill <- lapply(unique(neurocog$domain), function(x_level) {
+  ncog2 <- subset(neurocog, neurocog$domain %in% x_level)
+  # ncog2 <- neurocog[neurocog$domain == x_level,]
+  ncog2 <- ncog2 %>%
+    group_by(subdomain) %>%
+    summarize(Pct = mean(percentile))
+  ncog2 <- arrange(ncog2, desc(Pct)) ### CHECK
+  ncogL2status <- tibble(name = ncog2$subdomain, y = ncog2$Pct, drilldown = tolower(paste(x_level, name, sep = "_")))
+  list(id = tolower(x_level), type = "column", data = list_parse(ncogL2status))
+})
+
+## Level 3
+ncogL3drill <- lapply(unique(neurocog$domain), function(x_level) {
+  ncog2 <- subset(neurocog, neurocog$domain %in% x_level)
+  # ncog2 <- neurocog[neurocog$domain == x_level,]
+  lapply(unique(ncog2$subdomain), function(y_level) {
+    ncog3 <- subset(ncog2, ncog2$subdomain %in% y_level)
+    # ncog3 <- ncog2[ncog2$subdomain == y_level,]
+    ncog3 <- ncog3 %>%
+      group_by(narrow) %>%
+      summarize(Pct = mean(percentile))
+    ncog3 <- arrange(ncog3, desc(Pct))
+    ncogL3status <- tibble(name = ncog3$narrow, y = ncog3$Pct, drilldown = tolower(paste(x_level, y_level, name, sep = "_")))
+    list(id = tolower(paste(x_level, y_level, sep = "_")), type = "column", data = list_parse(ncogL3status))
+  })
+}) %>% unlist(recursive = FALSE)
+
+## Level 4
+ncogL4drill <- lapply(unique(neurocog$domain), function(x_level) {
+  ncog2 <- subset(neurocog, neurocog$domain %in% x_level)
+  # ncog2 <- neurocog[neurocog$domain == x_level,]
+  lapply(unique(ncog2$subdomain), function(y_level) {
+    ncog3 <- subset(ncog2, ncog2$subdomain %in% y_level)
+    # ncog3 <- ncog2[ncog2$subdomain == y_level,]
+    lapply(unique(ncog3$narrow), function(z_level) {
+      ncog4 <- subset(ncog3, ncog3$narrow %in% z_level)
+      # ncog4 <- ncog3[ncog3$narrow == z_level,]
+      ncog4 <- ncog4 %>%
+        group_by(scale) %>%
+        summarize(Pct = mean(percentile))
+      ncog4 <- arrange(ncog4, desc(Pct))
+      ncogL4status <- tibble(name = ncog4$scale, y = ncog4$Pct)
+      list(id = tolower(paste(x_level, y_level, z_level, sep = "_")), type = "column", data = list_parse2(ncogL4status))
+    })
+  }) %>% unlist(recursive = FALSE)
+}) %>% unlist(recursive = FALSE)
+```
+
+
+```{r drillp, fig.cap='Drilldown neurocog Pct', fig.width=12, fig.height=8, fig.retina=3, out.width = "100%"}
+## for Tooltip
+ncogL1status <- ncogL1status %>%
+  dplyr::mutate(
+    rangep = case_when(
+      y >= 98 ~ "Exceptionally High",
+      y %in% 91:97 ~ "Above Average",
+      y %in% 75:90 ~ "High-Average",
+      y %in% 25:74 ~ "Average",
+      y %in% 9:24 ~ "Low-Average",
+      y %in% 2:8 ~ "Below Average",
+      y < 2 ~ "Exceptionally Low",
+      TRUE ~ as.character(y)
+    )
+  )
+
+#x <- c("Name", "Score")
+#y <- c("{point.name}", "{point.y}")
+#tt <- tooltip_table(x, y)
+
+x <- c("Name", "Score", "Range")
+y <- c("{point.name}", "{point.y}", "{point.rangep}")
+tt <- tooltip_table(x, y)
+
+# Create drilldown bar plot
+p2 <- 
+  highchart() %>%
+  hc_title(text = patient,
+           style = list(fontSize = "15px")) %>%
+  hc_add_series(
+    ncogL1status,
+    type = "bar",
+    name = "neurocogological Test Scores",
+    hcaes(x = name, y = y, color = colors)
+  ) %>%
+  hc_xAxis(
+    type = "category",
+    title = list(text = "Domain"),
+    categories = .$name
+  ) %>%
+  hc_yAxis(
+    title = list(text = "Percentile"),
+    labels = list(format = "{value} ‰")
+  ) %>%
+  hc_tooltip(
+    pointFormat = tt,
+    useHTML = TRUE,
+    valueDecimals = 0
+  ) %>%
+  hc_plotOptions(
+    series = list(
+      colorByPoint = TRUE,
+      allowPointSelect = TRUE,
+      dataLabels = TRUE
+    )
+  ) %>%
+  hc_drilldown(
+    allowPointDrilldown = TRUE,
+    series = c(ncogL2drill, ncogL3drill, ncogL4drill)
+  )
+p2
+```
+
+
+
+---
+
+B
+
+---
+
+C
+
+---
+
+D
+
+---
+
+E
+
+---
+
+F
+
+---
+
+G
+
+---
+
+H
+
+---
