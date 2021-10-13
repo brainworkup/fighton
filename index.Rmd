@@ -71,7 +71,7 @@ style_mono_accent(
 )
 ```
 
-```{r xaringan-extra}
+```{r xaringan-extra, include=FALSE}
 xaringanExtra::use_panelset()
 xaringanExtra::use_broadcast()
 xaringanExtra::use_tile_view()
@@ -103,34 +103,13 @@ xaringanExtra::use_logo(
 )
 ```
 
-```{r}
+```{r share-again, include=FALSE}
 xaringanExtra::use_share_again()
 xaringanExtra::style_share_again(
   share_buttons = c("twitter", "linkedin", "pocket")
 )
 xaringanExtra::embed_xaringan(url = "share-again.html", ratio = "4:3")
 ```
-
-
-## Typography
-
-Text can be **bold**, _italic_, ~~strikethrough~~, or `inline code`.
-
-[Link to another slide](#colors).
-
-### Lorem Ipsum
-
-Dolor imperdiet nostra sapien scelerisque praesent curae metus facilisis dignissim tortor. 
-Lacinia neque mollis nascetur neque urna velit bibendum. 
-Himenaeos suspendisse leo varius mus risus sagittis aliquet venenatis duis nec.
-
-- Dolor cubilia nostra nunc sodales
-
-- Consectetur aliquet mauris blandit
-
-- Ipsum dis nec porttitor urna sed
-
----
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 The only way to write good code is to write tons of bad code first. 
@@ -423,33 +402,6 @@ layout: false
 ]
 
 ---
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
----
-class: center, middle
-
-# Thanks!
-
-Slides created via the R packages:
-
-[**xaringan**](https://github.com/yihui/xaringan)<br>
-[gadenbuie/xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
-
-The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
-
----
 class: animated slideInRight fadeOutLeft
 
 # remark.js
@@ -469,7 +421,7 @@ It is important to be familiar with remark.js before you can understand the opti
 .footnote[[*] It is different with Pandoc's Markdown! It is limited but should be enough for presentation purposes. Come on... You do not need a slide for the Table of Contents! Well, the Markdown support in remark.js [may be improved](https://github.com/gnab/remark/issues/142) in the future.]
 
 ---
-class: middle left
+class: middle center
 
 # Distribution of Scores: Population-level Interpretation
 
@@ -500,13 +452,32 @@ library(dplyr)
 neurocog <- read_csv("neurocog.csv")
 ```
 
-```{r drillz-data-tidy}
+```{r}
 library(highcharter)
+library(tidyverse)
+library(htmlwidgets)
+library(widgetframe)
+library(crosstalk)
+library(manipulateWidget)
+colors <-
+  c(
+    "#058DC7",
+    "#50B432",
+    "#ED561B",
+    "#DDDF00",
+    "#24CBE5",
+    "#64E572"
+# "#FF9655",
+# "#FFF263",
+# "#6AF9C4"
+  )
+```
+
+```{r drillz-data-tidy}
 ncogz <- neurocog %>%
   group_by(domain) %>%
   summarize(zMean = mean(z)
   )
-
 ncogz <- arrange(ncogz, desc(zMean))
 
 ## Level 1
@@ -564,7 +535,7 @@ ncogL4drillz <- lapply(unique(neurocog$domain), function(x_level) {
 }) %>% unlist(recursive = FALSE)
 ```
 
-```{r drillz-tooltip, fig.cap='Drilldown Neuropsych Testing zScores', out.width = "100%"}
+```{r drillz-tt, fig.cap='Drilldown Neuropsych Testing zScores', fig.width=12, fig.height=8, fig.retina=3, out.width = "100%"}
 ncogL1statusz <- ncogL1statusz %>%
   dplyr::mutate(
     rangez = case_when(
@@ -577,37 +548,21 @@ ncogL1statusz <- ncogL1statusz %>%
       y < -2.0 ~ "Exceptionally Low"
     )
   )
-
 x <- c("Name", "Score", "Range")
 y <- c("{point.name}", "{point.y}", "{point.rangez}")
 tt <- tooltip_table(x, y)
 ```
 
 ```{r drillz-plot}
-library(htmlwidgets)
-library(widgetframe)
-library(crosstalk)
-library(manipulateWidget)
-frameWidget(
+p1 <-
   highchart() %>%
-    hc_title(text = "biggie",
+    hc_title(text = patient,
              style = list(fontSize = "15px")) %>%
     hc_add_series(
       ncogL1statusz,
       type = "bar",
       name = "Neuropsychological Test Scores",
-      hcaes(
-        x = name,
-        y = y,
-        color = c(
-          "#058DC7",
-          "#50B432",
-          "#DDDF00",
-          "#24CBE5",
-          "#64E572",
-          "#FF9655"
-        )
-      )
+      hcaes(x = name, y = y, color = colors)
     ) %>%
     hc_xAxis(
       type = "category",
@@ -621,7 +576,7 @@ frameWidget(
     hc_tooltip(
       pointFormat = tt,
       useHTML = TRUE,
-      valueDecimals = 0
+      valueDecimals = 1
     ) %>%
     hc_plotOptions(
       series = list(
@@ -634,43 +589,14 @@ frameWidget(
       allowPointDrilldown = TRUE,
       series = c(ncogL2drillz, ncogL3drillz, ncogL4drillz)
     )
-)
+p1
 ```
 
 ---
 
 # Neuropsych Drilldown: Percentiles
 
-```{r}
-library(highcharter)
-library(tidyverse)
-library(htmlwidgets)
-library(widgetframe)
-colors <-
-  c(
-    "#058DC7",
-    "#50B432",
-    "#ED561B",
-    "#DDDF00",
-    "#24CBE5",
-    "#64E572"
-  )
-# colors <-
-#   c(
-#     "#058DC7",
-#     "#50B432",
-#     "#ED561B",
-#     "#DDDF00",
-#     "#24CBE5",
-#     "#64E572",
-#     "#FF9655",
-#     "#FFF263",
-#     "#6AF9C4"
-#   )
-```
-
-
-```{r}
+```{r drillp-tidy}
 # percentiles
 ncog <- neurocog %>%
   group_by(domain) %>%
@@ -736,7 +662,7 @@ ncogL4drill <- lapply(unique(neurocog$domain), function(x_level) {
 ```
 
 
-```{r drillp, fig.cap='Drilldown neurocog Pct', fig.width=12, fig.height=8, fig.retina=3, out.width = "100%"}
+```{r drillp-tt, fig.cap='Drilldown neurocog Pct', fig.width=12, fig.height=8, fig.retina=3, out.width = "100%"}
 ## for Tooltip
 ncogL1status <- ncogL1status %>%
   dplyr::mutate(
@@ -751,16 +677,12 @@ ncogL1status <- ncogL1status %>%
       TRUE ~ as.character(y)
     )
   )
-
-#x <- c("Name", "Score")
-#y <- c("{point.name}", "{point.y}")
-#tt <- tooltip_table(x, y)
-
 x <- c("Name", "Score", "Range")
 y <- c("{point.name}", "{point.y}", "{point.rangep}")
 tt <- tooltip_table(x, y)
+```
 
-# Create drilldown bar plot
+```{r drillp-plot, fig.cap='Drilldown neurocog Pct', fig.width=12, fig.height=8, fig.retina=3, out.width = "100%"}
 p2 <- 
   highchart() %>%
   hc_title(text = patient,
@@ -799,34 +721,14 @@ p2 <-
 p2
 ```
 
-
-
 ---
+class: center, middle
 
-B
+# Thanks!
 
----
+Slides created via the R packages:
 
-C
+[**xaringan**](https://github.com/yihui/xaringan)<br>
+[gadenbuie/xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
 
----
-
-D
-
----
-
-E
-
----
-
-F
-
----
-
-G
-
----
-
-H
-
----
+The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
