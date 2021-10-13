@@ -124,6 +124,7 @@ Feeling shame about bad code stops you from getting to good code
 ]]
 
 ---
+
 name: colors
 
 ## Colors
@@ -190,6 +191,7 @@ Dolor elementum fermentum pharetra lectus arcu pulvinar.
 ]
 
 ---
+
 class: inverse center middle
 
 # Topic Changing Interstitial
@@ -201,6 +203,7 @@ class: inverse center middle
 ```
 
 ---
+
 layout: true
 
 ## Blocks
@@ -237,43 +240,12 @@ var fun = function lang(l) {
 
 ---
 
-### More R Code
-
-```{r eval=FALSE}
-dplyr::starwars %>% dplyr::slice_sample(n = 4)
-```
-
----
-
-```{r message=TRUE, eval=requireNamespace("cli", quietly = TRUE)}
-cli::cli_alert_success("It worked!")
-```
-
---
-
-```{r message=TRUE}
-message("Just a friendly message")
-```
-
---
-
-```{r warning=TRUE}
-warning("This could be bad...")
-```
-
---
-
-```{r error=TRUE}
-stop("I hope you're sitting down for this")
-```
-
-
----
 layout: true
 
 ## Tables
 
 ---
+
 exclude: `r if (requireNamespace("tibble", quietly=TRUE)) "false" else "true"`
 
 ```{r eval=requireNamespace("tibble", quietly=TRUE)}
@@ -287,6 +259,7 @@ knitr::kable(head(mtcars), format = 'html')
 ```
 
 ---
+
 exclude: `r if (requireNamespace("DT", quietly=TRUE)) "false" else "true"`
 
 ```{r eval=requireNamespace("DT", quietly=TRUE)}
@@ -294,70 +267,7 @@ DT::datatable(head(mtcars), fillContainer = FALSE, options = list(pageLength = 4
 ```
 
 ---
-layout: true
 
-## Lists
-
----
-
-.pull-left[
-#### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-]
-
-.pull-right[
-
-#### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-]
-
----
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
----
-
-### Nesting an ol in ul in an ol
-
-- level 1 item (ul)
-  1. level 2 item (ol)
-  1. level 2 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-- level 1 item (ul)
-  1. level 2 item (ol)
-  1. level 2 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-  1. level 4 item (ol)
-  1. level 4 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-- level 1 item (ul)
-
----
 layout: true
 
 ## Plots
@@ -377,6 +287,7 @@ g + xaringanthemer::theme_xaringan(text_font_size = 16, title_font_size = 18) +
 ```
 
 ---
+
 layout: false
 
 ## Square image
@@ -406,6 +317,7 @@ layout: false
 ]
 
 ---
+
 class: animated slideInRight fadeOutLeft
 
 # remark.js
@@ -425,6 +337,7 @@ It is important to be familiar with remark.js before you can understand the opti
 .footnote[[*] It is different with Pandoc's Markdown! It is limited but should be enough for presentation purposes. Come on... You do not need a slide for the Table of Contents! Well, the Markdown support in remark.js [may be improved](https://github.com/gnab/remark/issues/142) in the future.]
 
 ---
+
 class: middle center
 
 # Distribution of Scores: Population-level Interpretation
@@ -434,6 +347,7 @@ knitr::include_graphics("plot_narrow.png", auto_pdf = TRUE)
 ```
 
 ---
+
 class: middle center
 
 # Distribution of Scores: Clinical Interpretation
@@ -726,6 +640,7 @@ p2
 ```
 
 ---
+
 class: center, middle
 
 # Thanks!
