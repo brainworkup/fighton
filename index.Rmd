@@ -73,7 +73,6 @@ style_mono_accent(
 
 ```{r xaringan-extra, include=FALSE}
 xaringanExtra::use_panelset()
-xaringanExtra::use_broadcast()
 xaringanExtra::use_tile_view()
 xaringanExtra::use_editable(expires = 1)
 xaringanExtra::use_animate_css()
@@ -110,6 +109,11 @@ xaringanExtra::style_share_again(
 )
 xaringanExtra::embed_xaringan(url = "share-again.html", ratio = "4:3")
 ```
+
+```{r broadcast, echo=FALSE}
+xaringanExtra::use_broadcast()
+```
+
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 The only way to write good code is to write tons of bad code first. 
