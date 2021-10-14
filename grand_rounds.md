@@ -6,6 +6,10 @@ Help Me Help You: Data Science, Neuropsychology, Stimulants, and ADHD
 
 ### Notes
 
+[Making Slides with R Markdown](https://arm.rbind.io/slides/xaringan.html#1)
+
+[Home · yihui/xaringan Wiki](https://github.com/yihui/xaringan/wiki)
+
 ### 7.2 Keyboard shortcuts
 
 After opening slides generated from xaringan or remark.js, you may press the key h (Help) or ? on your keyboard to learn all possible keyboard shortcuts, which may help you better present your slides.
@@ -25,3 +29,21 @@ Press f to toggle the fullscreen mode.
 Press c to clone the slides to a new browser window; slides in the two windows will be in sync as you navigate through them. Press p to toggle the presenter mode. The presenter mode shows thumbnails of the current slide and the next slide on the left, presenter notes on the right (see Section 7.3.5), and also a timer on the top right. The keys c and p can be very useful when you present with your own computer connected to a second screen (such as a projector). On the second screen, you can show the normal slides, while cloning the slides to your own computer screen and using the presenter mode. Only you can see the presenter mode, which means only you can see presenter notes and the time, and preview the next slide. You may press t to restart the timer at any time.
 
 Press h or ? again to exit the help page.
+
+-   [ ]
+
+
+-   F90.1 attention-deficit/hyperactivity disorder inattentive type
+
+_Exceptionally Low_
+
+-   [ ]
+
+-   list 1
+
+-   list 2
+
+-   list 3
+
+_italics_
+**bold**
