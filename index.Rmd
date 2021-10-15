@@ -96,7 +96,7 @@ xaringanExtra::use_extra_styles(
   hover_code_line = TRUE,         #<<
   mute_unhighlighted_code = TRUE  #<<
 )
-xaringanExtra::use_progress_bar(color = "#0051BA", location = "top")
+xaringanExtra::use_progress_bar(color = "#478ce6", location = "top")
 xaringanExtra::use_logo(
   image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png"
 )
@@ -116,11 +116,10 @@ xaringanExtra::use_broadcast()
 
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
-The only way to write good code is to write tons of bad code first. 
-Feeling shame about bad code stops you from getting to good code
+If you cannot explain something in simple terms, you don't understand it.
 
 .tr[
-— Hadley Wickham
+— Richard Feynman
 ]]
 
 ---
