@@ -1,10 +1,12 @@
 ---
-title: "Neuropsychology"
+title: "Help Me Help You: Neuropsychological Assessment of ADHD for Diagnostic Clarification and Treatment Planning"
 subtitle: "Psychiatry Grand Rounds Nov 2021"  
 author: 
-  - "Joey Trampush"
-  - "Second person"
-institute: "USC Keck School of Medicine"
+  - "Joey Trampush, PhD"
+  - "First Last, MD/PhD"
+institute: 
+  - "USC Keck School of Medicine"
+  - "Department of Psychiatry and the Behavioral Sciences"
 date: '`r Sys.Date()`'
 output:
   xaringan::moon_reader:
@@ -134,6 +136,9 @@ Text color
 [Link Color](#3)
 
 **Bold Color**
+
+https://media.giphy.com/media/fdLR6LGwAiVNhGQNvf/giphy.gif
+
 
 _Italic Color_
 
