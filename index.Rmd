@@ -1,13 +1,12 @@
 ---
-title: "Help Me Help You: Neuropsychological Assessment of ADHD for Diagnostic Clarification and Treatment Planning"
-subtitle: "Psychiatry Grand Rounds Nov 2021"  
+title: "Neuropsychological Assessment of ADHD"
 author: 
   - "Joey Trampush, PhD"
   - "First Last, MD/PhD"
 institute: 
   - "USC Keck School of Medicine"
   - "Department of Psychiatry and the Behavioral Sciences"
-date: '`r Sys.Date()`'
+subtitle: "Psychiatry Grand Rounds `r Sys.Date()`"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -36,7 +35,7 @@ knitr::opts_chunk$set(
   message = FALSE, 
   warning = FALSE,
   hiline = TRUE,
-  dev = "svg"
+  dev = c("svg", "svglite")
 )
 ```
 
@@ -57,11 +56,12 @@ library(widgetframe)
 library(crosstalk)
 library(manipulateWidget)
 library(tibble)
-style_duo_accent(
-  primary_color = "#1381B0",
-  secondary_color = "#FF961C",
-  inverse_header_color = "#FFFFFF"
-)
+library(svglite)
+# style_duo_accent(
+#   primary_color = "#1381B0",
+#   secondary_color = "#FF961C",
+#   inverse_header_color = "#FFFFFF"
+# )
 style_mono_accent(
   base_color = "#690f0d",               # bright red
   inverse_background_color = "#002B36", # dark dark blue
@@ -107,9 +107,9 @@ xaringanExtra::use_logo(
 ```{r share-again, include=FALSE}
 xaringanExtra::use_share_again()
 xaringanExtra::style_share_again(
-  share_buttons = c("twitter", "linkedin", "pocket")
+  share_buttons = c("twitter", "instagram")
 )
-xaringanExtra::embed_xaringan(url = "share-again.html", ratio = "4:3")
+xaringanExtra::embed_xaringan(url = "share-again.html", ratio = "16:9")
 ```
 
 ```{r broadcast, echo=FALSE}
@@ -136,9 +136,6 @@ Text color
 [Link Color](#3)
 
 **Bold Color**
-
-https://media.giphy.com/media/fdLR6LGwAiVNhGQNvf/giphy.gif
-
 
 _Italic Color_
 
@@ -296,7 +293,7 @@ layout: false
 
 ## Square image
 
-<center><img src="https://octodex.github.com/images/labtocat.png" height="400px" /></center>
+.center[![jerry maguire](gifs/jerry_maguire.gif)]
 
 .footnote[GitHub Octocat]
 
