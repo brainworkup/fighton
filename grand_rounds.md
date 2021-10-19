@@ -8,7 +8,7 @@ Help Me Help You: Data Science, Neuropsychology, Stimulants, and ADHD
 
 [Making Slides with R Markdown](https://arm.rbind.io/slides/xaringan.html#1)
 
-[Home · yihui/xaringan Wiki](https://github.com/yihui/xaringan/wiki)
+[Home·yihui/xaringan Wiki](https://github.com/yihui/xaringan/wiki)
 
 ### 7.2 Keyboard shortcuts
 
