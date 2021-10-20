@@ -207,11 +207,11 @@ class: animated slideInLeft fadeOutRight inverse center middle
 ![](https://octodex.github.com/images/motherhubbertocat.png)
 ]
 
-
 ---
 class: animated slideInRight fadeOutLeft
 
 # neuropsychological deficits related to adhd
+
 
 .left-column[
 ### Working Memory
@@ -237,35 +237,21 @@ Reaction time variability/response consistency.
 ]
 
 ---
-class: animated slideInRight fadeOutLeft
-
-# remark.js
-
-You can see an introduction of remark.js from [its homepage](https://remarkjs.com). You should read the [remark.js Wiki](https://github.com/gnab/remark/wiki) at least once to know how to
-
-- create a new slide (Markdown syntax<sup>*</sup> and slide properties);
-
-- format a slide (e.g. text alignment);
-
-- configure the slideshow;
-
-- and use the presentation (keyboard shortcuts).
-
----
 class: middle left animated slideInRight fadeOutLeft
 
-## Distribution of Scores: **Population-level Interpretation**
+## Distribution of Scores: _Population-level Interpretation_
 
 ```{r gauss-plot1, fig.cap='Statistical classification of neuropsychological test scores in the general population.', fig.width=4, fig.height=4, out.width = "50%"}
 knitr::include_graphics("images/plot_narrow.png", auto_pdf = TRUE)
 ```
 
 ---
-class: animated slideInLeft fadeOutRight middle left
+class: middle left animated slideInLeft fadeOutRight 
 
-## Distribution of Scores: **Clinical Interpretation**
+## Distribution of Scores: _Clinical Interpretation_
 
-```{r gauss-plot2, fig.cap='General clinical interpretation of performance for individual test scores and broader neuropsychological domains.', fig.width=4, fig.height=4, out.width = "50%"}
+```{r gauss-plot2, fig.cap='General clinical interpretation of performance for individual test scores and broader neuropsychological domains.', fig.retina=3, fig.asp=0.5, out.width = "50%"}
+# change these to match if necessary
 knitr::include_graphics("images/plot_broad.png", auto_pdf = TRUE)
 ```
 
@@ -366,7 +352,7 @@ ncogL4drillz <- lapply(unique(neurocog$domain), function(x_level) {
 }) %>% unlist(recursive = FALSE)
 ```
 
-```{r drillz-tt, fig.cap='Drilldown Neuropsych Testing zScores', fig.width=12, fig.height=8, fig.retina=3, out.width = "100%"}
+```{r drillz-tt}
 ncogL1statusz <- ncogL1statusz %>%
   dplyr::mutate(
     rangez = case_when(
@@ -384,7 +370,7 @@ y <- c("{point.name}", "{point.y}", "{point.rangez}")
 tt <- tooltip_table(x, y)
 ```
 
-```{r drillz-plot}
+```{r drillz-plot, fig.width=12, fig.height=8, fig.retina=3, out.width = "100%"}
 p1 <-
   highchart() %>%
     hc_title(text = patient,
@@ -493,7 +479,7 @@ ncogL4drill <- lapply(unique(neurocog$domain), function(x_level) {
 ```
 
 
-```{r drillp-tt, fig.cap='Drilldown neurocog Pct', fig.width=12, fig.height=8, fig.retina=3, out.width = "100%"}
+```{r drillp-tt}
 ## for Tooltip
 ncogL1status <- ncogL1status %>%
   dplyr::mutate(
