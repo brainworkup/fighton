@@ -49,9 +49,9 @@ knitr::opts_chunk$set(
   fig.asp = .5,
   out.width = "100%",
   fig.showtext = TRUE,
-  #comment = NULL,
-  cache = TRUE,
-  cache.path = "cache/",
+  comment = NULL,
+  cache = FALSE,
+  #cache.path = "cache/",
   #include = FALSE,
   echo = FALSE,
   message = FALSE, 
@@ -186,33 +186,32 @@ If you cannot explain something in simple terms, you don't understand it.
 .center[![jerry maguire](images/jerry_maguire.gif)]
 
 ---
-
-class: inverse center middle
-
-# 80HD
---
-
-## Adult ADHD
-
-### Child ADHD
-
----
-
-class: inverse center middle
+class: animated slideInRight fadeOutLeft inverse center middle
 
 # 80HD
 
-.pull-left[
-![](https://octodex.github.com/images/motherhubbertocat.png)
-]
+## Child ADHD
 
 .pull-right[
 ![](https://octodex.github.com/images/dinotocat.png)
 ]
 
 ---
+class: animated slideInLeft fadeOutRight inverse center middle
 
-# Neuropsych Deficits
+# 80HD
+
+## Adult ADHD
+
+.pull-left[
+![](https://octodex.github.com/images/motherhubbertocat.png)
+]
+
+
+---
+class: animated slideInRight fadeOutLeft
+
+# neuropsychological deficits related to adhd
 
 .left-column[
 ### Working Memory
@@ -238,85 +237,6 @@ Reaction time variability/response consistency.
 ]
 
 ---
-
-### Code Blocks
-
-#### R Code
-
-```{r eval=FALSE}
-ggplot(gapminder) +
-  aes(x = gdpPercap, y = lifeExp, size = pop, color = country) +
-  geom_point() +
-  facet_wrap(~year)
-```
-
-#### JavaScript
-
-```js
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
----
-
-layout: true
-
-## Tables
-
----
-
-exclude: `r if (requireNamespace("tibble", quietly=TRUE)) "false" else "true"`
-
-```{r eval=requireNamespace("tibble", quietly=TRUE)}
-tibble::as_tibble(mtcars)
-```
-
----
-
-```{r}
-knitr::kable(head(mtcars), format = 'html')
-```
-
----
-
-exclude: `r if (requireNamespace("DT", quietly=TRUE)) "false" else "true"`
-
-```{r eval=requireNamespace("DT", quietly=TRUE)}
-DT::datatable(head(mtcars), fillContainer = FALSE, options = list(pageLength = 4))
-```
-
----
-
-layout: true
-
-## Plots
-
----
-
-```{r plot-example, eval=requireNamespace("ggplot2", quietly=TRUE)}
-library(ggplot2)
-(g <- ggplot(mpg) + aes(hwy, cty, color = class) + geom_point())
-```
-
----
-
-```{r plot-example-themed, eval=requireNamespace("ggplot2", quietly=TRUE)}
-g + xaringanthemer::theme_xaringan(text_font_size = 16, title_font_size = 18) +
-  ggtitle("A Plot About Cars")
-```
-
----
-
-### Wide image
-
-![](https://guides.github.com/activities/hello-world/branching.png)
-
-.footnote[Wide images scale to 100% slide width]
-
----
-
 class: animated slideInRight fadeOutLeft
 
 # remark.js
@@ -331,26 +251,19 @@ You can see an introduction of remark.js from [its homepage](https://remarkjs.co
 
 - and use the presentation (keyboard shortcuts).
 
-It is important to be familiar with remark.js before you can understand the options in **xaringan**.
-
-.footnote[[*] It is different with Pandoc's Markdown! It is limited but should be enough for presentation purposes. Come on... You do not need a slide for the Table of Contents! Well, the Markdown support in remark.js [may be improved](https://github.com/gnab/remark/issues/142) in the future.]
-
 ---
+class: middle left animated slideInRight fadeOutLeft
 
-class: middle left
-
-# Distribution of Scores
-## Population-level Interpretation
+## Distribution of Scores: **Population-level Interpretation**
 
 ```{r gauss-plot1, fig.cap='Statistical classification of neuropsychological test scores in the general population.', fig.width=4, fig.height=4, out.width = "50%"}
 knitr::include_graphics("images/plot_narrow.png", auto_pdf = TRUE)
 ```
 
 ---
+class: animated slideInLeft fadeOutRight middle left
 
-class: middle left
-
-## Distribution of Scores: Clinical Interpretation
+## Distribution of Scores: **Clinical Interpretation**
 
 ```{r gauss-plot2, fig.cap='General clinical interpretation of performance for individual test scores and broader neuropsychological domains.', fig.width=4, fig.height=4, out.width = "50%"}
 knitr::include_graphics("images/plot_broad.png", auto_pdf = TRUE)
@@ -358,8 +271,7 @@ knitr::include_graphics("images/plot_broad.png", auto_pdf = TRUE)
 
 ---
 
-# Highcharter Drilldown
-## z-Scores (M = 0, SD = 1)
+## Highcharter Drilldown: z-Scores (M = 0, SD = 1)
 
 ```{r}
 patient <- "Biggie"
@@ -513,7 +425,7 @@ p1
 
 ---
 
-# Neuropsych Drilldown: Percentiles
+## Neuropsych Drilldown: Percentiles
 
 ```{r drillp-tidy}
 # percentiles
@@ -601,7 +513,7 @@ y <- c("{point.name}", "{point.y}", "{point.rangep}")
 tt <- tooltip_table(x, y)
 ```
 
-```{r drillp-plot, fig.cap='Drilldown neurocog Pct', fig.width=12, fig.height=8, fig.retina=3, out.width = "100%"}
+```{r drillp-plot, fig.retina=3, fig.asp=0.5, out.width = "100%"}
 p2 <- 
   highchart() %>%
   hc_title(text = patient,
@@ -609,7 +521,7 @@ p2 <-
   hc_add_series(
     ncogL1status,
     type = "bar",
-    name = "neurocogological Test Scores",
+    name = "Neuropsychological Test Scores",
     hcaes(x = name, y = y, color = colors)
   ) %>%
   hc_xAxis(
@@ -641,11 +553,15 @@ p2
 ```
 
 ---
-
 class: center, middle
 
 # Thanks!
 
-> When something is important enough, you do it even if the odds are not in your favor.
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+When something is important enough, you do it even if the odds are not in your favor.
+
+.tr[
+— Unknown
+]]
 
 ---
