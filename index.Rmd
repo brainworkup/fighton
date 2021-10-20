@@ -548,4 +548,4 @@ When something is important enough, you do it even if the odds are not in your f
 — Unknown
 ]]
 
-.center[![:scale 50%](images/my-octocat.png)]
+![:scale 50%](images/my-octocat.png)
