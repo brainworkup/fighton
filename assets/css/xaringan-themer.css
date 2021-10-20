@@ -18,9 +18,12 @@
  *  Version: 0.4.0.9000
  *
  * ------------------------------------------------------- */
-@import url(https://fonts.googleapis.com/css?family=Kelly+Slab&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap);
+@import url('https://fonts.googleapis.com/css?family=Kelly+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,300;1,300;1,600&display=swap');
 
 
 :root {
@@ -71,11 +74,39 @@ body {
   font-weight: normal;
   color: var(--text-color);
 }
-h1, h2, h3 {
+
+h1 {
+  font-family: 'Major Mono Display', serif;
+  font-weight: 600;
+  color: var(--independence);
+}
+
+h2 {
+  font-family: 'Petrona', serif;
+  font-weight: 500;
+  color: var(--independence);
+}
+
+h3 {
+  font-family: 'Petrona', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--china-rose);
+  font-size: 1.3em !important;
+}
+
+h4, h5, h6 {
+  font-family: 'Bitter', sans-serif;
+  font-weight: 400;
+  color: var(--china-rose);
+}
+
+/*h1, h2, h3 {
   font-family: var(--header-font-family), var(--header-font-family-fallback);
   font-weight: 600;
   color: var(--header-color);
-}
+}*/
+
 .remark-slide-content {
   background-color: var(--background-color);
   font-size: 1rem;
@@ -127,7 +158,7 @@ a, a > code {
 .inverse {
   background-color: var(--inverse-background-color);
   color: var(--inverse-text-color);
-  
+
 }
 .inverse h1, .inverse h2, .inverse h3 {
   color: var(--inverse-header-color);

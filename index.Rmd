@@ -1,18 +1,19 @@
 ---
-title: "Help Me Help You:"
+title: "Help Me Help You"
 subtitle: "Neuropsychological Assessment of ADHD"
-author: 
-  - "Joey Trampush, PhD"
-  - "First Last, MD"
+author: Joey Trampush, PhD
+# author: 
+#   - "Joey Trampush, PhD"
+#   - "First Last, MD"
 institute: 
   - "USC Keck School of Medicine"
   - "Department of Psychiatry and the Behavioral Sciences"
-date: "Psychiatry Grand Rounds `r Sys.Date()`"
+date: "Psychiatry Grand Rounds 2021-11-09"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: "assets/css/xaringan-themer.css"
-    #css: ["default", "assets/css/xaringan-themer.css", "assets/css/my-theme.css", "assets/css/my-fonts.css"]
+    css: ["assets/css/xaringan-themer.css"]
+    #css: ["default", "assets/css/my-theme.css", "assets/css/my-fonts.css"]
     chakra: libs/remark-latest.min.js
     nature:
       highlightStyle: solarized-light #github
@@ -32,6 +33,7 @@ output:
     self_contained: true
     anchor_sections: false
     seal: false
+    beforeInit: "macros.js"
     includes:
       in_header: header.html        
 ---
@@ -41,21 +43,21 @@ library(knitr)
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(
   fig.path = "figs/",
-  fig.width = 9, 
-  fig.height = 3.5,
+  # fig.width = 9, 
+  # fig.height = 3.5,
   fig.retina = 3,
   fig.asp = .5,
   out.width = "100%",
   fig.showtext = TRUE,
-  comment = NULL,
+  #comment = NULL,
   cache = TRUE,
   cache.path = "cache/",
   #include = FALSE,
   echo = FALSE,
   message = FALSE, 
   warning = FALSE,
-  hiline = TRUE,
-  dev = c("svg", "svglite")
+  dev = c("svg", "svglite"),
+  hiline = TRUE
 )
 ```
 
@@ -93,14 +95,14 @@ style_mono_accent(
 
 # for fonts
 library(showtext)
-font_add_google("Bitter", "Bitter")
+# font_add_google("Bitter", "Bitter")
 showtext_auto()
-theme_set(theme_minimal(base_family = "Bitter"))
-
-# for colors
-pkg_colors <- c("palmerpenguins" = "#7899d4", 
-                "blogdown" = "#f5ab1f", 
-                "distill" = "#b74f6f")
+# theme_set(theme_minimal(base_family = "Bitter"))
+# 
+# # for colors
+# pkg_colors <- c("palmerpenguins" = "#7899d4", 
+#                 "blogdown" = "#f5ab1f", 
+#                 "distill" = "#b74f6f")
 
 ```
 
@@ -110,7 +112,6 @@ xaringanExtra::use_tile_view()
 xaringanExtra::use_editable(expires = 1)
 xaringanExtra::use_animate_css()
 xaringanExtra::use_tachyons()
-#xaringanExtra::use_slide_tone()
 xaringanExtra::use_scribble()
 xaringanExtra::use_webcam()
 xaringanExtra::use_clipboard()
@@ -135,7 +136,7 @@ xaringanExtra::use_logo(
 )
 ```
 
-```{r share-again}
+```{r share-again, eval=FALSE}
 xaringanExtra::use_share_again()
 xaringanExtra::style_share_again(
   share_buttons = c("twitter", "instagram")
@@ -147,9 +148,8 @@ xaringanExtra::embed_xaringan(url = "https://brainworkup.github.io/fighton/", ra
 xaringanExtra::use_broadcast()
 ```
 
-
 class: title-slide, left, middle
-background-image: url("images/chimp.jpg")
+background-image: url("images/daftpunktocat-thomas.gif")
 background-position: right
 background-size: contain
 background-color: #7899d4ff
@@ -161,8 +161,6 @@ background-color: #7899d4ff
 ## `r rmarkdown::metadata$subtitle`
 
 ### `r rmarkdown::metadata$author`
-
-### `r rmarkdown::metadata$institute`
 
 ### `r rmarkdown::metadata$date`
 ]
@@ -317,7 +315,7 @@ g + xaringanthemer::theme_xaringan(text_font_size = 16, title_font_size = 18) +
 
 .footnote[Wide images scale to 100% slide width]
 
-
+---
 
 class: animated slideInRight fadeOutLeft
 
@@ -341,7 +339,8 @@ It is important to be familiar with remark.js before you can understand the opti
 
 class: middle left
 
-## Distribution of Scores: Population-level Interpretation
+# Distribution of Scores
+## Population-level Interpretation
 
 ```{r gauss-plot1, fig.cap='Statistical classification of neuropsychological test scores in the general population.', fig.width=4, fig.height=4, out.width = "50%"}
 knitr::include_graphics("images/plot_narrow.png", auto_pdf = TRUE)

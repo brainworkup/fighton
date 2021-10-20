@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,300;1,300;1,600&display=swap');
 
-body { 
+body {
   font-family: 'Bitter', sans-serif;
   font-weight: 400;
   color: var(--independence);
@@ -35,7 +35,7 @@ h4, h5, h6 {
 }
 
 .remark-code,
-.remark-inline-code{ 
+.remark-inline-code{
   font-family: 'Courier Prime', monospace;
 }
 
