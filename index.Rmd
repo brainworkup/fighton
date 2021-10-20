@@ -186,7 +186,7 @@ If you cannot explain something in simple terms, you don't understand it.
 .center[![jerry maguire](images/jerry_maguire.gif)]
 
 ---
-class: animated slideInRight fadeOutLeft inverse center middle
+class: inverse center middle
 
 # 80HD
 
@@ -197,7 +197,7 @@ class: animated slideInRight fadeOutLeft inverse center middle
 ]
 
 ---
-class: animated slideInLeft fadeOutRight inverse center middle
+class: inverse center middle
 
 # 80HD
 
@@ -208,10 +208,8 @@ class: animated slideInLeft fadeOutRight inverse center middle
 ]
 
 ---
-class: animated slideInRight fadeOutLeft
 
 # neuropsychological deficits related to adhd
-
 
 .left-column[
 ### Working Memory
@@ -246,7 +244,7 @@ knitr::include_graphics("images/plot_narrow.png", auto_pdf = TRUE)
 ```
 
 ---
-class: middle right animated slideInLeft fadeOutRight 
+class: middle center animated slideInLeft fadeOutRight 
 
 ## Distribution of Scores: _Clinical Interpretation_
 
@@ -549,5 +547,3 @@ When something is important enough, you do it even if the odds are not in your f
 .tr[
 — Unknown
 ]]
-
----
