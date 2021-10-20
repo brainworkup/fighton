@@ -30,10 +30,10 @@ output:
       #   </div>      
       includePresenterNotes: yes
       countdown: 60000
+      beforeInit: ["libs/macros.js"]
     self_contained: true
     anchor_sections: false
     seal: false
-    beforeInit: "libs/macros.js"
     includes:
       in_header: header.html        
 ---
@@ -537,15 +537,16 @@ p2
 ```
 
 ---
-class: center, middle
+class: left
 
 # Thanks!
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
-When something is important enough, you do it even if the odds are not in your favor.
+When something is important enough, 
+you do it even if the odds are not in your favor.
 
 .tr[
-— Unknown
+— Someone
 ]]
 
-![:scale 50%](images/my-octocat.png)
+![:scale 25%](images/my-octocat.png)
