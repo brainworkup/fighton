@@ -237,7 +237,7 @@ Reaction time variability/response consistency.
 ]
 
 ---
-class: middle left animated slideInRight fadeOutLeft
+class: middle center animated slideInRight fadeOutLeft
 
 ## Distribution of Scores: _Population-level Interpretation_
 
@@ -246,7 +246,7 @@ knitr::include_graphics("images/plot_narrow.png", auto_pdf = TRUE)
 ```
 
 ---
-class: middle left animated slideInLeft fadeOutRight 
+class: middle right animated slideInLeft fadeOutRight 
 
 ## Distribution of Scores: _Clinical Interpretation_
 
