@@ -33,7 +33,7 @@ output:
     self_contained: true
     anchor_sections: false
     seal: false
-    beforeInit: "macros.js"
+    beforeInit: "libs/macros.js"
     includes:
       in_header: header.html        
 ---
@@ -548,4 +548,4 @@ When something is important enough, you do it even if the odds are not in your f
 — Unknown
 ]]
 
-.center[![octocat](images/my-octocat.png)]
+.center[![:scale 50%](images/my-octocat.png)]
