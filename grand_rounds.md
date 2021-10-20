@@ -1,8 +1,38 @@
 # Grand Rounds
 
-## Title
+# Title
 
 Help Me Help You: Data Science, Neuropsychology, Stimulants, and ADHD
+
+Help Me Help You: When and Why to Refer for Neuropsychological Assessment of 80HD for Diagnostic Clarification and Treatment Planning
+
+Help Me Help You: Neuropsychological Assessment of 80HD for Diagnostic Clarification and Treatment Planning
+
+Help Me Help You: Referring for Neuropsychological Assessment of 80HD for Diagnostic Clarification and Treatment Planning
+
+## Why Neuropsych for ADHD
+
+An accurate diagnosis is key to developing a personalized treatment plan.
+
+Comprehensive neuropsychological assessments for youth with ADHD allow for thorough consideration of co-occurring disorders and provide targeted recommendations for treating ADHD and comorbid conditions. [mahone paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3943538/)
+
+## Adult ADHD
+
+ABSTRACT: The recognition of attention deficit/hyperactivity disorder (ADHD) in adults is a well documented, but relatively new development. Investigations of the disorder have indicated that disturbances in behavior and adjustment are common. These disturbances may be linked to poorly developed executive functions. This paper reviews the neuropsychological studies that have compared persons with ADHD to normal controls and to psychiatric controls. The review indicates that persons with ADHD share many neuropsychological characteristics with other persons with serious psychiatric conditions, although those with ADHD may have a particular profile of slowed performance in tasks of sustained attention and set shifting, and their use of working memory may be particularly impaired. The implications of research for clinical assessment are discussed. We contend that a neuropsychological orientation is necessary for making the diagnosis and gaining a full understanding of adult ADHD. A model for clinical assessment is proposed which utilizes a neuropsychological orientation and the targeted administration of neuropsychological instruments. The careful use of neuropsychological measures is warranted in providing an elaborate picture of a person’s functioning, although the use of neuropsychological tests is not necessary to make the diagnosis.
+
+## Emotion/Emot Dysregulation
+
+second most suggested domain to assess in adults
+
+## Symptom Validity
+
+## Comorbidity
+
+## Stimulants
+
+## Non-stimulants
+
+## CBT/Mindfulness
 
 ### Notes
 

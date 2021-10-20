@@ -1,36 +1,56 @@
 ---
-title: "Neuropsychological Assessment of ADHD"
+title: "Help Me Help You:"
+subtitle: "Neuropsychological Assessment of ADHD"
 author: 
   - "Joey Trampush, PhD"
-  - "First Last, MD/PhD"
+  - "First Last, MD"
 institute: 
   - "USC Keck School of Medicine"
   - "Department of Psychiatry and the Behavioral Sciences"
-subtitle: "Psychiatry Grand Rounds `r Sys.Date()`"
+date: "Psychiatry Grand Rounds `r Sys.Date()`"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: xaringan-themer.css
+    css: "assets/css/xaringan-themer.css"
+    #css: ["default", "assets/css/xaringan-themer.css", "assets/css/my-theme.css", "assets/css/my-fonts.css"]
+    chakra: libs/remark-latest.min.js
     nature:
-      highlightStyle: github
+      highlightStyle: solarized-light #github
+      highlightLanguage: ["r", "css", "yaml"]
       highlightLines: true
+      countIncrementalSlides: false
       ratio: '16:9'
-      countIncrementalSlides: true
+      navigation: list(click = TRUE)
       slideNumberFormat: '%current%'
+      # slideNumberFormat: |
+      #   <div class="progress-bar-container">
+      #     <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+      #     </div>
+      #   </div>      
       includePresenterNotes: yes
-    self_contained: yes      
+      countdown: 60000
+    self_contained: true
+    anchor_sections: false
+    seal: false
+    includes:
+      in_header: header.html        
 ---
 
 ```{r setup, include=FALSE}
 library(knitr)
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(
+  fig.path = "figs/",
   fig.width = 9, 
   fig.height = 3.5,
-  #fig.asp = 0.618, 
   fig.retina = 3,
+  fig.asp = .5,
   out.width = "100%",
-  cache = FALSE,
+  fig.showtext = TRUE,
+  comment = NULL,
+  cache = TRUE,
+  cache.path = "cache/",
+  #include = FALSE,
   echo = FALSE,
   message = FALSE, 
   warning = FALSE,
@@ -39,7 +59,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r xaringan-themer, include=FALSE}
+```{r xaringan-themer}
 library(xaringan)
 library(xaringanExtra)
 library(xaringanBuilder)
@@ -57,20 +77,31 @@ library(crosstalk)
 library(manipulateWidget)
 library(tibble)
 library(svglite)
-# style_duo_accent(
-#   primary_color = "#1381B0",
-#   secondary_color = "#FF961C",
-#   inverse_header_color = "#FFFFFF"
-# )
+
 style_mono_accent(
   base_color = "#690f0d",               # bright red
   inverse_background_color = "#002B36", # dark dark blue
   inverse_header_color = "#31b09e",     # light aqua green
   inverse_text_color = "#FFFFFF",       # white
   title_slide_background_color = "var(--base)",
-  text_font_google = google_font("Sen"),
-  header_font_google = google_font("NATS")
+  # text_font_google = google_font("Sen"),
+  # header_font_google = google_font("NATS"),
+  text_font_google = google_font("Kelly Slab"),
+  #header_font_google = google_font("Oleo Script")
+  header_font_google = google_font("Major Mono Display")
 )
+
+# for fonts
+library(showtext)
+font_add_google("Bitter", "Bitter")
+showtext_auto()
+theme_set(theme_minimal(base_family = "Bitter"))
+
+# for colors
+pkg_colors <- c("palmerpenguins" = "#7899d4", 
+                "blogdown" = "#f5ab1f", 
+                "distill" = "#b74f6f")
+
 ```
 
 ```{r xaringan-extra, include=FALSE}
@@ -104,18 +135,48 @@ xaringanExtra::use_logo(
 )
 ```
 
-```{r share-again, include=FALSE}
+```{r share-again}
 xaringanExtra::use_share_again()
 xaringanExtra::style_share_again(
   share_buttons = c("twitter", "instagram")
 )
-xaringanExtra::embed_xaringan(url = "share-again.html", ratio = "16:9")
+xaringanExtra::embed_xaringan(url = "https://brainworkup.github.io/fighton/", ratio = "16:9")
 ```
 
-```{r broadcast, echo=FALSE}
+```{r broadcast}
 xaringanExtra::use_broadcast()
 ```
 
+
+class: title-slide, left, middle
+background-image: url("images/chimp.jpg")
+background-position: right
+background-size: contain
+background-color: #7899d4ff
+
+.pull-left[
+
+# `r rmarkdown::metadata$title`
+
+## `r rmarkdown::metadata$subtitle`
+
+### `r rmarkdown::metadata$author`
+
+### `r rmarkdown::metadata$institute`
+
+### `r rmarkdown::metadata$date`
+]
+
+---
+class: middle, center, inverse
+
+# .big-text[Hello.]
+
+???
+
+So hello- I'm so happy to be invited to join you all today.
+
+---
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 If you cannot explain something in simple terms, you don't understand it.
@@ -124,98 +185,59 @@ If you cannot explain something in simple terms, you don't understand it.
 — Richard Feynman
 ]]
 
----
-
-name: colors
-
-## Colors
-
-.left-column[
-Text color
-
-[Link Color](#3)
-
-**Bold Color**
-
-_Italic Color_
-
-`Inline Code`
-]
-
-.right-column[
-Lorem ipsum dolor sit amet, [consectetur adipiscing elit (link)](#3), 
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Erat nam at lectus urna.
-Pellentesque elit ullamcorper **dignissim cras tincidunt (bold)** lobortis feugiat. 
-_Eros donec ac odio tempor_ orci dapibus ultrices. 
-Id porta nibh venenatis cras sed felis eget velit aliquet.
-Aliquam id diam maecenas ultricies mi.
-Enim sit amet 
-`code_color("inline")`
-venenatis urna cursus eget nunc scelerisque viverra.
-]
-
----
-
-# Big Topic or Inverse Slides `#`
-
-## Slide Headings `##`
-
-### Sub-slide Headings `###`
-
-#### Bold Call-Out `####`
-
-This is a normal paragraph text. Only use header levels 1-4.
-
-##### Possible, but not recommended `#####`
-
-###### Definitely don't use h6 `######`
-
----
-
-# Left-Column Headings
-
-.left-column[
-## First
-
-## Second
-
-## Third
-]
-
-.right-column[
-Dolor quis aptent mus a dictum ultricies egestas.
-
-Amet egestas neque tempor fermentum proin massa!
-
-Dolor elementum fermentum pharetra lectus arcu pulvinar.
-]
+.center[![jerry maguire](images/jerry_maguire.gif)]
 
 ---
 
 class: inverse center middle
 
-# Topic Changing Interstitial
-
+# 80HD
 --
 
-```
+## Adult ADHD
+
+### Child ADHD
+
+---
+
 class: inverse center middle
-```
+
+# 80HD
+
+.pull-left[
+![](https://octodex.github.com/images/motherhubbertocat.png)
+]
+
+.pull-right[
+![](https://octodex.github.com/images/dinotocat.png)
+]
 
 ---
 
-layout: true
+# Neuropsych Deficits
 
-## Blocks
+.left-column[
+### Working Memory
 
----
+### Processing Speed
 
-### Blockquote
+### Response Variability
+]
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+.right-column[
+Remembering things short term memory.
+Rate of test taking, rate of speed of information processing.
+Reaction time variability/response consistency.
+
+Remembering things short term memory.
+Rate of test taking, rate of speed of information processing.
+Reaction time variability/response consistency.
+
+Remembering things short term memory.
+Rate of test taking, rate of speed of information processing.
+Reaction time variability/response consistency.
+
+]
 
 ---
 
@@ -289,35 +311,13 @@ g + xaringanthemer::theme_xaringan(text_font_size = 16, title_font_size = 18) +
 
 ---
 
-layout: false
-
-## Square image
-
-.center[![jerry maguire](gifs/jerry_maguire.gif)]
-
-.footnote[GitHub Octocat]
-
----
-
 ### Wide image
 
 ![](https://guides.github.com/activities/hello-world/branching.png)
 
 .footnote[Wide images scale to 100% slide width]
 
----
 
-## Two images
-
-.pull-left[
-![](https://octodex.github.com/images/motherhubbertocat.png)
-]
-
-.pull-right[
-![](https://octodex.github.com/images/dinotocat.png)
-]
-
----
 
 class: animated slideInRight fadeOutLeft
 
@@ -339,27 +339,28 @@ It is important to be familiar with remark.js before you can understand the opti
 
 ---
 
-class: middle center
+class: middle left
 
-# Distribution of Scores: Population-level Interpretation
+## Distribution of Scores: Population-level Interpretation
 
 ```{r gauss-plot1, fig.cap='Statistical classification of neuropsychological test scores in the general population.', fig.width=4, fig.height=4, out.width = "50%"}
-knitr::include_graphics("plot_narrow.png", auto_pdf = TRUE)
+knitr::include_graphics("images/plot_narrow.png", auto_pdf = TRUE)
 ```
 
 ---
 
-class: middle center
+class: middle left
 
-# Distribution of Scores: Clinical Interpretation
+## Distribution of Scores: Clinical Interpretation
 
 ```{r gauss-plot2, fig.cap='General clinical interpretation of performance for individual test scores and broader neuropsychological domains.', fig.width=4, fig.height=4, out.width = "50%"}
-knitr::include_graphics("plot_broad.png", auto_pdf = TRUE)
+knitr::include_graphics("images/plot_broad.png", auto_pdf = TRUE)
 ```
 
 ---
 
-# Neuropsych Drilldown: z-Scores (M = 0, SD = 1)
+# Highcharter Drilldown
+## z-Scores (M = 0, SD = 1)
 
 ```{r}
 patient <- "Biggie"
@@ -646,9 +647,6 @@ class: center, middle
 
 # Thanks!
 
-Slides created via the R packages:
+> When something is important enough, you do it even if the odds are not in your favor.
 
-[**xaringan**](https://github.com/yihui/xaringan)<br>
-[gadenbuie/xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
-
-The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
+---
