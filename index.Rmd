@@ -255,7 +255,7 @@ patient <- "Biggie"
 ```{r drillz-data}
 library(readr)
 library(dplyr)
-neurocog <- read_csv("neurocog_3.csv")
+neurocog <- read_csv("neurocog.csv")
 ```
 
 ```{r}
