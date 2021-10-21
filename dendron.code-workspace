@@ -1,6 +1,12 @@
 {
   "folders": [
     {
+      "path": "."
+    },
+    {
+      "path": "wm"
+    },
+    {
       "path": "vault"
     }
   ],

@@ -186,6 +186,12 @@ If you cannot explain something in simple terms, you don't understand it.
 .center[![jerry maguire](images/jerry_maguire.gif)]
 
 ---
+
+# Data science
+
+.center[![data-science](images/computer.gif)]
+
+---
 class: inverse center middle
 
 # 80HD

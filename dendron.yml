@@ -1,8 +1,12 @@
 maxPreviewsCached: 10
 vaults:
-    -
-        fsPath: vault
-useFMTitle: true
+    - fsPath: wm
+      remote:
+          type: git
+          url: "https://github.com/brainworkup/wm"
+      name: wm
+    - fsPath: vault
+useFMTitle: false
 useNoteTitleForLink: true
 noAutoCreateOnDefinition: true
 noLegacyNoteRef: true
@@ -37,6 +41,7 @@ site:
         action: useVault
         payload:
             - vault
+            - wm
 version: 1
 lookupConfirmVaultOnCreate: false
 lookup:
@@ -44,3 +49,4 @@ lookup:
         selectionType: selectionExtract
         leaveTrace: false
 initializeRemoteVaults: true
+maxNoteLength: 1000000
