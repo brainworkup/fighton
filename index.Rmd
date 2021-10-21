@@ -1,15 +1,15 @@
 ---
-title: "Help Me Help You"
-subtitle: "Neuropsychological assessment of ADHD for diagnostic clarification and treatment planning"
-author: Joey W. Trampush, Ph.D.
+title: "A.D.H.D"
+subtitle: "Neuropsychological assessment for diagnostic clarification and treatment planning"
+author: Joey Trampush, Ph.D.
 # author: 
 #   - "Joey Trampush, PhD"
 #   - "First Last, MD"
-role: "Della Martin Assistant Professor of Psychiatry & Behavioral Sciences"
+role: "Della Martin Assistant Professor of Psychiatry"
 institute: 
   - "USC Keck School of Medicine"
   - "Department of Psychiatry and the Behavioral Sciences"
-date: "Psychiatry Grand Rounds 2021-11-09"
+date: "2021-11-09"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -23,12 +23,11 @@ output:
       countIncrementalSlides: false
       ratio: '16:9'
       navigation: list(click = true)
-      slideNumberFormat: '%current%'
-      # slideNumberFormat: |
-      #  <div class="progress-bar-container">
-      #    <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
-      #    </div>
-      #  </div>      
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
       includePresenterNotes: yes
       countdown: 60000
       beforeInit: ["libs/macros.js"]
@@ -51,7 +50,6 @@ knitr::opts_chunk$set(
   comment = NULL,
   cache = FALSE,
   cache.path = "cache/",
-  #include = FALSE,
   echo = FALSE,
   message = FALSE, 
   warning = FALSE,
@@ -154,6 +152,7 @@ class: middle, center, inverse
 So hello- I'm so happy to be invited to join you all today.
 
 ---
+
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 If you cannot explain something in simple terms, you don't understand it.
 
@@ -161,28 +160,29 @@ If you cannot explain something in simple terms, you don't understand it.
 — Richard Feynman
 ]]
 
-.center[![:scale 70%](images/jerry_maguire.gif)]
+.center[![:scale 50%](images/jerry_maguire.gif)]
 
 ---
+class: top, left, inverse
 
 # Data science
 
-.left[![:scale 45%](images/computer.gif)]
+.left[
+![:scale 45%](images/computer.gif)
+]
 
 ---
 class: inverse left middle
 
 # 80HD
 
-## Child ADHD
-
-.right[![:scale 45%](images/dinotocat.png)]
+.right[![:scale 40%](images/dinotocat.png)]
 
 ---
 
-## neuropsychological deficits related to adhd
+# neuropsychological deficits related to adhd
 
-.left-column[
+.pull-left[
 ### Working Memory
 
 ### Processing Speed
@@ -190,7 +190,7 @@ class: inverse left middle
 ### Response Variability
 ]
 
-.right-column[
+.pull-right[
 Remembering things short term memory.
 
 Rate of test taking, rate of speed of information processing.
@@ -199,12 +199,31 @@ Reaction time variability/response consistency.
 ]
 
 ---
-class: left, top, fullscale
-background-image: url("images/7-emot-laughing-crying.gif")
+name: bell
+background-image: url(images/7-emot-laughing-crying.gif)
 background-position: 50% 50%
 background-size: 100%
+class: left, top, fullscale
 
-# Emotion (Dys)regulation in ADHD
+.pull-left[
+
+> **Emotion**
+>
+> **(Dys)regulation**
+> 
+> in
+>
+> **ADHD**
+> 
+> Not part of DSM/ICD diagnostic criteria 
+>
+> BUT core feature of disorder
+
+]
+
+???
+
+This is recognized on most rating scales
 
 ---
 class: middle center animated slideInRight fadeOutLeft
@@ -227,7 +246,7 @@ knitr::include_graphics("images/plot_broad.png", auto_pdf = TRUE)
 
 ---
 
-## Highcharter Drilldown: z-Scores (M = 0, SD = 1)
+## Highcharte`R` Drilldown: z-Scores (M = 0, SD = 1)
 
 ```{r}
 patient <- "Biggie"
