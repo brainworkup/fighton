@@ -1,0 +1,23 @@
+﻿scale,raw_score,score,percentile,range,ci_95,test,test_name,domain,subdomain,subdomain_narrow,domain_broad,domain_test,test_type,score_type,timed,absort
+Animal Sorting,,11,63,Average,,nepsy2,NEPSY-2,Attention/Executive,Concept Formation,Concept Formation,Cognitive,Attention and Executive Functioning,npsych_test,scaled_score,FALSE,NEPSY2_01
+Clocks,71,12,75,High Average,,nepsy2,NEPSY-2,Visual Perception/Construction,Spatial Construction,Spatial Construction,Cognitive,Attention and Executive Functioning,npsych_test,scaled_score,FALSE,NEPSY2_02
+Inhibition Naming,,1,0.1,Exceptionally Low,,nepsy2,NEPSY-2,Verbal/Language,Rapid Automatic Naming,Rapid Automatic Naming,Cognitive,Attention and Executive Functioning,npsych_test,scaled_score,TRUE,NEPSY2_03
+Inhibition Inhibition,,1,0.1,Exceptionally Low,,nepsy2,NEPSY-2,Attention/Executive,Cognitive Control,Inhibition,Cognitive,Attention and Executive Functioning,npsych_test,scaled_score,TRUE,NEPSY2_04
+Inhibition Switching,,5,5,Below Average,,nepsy2,NEPSY-2,Attention/Executive,Cognitive Flexibility,Set-Shifting,Cognitive,Attention and Executive Functioning,npsych_test,scaled_score,TRUE,NEPSY2_05
+Inhibition Total Errors,59,1,0.1,Exceptionally Low,,nepsy2,NEPSY-2,Attention/Executive,Response Monitoring,Response Monitoring,Cognitive,Attention and Executive Functioning,npsych_test,scaled_score,TRUE,NEPSY2_06
+List Memory and List Memory Delayed,65,12,75,High Average,,nepsy2,NEPSY-2,Memory,Verbal Memory,Word List Learning,Cognitive,Memory and Learning,npsych_test,scaled_score,FALSE,NEPSY2_07
+Memory for Designs,97,8,25,Low Average,,nepsy2,NEPSY-2,Memory,Spatial Memory,Figure Memory,Cognitive,Memory and Learning,npsych_test,scaled_score,FALSE,NEPSY2_08
+Memory for Designs Delayed,21,5,5,Below Average,,nepsy2,NEPSY-2,Memory,Spatial Memory,Figure Memory,Cognitive,Memory and Learning,npsych_test,scaled_score,FALSE,NEPSY2_09
+Narrative Memory Free Recall,17,14,91,Above Average,,nepsy2,NEPSY-2,Memory,Verbal Memory,Story Learning,Cognitive,Memory and Learning,npsych_test,scaled_score,FALSE,NEPSY2_10
+Narrative Memory Free and Cued Recall,35,13,84,High Average,,nepsy2,NEPSY-2,Memory,Verbal Memory,Story Learning,Cognitive,Memory and Learning,npsych_test,scaled_score,FALSE,NEPSY2_11
+Fingertip Tapping Dominant Hand,,11,63,Average,,nepsy2,NEPSY-2,Motor,Finger Dexterity,RH Finger Dexterity,Cognitive,Sensorimotor,npsych_test,scaled_score,TRUE,NEPSY2_12
+Fingertip Tapping Nondominant Hand,,14,91,Above Average,,nepsy2,NEPSY-2,Motor,Finger Dexterity,LH Finger Dexterity,Cognitive,Sensorimotor,npsych_test,scaled_score,TRUE,NEPSY2_13
+Fingertip Tapping Repetitions,,11,63,Average,,nepsy2,NEPSY-2,Motor,Fine Motor Control,Basic Fine Motor Dexterity,Cognitive,Sensorimotor,npsych_test,scaled_score,TRUE,NEPSY2_14
+Fingertip Tapping Sequences,,14,91,Above Average,,nepsy2,NEPSY-2,Motor,Fine Motor Sequencing,Complex Fine Motor Dexterity,Cognitive,Sensorimotor,npsych_test,scaled_score,TRUE,NEPSY2_15
+Imitating Hand Positions,22,9,37,Average,,nepsy2,NEPSY-2,Motor,Motor Imitation/Praxis,Imitation of Motor Positions/Sequences,Cognitive,Sensorimotor,npsych_test,scaled_score,FALSE,NEPSY2_16
+Visuomotor Precision,,7,16,Low Average,,nepsy2,NEPSY-2,Attention/Executive,Processing Speed,Graphomotor Speed and Accuracy,Cognitive,Sensorimotor,npsych_test,scaled_score,TRUE,NEPSY2_17
+Comprehension of Instructions,20,5,5,Below Average,,nepsy2,NEPSY-2,Verbal/Language,Auditory Comprehension,Auditory Comprehension,Cognitive,Language,npsych_test,scaled_score,FALSE,NEPSY2_18
+Speeded Naming,,5,5,Below Average,,nepsy2,NEPSY-2,Verbal/Language,Rapid Automatic Naming,Rapid Automatic Naming,Cognitive,Language,npsych_test,scaled_score,TRUE,NEPSY2_19
+Word Generation Initial Letter,12,7,16,Low Average,,nepsy2,NEPSY-2,Verbal/Language,Phonemic Fluency,Phonemic Fluency,Cognitive,Language,npsych_test,scaled_score,TRUE,NEPSY2_20
+Word Generation Semantic,43,15,95,Above Average,,nepsy2,NEPSY-2,Verbal/Language,Semantic Fluency,Semantic Fluency,Cognitive,Language,npsych_test,scaled_score,TRUE,NEPSY2_21
+Design Copying Process,92,13,84,High Average,,nepsy2,NEPSY-2,Visual Perception/Construction,Spatial Construction,Visuomotor Integration,Cognitive,Visuospatial Processing,npsych_test,scaled_score,FALSE,NEPSY2_22

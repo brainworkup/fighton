@@ -1,0 +1,19 @@
+scale,raw_score,score,percentile,range,ci_95,test,test_name,domain,subdomain,subdomain_narrow,domain_broad,domain_test,test_type,score_type,timed,absort
+Externalizing Problems,282,101,99,Clinically Significant,96-106,basc3_prs_child,BASC-3 PRS,Behavioral/Emotional/Social,Externalizing Problems,Externalizing,Behavior,Externalizing Problems,rating_scale_parent,t_score,FALSE,BASC3_PRS_01
+Internalizing Problems,191,66,93,At-Risk,61-71,basc3_prs_child,BASC-3 PRS,Behavioral/Emotional/Social,Internalizing Problems,Internalizing,Behavior,Internalizing Problems,rating_scale_parent,t_score,FALSE,BASC3_PRS_02
+Behavioral Symptoms Index,478,90,99,Clinically Significant,86-94,basc3_prs_child,BASC-3 PRS,Behavioral/Emotional/Social,Behavioral Symptoms Index,Behavioral Symptoms Index,Behavior,Behavioral Symptoms Index,rating_scale_parent,t_score,FALSE,BASC3_PRS_03
+Adaptive Skills,183,35,8,At-Risk,31-39,basc3_prs_child,BASC-3 PRS,Behavioral/Emotional/Social,Adaptive Skills,Adaptive Skills,Behavior,Adaptive Skills,rating_scale_parent,t_score,FALSE,BASC3_PRS_04
+Hyperactivity,29,94,99,Clinically Significant,86-102,basc3_prs_child,BASC-3 PRS,Behavioral/Emotional/Social,Externalizing Problems,Externalizing,Behavior,Externalizing,rating_scale_parent,t_score,FALSE,BASC3_PRS_05
+Aggression,13,87,99,Clinically Significant,78-96,basc3_prs_child,BASC-3 PRS,Behavioral/Emotional/Social,Externalizing Problems,Externalizing,Behavior,Externalizing,rating_scale_parent,t_score,FALSE,BASC3_PRS_06
+Conduct Problems,23,101,99,Clinically Significant,94-108,basc3_prs_child,BASC-3 PRS,Behavioral/Emotional/Social,Externalizing Problems,Externalizing,Behavior,Externalizing,rating_scale_parent,t_score,FALSE,BASC3_PRS_07
+Anxiety,12,51,60,Average,44-58,basc3_prs_child,BASC-3 PRS,Behavioral/Emotional/Social,Internalizing Problems,Internalizing,Behavior,Internalizing,rating_scale_parent,t_score,FALSE,BASC3_PRS_08
+Depression,24,88,99,Clinically Significant,81-95,basc3_prs_child,BASC-3 PRS,Behavioral/Emotional/Social,Internalizing Problems,Internalizing,Behavior,Internalizing,rating_scale_parent,t_score,FALSE,BASC3_PRS_09
+Somatization,6,52,62,Average,44-60,basc3_prs_child,BASC-3 PRS,Behavioral/Emotional/Social,Internalizing Problems,Internalizing,Behavior,Internalizing,rating_scale_parent,t_score,FALSE,BASC3_PRS_10
+Atypicality,17,81,98,Clinically Significant,74-88,basc3_prs_child,BASC-3 PRS,Behavioral/Emotional/Social,Behavioral Symptoms Index,Social/Emotional,Behavior,social_emotional,rating_scale_parent,t_score,FALSE,BASC3_PRS_11
+Withdrawal,5,51,64,Average,43-59,basc3_prs_child,BASC-3 PRS,Behavioral/Emotional/Social,Behavioral Symptoms Index,Social/Emotional,Behavior,social_emotional,rating_scale_parent,t_score,FALSE,BASC3_PRS_12
+Attention Problems,18,77,99,Clinically Significant,70-84,basc3_prs_child,BASC-3 PRS,Behavioral/Emotional/Social,Behavioral Symptoms Index,Externalizing,Behavior,Externalizing,rating_scale_parent,t_score,FALSE,BASC3_PRS_13
+Adaptability,7,32,3,At-Risk,24-40,basc3_prs_child,BASC-3 PRS,Behavioral/Emotional/Social,Adaptive Skills,Adaptive,Behavior,Adaptive,rating_scale_parent,t_score,FALSE,BASC3_PRS_14
+Social Skills,21,50,43,Average,44-56,basc3_prs_child,BASC-3 PRS,Behavioral/Emotional/Social,Adaptive Skills,Adaptive,Behavior,Adaptive,rating_scale_parent,t_score,FALSE,BASC3_PRS_15
+Leadership,11,47,37,Average,39-55,basc3_prs_child,BASC-3 PRS,Behavioral/Emotional/Social,Adaptive Skills,Adaptive,Behavior,Adaptive,rating_scale_parent,t_score,FALSE,BASC3_PRS_16
+Activities of Daily Living,6,23,1,Clinically Significant,14-32,basc3_prs_child,BASC-3 PRS,Behavioral/Emotional/Social,Adaptive Skills,Adaptive,Behavior,Adaptive,rating_scale_parent,t_score,FALSE,BASC3_PRS_17
+Functional Communication,14,31,5,At-Risk,24-38,basc3_prs_child,BASC-3 PRS,Behavioral/Emotional/Social,Adaptive Skills,Adaptive,Behavior,Adaptive,rating_scale_parent,t_score,FALSE,BASC3_PRS_18

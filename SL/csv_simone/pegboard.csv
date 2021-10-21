@@ -1,0 +1,3 @@
+scale,raw_score,score,ci_95,percentile,range,test,test_name,domain,subdomain,subdomain_narrow,domain_test,domain_broad,test_type,score_type,timed,absort
+Dominant Hand,101,21,,1,Exceptionally Low,pegboard,Grooved Pegboard,Motor,Fine Motor Dexterity,RH Dexterity,Fine Motor,Cognitive,npsych_test,t_score,TRUE,GP_01
+Nondominant Hand,110,18,,1,Exceptionally Low,pegboard,Grooved Pegboard,Motor,Fine Motor Dexterity,LH Dexterity,Fine Motor,Cognitive,npsych_test,t_score,TRUE,GP_02

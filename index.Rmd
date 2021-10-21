@@ -193,7 +193,7 @@ class: inverse center middle
 ## Child ADHD
 
 .pull-right[
-![](https://octodex.github.com/images/dinotocat.png)
+![:scale 25%](images/dinotocat.png)
 ]
 
 ---
@@ -202,10 +202,6 @@ class: inverse center middle
 # 80HD
 
 ## Adult ADHD
-
-.pull-left[
-![](https://octodex.github.com/images/motherhubbertocat.png)
-]
 
 ---
 
@@ -371,8 +367,7 @@ tt <- tooltip_table(x, y)
 ```{r drillz-plot, fig.width=12, fig.height=8, fig.retina=3, out.width = "100%"}
 p1 <-
   highchart() %>%
-    hc_title(text = patient,
-             style = list(fontSize = "15px")) %>%
+    hc_title(text = patient, style = list(fontSize = "15px")) %>%
     hc_add_series(
       ncogL1statusz,
       type = "bar",
@@ -534,6 +529,237 @@ p2 <-
     series = c(ncogL2drill, ncogL3drill, ncogL4drill)
   )
 p2
+```
+
+---
+
+# R `dataui` package 
+
+```{r}
+library(dataui)
+library(reactable)
+```
+
+```{r}
+# this is a very ugly way of creating a data.frame with lists
+df1 <- data.frame(
+  Group = LETTERS[1:5],
+  Line =- NA,
+  Bar = NA,
+  stringsAsFactors = FALSE
+)
+df1$Line <- lapply(1:5, function(x) list(runif(30)))
+df1$Bar <- lapply(1:5, function(x) list(rnorm(40, mean = x, sd = 2)))
+
+# to use same x scale we will calculate bins and use later
+bins <- hist(unlist(df1$Bar), breaks = 20, plot = FALSE)$breaks
+
+rt1 <- reactable(
+  df1,
+  columns = list(
+    Line = colDef(
+      # use reactable very convenient conversion of htmlwidgets
+      #  we will focus on this in another article
+      #  more details on custom rendering
+      #  https://glin.github.io/reactable/articles/custom-rendering.html
+      cell = function(value, index) {
+        dui_sparkline(
+          data = value[[1]], # because we gave it a list use [[1]]
+          height = 80, # we will want to be specific here
+          components = dui_sparklineseries()
+        )
+      }
+    ),
+    Bar = colDef(
+      cell = function(value, index) {
+        dui_sparkline(
+          data = hist(value[[1]], breaks=bins, plot=FALSE)$density,
+          height = 80,
+          component = dui_sparkbarseries()
+        )
+      }
+    )
+  )
+)
+rt1
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "#DC322F",               # bright red
+  inverse_background_color = "#002B36", # dark dark blue
+  inverse_header_color = "#31b09e",     # light aqua green
+  inverse_text_color = "#FFFFFF",       # white
+  title_slide_background_color = "var(--base)",
+  text_font_google = google_font("Kelly Slab"),
+  header_font_google = google_font("Oleo Script")
+)
+```
+
+```{r xaringan-themer1, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+mono <- tempfile("mono-", fileext = ".css")
+style_mono_accent(
+  base_color = "#DC322F",               # bright red
+  inverse_background_color = "#002B36", # dark dark blue
+  inverse_header_color = "#31b09e",     # light aqua green
+  inverse_text_color = "#FFFFFF",       # white
+  title_slide_background_color = "var(--base)",
+  text_font_google = google_font("Kelly Slab"),
+  header_font_google = google_font("Oleo Script"),
+  outfile = mono
+)
+#file.edit(mono)
+```
+
+---
+
+
+```{r}
+library(ggplot2)
+g_base <- ggplot(mpg) + 
+  aes(hwy, cty) + 
+  geom_point() +
+  labs(x = "Highway MPG", y = "City MPG", title = "Fuel Efficiency")
+# Basic plot with default theme
+g_base
+```
+---
+
+## Plots
+
+```{r}
+# Fancy slide-matching themed plot
+g_base + theme_xaringan()
+```
+
+---
+
+```{r}
+theme_xaringan_restore_defaults()
+```
+
+```{r}
+# theme_xaringan() on the left, theme_xaringan_inverse() on the right
+g_base + theme_xaringan_inverse()
+```
+
+```{r}
+theme_xaringan(css_file = "assets/css/mono-jwt.css")
+```
+
+```{r}
+theme_xaringan(
+  text_color = "#3D3E38",
+  background_color = "#FFFFFF",
+  accent_color = "#DC322F",
+  text_font = "Apex",
+  text_font_use_google = TRUE,
+  title_font = "Oleo Script",
+  title_font_use_google = TRUE
+)
+```
+
+---
+
+```{r}
+g_diamonds <- ggplot(diamonds, aes(x = cut)) +
+  geom_bar() +
+  labs(x = NULL, y = NULL, title = "Diamond Cut Quality") +
+  ylim(0, 25000)
+g_diamonds + theme_xaringan()
+```
+
+```{r}
+theme_xaringan_restore_defaults()
+```
+
+---
+
+## Alpha
+
+```{r}
+ggplot(diamonds, aes(x = cut)) +
+  geom_bar(aes(fill = ..count..), show.legend = FALSE) +
+  labs(x = NULL, y = "Count", title = "Diamond Cut Quality") +
+  theme_xaringan() +
+  scale_xaringan_fill_continuous()
+# ggplot(mpg, aes(x = hwy, y = cty)) +
+#   geom_count(aes(color = ..n..), show.legend = FALSE) +
+#   labs(x = "Highway MPG", y = "City MPG", title = "Fuel Efficiency") +
+#   theme_xaringan_inverse() +
+#   scale_xaringan_color_continuous(breaks = seq(3, 12, 2), inverse = TRUE, begin = 1, end = 0)
+```
+
+---
+
+## with values
+```{r}
+g_diamonds_with_text <- 
+  g_diamonds + 
+  geom_text(aes(y = ..count.., label = format(..count.., big.mark = ",")),
+            vjust = -0.30, size = 8, stat = "count") +
+  labs(x = "Cut", y = "Count")
+g_diamonds_with_text + theme_xaringan()
+```
+
+---
+
+## Hollywood font
+
+```{r}
+g_diamonds_with_text +
+  theme_xaringan(
+    text_font = google_font("Ranga"),
+    title_font = google_font("Holtwood One SC")
+  )
+```
+
+---
+
+## GlacialIndifference Font
+
+```{r, eval=F}
+style_mono_accent(
+  text_font_family = "GlacialIndifferenceRegular",
+  text_font_url = "https://fontlibrary.org/face/glacial-indifference"
+)
+```
+
+```{r, eval=FALSE}
+font_url <- file.path(
+  "https://fontlibrary.org/assets/fonts/glacial-indifference/",
+  "5f2cf277506e19ec77729122f27b1faf/0820b3c58fed35de298219f314635982", 
+  "GlacialIndifferenceRegular.ttf"
+)
+font_temp <- tempfile()
+download.file(font_url, font_temp)
+```
+
+
+```{r, eval=FALSE}
+# Path to the local custom font file
+font_temp <- system.file(
+  "fonts/GlacialIndifferenceRegular.ttf", package = "xaringanthemer"
+)
+
+# Register the font with sysfonts/showtext
+sysfonts::font_add(family = "GlacialIndifferenceRegular", regular = font_temp)
+
+# Now it's available for use!
+g_diamonds_with_text +
+  theme_xaringan(
+    text_font = "GlacialIndifferenceRegular",
+    title_font = "GlacialIndifferenceRegular"
+  )
+```
+
+---
+
+```{r, sirf, results='asis'}
+cat("---\n")
+cat(readLines('sirf.md'), sep = '\n')
 ```
 
 ---

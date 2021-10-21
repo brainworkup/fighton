@@ -1,0 +1,5 @@
+test,scale,raw_score,score,ci_95,percentile,range,test_type,domain,subdomain,subdomain_narrow,domain_test,domain_broad,score_type,timed,description,pheno
+nih_examiner,Dot Counting Total Score,10,40,30-52,16,Low Average,npsych_test,Attention/Executive,Working Memory,Nonverbal Working Memory,Working Memory,Cognitive,t_score,FALSE,a measure of visual/nonverbal working memory,subtest
+nih_examiner,Unstructured Task Composite Score,1.9,64,53-74,92,Superior,npsych_test,Attention/Executive,Concept Formation,Planning,Planning,Cognitive,t_score,TRUE,a novel measure of planning/future episodic thinking,subtest
+nih_examiner,Set Shifting Task Shift Score,6.6,53,48-59,63,Average,npsych_test,Attention/Executive,Cognitive Flexibility,Cognitive Flexibility,Cognitive Control,Cognitive,t_score,TRUE,a measure of rapid switching/set-shifting,subtest
+nih_examiner,Flanker Task Total Score,7.7,48,42-54,42,Average,npsych_test,Attention/Executive,Cognitive Control,Cognitive Control,Cognitive Control,Cognitive,t_score,TRUE,a measure of cognitive control,subtest

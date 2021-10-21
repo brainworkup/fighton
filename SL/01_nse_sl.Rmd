@@ -1,0 +1,168 @@
+# Neurobehavioral Status Exam {#nse .unnumbered}
+
+## Identifying Information
+
+```{r results='asis'}
+cat("
+<style>
+#id {
+      font-family: 'Alegreya', 'Spectral', 'STKaiti', serif;
+    }
+</style>
+")
+```
+
+```{r results="asis"}
+cat("
+<style>
+.emphasized {
+      table-layout: auto;
+      width: 100%;
+      color: black;
+      font-size: 1.5em;
+      font-family: 'Roboto Condensed', 'Metrophobic', 'Aldrich';
+      break-inside: avoid;
+    }
+</style>
+")
+```
+
+|                          |                                                                    |
+|--------------------------|--------------------------------------------------------------------|
+| **Patient Name:**        | `r params$lname`, `r params$fname`                                 |
+| **MRN:**                 | `r params$mrn`                                                     |
+| **Date of Birth:**       | `r params$dob`                                                     |
+| **Age:**                 | `r calc_age(params$dob, params$doe1)` years                        |
+| **Gender:**              | `r params$sex`                                                     |
+| **Ethnicity:**           | `r params$race`                                                    |
+| **Handedness:**          | `r params$hand`                                                    |
+| **Education:**           | `r params$educ`                                                    |
+| **Dates of Evaluation:** | `r params$doe1`, `r params$doe2`, `r params$doe3`, `r params$doe4` |
+
+## Reason for Referral
+
+Simone presents for neuropsychological evaluation to determine her cognitive, academic, and emotional strengths and weaknesses.
+She was referred by her parents for behavioral and academic concerns, including behavioral immaturity, defiance, attention/executive problems, and reading/learning difficulties.
+The purpose of the evaluation is to clarify diagnoses and assist with educational and treatment planning.
+This report is based on a review of available medical and school records, and information gathered across multiple days of assessment.
+Results and recommendations were discussed with Simone's parents on the last of these evaluation dates during interactive feedback.
+
+## Background
+
+Simone's parents have multiple ongoing concerns about her behavior, cognitive and emotional development, and academic growth.
+She requires frequent redirection and strong reinforcements and consequences in order to manage her behavior.
+She defies parent requests, engages her parents and sister in frequent arguments and periodic acts of aggression, and commits serious rule violations (e.g., lying, stealing).
+Her parents struggle with discipline and feel frustrated.
+They worry about the impact Simone's distractibility, attention, and behavioral issues are having on her academic and social development.
+Behaviorally, she acts "immature" and will throw unprovoked tantrums.
+Her parents describe her as having a "lack of executive functioning skills," including an unawareness for how loud she is talking, "squeals" to annoy people, has poor body and voice control, and is defiant.
+She is forgetful; e.g., forgetting a set of instructions "two-seconds later" such as her nightly bedtime routine.
+Simone has only recently started to look both ways before crossing the street consistently per mom.
+
+Simone has a tendency to impulsively say things to others that are not true.
+For example, for unbeknownst reasons, she told folks that her dog had died, which was untrue.
+She has been accused of stealing on multiple occasions, behavior her mother said started to emerge around age 6.
+She has allegedly stolen money multiple times, stolen her mothers shampoo, her grandmother's lipstick, and her sister's belongings.
+She has been accused of stealing money from a friends house (\$50), an accusation Mrs. Lorge feels is very much unfounded.
+
+In a separate incident, last year, she told her school psychologist/therapist her older sister Colette "parents me" and that her parents "spank" her when she gets in trouble.
+She returned to class and repeated it to her teacher.
+A report was filed with child protective services (CPS) and the investigation was tabled.
+Her mother sometimes wonders if Simone has a "conscious" about the things she does and way she behaves at times.
+
+Finally, Simone presents with a number of cognitive and learning difficulties (described in more detail below).
+Her school IEP evaluation indicated a probable learning disorder in reading, and difficulties with attention and behavioral regulation.
+The fallout has been unwanted negative attention for Simone because she is required to leave class every day for tutoring, which is source of constant distress for her and of questionable benefit to her at this point.
+
+## Relevant History
+
+### Developmental/Medical
+
+Simone is the product of a planned, 42-week pregnancy (11 days late) delivered via planned home birth.
+Pregnancy was notable for Rh incompatibility.
+She was delivered after 4.5 hours of labor weighing 7 lb., 2 oz.
+Her mother described it as "a short but intense natural delivery" that required the umbilical cord to stay connected until it was done pumping blood from mom to baby.
+S/p delivery complications included mild jaundice without phototherapy.
+As an infant, Simone was able to establish regular feeding and sleeping patterns.
+Major developmental milestones (e.g., standing, walking, uttering first words, speaking in short sentences) were reached within expected time frames.
+Tantrums, loud screaming, and irritability emerged within the first four years as a toddler.
+Mrs. Lorge is concerned with Simone's eating habits, as she can be a pick eater and is underweight.
+
+Medical history is generally unremarkable.
+There is no reported history of loss of consciousness, seizure, or other significant illness.
+Mom has had concerns with Simone's poor posture/musculoskeletal stability and is accident prone ("she's falling and tripping all the time").
+She bites her finger nails throughout the day.
+She gets chronic blood noses.
+Simone's hearing is normal.
+She is far sighted and has prescription eye glasses for reading, but does not like to wear them and refuses to do so at times.
+No current regular medications.
+Dr. Edmond Sarraf is her pediatrician.
+Paternal family history includes ADHD and dyslexia.
+
+### Academics
+
+Simone attended preschool in Pasadena from ages 2-3, and then was in a transitional kindergarten class for a year.
+She has been enrolled at Franklin Elementary School in Santa Monica, CA since kindergarten and is now in fourth grade.
+She received an IEP toward the end of second grade.
+School can be excruciatingly challenging for Simone much of the time.
+She gets "lost" doing her schoolwork and constantly feels overwhelmed.
+She sometimes refuses to turn in her assignments and/or tests because she either didn't start them, didn't finish them, or didn't understand what was expected of her.
+She daydreams a lot in school and is always worrying about what everyone thinks.
+She has an individualized education plan (IEP) at school for reading and attention problems.
+She has to "log out" of class for tutoring each day on Zoom.
+She works through the Barton Reading and Spelling Program for dyslexia x2 days/week.
+She "hates" being singled out everyday to leave class for an hour to work with her reading tutor.
+She is supposed to keep a reading log of her IEP work but won't do it.
+Even at home, Simone gets frustrated when doing her homework, yet will not let her mother help her.
+
+She is performing well-below grade level in reading, writing, and spelling.
+She writes complete sentences and formulates basic paragraphs, but makes frequent errors in capitalization and punctuation.
+She has made progress in reading fluency.
+Her comprehension is better than her basic reading skills (phonics).
+In math, Simone is performing below grade level, suspected to be due to her difficulty in reading the word problems.
+When she is prompted to read carefully, or sits with a teacher, she performs better in math.
+Without these supports, Simone is careless and unmotivated.
+Her calculation skills are at grade-level.
+Similarly, in Social Studies and Science, she performs below grade level, because the reading is difficult for her.
+When teacher reads or supports her reading, she is better able to grasp the concepts.
+The cumulative impact of her school difficulties has crushed Simone's self-esteem and feelings of competency.
+
+### Behavioral/Emotional/Social
+
+At one point in second grade (\~2019), Simone threatened to kill herself in what seemed to be related to her feelings of school inadequacy.
+She began seeing the school counselor for therapy at Franklin.
+Simone recalls seeing her therapist at school and found it to be helpful.
+She has not seen any other outside counselor or psychologist.
+
+Simone relates well to her peers and is quite social.
+However, her mother reported the following:
+
+> "She has tendency to lie, to make up little fibs to look smarter, more cool or get the attention. Then her friends find out its not true and they get upset with her. Or, Simone interrupts them when they are talking, she wants to change the rules to the game. She loves talking to and hanging out with adults, but loves playing with younger kids because she is in control. They look up to her and Simone can be the 'mommy.' She usually wants to be the leader of her peer group."
+
+> "Simone has a huge heart! She cares strongly for the family dog-he is the only one that can help her calm down. They sleep together every night. She has a strong energy. People love talking with her, think she's funny and engaging. Simone loves giving compliments (whether they are genuine or she knows that it will make them like her more) again though... a strength. She has a lot of empathy for her peers/friends when they get hurt or are left out. She has been praised from teachers for her sweet nature."
+
+### Family
+
+She lives with her biological parents and older sister (Colette, age 14) in Santa Monica, CA. English is the primary language spoken.
+Simone's mother, Cassie Lorge, graduated from high school and is employed as an on set florist and prop stylist.
+Her father, Alex Lorge, has an MFA and is a film editor.
+Her parents work opportunities were reduced during the early part of the COVID-19 pandemic and struggled financially for a while, but are now back on track and working steadily.
+Simone's family is planning to move up to Oregon in the next year.
+
+Simone and her sister get along okay most of the time, but not always.
+Per Cassie Lorge, "They love each other but have a very competitive relationship. When they get along... it's beautiful when they fight... it's all tears."
+
+Mrs. Lorge made this comment about some of Simone's behavior at home:
+
+> "Simone does odd things sometimes... like she doesn't think. For instance, pull on her curtains and make the support come off the wall (9 years old) use a marker and write all over her dresser (9 years old) come in my room and take clothing or jewelry without asking then lie that she took it, not flush her toilet for days, has to be reminded to brush her teeth, puts chewed gum on her bookshelf, the list goes on. And Alex and I get upset with her so much we can see it's wearing on her spirit."
+
+### Prior Testing
+
+No prior formal test records were available to review.
+A copy of a summary of her IEP noted:
+
+> "Simone presents with limited strength, vitality and alertness, including a heightened alertness to environmental stimuli, that results in limited alertness with respect to the educational 􏰀environment. This appears to be due to significant inattentive and hyperactive-impulsive/distractible behaviors, as well as difficulty with executive functioning in the school setting. These characteristics appear to be adversely affecting Simone's educational performance in her ability to decode words, and to organize tasks and materials. Therefore, Simone meets the eligibility criteria for Other Health Impairment (OHI) at this 􏰀time."
+
+In addition, her IEP stated:
+
+> "Simone does display deficits in the basic cognitive processes of Attention and Phonological Processing (memory), which results in a significant discrepancy between her overall intellectual abilities and her academic achievement in Basic Reading based on standardized assessment. There is evidence she may also have a deficit in sensory motor skills, but this is inconclusive due to her recently identified farsightedness and need for glasses. Simone has not made sufficient progress across academic areas, despite several interventions and does not appear to be able to access the general education curriculum adequately. Therefore, she meets the eligibility criteria for a Specific Learning Disability (SLD) at this time.

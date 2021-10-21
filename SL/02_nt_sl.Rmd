@@ -1,0 +1,370 @@
+# Neuropsychological Testing {#nt .unnumbered}
+
+```{r, echo=FALSE}
+# load libraries
+library(knitr)
+library(kableExtra)
+library(readr)
+library(googlesheets4)
+library(lubridate)
+library(here)
+library(purrr)
+library(glue)
+library(gt)
+library(tibble)
+library(forcats)
+library(ggplot2)
+library(ggthemes)
+library(RColorBrewer)
+library(scales)
+library(dplyr)
+gs4_deauth()
+```
+
+(ref:wisc5) Wechsler Intelligence Scale for Children, 5th ed (WISC-5)
+
+(ref:ktea3) Kaufman Test of Educational Achievement, 3rd ed (KTEA-3)
+
+(ref:wrat5) Wide Range Achievement Test, 5th ed (WRAT-5)
+
+(ref:wiat4) Wechsler Individual Achievement Test, 4th ed (WIAT-4)
+
+(ref:evt3) Expressive Vocabulary Test, 3rd ed (EVT-3)
+
+(ref:nepsy2) NEPSY-II Developmental Neuropsychological Battery
+
+(ref:examiner) NIH Executive Abilities: Measures and Instruments for Neurobehavioral Evaluation and Research (NIH EXAMINER)
+
+(ref:examiner-brs) NIH EXAMINER Behavior Rating Scale
+
+(ref:examiner-csi) NIH EXAMINER Child Social Interactions Scale
+
+(ref:cvlt-c) California Verbal Learning Test, Child ed (CVLT-C)
+
+(ref:ravlt) Rey Auditory Verbal Learning Test (RAVLT)
+
+(ref:tmt) Trail Making Test
+
+(ref:rcft) Rey-Osterrieth Complex Figure Test (RCFT)
+
+(ref:pegboard) Grooved Pegboard Test
+
+(ref:clock) Clock Drawing Test
+
+(ref:bicycle) Bicycle Drawing Task
+
+(ref:tomm) Test of Memory Malingering (TOMM)
+
+(ref:basc3) Behavioral Assessment Scale for Children, 3rd ed (BASC-3)
+
+(ref:basc3-sdh) BASC-3 Structured Developmental History (SDH)
+
+(ref:basc3-prs) BASC-3 Parent Rating Scale (PRS)
+
+(ref:basc3-prs-child) BASC-3 Parent Rating Scale (PRS), Child
+
+(ref:basc3-srp) BASC-3 Self-Report of Personality (SRP)
+
+(ref:basc3-srp-child) BASC-3 Self-Report of Personality (SRP), Child
+
+(ref:brown) Brown Executive Function/Attention Scales (Brown EF/A)
+
+(ref:brown-parent) Brown Executive Function/Attention Scales (Brown EF/A), Parent Report
+
+(ref:brown-self) Brown EF/A Self-Report
+
+(ref:iq) Intelligence
+
+(ref:academics) Academic Skills
+
+(ref:verbal) Verbal/Language
+
+(ref:spatial) Visual Perception/Construction
+
+(ref:memory) Memory
+
+(ref:executive) Attention/Executive
+
+(ref:motor) Motor
+
+(ref:lwr) Letter & Word Recognition
+
+(ref:nwd) Nonsense Word Decoding
+
+(ref:rc) Reading Comprehension
+
+(ref:rv) Reading Vocabulary
+
+(ref:wrf) Word Recognition Fluency
+
+(ref:pp) Phonological Processing
+
+(ref:sp) Spelling
+
+(ref:we) Written Expression
+
+(ref:mca) Math Concepts & Applications
+
+(ref:mc) Math Computation
+
+## Test Procedures
+
+-   (ref:wisc5)
+-   (ref:wrat5)
+-   (ref:wiat4)
+-   (ref:nepsy2)
+-   (ref:examiner)
+-   (ref:pegboard)
+-   (ref:bicycle)
+-   (ref:tomm)
+-   (ref:basc3-sdh)
+-   (ref:basc3-prs-child)
+-   (ref:basc3-srp-child)
+-   (ref:brown-parent)
+
+## Behavioral Observations
+
+### Testing
+
+Simone was seen in-person at the USC Psychiatry and Behavioral Health Services (PBHS) clinic on the University Park Campus.
+She was evaluated across two 4-hour testing sessions scheduled a week apart in a physically distanced testing environment.
+A number of precautionary safety measures were employed (e.g., masks, gloves, plexiglass dividers) to reduce the risk of coronavirus infection without interfering with testing.
+She attended the appointments with her mother Cassie.
+
+Simone transitioned appropriately to begin testing.
+She brought several stuffed dolls (Yoda) and various other items (her "blanky") with her from home.
+Physically, Simone is exceptionally tall (\>90th percentile in height), thin, and pretty for her age group.
+Interpersonally, she is friendly and engaging, and it was easy to establish rapport with her.
+Spontaneous language is easy to elicit from her, as she is talkative and social, and hyper-expressive.
+Receptive language comprehension is variable.
+On multiple occasions she misheard what was said to her (e.g., twice, when she was supposed to repeat "8" she substituted "J" and then "A" for 8).
+She unknowingly confabulates a lot (i.e., makes up words and phrases that are unique to her mental lexicon such as "fratten" and "confrunkled" and "quimping"), which are due to her language-based learning disorder.
+She uses "filler words" a lot such as "umm yeah," as if she goes blank for a second when trying to think of what to say and loses her train of thought briefly.
+Aside from the technical paraphasias she made as just described, she has a good sense of humor, likes to engage in a variety of topics, and enjoys engaging in witty banter.
+Eye contact was variable but appropriate to situation and setting.
+For paper-and-pencil tests, she used her right hand with variable pencil grip.
+Her fine-motor dexterity is an area of weakness for her, as is motor persistence; she stood up a lot during testing because it was hard for her to sit still seated for extended periods of time.
+
+It is difficult for Simone to stay on topic.
+She often comments about events/ideas/thoughts unrelated to the topic of interest and/or task at hand.
+It distracts her and makes it difficult for her to complete tasks efficiently, especially when she has a time limit set.
+For example, in the middle of a 1-minute word fluency task, one of her responses triggered an approximate 20" tangent about something that happened last Christmas. Then, she struggles to pick up on nonverbal social cues when subtly being redirected back to task using nonverbal gesturing, requiring more exaggerated and direct gestures. This happened often. These types of difficulties fall within the neuropsychological construct of "stimulus-boundednesss," which is an inappropriate response to a salient environmental (internal or external) stimulus and indicative of poor impulse control. Despite her impulsive nature, Simone was always cooperative and responded to questions in a polite and forthright manner to the best of her abilities. To her credit, even though she had variable attention, she persisted even on challenging items and put forth good effort (as supported by formal effort measures). As such, the evaluation in its entirety is an accurate representation of her functioning at this time, and the results presented herein are considered valid for interpretation.
+
+### Child Interview
+
+Simone expressed wide ranging but predominantly negative feelings about everything we discussed over two days of testing.
+She is open and honest about her school difficulties.
+She "hates" having to leave Zoom everyday for an hour to work with her reading tutor.
+It makes her feel bad about herself and she wants no part of her IEP.
+She said her peers "make fun of me for my IEP." She said her teacher "hates me" and "won't call on me" on Zoom.
+Simone said she "panics" before all of her tests because she is usually unprepared/didn't study.
+She fights a lot with her older sister Colette, who calls her "Simon" to irritate her when they are fighting.
+She openly said she can be a "very naughty child" and is "only good about 1 day a week." She said she gets "excluded" by her friends sometimes, and said, "sometimes I feel like I"m not good enough." She has a "boyfriend" named Hunter who is "cute, funny and puts a smile on my face." She loves her dog "Franky" who is "the only one who is nice to her."
+
+## Test Results
+
+```{r, echo=FALSE}
+# path to files
+data_path <- here("04_DTF", "sl", "csv")
+
+# get file names of .csv files
+files <- dir(data_path, pattern = "*.csv")
+
+# read into env
+neurocog <- files %>%
+  purrr::set_names() %>%
+  map_df(~ read_csv(file.path(data_path, .)),
+         na = c("", "NA", "--", "-"),
+         .id = "filename") %>%
+  filter(!is.na(percentile)) %>%
+  distinct() %>%
+  mutate(z = qnorm(percentile/100)) %>%
+  #mutate(range = as_factor(range)) %>%
+  #mutate(test_name = as_factor(test_name)) %>%
+  mutate(domain = as_factor(domain)) %>%
+  mutate(subdomain = as_factor(subdomain)) %>%
+  mutate(subdomain_narrow = as_factor(subdomain_narrow)) %>%
+  mutate(domain_broad = as_factor(domain_broad)) %>%
+  mutate(domain_test = as_factor(domain_test)) #%>%
+  #mutate(test_type = as_factor(test_type)) %>%
+  #mutate(score_type = as_factor(score_type))
+
+```
+
+```{r}
+## Create factors
+neurocog <-
+  neurocog %>%
+  #filter(test_type == "npsych_test") %>% 
+  group_by(domain, .add = TRUE) %>%
+  mutate(z_mean_dom = mean(z), z_sd_dom = sd(z)) %>% 
+  ungroup()
+
+neurocog <-
+  neurocog %>%
+  #filter(test_type == "npsych_test") %>% 
+  group_by(subdomain, .add = TRUE) %>%
+  mutate(z_mean_sub = mean(z), z_sd_sub = sd(z)) %>%
+  ungroup()
+
+neurocog <-
+  neurocog %>%
+  #filter(test_type == "npsych_test") %>% 
+  group_by(subdomain_narrow, .add = TRUE) %>%
+  mutate(z_mean_narrow = mean(z), z_sd_narrow = sd(z)) %>% 
+  ungroup()
+
+```
+
+```{r}
+## Write data
+readr::write_csv(neurocog, "neurocog_sl.csv")
+```
+
+```{r}
+## Read data
+neurocog <- readr::read_csv("neurocog_sl.csv")
+```
+
+### Intelligence
+
+Overall intellectual skills were *Average* for her age.
+Index scores were broadly *Average*, with strengths in verbal reasoning/acquired knowledge.
+**Table** \@ref(tab:iq)
+
+### Academic Skills
+
+Simone's academic skills were at or below age- and grade-expected levels in most areas.
+Scores across measures of reading and spelling including irregular word reading, nonsense/non-word decoding, spelling to dictation, and decoding fluency were *Low Average* to *Below Average.* Reading comprehension and writing fluency (sans correct spelling and grammar/punctuation) were strengths.
+General academic fluency was *Low Average* with a notable weakness in math fluency.
+Her *Low Average* score in math calculation was in part due to her vulnerability to inattentive/impulsive/careless errors (e.g., switching the computational sign) and not yet having mastered the concept of multiplication.
+**Table** \@ref(tab:academics)
+
+An ability-achievement discrepancy analysis (predicted achievement method) utilizing Simone's WISC-V GAI score of 103 as her general cognitive ability benchmark indicated that her performance on spelling (19-point discrepancy; base rate \< 10%), word reading (20-point discrepancy; base rate \< 5%), and her reading composite score (15-point discrepancy; base rate \< 10%) were statistically much lower than predicted.
+Math computation was somewhat lower than expected (15-point discrepancy), but not quite as rare of a finding in the general population (base rate \< 15%).
+Further, measures of nonsense word decoding (18-point discrepancy; base rate \< 10%), math fluency (22-point discrepancy; base rate \< 5%), and decoding fluency (19-point discrepancy; base rate \< 10%) were statistically much lower than predicted.
+Discrepancy scores of these magnitudes are indicative of *Clinically Significant* weaknesses in reading, spelling, and academic fluency.
+
+### Verbal/Language {#verbal}
+
+Scores in this area ranged from *Exceptionally Low* (\<1st percentile) to *Above Average* (95th percentile).
+Simone's strengths on exam were notable in semantic word fluency and her word knowledge/vocabulary skills.
+However, she was somewhat concrete when asked to apply her strong working vocabulary in a more abstract way by deducing the underlying relationship between two unrelated words.
+Areas of relative weakness were notable in phonological awareness and listening comprehension.
+For example, phonemic word fluency (i.e., the ability to generate as many words as possible in 1-minute in response to a letter cue) was *Low Average* given her developmental level, and especially weak when contrasted with her *Above average* semantic word fluency performance.
+Rapid automatic naming (RAN), a precursor to early reading development proficiency, was *Below Average* across measures.
+Phonological processing and rapid naming are important skills underlying reading development in early childhood, and her weaknesses in these areas are consistent with her reading/spelling profile and history of learning difficulties in these areas.
+**Table** \@ref(tab:verbal)
+
+### Visual Perception/Construction {#spatial}
+
+Scores were *Average* to *High Average* here, without a clear pattern of strengths or weaknesses.
+**Table** \@ref(tab:spatial)
+
+### Attention/Executive {#executive}
+
+Simone evidenced variable attentional and executive functioning on exam, with scores ranging from *Exceptionally Low* (\<1st percentile) to *Above Average* (92nd percentile).
+Her best performance was on an unstructured planning task on which she was left up to her own devices to figure out how to maximize the number of points she could earn while expending the least amount of effort within the allotted six minute time limit.
+A similar strength as seen on a related card sorting task of concept formation and problem-solving.
+By contrast, she struggled as the tasks in this domain became more structured and required increasing levels of cognitive control and/or cognitive flexibility.
+She made an excessive number of uncorrected errors across tasks, indicative of poor response monitoring (i.e., unaware she had made an error and/or that she had repeated a previous response) and an impulsive response style favoring speed over accuracy.
+Verbal working memory was relatively low, which is a neurocognitive trait commonly impaired in children with developmental reading difficulties.
+Processing speed was within the lower end of the average range across tasks.
+Scores on timed tests varied, but tended to be weaker than on untimed tests; and she performed better on the computerized versions of these measures than the traditional paper-and-pencil versions.
+**Table** \@ref(tab:executive)
+
+Parent ratings indicated *Clinically Significant* executive dysfunction in all areas (\>98th percentile in all subdomains), including Activation (organizing, prioritizing, and activating to work), Focus (focusing, sustaining, and shifting attention to tasks), Effort (regulating alertness, sustaining effort, and adjusting processing speed), Emotion (managing frustration and modulating emotions), Memory (utilizing working memory and accessing recall), and Action (monitoring and self-regulating action).
+**Table** \@ref(tab:brown-parent)
+
+### Memory {#memory}
+
+Simone evidenced uneven performance across measures of verbal and nonverbal learning and memory.
+She showed clear strengths in verbal memory on exam, both for rote word list learning (*High Average score*) and for contextually-based learning (recalling the descriptive details of a short story; *Above Average score*).
+In contrast, initial learning and delayed recall of complex, novel visual material (a series of abstract visual designs) was *Low Average* across the learning trials.
+Few visual details were encoded into her longer-term memory system, supported by her *Below Average score* on the delayed recall trials.
+**Table** \@ref(tab:memory)
+
+### Motor {#motor}
+
+Simone's scores on a measure of fine motor speed and dexterity fell within the *Exceptionally Low* score range bilaterally.
+Her score is consistent with individuals who need to be deliberate and focused when performing goal-directed activities that involve small objects.
+Finger dexterity was significantly better in her nondominant left hand compared to her dominant right hand, which is an atypical pattern in the general child population, yet is a pattern we commonly see in right-handed children with language-based learning disorders.
+Complex motor sequencing/programming was easier for Simone than simple repeated tapping, suggesting she was better able to focus during the more challenging task.
+**Table** \@ref(tab:motor)
+
+### Emotional/Behavioral/Adaptive {#emotional}
+
+#### Parent Report
+
+In addition to the attention and executive concerns noted above, parent ratings on the BASC-3 indicated *Clinically Significant* difficulties with Externalizing Behavior across all related areas, including Hyperactivity, Attention Problems, Aggression, Conduct Problems.
+Her Externalizing Problems composite scale *T* score was 101 (i.e., five standard deviations above average) at a percentile rank \>99.
+Simone's mother reports Simone engages in many disruptive, impulsive, and uncontrolled behaviors; displays a high number of argumentative and defiant behaviorS; and reports that Simone frequently engages in rule-breaking behavior including lying and stealing.
+Further, symptom clusters on the Depression scale were markedly elevated related to general negative emotionality[^1].
+Simone has a tendency to become irritable quickly and has difficulty maintaining her self-control when faced with adversity.
+She has a tendency to become easily upset, frustrated, and/or angered in response to environmental changes; and has difficulty controlling and maintaining her behavior and mood.
+Simone's mother noted Simone engages in behaviors that are considered strange or odd and she generally seems disconnected from her surroundings.
+Finally, Simone's Activities of Daily Living are significantly impaired, noting she has difficulty performing simple daily tasks in a safe and efficient manner.
+**Table** \@ref(tab:basc3-prs-child)
+
+#### Self-Report
+
+Simone completed an objective, age-appropriate measure of personality and emotional functioning.
+Her responses produced an infrequency index score that fell within the *Caution* range.
+An elevated infrequency index score typically indicates the presence of extraordinarily high levels of maladaptive behavior or emotional distress, and further indicates Simone has a negative overall view of her own thoughts, feelings, and behavior.
+Three items in particular were flagged due to the rarity in which they are endorsed by children of the same age:
+
+-   I like who I am. (False)
+-   I am good at schoolwork. (Never)
+-   I get along with my teacher. (Never)
+
+Every composite score and subscale fell within the *Clinically Significant* range, rendering the measure in its entirety uninterpretable, other than to reiterate that Simone is experiencing a wide range of challenges and difficulties in almost every area of her behavioral, social, academic, and emotional functioning.
+**Table** \@ref(tab:basc3-srp-child)
+
+### Broad domain scores {#domain .page-break-before}
+
+```{r results="asis"}
+cat("
+<style>
+.figure {
+		  display: inline-block;
+    }
+</style>
+")
+```
+
+```{r domain, fig.cap = "Simone's broad neurocognitive domain scores. Her academic skills and attentional/executive functioning are areas of relative weakness. *Note:* scores = *z*-scores (Mean = 0, SD = 1); a test score of 0 falls at the 50th percentile relative to peers."}
+
+# subset cog data
+neurocog.1 <- 
+  neurocog %>%
+  filter(test_type == "npsych_test") %>% 
+  filter(!is.na(domain))
+
+# plot
+dotplot(
+  data = neurocog.1,
+  x = neurocog.1$z_mean_dom, 
+  y = neurocog.1$domain,
+  domain = "domain")
+
+```
+
+### Neurocognitive strengths and weaknesses {#subdomain .page-break-before}
+
+```{r subdomain, fig.cap = "Simone's low reading and spelling scores are mediated thru specific processing weaknesses in fine motor dexterity, rapid automatic naming, inhibiiton, and working memory. *Note:* Scores have been uniformly transformed to *z*-scores (Mean = 0, SD = 1), meaning a *z*-score of 0 falls at the 50th percentile, *z* of 1 falls at the 84th percentile, and *z* of -1 falls at the 16th percentile.", fig.width=8, fig.height=10}
+
+# subset cog data
+neurocog.2 <- neurocog %>%
+  filter(test_type == "npsych_test") %>% 
+  filter(!is.na(subdomain))
+
+# plot
+dotplot(data = neurocog.2,
+    x = neurocog.2$z_mean_sub, 
+    y = neurocog.2$subdomain,
+    domain = "subdomain")
+
+```
+
+[^1]: This pattern occurred in 100% of the BASC-3 standardization sample with clinically significant Hyperactivity, Aggression, Conduct Problems, and Attention Problems scale scores.
+
