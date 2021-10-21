@@ -176,15 +176,7 @@ class: inverse left middle
 
 ## Child ADHD
 
-.right[![:scale 50%](images/dinotocat.png)]
-
----
-class: center, bottom, fullscale
-background-image: url("images/7-emot-laughing-crying.gif")
-background-position: 50% 50%
-background-size: 100%
-
-# Run...
+.right[![:scale 45%](images/dinotocat.png)]
 
 ---
 
@@ -207,11 +199,12 @@ Reaction time variability/response consistency.
 ]
 
 ---
-class: center middle
+class: left, top, fullscale
+background-image: url("images/7-emot-laughing-crying.gif")
+background-position: 50% 50%
+background-size: 100%
 
-## Emotion (Dys)regulation in ADHD
-
-![silver](images/4-table-wipe-rage.gif)
+# Emotion (Dys)regulation in ADHD
 
 ---
 class: middle center animated slideInRight fadeOutLeft
@@ -676,46 +669,9 @@ g_diamonds_with_text +
 ```
 
 ---
-
-#### GlacialIndifference Font
-
-```{r}
-style_mono_accent(
-  text_font_family = "GlacialIndifferenceRegular",
-  text_font_url = "https://fontlibrary.org/face/glacial-indifference"
-)
-```
-
-```{r}
-font_url <- file.path(
-  "https://fontlibrary.org/assets/fonts/glacial-indifference/",
-  "5f2cf277506e19ec77729122f27b1faf/0820b3c58fed35de298219f314635982", 
-  "GlacialIndifferenceRegular.ttf"
-)
-font_temp <- tempfile()
-download.file(font_url, font_temp)
-```
-
-```{r}
-# Path to the local custom font file
-font_temp <- system.file(
-  "fonts/GlacialIndifferenceRegular.ttf", package = "xaringanthemer"
-)
-# Register the font with sysfonts/showtext
-sysfonts::font_add(family = "GlacialIndifferenceRegular", regular = font_temp)
-# Now it's available for use!
-g_diamonds_with_text +
-  theme_xaringan(
-    text_font = "GlacialIndifferenceRegular",
-    title_font = "GlacialIndifferenceRegular"
-  )
-```
-
----
 class: left
 
 # Thanks!
-
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 When something is important enough, 
 you do it even if the odds are not in your favor.
