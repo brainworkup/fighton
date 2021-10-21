@@ -5,4 +5,7 @@ build
 .Rproj.user/
 .DS_Store
 
-wm
+indexHill.Rmd
+SL/
+wm/
+grand_rounds.md
