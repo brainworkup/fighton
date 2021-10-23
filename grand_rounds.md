@@ -80,3 +80,11 @@ _italics_
 ## fonts
 
 ![picture 1](assets/images/b4aa81e6df25ca807af1e8ac9fc8471e948883b777dfc9ec4eb1bd000f315334.png)
+
+## git to mpeg4
+
+ffmpeg -i 7-emot-laughing-crying.gif 7-emot-laughing-crying.mp4
+
+ffmpeg -i daftpunktocat-thomas.gif daftpunktocat-thomas.mp4
+
+ffmpeg -i 7-emot-laughing-crying.gif -c vp9 -b:v 0 -crf 41 7-emot-laughing-crying.webm

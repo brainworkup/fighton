@@ -167,19 +167,24 @@ If you cannot explain something in simple terms, you don't understand it.
 .center[![:scale 50%](images/jerry_maguire.gif)]
 
 ---
-class: top, left, inverse
+class: middle, left, inverse
 
 # Data science
 
 .left[
+
 ![:scale 45%](images/computer.gif)
+
 ]
+
 
 ---
 class: inverse left middle
 .footnote[.red.bold[*] Important footnote]
 
 # ADHD
+
+This .big[kid] has ADHD.
 
 .right[![:scale 40%](images/dinotocat.png)]
 
@@ -242,11 +247,77 @@ class: left middle
 ]
 
 ---
+class: left
+
+# neuropsychological deficits related to adhd
+
+.panelset[
+.panel[.panel-name[Working Memory]
+
+## Working Memory
+
+- Remembering things short term memory
+
+- Verbal information
+
+- Nonverbal information
+
+- "mind's eye"
+]
+
+.panel[.panel-name[Processing Speed]
+
+## Processing Speed
+
+- Rate of test taking
+
+- Rate of speed of information processing
+
+- Some other description
+
+- Fourth layer
+
+]
+
+.panel[.panel-name[Response Variability]
+
+## Response Variability
+
+- Reaction time variability
+    1. too fast
+    1. too slow
+
+- Response consistency
+
+- Attentional drift
+
+- Impulsive responding
+
+]
+
+.panel[.panel-name[Inhibitory Control]
+
+## Inhibitory Control
+
+- Reaction time variability
+    1. too fast
+    1. too slow
+
+- Response consistency
+
+- Attentional drift
+
+- Impulsive responding
+
+]
+]
+
+---
 name: bell
 background-image: url(images/7-emot-laughing-crying.gif)
 background-position: 50% 50%
 background-size: 100%
-class: left, top, fullscale, inverse
+class: left, middle, fullscale, inverse
 
 ```{css, eval=F, echo = FALSE}
 body {
@@ -268,7 +339,7 @@ body {
 > 
 > Not part of DSM/ICD diagnostic criteria 
 >
-> BUT core feature of disorder
+> .big[BUT] core feature of disorder
 
 ]
 
@@ -276,6 +347,7 @@ body {
 ???
 
 This is recognized on most rating scales
+
 
 ---
 class: middle center animated slideInRight fadeOutLeft
