@@ -1,10 +1,7 @@
 ---
 title: "A.D.H.D"
 subtitle: "Neuropsychological assessment for diagnostic clarification and treatment planning"
-author: Joey Trampush, Ph.D.
-# author: 
-#   - "Joey Trampush, PhD"
-#   - "First Last, MD"
+author: "Joey Trampush, Ph.D."
 role: "Della Martin Assistant Professor of Psychiatry"
 institute: 
   - "USC Keck School of Medicine"
@@ -177,7 +174,6 @@ class: middle, left, inverse
 
 ]
 
-
 ---
 class: inverse left middle
 .footnote[.red.bold[*] Important footnote]
@@ -247,9 +243,9 @@ class: left middle
 ]
 
 ---
-class: left
+class: inverse, middle
 
-# neuropsychological deficits related to adhd
+# neurocognitive deficits related to adhd
 
 .panelset[
 .panel[.panel-name[Working Memory]
@@ -299,13 +295,11 @@ class: left
 
 ## Inhibitory Control
 
-- Reaction time variability
-    1. too fast
-    1. too slow
+- Go/No-Go performance
 
-- Response consistency
+- Core DSM symptom (impulsivity)
 
-- Attentional drift
+- Something else ...
 
 - Impulsive responding
 
