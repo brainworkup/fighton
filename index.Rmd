@@ -17,10 +17,10 @@ output:
     #css: ["default", "assets/css/my-theme.css", "assets/css/my-fonts.css"]
     chakra: libs/remark-latest.min.js
     nature:
-      highlightStyle: solarized-light #github
+      highlightStyle: github
       highlightLanguage: ["r", "css", "yaml"]
       highlightLines: true
-      countIncrementalSlides: false
+      countIncrementalSlides: true
       ratio: '16:9'
       navigation: list(click = true)
       slideNumberFormat: |
@@ -204,6 +204,13 @@ background-image: url(images/7-emot-laughing-crying.gif)
 background-position: 50% 50%
 background-size: 100%
 class: left, top, fullscale
+
+```{css, echo = FALSE}
+body {
+  color: white;
+}
+```
+
 
 .pull-left[
 
@@ -526,6 +533,10 @@ p2 <-
 p2
 ```
 
+---
+
+knitr::kable(head(trees), 
+             format='markdown')
 ---
 
 # R `dataui` package 
