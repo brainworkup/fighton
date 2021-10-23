@@ -76,21 +76,21 @@ library(crosstalk)
 library(manipulateWidget)
 library(tibble)
 library(svglite)
-style_mono_accent(
-  base_color = "#690f0d",               # bright red
-  inverse_background_color = "#002B36", # dark dark blue
-  inverse_header_color = "#31b09e",     # light aqua green
-  inverse_text_color = "#FFFFFF",       # white
-  title_slide_background_color = "var(--base)",
-  # text_font_google = google_font("Sen"),
-  # header_font_google = google_font("NATS"),
-  text_font_google = google_font("Latin Modern Mono"),
-  #text_font_google = google_font("Kelly Slab"),
-  #header_font_google = google_font("Oleo Script")
-  #header_font_google = google_font("Alfa Slab One")
-  #header_font_google = google_font("Major Mono Display")
-  header_font_google = google_font("Monoton")
-)
+# style_mono_accent(
+#   base_color = "#690f0d",               # bright red
+#   inverse_background_color = "#002B36", # dark dark blue
+#   inverse_header_color = "#31b09e",     # light aqua green
+#   inverse_text_color = "#FFFFFF",       # white
+#   title_slide_background_color = "var(--base)",
+#   # text_font_google = google_font("Sen"),
+#   # header_font_google = google_font("NATS"),
+#   text_font_google = google_font("Latin Modern Mono"),
+#   #text_font_google = google_font("Kelly Slab"),
+#   #header_font_google = google_font("Oleo Script")
+#   #header_font_google = google_font("Alfa Slab One")
+#   #header_font_google = google_font("Major Mono Display")
+#   header_font_google = google_font("Monoton")
+# )
 ```
 
 ```{r xaringan-extra, include=FALSE}

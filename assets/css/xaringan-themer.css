@@ -18,24 +18,25 @@
  *  Version: 0.4.0.9000
  *
  * ------------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css?family=Kelly+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,300;1,300;1,600&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Kelly+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,300;1,300;1,600&display=swap");
 
 :root {
   /* Fonts */
-  --text-font-family: 'Kelly Slab';
+  --text-font-family: "Kelly Slab";
   --text-font-is-google: 1;
-  --text-font-family-fallback: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial;
+  --text-font-family-fallback: -apple-system, BlinkMacSystemFont, avenir next,
+    avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial;
   --text-font-base: sans-serif;
-  --header-font-family: 'Major Mono Display';
+  /* --header-font-family: "Major Mono Display";*/
+  --header-font-family: "Monoton";
   --header-font-is-google: 1;
   --header-font-family-fallback: Georgia, serif;
-  --code-font-family: 'Source Code Pro';
+  --code-font-family: "Source Code Pro";
   --code-font-is-google: 1;
   --base-font-size: 20px;
   --text-font-size: 1rem;
@@ -48,20 +49,20 @@
   /* Colors */
   --text-color: #272822;
   --header-color: #690f0d;
-  --background-color: #FFFFFF;
+  --background-color: #ffffff;
   --link-color: #690f0d;
   --text-bold-color: #690f0d;
-  --code-highlight-color: rgba(255,255,0,0.5);
-  --inverse-text-color: #FFFFFF;
-  --inverse-background-color: #002B36;
+  --code-highlight-color: rgba(255, 255, 0, 0.5);
+  --inverse-text-color: #ffffff;
+  --inverse-background-color: #002b36;
   --inverse-header-color: #31b09e;
   --inverse-link-color: #690f0d;
   --title-slide-background-color: var(--base);
-  --title-slide-text-color: #FFFFFF;
+  --title-slide-text-color: #ffffff;
   --header-background-color: #690f0d;
-  --header-background-text-color: #FFFFFF;
+  --header-background-text-color: #ffffff;
   --base: #690f0d;
-  --white: #FFFFFF;
+  --white: #ffffff;
   --black: #272822;
 }
 
@@ -70,33 +71,36 @@ html {
 }
 
 body {
-  font-family: var(--text-font-family), var(--text-font-family-fallback), var(--text-font-base);
+  font-family: var(--text-font-family), var(--text-font-family-fallback),
+    var(--text-font-base);
   font-weight: normal;
   color: var(--text-color);
 }
 
 h1 {
-  font-family: 'Major Mono Display', serif;
+  font-family: "Major Mono Display", serif;
   font-weight: 600;
   color: var(--independence);
 }
 
 h2 {
-  font-family: 'Petrona', serif;
+  font-family: "Petrona", serif;
   font-weight: 500;
   color: var(--independence);
 }
 
 h3 {
-  font-family: 'Petrona', sans-serif;
+  font-family: "Petrona", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   color: var(--china-rose);
   font-size: 1.3em !important;
 }
 
-h4, h5, h6 {
-  font-family: 'Bitter', sans-serif;
+h4,
+h5,
+h6 {
+  font-family: "Bitter", sans-serif;
   font-weight: 400;
   color: var(--china-rose);
 }
@@ -123,8 +127,10 @@ h4, h5, h6 {
 .remark-slide-content h3 {
   font-size: var(--header-h3-font-size);
 }
-.remark-code, .remark-inline-code {
-  font-family: var(--code-font-family), Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+.remark-code,
+.remark-inline-code {
+  font-family: var(--code-font-family), Menlo, Consolas, Monaco, Liberation Mono,
+    Lucida Console, monospace;
 }
 .remark-code {
   font-size: var(--code-font-size);
@@ -142,7 +148,8 @@ strong {
   font-weight: bold;
   color: var(--text-bold-color);
 }
-a, a > code {
+a,
+a > code {
   color: var(--link-color);
   text-decoration: none;
 }
@@ -158,15 +165,20 @@ a, a > code {
 .inverse {
   background-color: var(--inverse-background-color);
   color: var(--inverse-text-color);
-
 }
-.inverse h1, .inverse h2, .inverse h3 {
+.inverse h1,
+.inverse h2,
+.inverse h3 {
   color: var(--inverse-header-color);
 }
-.inverse a, .inverse a > code {
+.inverse a,
+.inverse a > code {
   color: var(--inverse-link-color);
 }
-.title-slide, .title-slide h1, .title-slide h2, .title-slide h3 {
+.title-slide,
+.title-slide h1,
+.title-slide h2,
+.title-slide h3 {
   color: var(--title-slide-text-color);
 }
 .title-slide {
@@ -181,10 +193,12 @@ a, a > code {
   height: 92%;
   float: left;
 }
-.left-column h2, .left-column h3 {
+.left-column h2,
+.left-column h3 {
   color: #690f0d99;
 }
-.left-column h2:last-of-type, .left-column h3:last-child {
+.left-column h2:last-of-type,
+.left-column h3:last-child {
   color: #690f0d;
 }
 .right-column {
@@ -203,7 +217,9 @@ a, a > code {
 .pull-right + * {
   clear: both;
 }
-img, video, iframe {
+img,
+video,
+iframe {
   max-width: 100%;
 }
 blockquote {
@@ -218,11 +234,14 @@ blockquote {
 .remark-slide table thead th {
   border-bottom: 1px solid #ddd;
 }
-th, td {
+th,
+td {
   padding: 5px;
 }
-.remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) {
-  background: #E1CFCE;
+.remark-slide thead,
+.remark-slide tfoot,
+.remark-slide tr:nth-child(even) {
+  background: #e1cfce;
 }
 table.dataTable tbody {
   background-color: var(--background-color);
@@ -232,12 +251,17 @@ table.dataTable.display tbody tr.odd {
   background-color: var(--background-color);
 }
 table.dataTable.display tbody tr.even {
-  background-color: #E1CFCE;
+  background-color: #e1cfce;
 }
-table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
+table.dataTable.hover tbody tr:hover,
+table.dataTable.display tbody tr:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
-.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate {
   color: var(--text-color);
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button {
@@ -291,7 +315,9 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   padding-top: 7rem;
 }
 
-@page { margin: 0; }
+@page {
+  margin: 0;
+}
 @media print {
   .remark-slide-scaler {
     width: 100% !important;
@@ -320,4 +346,3 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 .bg-black {
   background-color: var(--black);
 }
-

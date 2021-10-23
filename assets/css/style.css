@@ -2,3 +2,13 @@ div.FOO {
   font-weight: bold;
   color: red;
 }
+
+.big {
+  font-size: 3em;
+  font-style: italic;
+  color: seagreen;
+}
+
+.big-text {
+  font-size: 3em !important;
+}
