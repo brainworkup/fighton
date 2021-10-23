@@ -17,7 +17,7 @@ output:
     #css: ["default", "assets/css/my-theme.css", "assets/css/my-fonts.css"]
     chakra: libs/remark-latest.min.js
     nature:
-      highlightStyle: github
+      highlightStyle: monokai
       highlightLanguage: ["r", "css", "yaml"]
       highlightLines: true
       countIncrementalSlides: true
@@ -88,7 +88,8 @@ style_mono_accent(
   #text_font_google = google_font("Kelly Slab"),
   #header_font_google = google_font("Oleo Script")
   #header_font_google = google_font("Alfa Slab One")
-  header_font_google = google_font("Major Mono Display")
+  #header_font_google = google_font("Major Mono Display")
+  header_font_google = google_font("Monoton")
 )
 ```
 
@@ -125,6 +126,7 @@ xaringanExtra::use_logo(
 ```{r broadcast}
 xaringanExtra::use_broadcast()
 ```
+name: tittle
 class: title-slide, left, middle
 background-image: url("images/daftpunktocat-thomas.gif")
 background-position: right
@@ -175,29 +177,68 @@ class: top, left, inverse
 
 ---
 class: inverse left middle
+.footnote[.red.bold[*] Important footnote]
 
-# 80HD
+# ADHD
 
 .right[![:scale 40%](images/dinotocat.png)]
 
+???
+
+80HD
+
 ---
+class: left middle
 
 # neuropsychological deficits related to adhd
 
+--
+
 .pull-left[
-### Working Memory
 
-### Processing Speed
+## Working Memory
 
-### Response Variability
 ]
 
 .pull-right[
-Remembering things short term memory.
 
-Rate of test taking, rate of speed of information processing.
+- Remembering things short term memory
+- Verbal information
+- Nonverbal information
+- "mind's eye"
 
-Reaction time variability/response consistency.
+]
+
+--
+
+.pull-left[
+
+## Processing Speed
+
+]
+.pull-right[
+
+- Rate of test taking
+- Rate of speed of information processing
+- Some other description
+- Fourth layer
+
+]
+
+--
+
+.pull-left[
+
+## Response Variability
+
+]
+.pull-right[
+
+- Reaction time variability
+- Response consistency
+- Attentional drift
+- Impulsive responding
+
 ]
 
 ---
@@ -205,11 +246,12 @@ name: bell
 background-image: url(images/7-emot-laughing-crying.gif)
 background-position: 50% 50%
 background-size: 100%
-class: left, top, fullscale
+class: left, top, fullscale, inverse
 
-```{css, echo = FALSE}
+```{css, eval=F, echo = FALSE}
 body {
-  color: white;
+  font-family: 'Latin Modern Mono';
+  color: black;
 }
 ```
 
@@ -229,6 +271,7 @@ body {
 > BUT core feature of disorder
 
 ]
+
 
 ???
 
@@ -537,8 +580,10 @@ p2
 
 ---
 
-knitr::kable(head(trees), 
-             format='markdown')
+```{r}
+knitr::kable(head(trees), format='markdown')
+```
+
 ---
 
 # R `dataui` package 
@@ -690,21 +735,28 @@ g_diamonds_with_text + theme_xaringan()
 
 ---
 
-#### Hollywood font
+#### Metal Mania
 
 ```{r}
 g_diamonds_with_text +
   theme_xaringan(
-    text_font = google_font("Ranga"),
-    title_font = google_font("Holtwood One SC")
+    text_font = google_font("New Rocker"),
+    title_font = google_font("Metal Mania")
   )
 ```
 
 ---
 
-```{block, type = 'FOO'}
-Some text for this block
+#### Monoton
+
+```{r}
+g_diamonds_with_text +
+  theme_xaringan(
+    text_font = google_font("Barlow"),
+    title_font = google_font("Monoton")
+  )
 ```
+
 
 ---
 class: left
@@ -715,7 +767,7 @@ When something is important enough,
 you do it even if the odds are not in your favor.
 
 .tr[
---- Someone
+— Someone
 ]]
 
 ![:scale 25%](images/my-octocat.png)
