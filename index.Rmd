@@ -13,7 +13,7 @@ date: "2021-11-09"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: ["assets/css/xaringan-themer.css"]
+    css: ["assets/css/xaringan-themer.css", "assets/css/style.css"]
     #css: ["default", "assets/css/my-theme.css", "assets/css/my-fonts.css"]
     chakra: libs/remark-latest.min.js
     nature:
@@ -84,8 +84,10 @@ style_mono_accent(
   title_slide_background_color = "var(--base)",
   # text_font_google = google_font("Sen"),
   # header_font_google = google_font("NATS"),
-  text_font_google = google_font("Kelly Slab"),
+  text_font_google = google_font("Latin Modern Mono"),
+  #text_font_google = google_font("Kelly Slab"),
   #header_font_google = google_font("Oleo Script")
+  #header_font_google = google_font("Alfa Slab One")
   header_font_google = google_font("Major Mono Display")
 )
 ```
@@ -699,6 +701,12 @@ g_diamonds_with_text +
 ```
 
 ---
+
+```{block, type = 'FOO'}
+Some text for this block
+```
+
+---
 class: left
 
 # Thanks!
@@ -707,7 +715,7 @@ When something is important enough,
 you do it even if the odds are not in your favor.
 
 .tr[
-— Someone
+--- Someone
 ]]
 
 ![:scale 25%](images/my-octocat.png)
