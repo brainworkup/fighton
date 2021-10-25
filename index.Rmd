@@ -73,21 +73,18 @@ library(crosstalk)
 library(manipulateWidget)
 library(tibble)
 library(svglite)
-# style_mono_accent(
-#   base_color = "#690f0d",               # bright red
-#   inverse_background_color = "#002B36", # dark dark blue
-#   inverse_header_color = "#31b09e",     # light aqua green
-#   inverse_text_color = "#FFFFFF",       # white
-#   title_slide_background_color = "var(--base)",
-#   # text_font_google = google_font("Sen"),
-#   # header_font_google = google_font("NATS"),
-#   text_font_google = google_font("Latin Modern Mono"),
-#   #text_font_google = google_font("Kelly Slab"),
-#   #header_font_google = google_font("Oleo Script")
-#   #header_font_google = google_font("Alfa Slab One")
-#   #header_font_google = google_font("Major Mono Display")
-#   header_font_google = google_font("Monoton")
-# )
+# theme/style
+style_mono_accent(
+  base_color = "#690f0d",               # bright red
+  inverse_background_color = "#002B36", # dark dark blue
+  inverse_header_color = "#31b09e",     # light aqua green
+  inverse_text_color = "#FFFFFF",       # white
+  title_slide_background_color = "var(--base)",
+  text_font_google = google_font("Latin Modern Mono"),
+  #   #text_font_google = google_font("Kelly Slab"),
+  header_font_google = google_font("Major Mono Display")
+  #header_font_google = google_font("Monoton")
+)
 ```
 
 ```{r xaringan-extra, include=FALSE}
@@ -153,7 +150,6 @@ class: middle, center, inverse
 So hello- I'm so happy to be invited to join you all today.
 
 ---
-
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 If you cannot explain something in simple terms, you don't understand it.
 
@@ -342,13 +338,29 @@ body {
 
 This is recognized on most rating scales
 
+---
+
+```{r}
+library(ggplot2)
+ggplot(diamonds) +
+  aes(cut, fill = cut) +
+  geom_bar(show.legend = FALSE) +
+  labs(
+    x = "Cut",
+    y = "Count",
+    title = "A Fancy diamonds Plot"
+  ) +
+  theme_xaringan(background_color = "#FFFFFF") +
+  scale_xaringan_fill_discrete()
+```
+
 
 ---
 class: middle center animated slideInRight fadeOutLeft
 
 ## Distribution of Scores: _Population-level Interpretation_
 
-```{r gauss-plot1, fig.cap='Statistical classification of neuropsychological test scores in the general population.', fig.width=4, fig.height=4, out.width = "50%"}
+```{r gauss-plot1, fig.cap='Statistical classification of neuropsychological test scores in the general population.', fig.retina=3, fig.asp=0.5, out.width = '50%'}
 knitr::include_graphics("images/plot_narrow.png", auto_pdf = TRUE)
 ```
 
@@ -357,7 +369,7 @@ class: middle center animated slideInLeft fadeOutRight
 
 ## Distribution of Scores: _Clinical Interpretation_
 
-```{r gauss-plot2, fig.cap='General clinical interpretation of performance for individual test scores and broader neuropsychological domains.', fig.retina=3, fig.asp=0.5, out.width = "50%"}
+```{r gauss-plot2, fig.cap='General clinical interpretation of performance for individual test scores and broader neuropsychological domains.', fig.retina=3, fig.asp=0.5, out.width = '50%'}
 # change these to match if necessary
 knitr::include_graphics("images/plot_broad.png", auto_pdf = TRUE)
 ```
