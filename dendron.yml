@@ -1,32 +1,11 @@
-maxPreviewsCached: 10
-vaults:
-    - fsPath: wm
-      remote:
-          type: git
-          url: "https://github.com/brainworkup/wm"
-      name: wm
-    - fsPath: vault
 useFMTitle: false
 useNoteTitleForLink: true
-noAutoCreateOnDefinition: true
 noLegacyNoteRef: true
-noXVaultWikiLink: true
 mermaid: true
 useKatex: true
-autoFoldFrontmatter: true
 usePrettyRefs: true
 dev:
     enablePreviewV2: true
-journal:
-    dailyDomain: daily
-    name: journal
-    dateFormat: y.MM.dd
-    addBehavior: childOfDomain
-    firstDayOfWeek: 1
-scratch:
-    name: scratch
-    dateFormat: y.MM.dd.HHmmss
-    addBehavior: asOwnDomain
 site:
     copyAssets: true
     siteHierarchies:
@@ -42,11 +21,49 @@ site:
         payload:
             - vault
             - wm
-version: 1
-lookupConfirmVaultOnCreate: false
-lookup:
-    note:
-        selectionType: selectionExtract
-        leaveTrace: false
-initializeRemoteVaults: true
-maxNoteLength: 1000000
+version: 3
+commands:
+    lookup:
+        note:
+            selectionMode: extract
+            confirmVaultOnCreate: false
+            leaveTrace: false
+    insertNote:
+        initialValue: templates
+    insertNoteLink:
+        aliasMode: none
+        enableMultiSelect: false
+    insertNoteIndex:
+        enableMarker: false
+    randomNote: {}
+workspace:
+    vaults:
+        -
+            fsPath: wm
+            remote:
+                type: git
+                url: 'https://github.com/brainworkup/wm'
+            name: wm
+        -
+            fsPath: vault
+    journal:
+        dailyDomain: daily
+        name: journal
+        dateFormat: y.MM.dd
+        addBehavior: childOfDomain
+    scratch:
+        name: scratch
+        dateFormat: y.MM.dd.HHmmss
+        addBehavior: asOwnDomain
+    graph:
+        zoomSpeed: 1
+    enableAutoCreateOnDefinition: false
+    enableXVaultWikiLink: false
+    enableRemoteVaultInit: true
+    workspaceVaultSyncMode: noCommit
+    enableAutoFoldFrontmatter: true
+    maxPreviewsCached: 10
+    maxNoteLength: 1000000
+    enableUserTags: true
+    enableHashTags: true
+    dendronVersion: 0.65.0
