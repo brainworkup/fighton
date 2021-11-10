@@ -12,3 +12,20 @@ div.FOO {
 .big-text {
   font-size: 3em !important;
 }
+
+.monoton {
+  font-family: Monoton;
+}
+
+.fat-font {
+  font-size: 600px;
+  color: chartreuse;
+}
+
+p.a {
+  font: 20px Arial, sans-serif;
+}
+
+p.b {
+  font: italic small-caps bold 12px/30px Georgia, serif;
+}
