@@ -1,5 +1,5 @@
 ---
-title: "A.D.H.D"
+title: "A.D.H.D."
 subtitle: "Neuropsychological assessment for diagnostic clarification and treatment planning"
 author: "Joey Trampush, Ph.D."
 role: "Della Martin Assistant Professor of Psychiatry"
@@ -146,7 +146,7 @@ class: middle, center, inverse
 
 ???
 
-So hello- I'm so happy to be invited to join you all today.
+We grew since 2018
 
 ---
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
@@ -173,21 +173,29 @@ class: middle, left, inverse
 class: monoton fat-font left middle
 
 
-1
+1.
+
 
 ---
-class: monoton fat-font center middle
+class: fat-font right middle
 
 
-2
+2.
+
 
 ---
+class: fat-font right middle
+
+
+3.
+
 
 ---
-class: monoton fat-font right middle
+class: fat-font right middle
 
 
-3
+4.
+
 
 ---
 class: inverse left middle
@@ -206,7 +214,7 @@ This .big[kid] has ADHD.
 ---
 class: left middle
 
-# neuropsychological deficits related to adhd
+# Neuropsychological deficits related to adhd
 
 --
 
