@@ -186,6 +186,7 @@ class: fat-font right middle
 ---
 class: fat-font right middle
 
+#### inattention
 
 3.
 
@@ -211,64 +212,11 @@ This .big[kid] has ADHD.
 
 80HD
 
----
-class: left middle
-
-# Neuropsychological deficits related to adhd
-
---
-
-.pull-left[
-
-## Working Memory
-
-]
-
-.pull-right[
-
-- Remembering things short term memory
-- Verbal information
-- Nonverbal information
-- "mind's eye"
-
-]
-
---
-
-.pull-left[
-
-## Processing Speed
-
-]
-.pull-right[
-
-- Rate of test taking
-- Rate of speed of information processing
-- Some other description
-- Fourth layer
-
-]
-
---
-
-.pull-left[
-
-## Response Variability
-
-]
-.pull-right[
-
-- Reaction time variability
-- Response consistency
-- Attentional drift
-- Impulsive responding
-
-]
 
 ---
 class: inverse, middle
 
-# neurocognitive deficits related to adhd
+# Neurocognitive deficits related to adhd
 
 .panelset[
 .panel[.panel-name[Working Memory]
@@ -365,22 +313,6 @@ body {
 
 This is recognized on most rating scales
 
----
-
-```{r}
-library(ggplot2)
-ggplot(diamonds) +
-  aes(cut, fill = cut) +
-  geom_bar(show.legend = FALSE) +
-  labs(
-    x = "Cut",
-    y = "Count",
-    title = "A Fancy diamonds Plot"
-  ) +
-  theme_xaringan(background_color = "#FFFFFF") +
-  scale_xaringan_fill_discrete()
-```
-
 
 ---
 class: middle center animated slideInRight fadeOutLeft
@@ -403,7 +335,9 @@ knitr::include_graphics("images/plot_broad.png", auto_pdf = TRUE)
 
 ---
 
-## Highcharte`R` Drilldown: z-Scores (M = 0, SD = 1)
+## Highcharte`R` Drilldown
+
+### z-Scores (M = 0, SD = 1)
 
 ```{r}
 patient <- "Biggie"
@@ -554,140 +488,6 @@ p1 <-
 p1
 ```
 
----
-
-## Neuropsych Drilldown: Percentiles
-
-```{r drillp-tidy}
-# percentiles
-ncog <- neurocog %>%
-  group_by(domain) %>%
-  summarize(Pct = mean(percentile)
-  )
-
-ncog <- arrange(ncog, desc(Pct))
-
-## Level 1
-ncogL1status <- tibble(
-  name = ncog$domain,
-  y = as.integer(ncog$Pct),
-  drilldown = tolower(name))
-# ncogL1status$y <- as.integer(ncogL1status$y)
-
-## Level 2
-ncogL2drill <- lapply(unique(neurocog$domain), function(x_level) {
-  ncog2 <- subset(neurocog, neurocog$domain %in% x_level)
-  # ncog2 <- neurocog[neurocog$domain == x_level,]
-  ncog2 <- ncog2 %>%
-    group_by(subdomain) %>%
-    summarize(Pct = mean(percentile))
-  ncog2 <- arrange(ncog2, desc(Pct)) ### CHECK
-  ncogL2status <- tibble(name = ncog2$subdomain, y = ncog2$Pct, drilldown = tolower(paste(x_level, name, sep = "_")))
-  list(id = tolower(x_level), type = "column", data = list_parse(ncogL2status))
-})
-
-## Level 3
-ncogL3drill <- lapply(unique(neurocog$domain), function(x_level) {
-  ncog2 <- subset(neurocog, neurocog$domain %in% x_level)
-  # ncog2 <- neurocog[neurocog$domain == x_level,]
-  lapply(unique(ncog2$subdomain), function(y_level) {
-    ncog3 <- subset(ncog2, ncog2$subdomain %in% y_level)
-    # ncog3 <- ncog2[ncog2$subdomain == y_level,]
-    ncog3 <- ncog3 %>%
-      group_by(narrow) %>%
-      summarize(Pct = mean(percentile))
-    ncog3 <- arrange(ncog3, desc(Pct))
-    ncogL3status <- tibble(name = ncog3$narrow, y = ncog3$Pct, drilldown = tolower(paste(x_level, y_level, name, sep = "_")))
-    list(id = tolower(paste(x_level, y_level, sep = "_")), type = "column", data = list_parse(ncogL3status))
-  })
-}) %>% unlist(recursive = FALSE)
-
-## Level 4
-ncogL4drill <- lapply(unique(neurocog$domain), function(x_level) {
-  ncog2 <- subset(neurocog, neurocog$domain %in% x_level)
-  # ncog2 <- neurocog[neurocog$domain == x_level,]
-  lapply(unique(ncog2$subdomain), function(y_level) {
-    ncog3 <- subset(ncog2, ncog2$subdomain %in% y_level)
-    # ncog3 <- ncog2[ncog2$subdomain == y_level,]
-    lapply(unique(ncog3$narrow), function(z_level) {
-      ncog4 <- subset(ncog3, ncog3$narrow %in% z_level)
-      # ncog4 <- ncog3[ncog3$narrow == z_level,]
-      ncog4 <- ncog4 %>%
-        group_by(scale) %>%
-        summarize(Pct = mean(percentile))
-      ncog4 <- arrange(ncog4, desc(Pct))
-      ncogL4status <- tibble(name = ncog4$scale, y = ncog4$Pct)
-      list(id = tolower(paste(x_level, y_level, z_level, sep = "_")), type = "column", data = list_parse2(ncogL4status))
-    })
-  }) %>% unlist(recursive = FALSE)
-}) %>% unlist(recursive = FALSE)
-```
-
-
-```{r drillp-tt}
-## for Tooltip
-ncogL1status <- ncogL1status %>%
-  dplyr::mutate(
-    rangep = case_when(
-      y >= 98 ~ "Exceptionally High",
-      y %in% 91:97 ~ "Above Average",
-      y %in% 75:90 ~ "High-Average",
-      y %in% 25:74 ~ "Average",
-      y %in% 9:24 ~ "Low-Average",
-      y %in% 2:8 ~ "Below Average",
-      y < 2 ~ "Exceptionally Low",
-      TRUE ~ as.character(y)
-    )
-  )
-x <- c("Name", "Score", "Range")
-y <- c("{point.name}", "{point.y}", "{point.rangep}")
-tt <- tooltip_table(x, y)
-```
-
-```{r drillp-plot, fig.retina=3, fig.asp=0.5, out.width = "100%"}
-p2 <- 
-  highchart() %>%
-  hc_title(text = patient,
-           style = list(fontSize = "15px")) %>%
-  hc_add_series(
-    ncogL1status,
-    type = "bar",
-    name = "Neuropsychological Test Scores",
-    hcaes(x = name, y = y, color = colors)
-  ) %>%
-  hc_xAxis(
-    type = "category",
-    title = list(text = "Domain"),
-    categories = .$name
-  ) %>%
-  hc_yAxis(
-    title = list(text = "Percentile"),
-    labels = list(format = "{value} ‰")
-  ) %>%
-  hc_tooltip(
-    pointFormat = tt,
-    useHTML = TRUE,
-    valueDecimals = 0
-  ) %>%
-  hc_plotOptions(
-    series = list(
-      colorByPoint = TRUE,
-      allowPointSelect = TRUE,
-      dataLabels = TRUE
-    )
-  ) %>%
-  hc_drilldown(
-    allowPointDrilldown = TRUE,
-    series = c(ncogL2drill, ncogL3drill, ncogL4drill)
-  )
-p2
-```
-
----
-
-```{r}
-knitr::kable(head(trees), format='markdown')
-```
 
 ---
 
@@ -791,6 +591,7 @@ g_base
 g_base + theme_xaringan()
 ```
 
+
 ---
 
 ```{r}
@@ -851,17 +652,15 @@ g_diamonds_with_text +
 ```
 
 ---
+class: middle
 
-#### Monoton
+# 5 things
 
-```{r}
-g_diamonds_with_text +
-  theme_xaringan(
-    text_font = google_font("Barlow"),
-    title_font = google_font("Monoton")
-  )
-```
-
+- 1
+- 2
+- 3
+- 4
+- 5
 
 ---
 class: left
