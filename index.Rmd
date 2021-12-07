@@ -72,6 +72,7 @@ library(crosstalk)
 library(manipulateWidget)
 library(tibble)
 library(svglite)
+
 # theme/style
 style_mono_accent(
   base_color = "#690f0d",               # bright red
@@ -80,9 +81,15 @@ style_mono_accent(
   inverse_text_color = "#FFFFFF",       # white
   title_slide_background_color = "var(--base)",
   #text_font_google = google_font("Latin Modern Mono"),
-  text_font_google = google_font("Kelly Slab"),
-  header_font_google = google_font("Major Mono Display")
+  #text_font_google = google_font("Kelly Slab"),
+  #header_font_google = google_font("Major Mono Display")
   #header_font_google = google_font("Monoton")
+)
+
+style_xaringan(
+  text_font_family = "Droid Serif",
+  text_font_url = "https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic",
+  header_font_google = google_font("Yanone Kaffeesatz")
 )
 ```
 
@@ -170,7 +177,13 @@ class: middle, left, inverse
 ]
 
 ---
-class: monoton fat-font left middle
+
+[`r fontawesome::fa("github")` @brainworkup](https://github.com/brainworkup)    
+[`r fontawesome::fa("twitter")` @brainworkup](https://twitter.com/brainworkup)   
+[`r fontawesome::fa("link")` brainworkup.io](https://brainworkup.io)
+
+---
+class: fat-font left middle
 
 
 1.
@@ -190,15 +203,24 @@ class: fat-font right middle
 
 3.
 
-
 ---
 class: fat-font right middle
 
-
 4.
 
+---
+class: section, middle, center
+
+.frame[
+# In the beginning...
+]
+
+--
+
+## There were tools.
 
 ---
+
 class: inverse left middle
 .footnote[.red.bold[*] Important footnote]
 
@@ -278,13 +300,45 @@ class: inverse, middle
 ]
 
 ---
+class: middle, inverse, center
+
+You may be thinking of yourself more as a tool-user
+
+--
+
+But today I want you to think about yourself as the tool-maker
+
+--
+
+Are you making a kind tool? 
+
+--
+
+What makes a tool kind?
+
+--
+
+Does it matter?
+
+---
+class: section, middle, center
+
+.frame[
+# Bringing the `r emo::ji("fire")`
+]
+
+--
+
+# Teaching tidymodels to *beginners*
+
+---
 name: bell
 background-image: url(images/7-emot-laughing-crying.gif)
 background-position: 50% 50%
 background-size: 100%
 class: left, middle, fullscale, inverse
 
-```{css, eval=F, echo = FALSE}
+```{css, eval=TRUE, echo = FALSE}
 body {
   font-family: 'Latin Modern Mono';
   color: black;
@@ -296,7 +350,7 @@ body {
 
 > **Emotion**
 >
-> **(Dys)regulation**
+> **(Dys)Regulation**
 > 
 > in
 >
@@ -657,10 +711,43 @@ class: middle
 # 5 things
 
 - 1
+
+--
+
 - 2
+
+--
+
 - 3
+
+--
+
 - 4
+
+--
+
+
 - 5
+
+---
+name: rogers
+background-image: url(images/rogers.jpg)
+background-size: cover
+class: inverse, middle
+
+---
+template: rogers
+
+"There are three ways to ultimate success:
+
+The first way is to be kind.
+
+The second way is to be kind.
+
+The third way is to be kind."
+
+
+.footnote[[Source](https://jasonstcyr.com/2019/11/27/building-trust-have-you-been-kind-today/)]
 
 ---
 class: left

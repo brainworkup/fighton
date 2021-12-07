@@ -90,8 +90,6 @@ ffmpeg -i daftpunktocat-thomas.gif daftpunktocat-thomas.mp4
 
 ffmpeg -i 7-emot-laughing-crying.gif -c vp9 -b:v 0 -crf 41 7-emot-laughing-crying.webm
 
-```{r code-chunk, echo = FALSE}
-
-```
+_At-Risk_
 
 [[#fighton|tag.fighton]]

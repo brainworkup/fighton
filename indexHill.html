@@ -1,0 +1,2620 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Crafting kind tools</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Alison Hill, Ph.D." />
+    <meta name="date" content="2021-04-12" />
+    <script src="libs/header-attrs-2.11.3/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/panelset-0.2.6/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset-0.2.6/panelset.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, orientation=auto"/>
+    <meta name="description" content="Crafting kind tools."/>
+    <meta name="github-repo" content="apreshill/talks"/>
+    <meta name="twitter:title" content="Crafting kind tools"/>
+    <meta name="twitter:description" content="Crafting kind tools."/>
+    <meta name="twitter:url" content="https://alison.netlify.app/ares-kind-tools"/>
+    <meta name="twitter:image" content="https://alison.netlify.app/ares-kind-tools/images/chimp.jpg"/>
+    <meta name="twitter:image:alt" content="Chimp"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:creator" content="@apreshill"/>
+    <meta name="twitter:site" content="@apreshill"/>
+    <meta property="og:title" content="Crafting kind tools"/>
+    <meta property="og:description" content="Crafting kind tools."/>
+    <meta property="og:url" content="https://alison.netlify.app/ares-kind-tools"/>
+    <meta property="og:image" content="https://alison.netlify.app/ares-kind-tools/images/chimp.jpg"/>
+    <meta property="og:image:alt" content="Chimp"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="article:author" content="Alison Hill"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/my-theme.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/my-fonts.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+class: title-slide, left, middle
+background-image: url("images/chimp.jpg")
+background-position: right
+background-size: contain
+background-color: #7899d4ff
+
+.pull-left[
+
+# Crafting kind tools
+
+## Data Science Applied Research and Education Seminar (ARES)
+
+### Alison Hill, Ph.D.
+
+### 2021-04-12
+]
+
+
+---
+class: middle, center, inverse
+
+## .big-text[Hello.]
+
+???
+
+So hello- I'm so happy to be invited to join you all today.
+
+
+---
+name: hello
+class: middle, center, inverse
+
+
+### Alison Hill, Ph.D.
+
+&lt;img style="border-radius: 50%;" src="https://alison.rbind.io/authors/alison/avatar.jpg" width="150px"/&gt;
+
+### Product Manager, Data Science Communication
+
+### @RStudio
+
+[<svg aria-hidden="true" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> @apreshill](https://github.com/apreshill)    
+[<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg> @apreshill](https://twitter.com/apreshill)   
+[<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg> alison.rbind.io](https://alison.rbind.io)
+
+---
+class: section, middle, center
+
+.frame[
+# In the beginning...
+]
+
+--
+
+# There were tools.
+
+---
+background-image: url(images/stone-tools.jpg)
+background-size: cover
+
+.footnote[[Source](https://commons.wikimedia.org/wiki/File:Ancient_Greece_Neolithic_Stone_Tools_%26_Weapons.jpg)]
+
+???
+
+But tools don't just exist in a vacuum. To be a tool, it must be used.
+
+---
+name: zinda
+background-image: url(images/zinda.jpg)
+background-position: right
+background-size: contain
+class: middle
+
+---
+template: zinda
+
+.pull-left[
+
+&gt; "In October, 1960, Dr. Goodall watched as a chimpanzee bent a twig, stripped off it leaves, and used it to “fish” termites from their nest. Up until her moment of discovery, the ability to make and use tools had been considered uniquely human."
+&gt; 
+&gt; [janegoodall.org](https://janegoodall.org/our-story/our-legacy-of-science/)
+
+]
+
+---
+template: zinda
+
+.pull-left[
+
+&gt; "Now we must redefine 'tool', redefine 'man', or accept chimpanzees as humans."
+&gt; 
+&gt; Louis B. Leakey
+
+]
+
+???
+
+And actually, this is something that was a seminal observation in other species- using tools.
+
+---
+class: center, inverse, middle
+
+# How do we define 'tool'?
+
+--
+
+![](https://media.giphy.com/media/WUOFfOsm78HJVgu2yo/giphy.gif)
+
+---
+class: middle
+background-image: url(images/tools.png)
+background-position: right
+background-size: 50%
+background-color: white
+
+# What is a tool?
+
+--
+
+.pull-left[
+&gt; A thing&amp;mdash;anything&amp;mdash;that can be used to get a job done. To achieve a goal.
+]
+
+
+.footnote[Image from [NYT](https://www.nytimes.com/2007/02/13/science/13chim.html)]
+
+???
+
+We don't use tools inherently because the tool is fun to use, although that is nice side effect when it happens. And when we have a choice of tools, that matters. 
+
+But like the chimpanzee, we mainly want to get a job done.
+
+---
+background-image: url(images/04-09-17-Chimpanzees.png)
+background-position: top
+class: bottom, center, inverse
+background-color: #7899d4
+
+#### Defining, and deciphering, how chimps teach each other to use tools
+
+.footnote[[Source](https://2newthings.com/defining-deciphering-how-chimps-teach-use-tools/)]
+
+---
+background-image: url(images/01-29-18-New-Caledonian-crow-using-a-hooked-stick.png)
+background-position: top
+class: bottom, center, inverse
+background-color: #7899d4
+
+#### New Caledonian crows’ clearly profit from the care and craftsmanship they put into their tools
+
+.footnote[[Source](https://2newthings.com/new-caledonian-crows-clearly-profit-care-craftsmanship-put-tools/)]
+
+---
+class: section, middle, center
+
+.frame[
+# And then...
+]
+
+--
+
+## Humans made software tools for other humans to use.
+
+---
+background-image: url(images/black-hole.jpg)
+background-size: contain
+background-position: left
+class: middle, inverse, right
+
+.pull-right[
+# Sometimes it goes well...
+]
+
+--
+
+
+.footnote[
+Katie Bouman, courtesy of [PBS](https://www.pbs.org/newshour/science/katie-bouman-hardly-knew-what-a-black-hole-was-her-algorithm-helped-us-see-one)
+]
+---
+class: center, inverse, middle
+
+# Sometimes it does not go well.
+
+--
+
+![](https://media.giphy.com/media/3tK7DEMGN6jewLa6aL/giphy.gif)
+
+---
+class: middle, inverse, center
+
+You may be thinking of yourself more as a tool-user
+
+--
+
+But today I want you to think about yourself as the tool-maker
+
+--
+
+Are you making a kind tool? 
+
+--
+
+What makes a tool kind?
+
+--
+
+Does it matter?
+
+---
+class: middle, monkey-slide, inverse
+
+# Social learning
+
+--
+
+.right-column[
+&gt; "Learning that is influenced by observation of, or interaction with, another animal (typically a conspecific) **or its products**" 
+]
+
+--
+
+.footnote[[Box, 1984](https://www.google.com/books/edition/Primate_Behaviour_and_Social_Ecology/bAwrBgAAQBAJ?hl=en&amp;gbpv=1&amp;pg=PR7&amp;printsec=frontcover); [Heyes, 1994](users.ox.ac.uk/~ascch/Celia's pdfs/3 1994 Heyes cats and mechs.pdf)]
+
+---
+background-image: url(images/work.jpg)
+background-size: cover
+class: middle, right
+
+.right-column[
+## .big-text[Wait, this is social learning?]
+
+]
+
+---
+name: takeaway
+background-image: url(images/takeout.jpg)
+background-size: contain
+background-position: left
+
+---
+name: takeaway1
+template: takeaway
+class: middle, inverse
+
+.pull-right[
+# Take aways
+]
+
+--
+
+.pull-right[
+### Learning to use a tool made by someone is social.
+]
+
+--
+
+.pull-right[
+### Making a tool that will be used by someone is social.
+]
+
+
+---
+background-image: url(images/cat-expert.jpg)
+background-size: contain
+background-position: left
+class: right, middle, inverse
+
+# I actually am!
+
+--
+
+.right-column[
+
+&gt; "Social cognition involves all the abilities that enable us to understand social agents and to interact with them."
+]
+
+--
+
+.right-column[
+
+### Elements of:
+
++ Social attention
++ Emotion regulation
++ Cognitive science
++ Language acquisition
+
+]
+
+.footnote[[Image](https://jasonstcyr.com/2019/11/27/building-trust-have-you-been-kind-today/); [Soto-Icaza et al.](https://www.frontiersin.org/articles/10.3389/fnins.2015.00333/full)]
+
+]
+
+
+---
+background-image: url(images/sciam.jpg)
+background-position: right
+background-size: 50%
+class: middle
+
+Tools can shape how you:
+
+--
+
++ think
+
+--
+
++ feel
+
+--
+
++ act
+
+--
+
++ react
+
+--
+
++ learn
+
+--
+
++ remember
+
+
+--
+
+.footnote[Illustration by Thomas Pitilli for [*Scientific American*](https://www.scientificamerican.com/article/monkeys-make-stone-ldquo-tools-rdquo-that-bear-a-striking-resemblance-to-early-human-artifacts/)
+]
+
+---
+name: mind
+background-image: url(images/mind.jpg)
+background-size: contain
+background-position: left
+class: middle, inverse
+background-color: #246A73
+
+---
+template: mind
+name: good-news
+
+.pull-right[
+## The good news
+
+We know a lot about how people learn.
+
+]
+
+.pull-right[
+We also know a lot about .shadow-text[*who*] people learn .shadow-text[*from*].
+]
+
+---
+class: middle, inverse
+background-color: #246A73
+
+
+We learn better from people who are perceived as:
+
+--
+
+- helpful (avoid learning from mean, “trickers”, otherwise deceptive people)
+
+--
+
+- reliable (avoid learning from ignorant people: “I don’t know what that is”) 
+
+--
+
+- knowledgeable (prefer “know” over “think” or “guess”, above and beyond “merely accurate”)
+
+--
+
+- credible (prefer history of accuracy)
+
+--
+
+- expertise (prefer informants with domain knowledge)
+
+--
+
+- relevant (prefer informants who provide the right quantity of information; avoid someone providing too little, circular, or irrelevant information)
+
+
+--
+
+.footnote[[Knowing When to Doubt: Developing a Critical Stance When Learning From Others](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3810952/)]
+
+---
+template: good-news
+
+--
+
+.pull-right[
+## The not-good news
+
+We are still humans...
+
+with emotions.
+]
+
+
+---
+background-image: url(images/debugging.jpg)
+background-size: cover
+
+
+.footnote[Art by [Allison Horst](https://github.com/allisonhorst/stats-illustrations)]
+
+
+---
+background-image: url(images/Why-buy-snickers.png)
+background-size: 50%
+class: top, center
+
+## User/learner personas often "ignore context, situations, and anxieties"
+
+
+.footnote[[Intercom](https://www.intercom.com/blog/using-job-stories-design-features-ui-ux/)]
+
+---
+class: middle
+
+
+# 🎸 Cause you're hot then you're cold 🎼
+
+
+--
+
+
+&gt; "Cool [executive function (EF) tasks] required large amount logic and critical analysis, and usually involve conscious control of thoughts and actions without an affective component."
+
+
+--
+
+
+&gt; "Contrary to cool tasks, hot EF tasks require regulation in contexts where the outcomes are of greater personal significance, such as completing a task to earn a desirable prize."
+
+
+
+--
+
+.footnote[[Poon](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5767838/); [Walle](https://idlab.ucmerced.edu/sites/idlab.ucmerced.edu/files/page/documents/walle_lopez_castillo_in_press.pdf)]
+
+---
+class: section, middle, center
+
+.frame[
+# Bringing the 🔥
+]
+
+--
+
+# Teaching tidymodels to *beginners*
+
+---
+background-image: url(images/tidymodels-workshop.png)
+background-size: contain
+
+.footnote[[Source](https://alison.rbind.io/project/tidyml/)]
+
+---
+background-image: url(images/fire.jpg)
+background-size: cover
+class: middle
+
+.pull-left[
+&gt; Much more understandable than online documentation of tidymodels, which should be set on FIRE
+]
+
+---
+background-image: url(images/fire.jpg)
+background-size: cover
+class: center, middle
+
+&lt;iframe width="712" height="400" src="https://www.youtube.com/embed/k1oXx4delIY?start=28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+---
+class: section, middle, center
+
+.frame[
+# &lt;i class="far fa-paper-plane"&gt;&lt;/i&gt;
+]
+
+--
+
+# Be the airplane
+
+
+---
+class: center, middle, inverse
+background-color: #246A73
+
+# How can you be the airplane &lt;i class="far fa-paper-plane"&gt;&lt;/i&gt;?
+
+&lt;hr&gt;
+
+--
+
+How do you help without adding any (more) heat?
+
+--
+
+I think the answer is .shadow-text[*kindness*].
+
+
+--
+
+But .shadow-text[*credible*], .shadow-text[*reliable*], and .shadow-text[*relevant*] kindness.
+
+
+---
+name: rogers
+background-image: url(images/rogers.jpg)
+background-size: cover
+class: inverse, middle
+
+---
+template: rogers
+
+"There are three ways to ultimate success:
+
+The first way is to be kind.
+
+The second way is to be kind.
+
+The third way is to be kind."
+
+
+.footnote[[Source](https://jasonstcyr.com/2019/11/27/building-trust-have-you-been-kind-today/)]
+
+---
+template: rogers
+name: kind-tools
+
+
+"There are three ways to ultimate success:
+ 
+The first way is to .shadow-text[*be an ally*].
+
+The second way is to .shadow-text[*be an advocate*].
+
+The third way is to .shadow-text[*be an accomplice*]."
+
+
+
+.footnote[[Source](https://jasonstcyr.com/2019/11/27/building-trust-have-you-been-kind-today/)]
+
+---
+class: section, middle, center
+background-image: url(images/penguins_cran.png)
+background-size: 15%
+background-position: bottom, center
+
+.frame[
+# Be an ally
+]
+
+--
+
+
+## Case study #1: `palmerpenguins`
+
+???
+
+credible -&gt; trust; use expertise effect here "I'm an expert"; examples/case studies build the case- people want you to show not tell
+
+
+
+---
+class: middle, center
+
+&lt;img src="figs/cran-line-1.png" width="100%" /&gt;
+
+---
+
+&lt;img src="figs/cran-median-1.png" width="100%" /&gt;
+
+---
+
+&lt;img src="figs/cran-trend-1.png" width="100%" /&gt;
+
+
+---
+name: penguins
+background-image: url(images/penguins.png)
+background-position: left
+background-size: 50%
+class: middle
+
+---
+template: penguins
+
+.pull-right[
+
+We set out to make a data package that was:
+
+1. Friendly
+
+1. Approachable
+
+1. Fun
+
+]
+
+---
+template: penguins
+
+.pull-right[
+
+The palmerpenguins data package
+
+1. [Friendly docs](https://allisonhorst.github.io/palmerpenguins/)
+
+1. [Approachable license](https://allisonhorst.github.io/palmerpenguins/LICENSE.html)
+
+1. [Fun art](https://allisonhorst.github.io/palmerpenguins/articles/art.html)
+
+And of course, penguins don't hurt!
+
+]
+
+
+---
+class: middle
+
+&gt; "I think this gives the best of both worlds — if you're running in a low dependency environment, you'll get a data frame."
+
+
+```
+      species    island
+1      Adelie Torgersen
+2      Adelie Torgersen
+3      Adelie Torgersen
+4      Adelie Torgersen
+5      Adelie Torgersen
+6      Adelie Torgersen
+7      Adelie Torgersen
+8      Adelie Torgersen
+9      Adelie Torgersen
+10     Adelie Torgersen
+11     Adelie Torgersen
+12     Adelie Torgersen
+13     Adelie Torgersen
+14     Adelie Torgersen
+15     Adelie Torgersen
+16     Adelie Torgersen
+17     Adelie Torgersen
+18     Adelie Torgersen
+19     Adelie Torgersen
+20     Adelie Torgersen
+21     Adelie    Biscoe
+22     Adelie    Biscoe
+23     Adelie    Biscoe
+24     Adelie    Biscoe
+25     Adelie    Biscoe
+26     Adelie    Biscoe
+27     Adelie    Biscoe
+28     Adelie    Biscoe
+29     Adelie    Biscoe
+30     Adelie    Biscoe
+31     Adelie     Dream
+32     Adelie     Dream
+33     Adelie     Dream
+34     Adelie     Dream
+35     Adelie     Dream
+36     Adelie     Dream
+37     Adelie     Dream
+38     Adelie     Dream
+39     Adelie     Dream
+40     Adelie     Dream
+41     Adelie     Dream
+42     Adelie     Dream
+43     Adelie     Dream
+44     Adelie     Dream
+45     Adelie     Dream
+46     Adelie     Dream
+47     Adelie     Dream
+48     Adelie     Dream
+49     Adelie     Dream
+50     Adelie     Dream
+51     Adelie    Biscoe
+52     Adelie    Biscoe
+53     Adelie    Biscoe
+54     Adelie    Biscoe
+55     Adelie    Biscoe
+56     Adelie    Biscoe
+57     Adelie    Biscoe
+58     Adelie    Biscoe
+59     Adelie    Biscoe
+60     Adelie    Biscoe
+61     Adelie    Biscoe
+62     Adelie    Biscoe
+63     Adelie    Biscoe
+64     Adelie    Biscoe
+65     Adelie    Biscoe
+66     Adelie    Biscoe
+67     Adelie    Biscoe
+68     Adelie    Biscoe
+69     Adelie Torgersen
+70     Adelie Torgersen
+71     Adelie Torgersen
+72     Adelie Torgersen
+73     Adelie Torgersen
+74     Adelie Torgersen
+75     Adelie Torgersen
+76     Adelie Torgersen
+77     Adelie Torgersen
+78     Adelie Torgersen
+79     Adelie Torgersen
+80     Adelie Torgersen
+81     Adelie Torgersen
+82     Adelie Torgersen
+83     Adelie Torgersen
+84     Adelie Torgersen
+85     Adelie     Dream
+86     Adelie     Dream
+87     Adelie     Dream
+88     Adelie     Dream
+89     Adelie     Dream
+90     Adelie     Dream
+91     Adelie     Dream
+92     Adelie     Dream
+93     Adelie     Dream
+94     Adelie     Dream
+95     Adelie     Dream
+96     Adelie     Dream
+97     Adelie     Dream
+98     Adelie     Dream
+99     Adelie     Dream
+100    Adelie     Dream
+101    Adelie    Biscoe
+102    Adelie    Biscoe
+103    Adelie    Biscoe
+104    Adelie    Biscoe
+105    Adelie    Biscoe
+106    Adelie    Biscoe
+107    Adelie    Biscoe
+108    Adelie    Biscoe
+109    Adelie    Biscoe
+110    Adelie    Biscoe
+111    Adelie    Biscoe
+112    Adelie    Biscoe
+113    Adelie    Biscoe
+114    Adelie    Biscoe
+115    Adelie    Biscoe
+116    Adelie    Biscoe
+117    Adelie Torgersen
+118    Adelie Torgersen
+119    Adelie Torgersen
+120    Adelie Torgersen
+121    Adelie Torgersen
+122    Adelie Torgersen
+123    Adelie Torgersen
+124    Adelie Torgersen
+125    Adelie Torgersen
+126    Adelie Torgersen
+127    Adelie Torgersen
+128    Adelie Torgersen
+129    Adelie Torgersen
+130    Adelie Torgersen
+131    Adelie Torgersen
+132    Adelie Torgersen
+133    Adelie     Dream
+134    Adelie     Dream
+135    Adelie     Dream
+136    Adelie     Dream
+137    Adelie     Dream
+138    Adelie     Dream
+139    Adelie     Dream
+140    Adelie     Dream
+141    Adelie     Dream
+142    Adelie     Dream
+143    Adelie     Dream
+144    Adelie     Dream
+145    Adelie     Dream
+146    Adelie     Dream
+147    Adelie     Dream
+148    Adelie     Dream
+149    Adelie     Dream
+150    Adelie     Dream
+151    Adelie     Dream
+152    Adelie     Dream
+153    Gentoo    Biscoe
+154    Gentoo    Biscoe
+155    Gentoo    Biscoe
+156    Gentoo    Biscoe
+157    Gentoo    Biscoe
+158    Gentoo    Biscoe
+159    Gentoo    Biscoe
+160    Gentoo    Biscoe
+161    Gentoo    Biscoe
+162    Gentoo    Biscoe
+163    Gentoo    Biscoe
+164    Gentoo    Biscoe
+165    Gentoo    Biscoe
+166    Gentoo    Biscoe
+167    Gentoo    Biscoe
+168    Gentoo    Biscoe
+169    Gentoo    Biscoe
+170    Gentoo    Biscoe
+171    Gentoo    Biscoe
+172    Gentoo    Biscoe
+173    Gentoo    Biscoe
+174    Gentoo    Biscoe
+175    Gentoo    Biscoe
+176    Gentoo    Biscoe
+177    Gentoo    Biscoe
+178    Gentoo    Biscoe
+179    Gentoo    Biscoe
+180    Gentoo    Biscoe
+181    Gentoo    Biscoe
+182    Gentoo    Biscoe
+183    Gentoo    Biscoe
+184    Gentoo    Biscoe
+185    Gentoo    Biscoe
+186    Gentoo    Biscoe
+187    Gentoo    Biscoe
+188    Gentoo    Biscoe
+189    Gentoo    Biscoe
+190    Gentoo    Biscoe
+191    Gentoo    Biscoe
+192    Gentoo    Biscoe
+193    Gentoo    Biscoe
+194    Gentoo    Biscoe
+195    Gentoo    Biscoe
+196    Gentoo    Biscoe
+197    Gentoo    Biscoe
+198    Gentoo    Biscoe
+199    Gentoo    Biscoe
+200    Gentoo    Biscoe
+201    Gentoo    Biscoe
+202    Gentoo    Biscoe
+203    Gentoo    Biscoe
+204    Gentoo    Biscoe
+205    Gentoo    Biscoe
+206    Gentoo    Biscoe
+207    Gentoo    Biscoe
+208    Gentoo    Biscoe
+209    Gentoo    Biscoe
+210    Gentoo    Biscoe
+211    Gentoo    Biscoe
+212    Gentoo    Biscoe
+213    Gentoo    Biscoe
+214    Gentoo    Biscoe
+215    Gentoo    Biscoe
+216    Gentoo    Biscoe
+217    Gentoo    Biscoe
+218    Gentoo    Biscoe
+219    Gentoo    Biscoe
+220    Gentoo    Biscoe
+221    Gentoo    Biscoe
+222    Gentoo    Biscoe
+223    Gentoo    Biscoe
+224    Gentoo    Biscoe
+225    Gentoo    Biscoe
+226    Gentoo    Biscoe
+227    Gentoo    Biscoe
+228    Gentoo    Biscoe
+229    Gentoo    Biscoe
+230    Gentoo    Biscoe
+231    Gentoo    Biscoe
+232    Gentoo    Biscoe
+233    Gentoo    Biscoe
+234    Gentoo    Biscoe
+235    Gentoo    Biscoe
+236    Gentoo    Biscoe
+237    Gentoo    Biscoe
+238    Gentoo    Biscoe
+239    Gentoo    Biscoe
+240    Gentoo    Biscoe
+241    Gentoo    Biscoe
+242    Gentoo    Biscoe
+243    Gentoo    Biscoe
+244    Gentoo    Biscoe
+245    Gentoo    Biscoe
+246    Gentoo    Biscoe
+247    Gentoo    Biscoe
+248    Gentoo    Biscoe
+249    Gentoo    Biscoe
+250    Gentoo    Biscoe
+251    Gentoo    Biscoe
+252    Gentoo    Biscoe
+253    Gentoo    Biscoe
+254    Gentoo    Biscoe
+255    Gentoo    Biscoe
+256    Gentoo    Biscoe
+257    Gentoo    Biscoe
+258    Gentoo    Biscoe
+259    Gentoo    Biscoe
+260    Gentoo    Biscoe
+261    Gentoo    Biscoe
+262    Gentoo    Biscoe
+263    Gentoo    Biscoe
+264    Gentoo    Biscoe
+265    Gentoo    Biscoe
+266    Gentoo    Biscoe
+267    Gentoo    Biscoe
+268    Gentoo    Biscoe
+269    Gentoo    Biscoe
+270    Gentoo    Biscoe
+271    Gentoo    Biscoe
+272    Gentoo    Biscoe
+273    Gentoo    Biscoe
+274    Gentoo    Biscoe
+275    Gentoo    Biscoe
+276    Gentoo    Biscoe
+277 Chinstrap     Dream
+278 Chinstrap     Dream
+279 Chinstrap     Dream
+280 Chinstrap     Dream
+281 Chinstrap     Dream
+282 Chinstrap     Dream
+283 Chinstrap     Dream
+284 Chinstrap     Dream
+285 Chinstrap     Dream
+286 Chinstrap     Dream
+287 Chinstrap     Dream
+288 Chinstrap     Dream
+289 Chinstrap     Dream
+290 Chinstrap     Dream
+291 Chinstrap     Dream
+292 Chinstrap     Dream
+293 Chinstrap     Dream
+294 Chinstrap     Dream
+295 Chinstrap     Dream
+296 Chinstrap     Dream
+297 Chinstrap     Dream
+298 Chinstrap     Dream
+299 Chinstrap     Dream
+300 Chinstrap     Dream
+301 Chinstrap     Dream
+302 Chinstrap     Dream
+303 Chinstrap     Dream
+304 Chinstrap     Dream
+305 Chinstrap     Dream
+306 Chinstrap     Dream
+307 Chinstrap     Dream
+308 Chinstrap     Dream
+309 Chinstrap     Dream
+310 Chinstrap     Dream
+311 Chinstrap     Dream
+312 Chinstrap     Dream
+313 Chinstrap     Dream
+314 Chinstrap     Dream
+315 Chinstrap     Dream
+316 Chinstrap     Dream
+317 Chinstrap     Dream
+318 Chinstrap     Dream
+319 Chinstrap     Dream
+320 Chinstrap     Dream
+321 Chinstrap     Dream
+322 Chinstrap     Dream
+323 Chinstrap     Dream
+324 Chinstrap     Dream
+325 Chinstrap     Dream
+326 Chinstrap     Dream
+327 Chinstrap     Dream
+328 Chinstrap     Dream
+329 Chinstrap     Dream
+330 Chinstrap     Dream
+331 Chinstrap     Dream
+332 Chinstrap     Dream
+333 Chinstrap     Dream
+334 Chinstrap     Dream
+335 Chinstrap     Dream
+336 Chinstrap     Dream
+337 Chinstrap     Dream
+338 Chinstrap     Dream
+339 Chinstrap     Dream
+340 Chinstrap     Dream
+341 Chinstrap     Dream
+342 Chinstrap     Dream
+343 Chinstrap     Dream
+344 Chinstrap     Dream
+    bill_length_mm bill_depth_mm
+1             39.1          18.7
+2             39.5          17.4
+3             40.3          18.0
+4               NA            NA
+5             36.7          19.3
+6             39.3          20.6
+7             38.9          17.8
+8             39.2          19.6
+9             34.1          18.1
+10            42.0          20.2
+11            37.8          17.1
+12            37.8          17.3
+13            41.1          17.6
+14            38.6          21.2
+15            34.6          21.1
+16            36.6          17.8
+17            38.7          19.0
+18            42.5          20.7
+19            34.4          18.4
+20            46.0          21.5
+21            37.8          18.3
+22            37.7          18.7
+23            35.9          19.2
+24            38.2          18.1
+25            38.8          17.2
+26            35.3          18.9
+27            40.6          18.6
+28            40.5          17.9
+29            37.9          18.6
+30            40.5          18.9
+31            39.5          16.7
+32            37.2          18.1
+33            39.5          17.8
+34            40.9          18.9
+35            36.4          17.0
+36            39.2          21.1
+37            38.8          20.0
+38            42.2          18.5
+39            37.6          19.3
+40            39.8          19.1
+41            36.5          18.0
+42            40.8          18.4
+43            36.0          18.5
+44            44.1          19.7
+45            37.0          16.9
+46            39.6          18.8
+47            41.1          19.0
+48            37.5          18.9
+49            36.0          17.9
+50            42.3          21.2
+51            39.6          17.7
+52            40.1          18.9
+53            35.0          17.9
+54            42.0          19.5
+55            34.5          18.1
+56            41.4          18.6
+57            39.0          17.5
+58            40.6          18.8
+59            36.5          16.6
+60            37.6          19.1
+61            35.7          16.9
+62            41.3          21.1
+63            37.6          17.0
+64            41.1          18.2
+65            36.4          17.1
+66            41.6          18.0
+67            35.5          16.2
+68            41.1          19.1
+69            35.9          16.6
+70            41.8          19.4
+71            33.5          19.0
+72            39.7          18.4
+73            39.6          17.2
+74            45.8          18.9
+75            35.5          17.5
+76            42.8          18.5
+77            40.9          16.8
+78            37.2          19.4
+79            36.2          16.1
+80            42.1          19.1
+81            34.6          17.2
+82            42.9          17.6
+83            36.7          18.8
+84            35.1          19.4
+85            37.3          17.8
+86            41.3          20.3
+87            36.3          19.5
+88            36.9          18.6
+89            38.3          19.2
+90            38.9          18.8
+91            35.7          18.0
+92            41.1          18.1
+93            34.0          17.1
+94            39.6          18.1
+95            36.2          17.3
+96            40.8          18.9
+97            38.1          18.6
+98            40.3          18.5
+99            33.1          16.1
+100           43.2          18.5
+101           35.0          17.9
+102           41.0          20.0
+103           37.7          16.0
+104           37.8          20.0
+105           37.9          18.6
+106           39.7          18.9
+107           38.6          17.2
+108           38.2          20.0
+109           38.1          17.0
+110           43.2          19.0
+111           38.1          16.5
+112           45.6          20.3
+113           39.7          17.7
+114           42.2          19.5
+115           39.6          20.7
+116           42.7          18.3
+117           38.6          17.0
+118           37.3          20.5
+119           35.7          17.0
+120           41.1          18.6
+121           36.2          17.2
+122           37.7          19.8
+123           40.2          17.0
+124           41.4          18.5
+125           35.2          15.9
+126           40.6          19.0
+127           38.8          17.6
+128           41.5          18.3
+129           39.0          17.1
+130           44.1          18.0
+131           38.5          17.9
+132           43.1          19.2
+133           36.8          18.5
+134           37.5          18.5
+135           38.1          17.6
+136           41.1          17.5
+137           35.6          17.5
+138           40.2          20.1
+139           37.0          16.5
+140           39.7          17.9
+141           40.2          17.1
+142           40.6          17.2
+143           32.1          15.5
+144           40.7          17.0
+145           37.3          16.8
+146           39.0          18.7
+147           39.2          18.6
+148           36.6          18.4
+149           36.0          17.8
+150           37.8          18.1
+151           36.0          17.1
+152           41.5          18.5
+153           46.1          13.2
+154           50.0          16.3
+155           48.7          14.1
+156           50.0          15.2
+157           47.6          14.5
+158           46.5          13.5
+159           45.4          14.6
+160           46.7          15.3
+161           43.3          13.4
+162           46.8          15.4
+163           40.9          13.7
+164           49.0          16.1
+165           45.5          13.7
+166           48.4          14.6
+167           45.8          14.6
+168           49.3          15.7
+169           42.0          13.5
+170           49.2          15.2
+171           46.2          14.5
+172           48.7          15.1
+173           50.2          14.3
+174           45.1          14.5
+175           46.5          14.5
+176           46.3          15.8
+177           42.9          13.1
+178           46.1          15.1
+179           44.5          14.3
+180           47.8          15.0
+181           48.2          14.3
+182           50.0          15.3
+183           47.3          15.3
+184           42.8          14.2
+185           45.1          14.5
+186           59.6          17.0
+187           49.1          14.8
+188           48.4          16.3
+189           42.6          13.7
+190           44.4          17.3
+191           44.0          13.6
+192           48.7          15.7
+193           42.7          13.7
+194           49.6          16.0
+195           45.3          13.7
+196           49.6          15.0
+197           50.5          15.9
+198           43.6          13.9
+199           45.5          13.9
+200           50.5          15.9
+201           44.9          13.3
+202           45.2          15.8
+203           46.6          14.2
+204           48.5          14.1
+205           45.1          14.4
+206           50.1          15.0
+207           46.5          14.4
+208           45.0          15.4
+209           43.8          13.9
+210           45.5          15.0
+211           43.2          14.5
+212           50.4          15.3
+213           45.3          13.8
+214           46.2          14.9
+215           45.7          13.9
+216           54.3          15.7
+217           45.8          14.2
+218           49.8          16.8
+219           46.2          14.4
+220           49.5          16.2
+221           43.5          14.2
+222           50.7          15.0
+223           47.7          15.0
+224           46.4          15.6
+225           48.2          15.6
+226           46.5          14.8
+227           46.4          15.0
+228           48.6          16.0
+229           47.5          14.2
+230           51.1          16.3
+231           45.2          13.8
+232           45.2          16.4
+233           49.1          14.5
+234           52.5          15.6
+235           47.4          14.6
+236           50.0          15.9
+237           44.9          13.8
+238           50.8          17.3
+239           43.4          14.4
+240           51.3          14.2
+241           47.5          14.0
+242           52.1          17.0
+243           47.5          15.0
+244           52.2          17.1
+245           45.5          14.5
+246           49.5          16.1
+247           44.5          14.7
+248           50.8          15.7
+249           49.4          15.8
+250           46.9          14.6
+251           48.4          14.4
+252           51.1          16.5
+253           48.5          15.0
+254           55.9          17.0
+255           47.2          15.5
+256           49.1          15.0
+257           47.3          13.8
+258           46.8          16.1
+259           41.7          14.7
+260           53.4          15.8
+261           43.3          14.0
+262           48.1          15.1
+263           50.5          15.2
+264           49.8          15.9
+265           43.5          15.2
+266           51.5          16.3
+267           46.2          14.1
+268           55.1          16.0
+269           44.5          15.7
+270           48.8          16.2
+271           47.2          13.7
+272             NA            NA
+273           46.8          14.3
+274           50.4          15.7
+275           45.2          14.8
+276           49.9          16.1
+277           46.5          17.9
+278           50.0          19.5
+279           51.3          19.2
+280           45.4          18.7
+281           52.7          19.8
+282           45.2          17.8
+283           46.1          18.2
+284           51.3          18.2
+285           46.0          18.9
+286           51.3          19.9
+287           46.6          17.8
+288           51.7          20.3
+289           47.0          17.3
+290           52.0          18.1
+291           45.9          17.1
+292           50.5          19.6
+293           50.3          20.0
+294           58.0          17.8
+295           46.4          18.6
+296           49.2          18.2
+297           42.4          17.3
+298           48.5          17.5
+299           43.2          16.6
+300           50.6          19.4
+301           46.7          17.9
+302           52.0          19.0
+303           50.5          18.4
+304           49.5          19.0
+305           46.4          17.8
+306           52.8          20.0
+307           40.9          16.6
+308           54.2          20.8
+309           42.5          16.7
+310           51.0          18.8
+311           49.7          18.6
+312           47.5          16.8
+313           47.6          18.3
+314           52.0          20.7
+315           46.9          16.6
+316           53.5          19.9
+317           49.0          19.5
+318           46.2          17.5
+319           50.9          19.1
+320           45.5          17.0
+321           50.9          17.9
+322           50.8          18.5
+323           50.1          17.9
+324           49.0          19.6
+325           51.5          18.7
+326           49.8          17.3
+327           48.1          16.4
+328           51.4          19.0
+329           45.7          17.3
+330           50.7          19.7
+331           42.5          17.3
+332           52.2          18.8
+333           45.2          16.6
+334           49.3          19.9
+335           50.2          18.8
+336           45.6          19.4
+337           51.9          19.5
+338           46.8          16.5
+339           45.7          17.0
+340           55.8          19.8
+341           43.5          18.1
+342           49.6          18.2
+343           50.8          19.0
+344           50.2          18.7
+    flipper_length_mm body_mass_g
+1                 181        3750
+2                 186        3800
+3                 195        3250
+4                  NA          NA
+5                 193        3450
+6                 190        3650
+7                 181        3625
+8                 195        4675
+9                 193        3475
+10                190        4250
+11                186        3300
+12                180        3700
+13                182        3200
+14                191        3800
+15                198        4400
+16                185        3700
+17                195        3450
+18                197        4500
+19                184        3325
+20                194        4200
+21                174        3400
+22                180        3600
+23                189        3800
+24                185        3950
+25                180        3800
+26                187        3800
+27                183        3550
+28                187        3200
+29                172        3150
+30                180        3950
+31                178        3250
+32                178        3900
+33                188        3300
+34                184        3900
+35                195        3325
+36                196        4150
+37                190        3950
+38                180        3550
+39                181        3300
+40                184        4650
+41                182        3150
+42                195        3900
+43                186        3100
+44                196        4400
+45                185        3000
+46                190        4600
+47                182        3425
+48                179        2975
+49                190        3450
+50                191        4150
+51                186        3500
+52                188        4300
+53                190        3450
+54                200        4050
+55                187        2900
+56                191        3700
+57                186        3550
+58                193        3800
+59                181        2850
+60                194        3750
+61                185        3150
+62                195        4400
+63                185        3600
+64                192        4050
+65                184        2850
+66                192        3950
+67                195        3350
+68                188        4100
+69                190        3050
+70                198        4450
+71                190        3600
+72                190        3900
+73                196        3550
+74                197        4150
+75                190        3700
+76                195        4250
+77                191        3700
+78                184        3900
+79                187        3550
+80                195        4000
+81                189        3200
+82                196        4700
+83                187        3800
+84                193        4200
+85                191        3350
+86                194        3550
+87                190        3800
+88                189        3500
+89                189        3950
+90                190        3600
+91                202        3550
+92                205        4300
+93                185        3400
+94                186        4450
+95                187        3300
+96                208        4300
+97                190        3700
+98                196        4350
+99                178        2900
+100               192        4100
+101               192        3725
+102               203        4725
+103               183        3075
+104               190        4250
+105               193        2925
+106               184        3550
+107               199        3750
+108               190        3900
+109               181        3175
+110               197        4775
+111               198        3825
+112               191        4600
+113               193        3200
+114               197        4275
+115               191        3900
+116               196        4075
+117               188        2900
+118               199        3775
+119               189        3350
+120               189        3325
+121               187        3150
+122               198        3500
+123               176        3450
+124               202        3875
+125               186        3050
+126               199        4000
+127               191        3275
+128               195        4300
+129               191        3050
+130               210        4000
+131               190        3325
+132               197        3500
+133               193        3500
+134               199        4475
+135               187        3425
+136               190        3900
+137               191        3175
+138               200        3975
+139               185        3400
+140               193        4250
+141               193        3400
+142               187        3475
+143               188        3050
+144               190        3725
+145               192        3000
+146               185        3650
+147               190        4250
+148               184        3475
+149               195        3450
+150               193        3750
+151               187        3700
+152               201        4000
+153               211        4500
+154               230        5700
+155               210        4450
+156               218        5700
+157               215        5400
+158               210        4550
+159               211        4800
+160               219        5200
+161               209        4400
+162               215        5150
+163               214        4650
+164               216        5550
+165               214        4650
+166               213        5850
+167               210        4200
+168               217        5850
+169               210        4150
+170               221        6300
+171               209        4800
+172               222        5350
+173               218        5700
+174               215        5000
+175               213        4400
+176               215        5050
+177               215        5000
+178               215        5100
+179               216        4100
+180               215        5650
+181               210        4600
+182               220        5550
+183               222        5250
+184               209        4700
+185               207        5050
+186               230        6050
+187               220        5150
+188               220        5400
+189               213        4950
+190               219        5250
+191               208        4350
+192               208        5350
+193               208        3950
+194               225        5700
+195               210        4300
+196               216        4750
+197               222        5550
+198               217        4900
+199               210        4200
+200               225        5400
+201               213        5100
+202               215        5300
+203               210        4850
+204               220        5300
+205               210        4400
+206               225        5000
+207               217        4900
+208               220        5050
+209               208        4300
+210               220        5000
+211               208        4450
+212               224        5550
+213               208        4200
+214               221        5300
+215               214        4400
+216               231        5650
+217               219        4700
+218               230        5700
+219               214        4650
+220               229        5800
+221               220        4700
+222               223        5550
+223               216        4750
+224               221        5000
+225               221        5100
+226               217        5200
+227               216        4700
+228               230        5800
+229               209        4600
+230               220        6000
+231               215        4750
+232               223        5950
+233               212        4625
+234               221        5450
+235               212        4725
+236               224        5350
+237               212        4750
+238               228        5600
+239               218        4600
+240               218        5300
+241               212        4875
+242               230        5550
+243               218        4950
+244               228        5400
+245               212        4750
+246               224        5650
+247               214        4850
+248               226        5200
+249               216        4925
+250               222        4875
+251               203        4625
+252               225        5250
+253               219        4850
+254               228        5600
+255               215        4975
+256               228        5500
+257               216        4725
+258               215        5500
+259               210        4700
+260               219        5500
+261               208        4575
+262               209        5500
+263               216        5000
+264               229        5950
+265               213        4650
+266               230        5500
+267               217        4375
+268               230        5850
+269               217        4875
+270               222        6000
+271               214        4925
+272                NA          NA
+273               215        4850
+274               222        5750
+275               212        5200
+276               213        5400
+277               192        3500
+278               196        3900
+279               193        3650
+280               188        3525
+281               197        3725
+282               198        3950
+283               178        3250
+284               197        3750
+285               195        4150
+286               198        3700
+287               193        3800
+288               194        3775
+289               185        3700
+290               201        4050
+291               190        3575
+292               201        4050
+293               197        3300
+294               181        3700
+295               190        3450
+296               195        4400
+297               181        3600
+298               191        3400
+299               187        2900
+300               193        3800
+301               195        3300
+302               197        4150
+303               200        3400
+304               200        3800
+305               191        3700
+306               205        4550
+307               187        3200
+308               201        4300
+309               187        3350
+310               203        4100
+311               195        3600
+312               199        3900
+313               195        3850
+314               210        4800
+315               192        2700
+316               205        4500
+317               210        3950
+318               187        3650
+319               196        3550
+320               196        3500
+321               196        3675
+322               201        4450
+323               190        3400
+324               212        4300
+325               187        3250
+326               198        3675
+327               199        3325
+328               201        3950
+329               193        3600
+330               203        4050
+331               187        3350
+332               197        3450
+333               191        3250
+334               203        4050
+335               202        3800
+336               194        3525
+337               206        3950
+338               189        3650
+339               195        3650
+340               207        4000
+341               202        3400
+342               193        3775
+343               210        4100
+344               198        3775
+       sex year
+1     male 2007
+2   female 2007
+3   female 2007
+4     &lt;NA&gt; 2007
+5   female 2007
+6     male 2007
+7   female 2007
+8     male 2007
+9     &lt;NA&gt; 2007
+10    &lt;NA&gt; 2007
+11    &lt;NA&gt; 2007
+12    &lt;NA&gt; 2007
+13  female 2007
+14    male 2007
+15    male 2007
+16  female 2007
+17  female 2007
+18    male 2007
+19  female 2007
+20    male 2007
+21  female 2007
+22    male 2007
+23  female 2007
+24    male 2007
+25    male 2007
+26  female 2007
+27    male 2007
+28  female 2007
+29  female 2007
+30    male 2007
+31  female 2007
+32    male 2007
+33  female 2007
+34    male 2007
+35  female 2007
+36    male 2007
+37    male 2007
+38  female 2007
+39  female 2007
+40    male 2007
+41  female 2007
+42    male 2007
+43  female 2007
+44    male 2007
+45  female 2007
+46    male 2007
+47    male 2007
+48    &lt;NA&gt; 2007
+49  female 2007
+50    male 2007
+51  female 2008
+52    male 2008
+53  female 2008
+54    male 2008
+55  female 2008
+56    male 2008
+57  female 2008
+58    male 2008
+59  female 2008
+60    male 2008
+61  female 2008
+62    male 2008
+63  female 2008
+64    male 2008
+65  female 2008
+66    male 2008
+67  female 2008
+68    male 2008
+69  female 2008
+70    male 2008
+71  female 2008
+72    male 2008
+73  female 2008
+74    male 2008
+75  female 2008
+76    male 2008
+77  female 2008
+78    male 2008
+79  female 2008
+80    male 2008
+81  female 2008
+82    male 2008
+83  female 2008
+84    male 2008
+85  female 2008
+86    male 2008
+87    male 2008
+88  female 2008
+89    male 2008
+90  female 2008
+91  female 2008
+92    male 2008
+93  female 2008
+94    male 2008
+95  female 2008
+96    male 2008
+97  female 2008
+98    male 2008
+99  female 2008
+100   male 2008
+101 female 2009
+102   male 2009
+103 female 2009
+104   male 2009
+105 female 2009
+106   male 2009
+107 female 2009
+108   male 2009
+109 female 2009
+110   male 2009
+111 female 2009
+112   male 2009
+113 female 2009
+114   male 2009
+115 female 2009
+116   male 2009
+117 female 2009
+118   male 2009
+119 female 2009
+120   male 2009
+121 female 2009
+122   male 2009
+123 female 2009
+124   male 2009
+125 female 2009
+126   male 2009
+127 female 2009
+128   male 2009
+129 female 2009
+130   male 2009
+131 female 2009
+132   male 2009
+133 female 2009
+134   male 2009
+135 female 2009
+136   male 2009
+137 female 2009
+138   male 2009
+139 female 2009
+140   male 2009
+141 female 2009
+142   male 2009
+143 female 2009
+144   male 2009
+145 female 2009
+146   male 2009
+147   male 2009
+148 female 2009
+149 female 2009
+150   male 2009
+151 female 2009
+152   male 2009
+153 female 2007
+154   male 2007
+155 female 2007
+156   male 2007
+157   male 2007
+158 female 2007
+159 female 2007
+160   male 2007
+161 female 2007
+162   male 2007
+163 female 2007
+164   male 2007
+165 female 2007
+166   male 2007
+167 female 2007
+168   male 2007
+169 female 2007
+170   male 2007
+171 female 2007
+172   male 2007
+173   male 2007
+174 female 2007
+175 female 2007
+176   male 2007
+177 female 2007
+178   male 2007
+179   &lt;NA&gt; 2007
+180   male 2007
+181 female 2007
+182   male 2007
+183   male 2007
+184 female 2007
+185 female 2007
+186   male 2007
+187 female 2008
+188   male 2008
+189 female 2008
+190   male 2008
+191 female 2008
+192   male 2008
+193 female 2008
+194   male 2008
+195 female 2008
+196   male 2008
+197   male 2008
+198 female 2008
+199 female 2008
+200   male 2008
+201 female 2008
+202   male 2008
+203 female 2008
+204   male 2008
+205 female 2008
+206   male 2008
+207 female 2008
+208   male 2008
+209 female 2008
+210   male 2008
+211 female 2008
+212   male 2008
+213 female 2008
+214   male 2008
+215 female 2008
+216   male 2008
+217 female 2008
+218   male 2008
+219   &lt;NA&gt; 2008
+220   male 2008
+221 female 2008
+222   male 2008
+223 female 2008
+224   male 2008
+225   male 2008
+226 female 2008
+227 female 2008
+228   male 2008
+229 female 2008
+230   male 2008
+231 female 2008
+232   male 2008
+233 female 2009
+234   male 2009
+235 female 2009
+236   male 2009
+237 female 2009
+238   male 2009
+239 female 2009
+240   male 2009
+241 female 2009
+242   male 2009
+243 female 2009
+244   male 2009
+245 female 2009
+246   male 2009
+247 female 2009
+248   male 2009
+249   male 2009
+250 female 2009
+251 female 2009
+252   male 2009
+253 female 2009
+254   male 2009
+255 female 2009
+256   male 2009
+257   &lt;NA&gt; 2009
+258   male 2009
+259 female 2009
+260   male 2009
+261 female 2009
+262   male 2009
+263 female 2009
+264   male 2009
+265 female 2009
+266   male 2009
+267 female 2009
+268   male 2009
+269   &lt;NA&gt; 2009
+270   male 2009
+271 female 2009
+272   &lt;NA&gt; 2009
+273 female 2009
+274   male 2009
+275 female 2009
+276   male 2009
+277 female 2007
+278   male 2007
+279   male 2007
+280 female 2007
+281   male 2007
+282 female 2007
+283 female 2007
+284   male 2007
+285 female 2007
+286   male 2007
+287 female 2007
+288   male 2007
+289 female 2007
+290   male 2007
+291 female 2007
+292   male 2007
+293   male 2007
+294 female 2007
+295 female 2007
+296   male 2007
+297 female 2007
+298   male 2007
+299 female 2007
+300   male 2007
+301 female 2007
+302   male 2007
+303 female 2008
+304   male 2008
+305 female 2008
+306   male 2008
+307 female 2008
+308   male 2008
+309 female 2008
+310   male 2008
+311   male 2008
+312 female 2008
+313 female 2008
+314   male 2008
+315 female 2008
+316   male 2008
+317   male 2008
+318 female 2008
+319   male 2008
+320 female 2008
+321 female 2009
+322   male 2009
+323 female 2009
+324   male 2009
+325   male 2009
+326 female 2009
+327 female 2009
+328   male 2009
+329 female 2009
+330   male 2009
+331 female 2009
+332   male 2009
+333 female 2009
+334   male 2009
+335   male 2009
+336 female 2009
+337   male 2009
+338 female 2009
+339 female 2009
+340   male 2009
+341 female 2009
+342   male 2009
+343   male 2009
+344 female 2009
+```
+
+---
+class: middle
+
+# If you're teaching a tidyverse centric course, you'll get tibbles 
+
+
+```
+# A tibble: 344 × 8
+   species island   bill_length_mm
+   &lt;fct&gt;   &lt;fct&gt;             &lt;dbl&gt;
+ 1 Adelie  Torgers…           39.1
+ 2 Adelie  Torgers…           39.5
+ 3 Adelie  Torgers…           40.3
+ 4 Adelie  Torgers…           NA  
+ 5 Adelie  Torgers…           36.7
+ 6 Adelie  Torgers…           39.3
+ 7 Adelie  Torgers…           38.9
+ 8 Adelie  Torgers…           39.2
+ 9 Adelie  Torgers…           34.1
+10 Adelie  Torgers…           42  
+# … with 334 more rows, and 5
+#   more variables:
+#   bill_depth_mm &lt;dbl&gt;,
+#   flipper_length_mm &lt;int&gt;,
+#   body_mass_g &lt;int&gt;, sex &lt;fct&gt;,
+#   year &lt;int&gt;
+```
+
+.footnote[Thanks to [Hadley Wickham!](https://github.com/allisonhorst/palmerpenguins/pull/25)]
+
+---
+exclude: true
+
+We learn better from 'ingroup' members:
+
+&gt; Babies as young as 14 months will prefer to imitate the novel actions of people who speak their own language, over a foreign-language speaker.
+
+.footnote[https://pubmed.ncbi.nlm.nih.gov/33203741/; https://pubmed.ncbi.nlm.nih.gov/23006251/; https://pubmed.ncbi.nlm.nih.gov/21159092/]
+
+---
+class: middle, center, inverse
+
+![](https://media.giphy.com/media/26tOY7amTI3QyIbZe/giphy.gif)
+
+---
+class: section, middle, center
+background-image: url(images/distill.png)
+background-size: 15%
+background-position: bottom, center
+
+.frame[
+# Be an advocate
+]
+
+--
+
+# Case study #2: `distill`
+
+---
+background-image: url(images/distill-theme.png)
+background-position: bottom, center 
+background-size: 75%
+class: top, center
+
+# Issue #19
+
+---
+class: middle, center, inverse
+
+# "The default website"
+
+![](https://media.giphy.com/media/10ngGQdSSV7EZ2/giphy.gif)
+
+---
+class: middle
+
+So we knew this was a problem.
+
+--
+
+And we thought if we could do a good job on this it would matter.
+
+--
+
+It would *also* make distill content more accessible (allowing users to increase font size and color contrast).
+
+
+---
+class: middle
+
+.panelset[
+.panel[.panel-name[Default]
+
+![](https://rstudio.github.io/distill/images/theme-before.png)
+
+]
+
+.panel[.panel-name[Themed]
+
+![](https://rstudio.github.io/distill/images/theme-after.png)
+]
+]
+
+---
+class: center, inverse, middle
+
+# Footage from the Hugo theme testing laboratory, pre-`rstudio::global`
+
+--
+
+![](https://media.giphy.com/media/PW24kUmUv3vlm/giphy.gif)
+
+---
+name: postcard
+background-image: url(images/postcard.jpg)
+background-size: 50%
+background-color: white
+background-position: left
+class: middle
+
+---
+template: postcard
+
+.pull-right[
+
+&gt; "Create simple, beautiful personal websites and landing pages using only R Markdown."
+&gt;
+&gt; [Sean Kross](https://github.com/seankross/postcards)
+
+]
+
+---
+template: postcard
+
+.pull-right[
+
+Distill is a package that *also* helps you make simple, beautiful websites and blogs using only R Markdown.
+
+Distill + postcards are [M-F-E-O](https://alison.rbind.io/post/2020-12-22-postcards-distill/)
+
+]
+
+---
+background-image: url(images/anyene.png)
+background-size: contain
+background-position: middle, center
+
+---
+background-image: url(images/preu.png)
+background-size: contain
+background-position: middle, center
+
+---
+background-image: url(images/laderas.png)
+background-size: contain
+background-position: middle, center
+
+---
+class: middle, center, inverse
+
+![](https://media.giphy.com/media/j4s6M0gYs5fUs/giphy.gif)
+
+---
+class: top, center
+background-image: url(images/blogdown.jpg)
+background-size: 63%
+background-position: bottom, center
+
+.frame[
+# Case study #3: `blogdown`
+]
+
+???
+
+
+3 acknowledge (reliable -&gt; trust; is there a "credible" effect here "I'm a reliable expert"; what is hard is hard, what you think is easy...is "easy"?) blogdown checks
+
+---
+
+&lt;img src="figs/cran-cum-1.png" width="100%" /&gt;
+
+
+
+---
+class: middle, center
+
+# What is hard about blogdown?
+
+--
+
+[I asked this in 2018](https://community.rstudio.com/t/what-is-hard-about-blogdown/8108/24).
+
+--
+
+I was *really* wrong. 
+
+--
+
+What is really hard about blogdown is that it is scary.
+
+![](https://media.giphy.com/media/OqqL7hw2U4dSo/giphy.gif)
+
+---
+class: center, inverse, middle
+
+# Troubleshooting blogdown sites
+
+![](https://media.giphy.com/media/4d8cNCXRnr2pO/giphy.gif)
+
+
+
+---
+class: section, middle, center
+
+.frame[
+# Be an accomplice
+]
+
+
+
+---
+class: middle
+
+# ✈️ Pre-flight checks
+
+
+```r
+library(blogdown)
+
+# kitchen sink
+check_site()
+
+# one at a time
+check_config()
+check_gitignore()
+check_hugo()
+check_netlify()
+check_content()
+```
+
+--
+
+.footnote[[PR](https://github.com/rstudio/blogdown/pull/534); [issue](https://github.com/rstudio/blogdown/issues/510); [post](https://alison.rbind.io/post/2020-12-27-blogdown-checks/)]
+
+---
+class: middle
+
+.panelset[
+.panel[.panel-name[Before]
+
+```{.r}
+blogdown:::serve_site()
+
+--------------------------------------------------------------------------------
+You are recommended to ignore more items in the 'ignoreFiles' field in config.toml: "\\.Rmd$", "\\.Rmarkdown$", "\\.knit\\.md$", "\\.utf8\\.md$"
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+You are recommended to remove the item '_files$' in the 'ignoreFiles' field in config.toml.
+--------------------------------------------------------------------------------
+```
+
+]
+
+.panel[.panel-name[Check]
+
+```{.r}
+blogdown::check_config()
+
+― Checking config.toml
+| Checking "baseURL" setting for Hugo...
+○ Found baseURL = "https://alison.rbind.io"; nothing to do here!
+| Checking "ignoreFiles" setting for Hugo...
+● [TODO] Add these items to the "ignoreFiles" setting: "\\.Rmd$", "\\.Rmarkdown$", "\\.knit\\.md$", "\\.utf8\\.md$"
+| Checking setting for Hugo's Markdown renderer...
+○ All set! Found the "unsafe" setting for goldmark.
+― Check complete: config.toml
+```
+]
+]
+
+---
+class: middle
+
+.panelset[
+.panel[.panel-name[Before]
+
+```{.r}
+The 'publish' setting in 'netlify.toml' is 'public/' but the publish dir in the Hugo config file is 'public'. You may want to change the former to the latter.
+```
+
+]
+
+.panel[.panel-name[Check]
+
+```{.r}
+blogdown::check_netlify()
+
+― Checking netlify.toml...
+○ Found HUGO_VERSION = 0.79.0 in [build] context of netlify.toml.
+| Checking that Netlify &amp; local Hugo versions match...
+○ It's a match! Blogdown and Netlify are using the same Hugo version (0.79.0).
+| Checking that Netlify &amp; local Hugo publish directories match...
+○ Good to go - blogdown and Netlify are using the same publish directory: public
+― Check complete: netlify.toml
+```
+]
+]
+
+---
+class: middle
+
+.panelset[
+.panel[.panel-name[Before]
+
+```{.r}
+The date of the post is in the future: '2025-01-01'. See https://github.com/rstudio/blogdown/issues/377 for consequences.
+To turn off this warning, set options(blogdown.warn.future = FALSE).
+```
+]
+
+
+.panel[.panel-name[Check]
+
+```{.r}
+blogdown::check_content()
+
+― Checking content files
+| Checking for previewed content that will not be published...
+● [TODO] Found 1 file with a future publish date:
+
+  content/talk/2021-rstudio-global/index.md
+
+  If you want to publish today, change a file's YAML key to 'date: 2020-12-27'
+○ Found 0 files marked as drafts.
+| Checking your R Markdown content...
+○ All R Markdown files have been knitted.
+○ All R Markdown output files are up to date with their source files.
+| Checking for .html/.md files to clean up...
+○ Found 0 duplicate .html output files.
+○ Found 0 incompatible .html files to clean up.
+― Check complete: Content
+```
+]
+]
+
+---
+
+# On design
+
+&gt; "In Japan and Korea, the ○ mark is used instead of the check mark, and the X or ✓ mark are commonly used for wrong."
+&gt;
+&gt; [Wikipedia](https://en.wikipedia.org/wiki/Check_mark)
+
+--
+
+```{.r}
+----------------------------------------------------------
+○ A successful check looks like this.
+● [TODO] A check that needs your attention looks like this.
+| Let's check out your blogdown site!
+----------------------------------------------------------
+```
+
+And we managed to avoid ✗ shapes, which always port you back to 5th grade math.
+
+
+
+---
+class: middle
+
+&gt; I can understand exactly what's being checked, I'm able to follow along with what's going on behind the scenes with each step, and I understand what I need to do next. What a difference! These messages are so much more helpful and clear -- I am so impressed!
+
+--
+
+&gt; Really enjoy the encouraging console output that accompanies the new blogdown::check_site() function.
+
+--
+
+&gt; I can't get over how great all the checks are in the new version of #blogdown. Wow. #RStats
+
+--
+
+&gt; Also blogdown::check_site() is a lifesaver for debugging your site
+
+--
+
+&gt; A friend of mine recently ran blogdown::check_config() and thanks to the messaging was able to fix some critical things that had been causing her (and me, by association!) some major confusion and headaches. Hurray! 
+
+--
+
+&gt; I feel empowered to continue using blogdown.
+
+---
+class: middle, center, inverse
+
+
+&lt;video width="300" height="400" controls&gt;
+  &lt;source src="images/gitignore.mp4" type="video/mp4"&gt;
+Your browser does not support the video tag.
+&lt;/video&gt; 
+
+---
+template: kind-tools
+
+---
+name: goodbye
+class: bottom
+background-color: #fad662
+
+.pull-left[
+### Sincere thanks to:
++ Allison Horst,
++ Kristen Gorman,
++ JJ Allaire,
++ Christophe Dervieux, 
++ Rich Iannone,
++ Charles Teague,
++ Hadley Wickham, and 
++ Yihui Xie.
+]
+
+
+.pull-right[
+.right[
+&lt;img style="border-radius: 50%;" src="https://github.com/apreshill.png" width="150px"/&gt;
+
+# Thank you!
+
+### Find me at...
+
+[<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg> @apreshill](http://twitter.com/apreshill)  
+[<svg aria-hidden="true" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> @apreshill](http://github.com/apreshill)  
+[<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg> alison.rbind.io](https://alison.rbind.io)  
+]
+]
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n",
+"highlightStyle": "solarized-light",
+"highlightLanguage": ["r", "css", "yaml"],
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
