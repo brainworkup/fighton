@@ -17,28 +17,10 @@
     "body": "$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE",
     "description": "time"
   },
-  "symlink": {
-    "prefix": "symlink",
-    "scope": "markdown,yaml,r,rmd",
-    "body": ["ln -shfi /Users/joey/${1:from}/ /Users/joey/${2:to}"],
-    "description": "create symlink"
-  },
   "tag": {
     "prefix": "#",
     "scope": "markdown,yaml",
     "body": "[[#${1:my-tag}|tag.${1}]]",
     "description": "tag"
-  },
-  "double dash": {
-    "prefix": "dd",
-    "scope": "markdown,revealjs,js",
-    "body": "--",
-    "description": "double dash for revealjs"
-  },
-  "triple dash": {
-    "prefix": "ddd",
-    "scope": "markdown,revealjs,js",
-    "body": "---",
-    "description": "triple dash for revealjs"
   }
 }
