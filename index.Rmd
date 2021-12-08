@@ -10,7 +10,8 @@ date: "2021-11-09"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: ["assets/css/xaringan-themer.css", "assets/css/style.css"]
+    css: xaringan-themer2.css
+    #css: ["assets/css/xaringan-themer.css", "assets/css/style.css"]
     chakra: libs/remark-latest.min.js
     nature:
       highlightStyle: monokai
@@ -35,26 +36,8 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+## load libraries
 library(knitr)
-options(htmltools.dir.version = FALSE)
-knitr::opts_chunk$set(
-  fig.path = "figs/",
-  fig.retina = 3,
-  fig.asp = .5,
-  out.width = "100%",
-  fig.showtext = TRUE,
-  comment = NULL,
-  cache = FALSE,
-  cache.path = "cache/",
-  echo = FALSE,
-  message = FALSE, 
-  warning = FALSE,
-  dev = c("svg", "svglite"),
-  hiline = TRUE
-)
-```
-
-```{r xaringan-themer, include=FALSE, warning=FALSE, message=FALSE}
 library(xaringan)
 library(xaringanExtra)
 library(xaringanBuilder)
@@ -73,19 +56,48 @@ library(manipulateWidget)
 library(tibble)
 library(svglite)
 
+## knitr options
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.path = "figs/",
+  fig.width = 9,
+  fig.height = 3.5,
+  fig.asp = .5, # might not work
+  fig.retina = 3,
+  out.width = "100%",
+  fig.showtext = TRUE,
+  comment = NULL,
+  cache = FALSE,
+  cache.path = "cache/",
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  dev = c("svg", "svglite"),
+  hiline = TRUE
+)
+```
+
+```{r mono-accent, eval=F, include=F}
 # theme/style
 style_mono_accent(
-  base_color = "#690f0d",               # bright red
+  base_color = "#690f0d", # bright red
   inverse_background_color = "#002B36", # dark dark blue
-  inverse_header_color = "#31b09e",     # light aqua green
-  inverse_text_color = "#FFFFFF",       # white
+  inverse_header_color = "#31b09e", # light aqua green
+  inverse_text_color = "#FFFFFF", # white
   title_slide_background_color = "var(--base)",
-  #text_font_google = google_font("Latin Modern Mono"),
-  #text_font_google = google_font("Kelly Slab"),
-  #header_font_google = google_font("Major Mono Display")
-  #header_font_google = google_font("Monoton")
+  text_font_google = google_font("Latin Modern Mono"),
+  # text_font_google = google_font("Kelly Slab"),
+  # header_font_google = google_font("Major Mono Display")
+  header_font_google = google_font("Monoton")
 )
+```
 
+```{r duo-accent, include=F}
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF"
+)
 style_xaringan(
   text_font_family = "Droid Serif",
   text_font_url = "https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic",
@@ -94,14 +106,12 @@ style_xaringan(
 ```
 
 ```{r xaringan-extra, include=FALSE}
-xaringanExtra::use_panelset()
-xaringanExtra::use_tile_view()
-xaringanExtra::use_editable(expires = 1)
-xaringanExtra::use_animate_css()
-xaringanExtra::use_tachyons()
+xaringanExtra::use_xaringan_extra(c("tile_view", "animate_css", "tachyons"))
+xaringanExtra::use_broadcast()
+# xaringanExtra::use_slide_tone()
 xaringanExtra::use_scribble()
+xaringanExtra::use_panelset()
 xaringanExtra::use_webcam()
-xaringanExtra::use_clipboard()
 htmltools::tagList(
   xaringanExtra::use_clipboard(
     button_text = "<i class=\"fa fa-clipboard\"></i>",
@@ -114,13 +124,10 @@ xaringanExtra::style_panelset_tabs(font_family = "inherit")
 xaringanExtra::use_freezeframe()
 xaringanExtra::use_fit_screen()
 xaringanExtra::use_extra_styles(
-  hover_code_line = TRUE,         #<<
-  mute_unhighlighted_code = TRUE  #<<
+  hover_code_line = TRUE, #<<
+  mute_unhighlighted_code = TRUE #<<
 )
-xaringanExtra::use_progress_bar(color = "#478ce6", location = "top")
-xaringanExtra::use_logo(
-  image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png"
-)
+xaringanExtra::use_progress_bar(color = "#0051BA", location = "top")
 ```
 
 ```{r broadcast}
@@ -166,61 +173,6 @@ If you cannot explain something in simple terms, you don't understand it.
 .center[![:scale 50%](images/jerry_maguire.gif)]
 
 ---
-class: middle, left, inverse
-
-# Data science
-
-.left[
-
-![:scale 45%](images/computer.gif)
-
-]
-
----
-
-[`r fontawesome::fa("github")` @brainworkup](https://github.com/brainworkup)    
-[`r fontawesome::fa("twitter")` @brainworkup](https://twitter.com/brainworkup)   
-[`r fontawesome::fa("link")` brainworkup.io](https://brainworkup.io)
-
----
-class: fat-font left middle
-
-
-1.
-
-
----
-class: fat-font right middle
-
-
-2.
-
-
----
-class: fat-font right middle
-
-#### inattention
-
-3.
-
----
-class: fat-font right middle
-
-4.
-
----
-class: section, middle, center
-
-.frame[
-# In the beginning...
-]
-
---
-
-## There were tools.
-
----
-
 class: inverse left middle
 .footnote[.red.bold[*] Important footnote]
 
@@ -233,7 +185,31 @@ This .big[kid] has ADHD.
 ???
 
 80HD
+---
+class: middle, left, inverse
 
+# Data science
+
+.left[
+
+![:scale 45%](images/computer.gif)
+
+]
+
+
+---
+class: left middle
+
+
+.big[3.]
+#### inattention
+
+---
+class: section right middle
+
+.big[4.]
+
+### hyperactivity
 
 ---
 class: inverse, middle
@@ -300,65 +276,30 @@ class: inverse, middle
 ]
 
 ---
-class: middle, inverse, center
-
-You may be thinking of yourself more as a tool-user
-
---
-
-But today I want you to think about yourself as the tool-maker
-
---
-
-Are you making a kind tool? 
-
---
-
-What makes a tool kind?
-
---
-
-Does it matter?
-
----
-class: section, middle, center
-
-.frame[
-# Bringing the `r emo::ji("fire")`
-]
-
---
-
-# Teaching tidymodels to *beginners*
-
----
 name: bell
+class: left, middle, fullscale, inverse
 background-image: url(images/7-emot-laughing-crying.gif)
 background-position: 50% 50%
 background-size: 100%
-class: left, middle, fullscale, inverse
+font-family: metal-mania
 
-```{css, eval=TRUE, echo = FALSE}
-body {
-  font-family: 'Latin Modern Mono';
-  color: black;
-}
-```
-
+# 1.
 
 .pull-left[
 
-> **Emotion**
+> **Emotion** `r emo::ji("fire")`
 >
 > **(Dys)Regulation**
 > 
-> in
+> **in**
 >
 > **ADHD**
 > 
 > Not part of DSM/ICD diagnostic criteria 
 >
-> .big[BUT] core feature of disorder
+> .big[BUT] ...
+>
+> ... a core feature of the disorder 
 
 ]
 
@@ -367,6 +308,33 @@ body {
 
 This is recognized on most rating scales
 
+
+---
+class: section, middle, center
+
+.frame[
+# Read these words as fast as you can
+]
+
+--
+
+# .blue[RED]
+
+--
+
+# .yellow[GREEN]
+
+--
+
+# .red[BLUE] 
+
+--
+
+# .green[YELLOW]
+
+???
+
+This is how we test it
 
 ---
 class: middle center animated slideInRight fadeOutLeft
@@ -390,8 +358,7 @@ knitr::include_graphics("images/plot_broad.png", auto_pdf = TRUE)
 ---
 
 ## Highcharte`R` Drilldown
-
-### z-Scores (M = 0, SD = 1)
+##### Z-scores (Mean = 0, SD = 1)
 
 ```{r}
 patient <- "Biggie"
@@ -404,12 +371,6 @@ neurocog <- read_csv("neurocog.csv")
 ```
 
 ```{r}
-library(highcharter)
-library(tidyverse)
-library(htmlwidgets)
-library(widgetframe)
-library(crosstalk)
-library(manipulateWidget)
 colors <-
   c(
     "#058DC7",
@@ -417,131 +378,214 @@ colors <-
     "#ED561B",
     "#DDDF00",
     "#24CBE5",
-    "#64E572"
-# "#FF9655",
-# "#FFF263",
-# "#6AF9C4"
+    "#64E572",
+    "#FF9655",
+    "#FFF263",
+    "#6AF9C4"
   )
 ```
 
-```{r drillz-data-tidy}
-ncogz <- neurocog %>%
-  group_by(domain) %>%
-  summarize(zMean = mean(z)
-  )
-ncogz <- arrange(ncogz, desc(zMean))
-
+```{r cog}
 ## Level 1
-ncogL1statusz <- tibble(
-  name = ncogz$domain,
-  y = ncogz$zMean,
-  drilldown = tolower(name)
+## Domain scores
+# 1. create mean z-scores for domain
+ncog1 <- neurocog %>%
+  group_by(domain) %>%
+  summarize(
+    zMean = mean(z),
+    zPct = mean(percentile),
+    range1 = range
   )
-ncogL1statusz$y <- round(ncogL1statusz$y, 1)
+
+# 2. sort hi to lo
+ncog1 <- arrange(ncog1, desc(zMean))
+
+# 3. create tibble with new column with domain name lowercase
+ncogL1status <- tibble(
+  name = ncog1$domain,
+  y = ncog1$zMean,
+  y2 = ncog1$zPct,
+  drilldown = tolower(name)
+)
+
+# 4. round z-score to 1 decimal
+ncogL1status$y <- round(ncogL1status$y, 1)
+ncogL1status$y2 <- round(ncogL1status$y2, 0)
 
 ## Level 2
-ncogL2drillz <- lapply(unique(neurocog$domain), function(x_level) {
-  ncog2z <- subset(neurocog, neurocog$domain %in% x_level)
-  ncog2z <- ncog2z %>%
-    group_by(subdomain) %>%
-    summarize(zMean = mean(z))
-  ncog2z <- arrange(ncog2z, desc(zMean)) ### CHECK
-  ncogL2zstatus <- tibble(name = ncog2z$subdomain, y = ncog2z$zMean, drilldown = tolower(paste(x_level, name, sep = "_")))
-  list(id = tolower(x_level), type = "column", data = list_parse(ncogL2zstatus))
-})
+## Subdomain scores
+## function to create second level of drilldown (subdomain scores)
+ncogL2drill <-
+  lapply(unique(neurocog$domain), function(x_level) {
+    # 1. create mean z-scores for domain
+    # ncog2 becomes pronoun for neurocog
+    ncog2 <- subset(neurocog, neurocog$domain %in% x_level)
 
-## Level 3
-ncogL3drillz <- lapply(unique(neurocog$domain), function(x_level) {
-  ncog2z <- subset(neurocog, neurocog$domain %in% x_level)
-  lapply(unique(ncog2z$subdomain), function(y_level) {
-    ncog3z <- subset(ncog2z, ncog2z$subdomain %in% y_level)
-    # ncog3 <- ncog2[ncog2$subdomain == y_level,]
-    ncog3z <- ncog3z %>%
-      group_by(narrow) %>%
-      summarize(zMean = mean(z))
-    ncog3z <- arrange(ncog3z, desc(zMean))
-    ncogL3zstatus <- tibble(name = ncog3z$narrow, y = ncog3z$zMean, drilldown = tolower(paste(x_level, y_level, name, sep = "_")))
-    list(id = tolower(paste(x_level, y_level, sep = "_")), type = "column", data = list_parse(ncogL3zstatus))
+    # same as above
+    ncog2 <- ncog2 %>%
+      group_by(subdomain) %>%
+      summarize(zMean = mean(z), zPct = mean(percentile))
+
+    # 2. sort hi to lo
+    ncog2 <- arrange(ncog2, desc(zMean))
+
+    # 3. create tibble with new column with domain name lowercase
+    ncogL2status <- tibble(
+      name = ncog2$subdomain,
+      y = ncog2$zMean,
+      y2 = ncog2$zPct,
+      drilldown = tolower(paste(x_level, name, sep = "_"))
+    )
+
+    # 4. round z-score to 1 decimal
+    ncogL2status$y <- round(ncogL2status$y, 1)
+    ncogL2status$y2 <- round(ncogL2status$y2, 0)
+
+    list(
+      id = tolower(x_level),
+      type = "column",
+      data = list_parse(ncogL2status)
+    )
   })
-}) %>% unlist(recursive = FALSE)
+## Level 3
+## Narrow subdomain
+## reuse function
+ncogL3drill <-
+  lapply(unique(neurocog$domain), function(x_level) {
+    ncog2 <-
+      subset(neurocog, neurocog$domain %in% x_level) # make sure this should be domain and not subdomain
 
-## Level 4
-ncogL4drillz <- lapply(unique(neurocog$domain), function(x_level) {
-  ncog2z <- subset(neurocog, neurocog$domain %in% x_level)
-  # ncog2 <- neurocog[neurocog$domain == x_level,]
-  lapply(unique(ncog2z$subdomain), function(y_level) {
-    ncog3z <- subset(ncog2z, ncog2z$subdomain %in% y_level)
-    # ncog3 <- ncog2[ncog2$subdomain == y_level,]
-    lapply(unique(ncog3z$narrow), function(z_level) {
-      ncog4z <- subset(ncog3z, ncog3z$narrow %in% z_level)
-      # ncog4 <- ncog3[ncog3$narrow == z_level,]
-      ncog4z <- ncog4z %>%
-        group_by(scale) %>%
-        summarize(zMean = mean(z))
-      ncog4z <- arrange(ncog4z, desc(zMean))
-      ncogL4zstatus <- tibble(name = ncog4z$scale, y = ncog4z$zMean)
-      list(id = tolower(paste(x_level, y_level, z_level, sep = "_")), type = "column", data = list_parse2(ncogL4zstatus))
+    # reuse function but with y_level
+    lapply(unique(ncog2$subdomain), function(y_level) {
+      # 1. create mean z-scores for subdomain
+      # ncog3 becomes pronoun for domain
+      ncog3 <- subset(ncog2, ncog2$subdomain %in% y_level)
+
+      ncog3 <- ncog3 %>%
+        group_by(narrow) %>%
+        summarize(zMean = mean(z), zPct = mean(percentile))
+
+      ncog3 <- arrange(ncog3, desc(zMean))
+
+      ncogL3status <- tibble(
+        name = ncog3$narrow,
+        y = ncog3$zMean,
+        y2 = ncog3$zPct,
+        drilldown = tolower(paste(x_level, y_level, name, sep = "_"))
+      )
+
+      ncogL3status$y <- round(ncogL3status$y, 1)
+      ncogL3status$y2 <- round(ncogL3status$y2, 0)
+
+      list(
+        id = tolower(paste(x_level, y_level, sep = "_")),
+        type = "column",
+        data = list_parse(ncogL3status)
+      )
     })
   }) %>% unlist(recursive = FALSE)
-}) %>% unlist(recursive = FALSE)
+
+## Level 4
+## Scale scores
+ncogL4drill <-
+  lapply(unique(neurocog$domain), function(x_level) {
+    ncog2 <- subset(neurocog, neurocog$domain %in% x_level)
+
+    lapply(unique(ncog2$subdomain), function(y_level) {
+      ncog3 <- subset(ncog2, ncog2$subdomain %in% y_level)
+
+      lapply(unique(ncog3$narrow), function(z_level) {
+        ncog4 <- subset(ncog3, ncog3$narrow %in% z_level)
+
+        ncog4 <- ncog4 %>%
+          group_by(scale) %>%
+          summarize(zMean = mean(z), zPct = mean(percentile))
+
+        ncog4 <- arrange(ncog4, desc(zMean))
+
+        ncogL4status <- tibble(
+          name = ncog4$scale,
+          y = ncog4$zMean,
+          y2 = ncog4$zPct
+        )
+
+        ncogL4status$y <- round(ncogL4status$y, 1)
+        ncogL4status$y2 <- round(ncogL4status$y2, 0)
+
+        list(
+          id = tolower(paste(x_level, y_level, z_level, sep = "_")),
+          type = "column",
+          data = list_parse2(ncogL4status)
+        )
+      })
+    }) %>% unlist(recursive = FALSE)
+  }) %>% unlist(recursive = FALSE)
 ```
 
-```{r drillz-tt}
-ncogL1statusz <- ncogL1statusz %>%
-  dplyr::mutate(
-    rangez = case_when(
-      y >= 2.0 ~ "Exceptionally High",
-      y %in% 1.3:1.9 ~ "Above Average",
-      y %in% 0.7:1.2 ~ "High-Average",
-      y %in% -0.7:0.6 ~ "Average",
-      y %in% -1.3:-0.6 ~ "Low-Average",
-      y %in% -2.0:-1.4 ~ "Below Average",
-      y < -2.0 ~ "Exceptionally Low"
+
+```{r drillz-tooltip, fig.cap='Drilldown Neuropsych zScores', fig.width=12, fig.height=8, fig.retina=3, out.width = "100%"}
+## for Tooltip
+
+ncogL1status <- ncogL1status %>%
+  mutate(
+    range = case_when(
+      y >= 1.9 ~ "Exceptionally High",
+      y == 1.5 ~ "Above Average",
+      y == 1.4 ~ "Above Average",
+      y == 1.2 ~ "High-Average",
+      y == 1.1 ~ "High-Average",
+      y == .7 ~ "High-Average",
+      y == .2 ~ "Average",
+      y == .0 ~ "Average",
+      y == -.6 ~ "Low-Average"
     )
   )
-x <- c("Name", "Score", "Range")
-y <- c("{point.name}", "{point.y}", "{point.rangez}")
-tt <- tooltip_table(x, y)
-```
 
-```{r drillz-plot, fig.width=12, fig.height=8, fig.retina=3, out.width = "100%"}
+x <- c("Name", "Score", "Percentile", "Range")
+y <- c("{point.name}", "{point.y}", "{point.y2}", "{point.range}")
+tt <- tooltip_table(x, y)
+
+# Create drilldown bar plot zscores
 p1 <-
   highchart() %>%
-    hc_title(text = patient, style = list(fontSize = "15px")) %>%
-    hc_add_series(
-      ncogL1statusz,
-      type = "bar",
-      name = "Neuropsychological Test Scores",
-      hcaes(x = name, y = y, color = colors)
-    ) %>%
-    hc_xAxis(
-      type = "category",
-      title = list(text = "Domain"),
-      categories = .$name
-    ) %>%
-    hc_yAxis(
-      title = list(text = "z-score"),
-      labels = list(format = "{value}")
-    ) %>%
-    hc_tooltip(
-      pointFormat = tt,
-      useHTML = TRUE,
-      valueDecimals = 1
-    ) %>%
-    hc_plotOptions(
-      series = list(
-        colorByPoint = TRUE,
-        allowPointSelect = TRUE,
-        dataLabels = TRUE
-      )
-    ) %>%
-    hc_drilldown(
-      allowPointDrilldown = TRUE,
-      series = c(ncogL2drillz, ncogL3drillz, ncogL4drillz)
+  hc_title(
+    text = patient,
+    style = list(fontSize = "15px")
+  ) %>%
+  hc_add_series(
+    ncogL1status,
+    type = "bar",
+    name = "Neuropsychological Test Scores",
+    hcaes(x = name, y = y)
+  ) %>%
+  hc_xAxis(
+    type = "category",
+    title = list(text = "Domain"),
+    categories = .$name
+  ) %>%
+  hc_yAxis(
+    title = list(text = "z-score"),
+    labels = list(format = "{value}")
+  ) %>%
+  hc_tooltip(
+    pointFormat = tt,
+    useHTML = TRUE,
+    valueDecimals = 1
+  ) %>%
+  hc_plotOptions(
+    series = list(
+      colorByPoint = TRUE,
+      allowPointSelect = TRUE,
+      dataLabels = TRUE
     )
+  ) %>%
+  hc_drilldown(
+    allowPointDrilldown = TRUE,
+    series = c(ncogL2drill, ncogL3drill, ncogL4drill)
+  ) %>%
+  hc_add_theme(hc_theme_smpl())
 p1
 ```
-
 
 ---
 
@@ -556,7 +600,7 @@ library(reactable)
 # this is a very ugly way of creating a data.frame with lists
 df1 <- data.frame(
   Group = LETTERS[1:5],
-  Line =- NA,
+  Line = -NA,
   Bar = NA,
   stringsAsFactors = FALSE
 )
@@ -585,7 +629,7 @@ rt1 <- reactable(
     Bar = colDef(
       cell = function(value, index) {
         dui_sparkline(
-          data = hist(value[[1]], breaks=bins, plot=FALSE)$density,
+          data = hist(value[[1]], breaks = bins, plot = FALSE)$density,
           height = 80,
           component = dui_sparkbarseries()
         )
@@ -597,60 +641,20 @@ rt1
 ```
 
 
-```{r xaringan-themer-2}
-style_mono_accent(
-  base_color = "#DC322F",               # bright red
-  inverse_background_color = "#002B36", # dark dark blue
-  inverse_header_color = "#31b09e",     # light aqua green
-  inverse_text_color = "#FFFFFF",       # white
-  title_slide_background_color = "var(--base)",
-  text_font_google = google_font("Kelly Slab"),
-  header_font_google = google_font("Oleo Script")
-)
-```
-
-```{r xaringan-themer-3}
-mono <- tempfile("mono-", fileext = ".css")
-style_mono_accent(
-  base_color = "#DC322F",               # bright red
-  inverse_background_color = "#002B36", # dark dark blue
-  inverse_header_color = "#31b09e",     # light aqua green
-  inverse_text_color = "#FFFFFF",       # white
-  title_slide_background_color = "var(--base)",
-  text_font_google = google_font("Kelly Slab"),
-  header_font_google = google_font("Oleo Script"),
-  outfile = mono
-)
-#file.edit(mono)
-```
-
 ---
 
 #### Basic plot with default theme
 
 ```{r}
 library(ggplot2)
-g_base <- ggplot(mpg) + 
-  aes(hwy, cty) + 
+g_base <- ggplot(mpg) +
+  aes(hwy, cty) +
   geom_point() +
   labs(x = "Highway MPG", y = "City MPG", title = "Fuel Efficiency")
 g_base
 ```
 
 ---
-
-#### Fancy slide-matching themed plot
-
-```{r}
-g_base + theme_xaringan()
-```
-
-
----
-
-```{r}
-theme_xaringan_restore_defaults()
-```
 
 #### Another fancy plot
 
@@ -668,26 +672,14 @@ theme_xaringan_restore_defaults()
 
 ---
 
-#### A fancy alpha plot
-
-```{r}
-ggplot(diamonds, aes(x = cut)) +
-  geom_bar(aes(fill = ..count..), show.legend = FALSE) +
-  labs(x = NULL, y = "Count", title = "Diamond Cut Quality") +
-  theme_xaringan() +
-  scale_xaringan_fill_continuous()
-```
-
-
----
-
 #### With values
 
 ```{r}
-g_diamonds_with_text <- 
-  g_diamonds + 
+g_diamonds_with_text <-
+  g_diamonds +
   geom_text(aes(y = ..count.., label = format(..count.., big.mark = ",")),
-            vjust = -0.30, size = 8, stat = "count") +
+    vjust = -0.30, size = 8, stat = "count"
+  ) +
   labs(x = "Cut", y = "Count")
 g_diamonds_with_text + theme_xaringan()
 ```
@@ -705,39 +697,19 @@ g_diamonds_with_text +
   )
 ```
 
----
-class: middle
-
-# 5 things
-
-- 1
-
---
-
-- 2
-
---
-
-- 3
-
---
-
-- 4
-
---
-
-
-- 5
 
 ---
-name: rogers
-background-image: url(images/rogers.jpg)
-background-size: cover
-class: inverse, middle
+name: snoop
+class: middle, right
+background-image: url(images/snoop.gif)
+background-color: #FFFFFF
+background-size: auto
+font-family: metal-mania
+font-style: bold
+font-weight: 600
 
----
-template: rogers
 
+.pull-right[
 "There are three ways to ultimate success:
 
 The first way is to be kind.
@@ -746,13 +718,24 @@ The second way is to be kind.
 
 The third way is to be kind."
 
+]
 
-.footnote[[Source](https://jasonstcyr.com/2019/11/27/building-trust-have-you-been-kind-today/)]
 
 ---
 class: left
 
-# Thanks!
+.pull-left[
+### Sincere thanks to:
++ Dr Almashat,
++ Dr 2,
+]
+
+[`r fontawesome::fa("github")` @brainworkup](https://github.com/brainworkup)
+[`r fontawesome::fa("twitter")` @brainworkup](https://twitter.com/brainworkup)   
+[`r fontawesome::fa("link")` brainworkup.io](https://brainworkup.io)
+
+## Happy New Year!
+
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 When something is important enough, 
 you do it even if the odds are not in your favor.
@@ -761,4 +744,5 @@ you do it even if the odds are not in your favor.
 — Someone
 ]]
 
-![:scale 25%](images/my-octocat.png)
+![:scale 25%](images/daftpunktocat-guy.gif)
+
