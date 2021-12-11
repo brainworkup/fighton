@@ -10,8 +10,8 @@ date: "2021-11-09"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: xaringan-themer2.css
-    #css: ["assets/css/xaringan-themer.css", "assets/css/style.css"]
+    #css: xaringan-themer2.css
+    css: ["assets/css/xaringan-themer.css", "assets/css/style.css"]
     chakra: libs/remark-latest.min.js
     nature:
       highlightStyle: monokai
@@ -202,7 +202,7 @@ class: left middle
 
 
 .big[3.]
-#### inattention
+### inattention
 
 ---
 class: section right middle
@@ -283,7 +283,7 @@ background-position: 50% 50%
 background-size: 100%
 font-family: metal-mania
 
-# 1.
+# Emotional Control
 
 .pull-left[
 
@@ -293,7 +293,7 @@ font-family: metal-mania
 > 
 > **in**
 >
-> **ADHD**
+> **ADHD:**
 > 
 > Not part of DSM/ICD diagnostic criteria 
 >
@@ -316,25 +316,93 @@ class: section, middle, center
 # Read these words as fast as you can
 ]
 
---
+---
+class: left
 
-# .blue[RED]
-
---
-
-# .yellow[GREEN]
-
---
-
-# .red[BLUE] 
+.frame[
+# RED
+]
 
 --
 
-# .green[YELLOW]
+.frame[
+# GREEN
+]
+
+--
+
+.frame[
+# BLUE 
+]
+
+
+--
+
+.frame[
+# YELLOW
+
+---
+class: left
+
+.frame[
+# RED
+]
+
+--
+
+.frame[
+# GREEN
+]
+
+--
+
+.frame[
+# BLUE 
+]
+
+
+--
+
+.frame[
+# YELLOW
+
+
+]
 
 ???
 
 This is how we test it
+
+---
+class: section, middle, center
+
+.frame[
+# .blue[RED]
+]
+
+--
+
+.frame[
+# .yellow[GREEN]
+]
+
+--
+
+.frame[
+# .red[BLUE] 
+]
+
+
+--
+
+.frame[
+# .green[YELLOW]
+]
+
+???
+
+This is how we test it
+
 
 ---
 class: middle center animated slideInRight fadeOutLeft
@@ -745,4 +813,3 @@ you do it even if the odds are not in your favor.
 ]]
 
 ![:scale 25%](images/daftpunktocat-guy.gif)
-
