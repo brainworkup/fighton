@@ -6,12 +6,12 @@ role: "Della Martin Assistant Professor of Psychiatry"
 institute: 
   - "USC Keck School of Medicine"
   - "Department of Psychiatry and the Behavioral Sciences"
-date: "2021-11-09"
+date: "2021-12-21"
 output:
   xaringan::moon_reader:
     lib_dir: libs
     #css: xaringan-themer2.css
-    css: ["assets/css/xaringan-themer.css", "assets/css/style.css"]
+    css: ["default", "assets/css/fighton-fonts.css", "assets/css/fighton-theme.css", "assets/css/fighton-style.css"]
     chakra: libs/remark-latest.min.js
     nature:
       highlightStyle: monokai
@@ -77,7 +77,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r mono-accent, eval=F, include=F}
+```{r mono-accent, eval=T, include=F}
 # theme/style
 style_mono_accent(
   base_color = "#690f0d", # bright red
@@ -87,28 +87,18 @@ style_mono_accent(
   title_slide_background_color = "var(--base)",
   text_font_google = google_font("Latin Modern Mono"),
   # text_font_google = google_font("Kelly Slab"),
-  # header_font_google = google_font("Major Mono Display")
-  header_font_google = google_font("Monoton")
+  #header_font_google = google_font("Yanone Kaffeesatz")
+  header_font_google = google_font("Major Mono Display")
+  #header_font_google = google_font("Monoton")
 )
 ```
 
-```{r duo-accent, include=F}
-style_duo_accent(
-  primary_color = "#1381B0",
-  secondary_color = "#FF961C",
-  inverse_header_color = "#FFFFFF"
-)
-style_xaringan(
-  text_font_family = "Droid Serif",
-  text_font_url = "https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic",
-  header_font_google = google_font("Yanone Kaffeesatz")
-)
-```
-
-```{r xaringan-extra, include=FALSE}
-xaringanExtra::use_xaringan_extra(c("tile_view", "animate_css", "tachyons"))
+```{r xaringan-extra, include=F}
+xaringanExtra::use_animate_css()
+xaringanExtra::embed_xaringan("https://brainworkup.github.io/fighton")
+xaringanExtra::use_tachyons()
+xaringanExtra::use_tile_view()
 xaringanExtra::use_broadcast()
-# xaringanExtra::use_slide_tone()
 xaringanExtra::use_scribble()
 xaringanExtra::use_panelset()
 xaringanExtra::use_webcam()
@@ -129,11 +119,7 @@ xaringanExtra::use_extra_styles(
 )
 xaringanExtra::use_progress_bar(color = "#0051BA", location = "top")
 ```
-
-```{r broadcast}
-xaringanExtra::use_broadcast()
-```
-name: tittle
+name: title
 class: title-slide, left, middle
 background-image: url("images/daftpunktocat-thomas.gif")
 background-position: right
@@ -174,6 +160,7 @@ If you cannot explain something in simple terms, you don't understand it.
 
 ---
 class: inverse left middle
+type: exclaim
 .footnote[.red.bold[*] Important footnote]
 
 # ADHD
@@ -199,7 +186,11 @@ class: middle, left, inverse
 
 ---
 class: left middle
-
+body {
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
+}
 
 .big[3.]
 ### inattention
@@ -281,7 +272,6 @@ class: left, middle, fullscale, inverse
 background-image: url(images/7-emot-laughing-crying.gif)
 background-position: 50% 50%
 background-size: 100%
-font-family: metal-mania
 
 # Emotional Control
 
@@ -317,7 +307,7 @@ class: section, middle, center
 ]
 
 ---
-class: left
+class: section, middle, center
 
 .frame[
 # RED
@@ -340,33 +330,38 @@ class: left
 
 .frame[
 # YELLOW
+
+
+]
+
+???
+
+This is how we test it
 
 ---
-class: left
+class: section, middle, center
 
 .frame[
-# RED
+# .red[RED]
 ]
 
 --
 
 .frame[
-# GREEN
+# .green[GREEN]
 ]
 
 --
 
 .frame[
-# BLUE 
+# .blue[BLUE] 
 ]
 
 
 --
 
 .frame[
-# YELLOW
-
-
+# .yellow[YELLOW]
 ]
 
 ???

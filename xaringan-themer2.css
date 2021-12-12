@@ -67,11 +67,13 @@ body {
   font-weight: normal;
   color: var(--text-color);
 }
+
 h1, h2, h3 {
   font-family: var(--header-font-family), var(--header-font-family-fallback);
   font-weight: 600;
   color: var(--header-color);
 }
+
 .remark-slide-content {
   background-color: var(--background-color);
   font-size: 1rem;
@@ -130,15 +132,58 @@ a, a > code {
 .inverse a, .inverse a > code {
   color: var(--inverse-link-color);
 }
+
+/* hold out 
 .title-slide, .title-slide h1, .title-slide h2, .title-slide h3 {
   color: var(--title-slide-text-color);
 }
 .title-slide {
   background-color: var(--title-slide-background-color);
 }
+
 .title-slide .remark-slide-number {
   display: none;
+} */
+
+
+.title-slide h1 {
+  font-family: "Monoton", serif;
+  color: var(--independence);
+  font-size: 3em;
+  word-wrap: break-word;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  margin-bottom: 1em !important;
 }
+
+.title-slide h2 {
+  font-family: "Petrona", serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: var(--independence);
+  text-shadow: none;
+  font-style: italic;
+  line-height: 2em;
+  margin-bottom: 1em !important;
+}
+
+.title-slide h3 {
+  font-family: "Bitter", sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  color: var(--independence);
+  text-transform: none;
+}
+
+.title-slide a {
+  color: var(--independence);
+}
+
+.title-slide a:hover {
+  color: #fff;
+}
+
+
 /* Two-column layout */
 .left-column {
   width: 20%;
@@ -265,5 +310,3 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
     left: 0 !important;
   }
 }
-
-

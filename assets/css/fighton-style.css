@@ -1,0 +1,28 @@
+div.FOO {
+  font-weight: bold;
+  color: red;
+}
+
+.big {
+  font-size: 2.8em;
+  font-style: italic;
+  color: seagreen;
+}
+
+.big-text {
+  font-size: 3em !important;
+}
+
+.fat-font {
+  font-family: Monoton;
+  font-size: 600px;
+  color: chartreuse;
+}
+
+p.a {
+  font: 20px Arial, sans-serif;
+}
+
+p.b {
+  font: italic small-caps bold 12px/30px Georgia, serif;
+}
