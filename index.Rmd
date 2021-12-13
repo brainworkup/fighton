@@ -77,10 +77,10 @@ knitr::opts_chunk$set(
 )
 
 # for fonts
-library(showtext)
-font_add_google("Monoton", "Latin Modern Mono")
-showtext_auto()
-theme_set(theme_minimal(base_family = "Latin Modern Mono"))
+# library(showtext)
+# font_add_google("Monoton", "Latin Modern Mono")
+# showtext_auto()
+# theme_set(theme_minimal(base_family = "Latin Modern Mono"))
 ```
 
 ```{r mono-accent, eval=F, include=F}
@@ -139,15 +139,15 @@ background-color: #7899d4ff
 
 ## `r rmarkdown::metadata$subtitle`
 
-### `r rmarkdown::metadata$author`
+#### `r rmarkdown::metadata$author`
 
-### `r rmarkdown::metadata$role`
+#### `r rmarkdown::metadata$role`
 
-### `r rmarkdown::metadata$date`
+#### `r rmarkdown::metadata$date`
 ]
 
 ---
-class: middle, center, inverse
+class: middle, center
 
 # .big-text[Hello.]
 
@@ -172,7 +172,7 @@ type: exclaim
 
 ## ADHD
 
-This .big[kid] has ADHD.
+What do I know about .big[ADHD]
 
 .right[![:scale 40%](images/dinotocat.png)]
 
@@ -728,7 +728,7 @@ g_base
 
 #### Another fancy plot
 
-```{r}
+```{r eval=F}
 g_diamonds <- ggplot(diamonds, aes(x = cut)) +
   geom_bar() +
   labs(x = NULL, y = NULL, title = "Diamond Cut Quality") +
@@ -744,7 +744,7 @@ theme_xaringan_restore_defaults()
 
 #### With values
 
-```{r}
+```{r eval=F}
 g_diamonds_with_text <-
   g_diamonds +
   geom_text(aes(y = ..count.., label = format(..count.., big.mark = ",")),
@@ -759,7 +759,7 @@ g_diamonds_with_text + theme_xaringan()
 
 #### Metal Mania
 
-```{r}
+```{r eval=F}
 g_diamonds_with_text +
   theme_xaringan(
     text_font = google_font("New Rocker"),

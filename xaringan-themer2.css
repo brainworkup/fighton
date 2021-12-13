@@ -136,15 +136,17 @@ a, a > code {
 /* hold out 
 .title-slide, .title-slide h1, .title-slide h2, .title-slide h3 {
   color: var(--title-slide-text-color);
-}
+} */
+
+/*
 .title-slide {
   background-color: var(--title-slide-background-color);
-}
+}*/
 
+/*
 .title-slide .remark-slide-number {
   display: none;
 } */
-
 
 .title-slide h1 {
   font-family: "Monoton", serif;
