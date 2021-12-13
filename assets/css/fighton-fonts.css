@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,300;1,300;1,600&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Cabin:600,600i&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap);
 
 body {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: 'Yanone Kaffeesatz', Prompt, sans-serif;
   font-weight: 400;
   color: var(--independence);
 }
@@ -21,7 +21,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Metal Mania', sans-serif;
+  font-family: 'Monoton', sans-serif;
   text-transform: uppercase;
   font-weight: 300;
   color: var(--china-rose);
@@ -29,7 +29,7 @@ h3 {
 }
 
 h4, h5, h6 {
-  font-family: 'New Rocker', sans-serif;
+  font-family: 'Monoton', sans-serif;
   font-weight: 400;
   color: var(--china-rose);
 }
@@ -41,6 +41,7 @@ h4, h5, h6 {
 
 @media print {
   body {
-    font-family: 'Bitter', sans-serif;
+    font-family: 'Prompt', sans-serif;
     font-weight: 400;
+}
 }

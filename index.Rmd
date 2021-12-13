@@ -75,9 +75,15 @@ knitr::opts_chunk$set(
   dev = c("svg", "svglite"),
   hiline = TRUE
 )
+
+# for fonts
+library(showtext)
+font_add_google("Monoton", "Latin Modern Mono")
+showtext_auto()
+theme_set(theme_minimal(base_family = "Latin Modern Mono"))
 ```
 
-```{r mono-accent, eval=T, include=F}
+```{r mono-accent, eval=F, include=F}
 # theme/style
 style_mono_accent(
   base_color = "#690f0d", # bright red
@@ -95,7 +101,7 @@ style_mono_accent(
 
 ```{r xaringan-extra, include=F}
 xaringanExtra::use_animate_css()
-xaringanExtra::embed_xaringan("https://brainworkup.github.io/fighton")
+xaringanExtra::embed_xaringan("https://brainworkup.github.io/fighton/#1")
 xaringanExtra::use_tachyons()
 xaringanExtra::use_tile_view()
 xaringanExtra::use_broadcast()
@@ -119,6 +125,7 @@ xaringanExtra::use_extra_styles(
 )
 xaringanExtra::use_progress_bar(color = "#0051BA", location = "top")
 ```
+
 name: title
 class: title-slide, left, middle
 background-image: url("images/daftpunktocat-thomas.gif")
@@ -163,7 +170,7 @@ class: inverse left middle
 type: exclaim
 .footnote[.red.bold[*] Important footnote]
 
-# ADHD
+## ADHD
 
 This .big[kid] has ADHD.
 
@@ -175,7 +182,7 @@ This .big[kid] has ADHD.
 ---
 class: middle, left, inverse
 
-# Data science
+## Data science
 
 .left[
 
@@ -205,12 +212,12 @@ class: section right middle
 ---
 class: inverse, middle
 
-# Neurocognitive deficits related to adhd
+## Neurocognitive deficits related to adhd
 
 .panelset[
 .panel[.panel-name[Working Memory]
 
-## Working Memory
+### Working Memory
 
 - Remembering things short term memory
 

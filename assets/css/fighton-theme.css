@@ -7,6 +7,9 @@
   --orchid-pink: #ffc6d9ff;
   --cultured: #fcfaf9ff;
   --ming: #246a73ff;
+  --cool-black: #202123;
+  --cool-white: #B8BCC2;
+  --primary-color: #EA80FC;
 }
 
 .remark-slide-content p,
@@ -24,13 +27,13 @@ ul li::marker {
 blockquote {
   border-left: solid 5px var(--china-rose);
   font-style: italic;
-  background-color: var(--orchid-pink);
+  background-color: var(--cultured);
   padding: 2em;
   color: var(--independence);
 }
 
 .remark-slide-content {
-  background-color: var(--cultured);
+  background-color: var(--cool-white);
 }
 
 .footnote {
@@ -100,7 +103,7 @@ a:focus {
 }
 
 .inverse {
-  background-color: var(--china-rose);
+  background-color: var(--cool-black);
   color: #fff;
   text-shadow: none;
 }
@@ -108,7 +111,7 @@ a:focus {
 .inverse h1,
 .inverse h2,
 .inverse h3 {
-  color: var(--orchid-pink);
+  color: var(--cool-black);
 }
 
 .inverse h4 {
@@ -124,7 +127,7 @@ a:focus {
 }
 
 .inverse a:hover {
-  color: var(--orchid-pink);
+  color: var(--cool-black);
 }
 
 /* Two-column layout */
@@ -222,7 +225,7 @@ tr:nth-child(even) {
 }
 
 .title-slide h3 {
-  font-family: "Metal Mania", sans-serif;
+  font-family: "Monoton", sans-serif;
   font-weight: 400;
   font-size: 1.3em;
   color: var(--independence);
@@ -238,8 +241,8 @@ tr:nth-child(even) {
 }
 
 .section {
-  background-color: var(--marigold);
-  color: var(--independence);
+  background-color: var(--cool-black);
+  color: var(--cool-white);
 }
 
 .frame h1 {
