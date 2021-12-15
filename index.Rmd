@@ -11,7 +11,7 @@ output:
   xaringan::moon_reader:
     lib_dir: libs
     #css: xaringan-themer2.css
-    css: ["default", "assets/css/fighton-fonts.css", "assets/css/fighton-theme.css", "assets/css/fighton-style.css"]
+    css: ["assets/css/fighton-fonts.css", "assets/css/fighton-theme.css"]
     chakra: libs/remark-latest.min.js
     nature:
       highlightStyle: monokai
@@ -75,27 +75,15 @@ knitr::opts_chunk$set(
   dev = c("svg", "svglite"),
   hiline = TRUE
 )
-
-# for fonts
-# library(showtext)
-# font_add_google("Monoton", "Latin Modern Mono")
-# showtext_auto()
-# theme_set(theme_minimal(base_family = "Latin Modern Mono"))
 ```
 
-```{r mono-accent, eval=F, include=F}
+```{r mono-accent, include=F}
 # theme/style
 style_mono_accent(
   base_color = "#690f0d", # bright red
   inverse_background_color = "#002B36", # dark dark blue
   inverse_header_color = "#31b09e", # light aqua green
   inverse_text_color = "#FFFFFF", # white
-  title_slide_background_color = "var(--base)",
-  text_font_google = google_font("Latin Modern Mono"),
-  # text_font_google = google_font("Kelly Slab"),
-  #header_font_google = google_font("Yanone Kaffeesatz")
-  header_font_google = google_font("Major Mono Display")
-  #header_font_google = google_font("Monoton")
 )
 ```
 
@@ -123,7 +111,7 @@ xaringanExtra::use_extra_styles(
   hover_code_line = TRUE, #<<
   mute_unhighlighted_code = TRUE #<<
 )
-xaringanExtra::use_progress_bar(color = "#0051BA", location = "top")
+# xaringanExtra::use_progress_bar(color = "#0051BA", location = "top", height = "10px")
 ```
 
 name: title
@@ -139,23 +127,24 @@ background-color: #7899d4ff
 
 ## `r rmarkdown::metadata$subtitle`
 
-#### `r rmarkdown::metadata$author`
+### `r rmarkdown::metadata$author`
 
-#### `r rmarkdown::metadata$role`
+### `r rmarkdown::metadata$role`
 
-#### `r rmarkdown::metadata$date`
+### `r rmarkdown::metadata$date`
 ]
 
 ---
 class: middle, center
 
-# .big-text[Hello.]
+### .big-text[Hello.]
 
 ???
 
 We grew since 2018
 
 ---
+class: middle, center, inverse
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 If you cannot explain something in simple terms, you don't understand it.
 
@@ -166,23 +155,27 @@ If you cannot explain something in simple terms, you don't understand it.
 .center[![:scale 50%](images/jerry_maguire.gif)]
 
 ---
-class: inverse left middle
+class: left, middle
 type: exclaim
-.footnote[.red.bold[*] Important footnote]
-
-## ADHD
 
 What do I know about .big[ADHD]
 
 .right[![:scale 40%](images/dinotocat.png)]
 
+.footnote[.red.bold[*] Important footnote]
+
+[`r fontawesome::fa("github")` @brainworkup](https://github.com/brainworkup)
+[`r fontawesome::fa("twitter")` @brainworkup](https://twitter.com/brainworkup)   
+[`r fontawesome::fa("link")` brainworkup.io](https://brainworkup.io)
+
 ???
 
 80HD
----
-class: middle, left, inverse
 
-## Data science
+---
+class: middle, left
+
+## Data Science
 
 .left[
 
@@ -190,34 +183,70 @@ class: middle, left, inverse
 
 ]
 
+---
+class: center middle
+
+.big[1.]
+
+## inattention
 
 ---
-class: left middle
-body {
-  font-family: 'Tangerine', serif;
-  font-size: 48px;
-  text-shadow: 4px 4px 4px #aaa;
-}
+class: center middle
+
+.big[2.]
+
+## hyperactivity
+
+---
+class: center middle
 
 .big[3.]
-### inattention
+
+## impulsivity
 
 ---
-class: section right middle
+class: center middle
 
 .big[4.]
 
-### hyperactivity
+## working memory
+
+---
+class: center middle
+
+.big[5.]
+
+## stimulus boundness
+
+
+---
+class: middle center
+color: white
+
+##### .big[Clinical ADHD vs Cognitive ADHD]
+
+.pull-left.white[
+#### inattention
+#### hyperactivity
+#### impulsivity
+]
+
+.pull-right.white[
+#### working memory
+#### response variability
+#### stimulus boundness
+]
+
 
 ---
 class: inverse, middle
 
-## Neurocognitive deficits related to adhd
+### Neurocognitive deficits related to adhd
 
 .panelset[
 .panel[.panel-name[Working Memory]
 
-### Working Memory
+#### Working Memory
 
 - Remembering things short term memory
 
@@ -230,7 +259,7 @@ class: inverse, middle
 
 .panel[.panel-name[Processing Speed]
 
-## Processing Speed
+#### Processing Speed
 
 - Rate of test taking
 
@@ -244,11 +273,9 @@ class: inverse, middle
 
 .panel[.panel-name[Response Variability]
 
-## Response Variability
+#### Response Variability
 
 - Reaction time variability
-    1. too fast
-    1. too slow
 
 - Response consistency
 
@@ -260,7 +287,7 @@ class: inverse, middle
 
 .panel[.panel-name[Inhibitory Control]
 
-## Inhibitory Control
+#### Inhibitory Control
 
 - Go/No-Go performance
 
@@ -275,12 +302,12 @@ class: inverse, middle
 
 ---
 name: bell
-class: left, middle, fullscale, inverse
+class: left, middle, fullscale
 background-image: url(images/7-emot-laughing-crying.gif)
 background-position: 50% 50%
 background-size: 100%
 
-# Emotional Control
+## Emotional Control
 
 .pull-left[
 
@@ -296,79 +323,47 @@ background-size: 100%
 >
 > .big[BUT] ...
 >
-> ... a core feature of the disorder 
-
-]
-
-
-???
-
-This is recognized on most rating scales
-
-
----
-class: section, middle, center
-
-.frame[
-# Read these words as fast as you can
-]
-
----
-class: section, middle, center
-
-.frame[
-# RED
-]
-
---
-
-.frame[
-# GREEN
-]
-
---
-
-.frame[
-# BLUE 
-]
-
-
---
-
-.frame[
-# YELLOW
-
+> ... a core feature of the disorder
 
 ]
 
 ???
 
-This is how we test it
+This is recognized on most rating scales e.g., brown
 
 ---
-class: section, middle, center
+class: middle, center
 
 .frame[
-# .red[RED]
+### Read these words as fast as you can
+]
+
+---
+class: middle, center
+
+.frame[
+### RED
 ]
 
 --
 
 .frame[
-# .green[GREEN]
+### GREEN
 ]
 
 --
 
 .frame[
-# .blue[BLUE] 
+### BLUE 
 ]
 
 
 --
 
 .frame[
-# .yellow[YELLOW]
+### YELLOW
+
+
 ]
 
 ???
@@ -376,49 +371,85 @@ class: section, middle, center
 This is how we test it
 
 ---
-class: section, middle, center
+class: middle, center
 
 .frame[
-# .blue[RED]
+### .red[RED]
 ]
 
 --
 
 .frame[
-# .yellow[GREEN]
+### .green[GREEN]
 ]
 
 --
 
 .frame[
-# .red[BLUE] 
+### .blue[BLUE] 
 ]
 
 
 --
 
 .frame[
-# .green[YELLOW]
+### .yellow[YELLOW]
 ]
 
 ???
 
 This is how we test it
 
+---
+class: middle, center
+
+.frame[
+## .blue[RED]
+]
+
+--
+
+.frame[
+## .yellow[GREEN]
+]
+
+--
+
+.frame[
+## .red[BLUE] 
+]
+
+
+--
+
+.frame[
+## .green[YELLOW]
+]
+
+???
+
+This is how we test it
 
 ---
-class: middle center animated slideInRight fadeOutLeft
+name: agenda
+class: middle, center
 
-## Distribution of Scores: _Population-level Interpretation_
+# Agenda
+
+The .big-text[name] of this slide is {{ name }}.
+---
+class: middle center inverse animated slideInRight fadeOutLeft
+
+### Distribution of Scores: _Population-level Interpretation_
 
 ```{r gauss-plot1, fig.cap='Statistical classification of neuropsychological test scores in the general population.', fig.retina=3, fig.asp=0.5, out.width = '50%'}
 knitr::include_graphics("images/plot_narrow.png", auto_pdf = TRUE)
 ```
 
 ---
-class: middle center animated slideInLeft fadeOutRight 
+class: middle center inverse animated slideInLeft fadeOutRight 
 
-## Distribution of Scores: _Clinical Interpretation_
+### Distribution of Scores: _Clinical Interpretation_
 
 ```{r gauss-plot2, fig.cap='General clinical interpretation of performance for individual test scores and broader neuropsychological domains.', fig.retina=3, fig.asp=0.5, out.width = '50%'}
 # change these to match if necessary
@@ -426,9 +457,10 @@ knitr::include_graphics("images/plot_broad.png", auto_pdf = TRUE)
 ```
 
 ---
+class: inverse middle center
 
-## Highcharte`R` Drilldown
-##### Z-scores (Mean = 0, SD = 1)
+### Highcharte`R` Drilldown
+### Z-scores (Mean = 0, SD = 1)
 
 ```{r}
 patient <- "Biggie"
@@ -592,7 +624,6 @@ ncogL4drill <-
   }) %>% unlist(recursive = FALSE)
 ```
 
-
 ```{r drillz-tooltip, fig.cap='Drilldown Neuropsych zScores', fig.width=12, fig.height=8, fig.retina=3, out.width = "100%"}
 ## for Tooltip
 
@@ -657,116 +688,6 @@ p1 <-
 p1
 ```
 
----
-
-# R `dataui` package 
-
-```{r}
-library(dataui)
-library(reactable)
-```
-
-```{r}
-# this is a very ugly way of creating a data.frame with lists
-df1 <- data.frame(
-  Group = LETTERS[1:5],
-  Line = -NA,
-  Bar = NA,
-  stringsAsFactors = FALSE
-)
-df1$Line <- lapply(1:5, function(x) list(runif(30)))
-df1$Bar <- lapply(1:5, function(x) list(rnorm(40, mean = x, sd = 2)))
-
-# to use same x scale we will calculate bins and use later
-bins <- hist(unlist(df1$Bar), breaks = 20, plot = FALSE)$breaks
-
-rt1 <- reactable(
-  df1,
-  columns = list(
-    Line = colDef(
-      # use reactable very convenient conversion of htmlwidgets
-      #  we will focus on this in another article
-      #  more details on custom rendering
-      #  https://glin.github.io/reactable/articles/custom-rendering.html
-      cell = function(value, index) {
-        dui_sparkline(
-          data = value[[1]], # because we gave it a list use [[1]]
-          height = 80, # we will want to be specific here
-          components = dui_sparklineseries()
-        )
-      }
-    ),
-    Bar = colDef(
-      cell = function(value, index) {
-        dui_sparkline(
-          data = hist(value[[1]], breaks = bins, plot = FALSE)$density,
-          height = 80,
-          component = dui_sparkbarseries()
-        )
-      }
-    )
-  )
-)
-rt1
-```
-
-
----
-
-#### Basic plot with default theme
-
-```{r}
-library(ggplot2)
-g_base <- ggplot(mpg) +
-  aes(hwy, cty) +
-  geom_point() +
-  labs(x = "Highway MPG", y = "City MPG", title = "Fuel Efficiency")
-g_base
-```
-
----
-
-#### Another fancy plot
-
-```{r eval=F}
-g_diamonds <- ggplot(diamonds, aes(x = cut)) +
-  geom_bar() +
-  labs(x = NULL, y = NULL, title = "Diamond Cut Quality") +
-  ylim(0, 25000)
-g_diamonds + theme_xaringan()
-```
-
-```{r}
-theme_xaringan_restore_defaults()
-```
-
----
-
-#### With values
-
-```{r eval=F}
-g_diamonds_with_text <-
-  g_diamonds +
-  geom_text(aes(y = ..count.., label = format(..count.., big.mark = ",")),
-    vjust = -0.30, size = 8, stat = "count"
-  ) +
-  labs(x = "Cut", y = "Count")
-g_diamonds_with_text + theme_xaringan()
-```
-
-
----
-
-#### Metal Mania
-
-```{r eval=F}
-g_diamonds_with_text +
-  theme_xaringan(
-    text_font = google_font("New Rocker"),
-    title_font = google_font("Metal Mania")
-  )
-```
-
 
 ---
 name: snoop
@@ -779,7 +700,8 @@ font-style: bold
 font-weight: 600
 
 
-.pull-right[
+
+.pull-right.white[
 "There are three ways to ultimate success:
 
 The first way is to be kind.
@@ -792,26 +714,40 @@ The third way is to be kind."
 
 
 ---
-class: left
-
-.pull-left[
-### Sincere thanks to:
-+ Dr Almashat,
-+ Dr 2,
-]
-
-[`r fontawesome::fa("github")` @brainworkup](https://github.com/brainworkup)
-[`r fontawesome::fa("twitter")` @brainworkup](https://twitter.com/brainworkup)   
-[`r fontawesome::fa("link")` brainworkup.io](https://brainworkup.io)
-
-## Happy New Year!
-
-.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
-When something is important enough, 
-you do it even if the odds are not in your favor.
-
-.tr[
-— Someone
-]]
 
 ![:scale 25%](images/daftpunktocat-guy.gif)
+
+---
+<form class="pa4">
+  <fieldset id="favorite_movies" class="bn">
+    <legend class="fw7 mb2">Favorite Movies</legend>
+    <div class="flex items-center mb2">
+      <input class="mr2" type="checkbox" id="spacejam" value="spacejam">
+      <label for="spacejam" class="lh-copy">Space Jam</label>
+    </div>
+    <div class="flex items-center mb2">
+      <input class="mr2" type="checkbox" id="airbud" value="airbud">
+      <label for="airbud" class="lh-copy">Air Bud</label>
+    </div>
+    <div class="flex items-center mb2">
+      <input class="mr2" type="checkbox" id="hocuspocus" value="hocuspocus">
+      <label for="hocuspocus" class="lh-copy">Hocus Pocus</label>
+    </div>
+    <div class="flex items-center mb2">
+      <input class="mr2" type="checkbox" id="diehard" value="diehard">
+      <label for="diehard" class="lh-copy">Die Hard</label>
+    </div>
+    <div class="flex items-center mb2">
+      <input class="mr2" type="checkbox" id="primer" value="primer">
+      <label for="primer" class="lh-copy">Primer</label>
+    </div>
+    <div class="flex items-center mb2">
+      <input class="mr2" type="checkbox" id="proxy" value="proxy">
+      <label for="proxy" class="lh-copy">Hudsucker Proxy</label>
+    </div>
+    <div class="flex items-center mb2">
+      <input class="mr2" type="checkbox" id="homealone" value="homealone">
+      <label for="homealone" class="lh-copy">Home Alone</label>
+    </div>
+  </fieldset>
+</form>
