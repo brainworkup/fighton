@@ -10,8 +10,7 @@ date: "2021-12-21"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    #css: xaringan-themer2.css
-    css: ["default", "assets/css/fighton-fonts.css", "assets/css/fighton-theme.css"]
+    css: ["assets/css/fighton-fonts.css", "assets/css/fighton-theme.css"]
     chakra: libs/remark-latest.min.js
     nature:
       highlightStyle: monokai
@@ -77,16 +76,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r mono-accent, include=F}
-# theme/style
-style_mono_accent(
-  base_color = "#690f0d", # bright red
-  inverse_background_color = "#002B36", # dark dark blue
-  inverse_header_color = "#31b09e", # light aqua green
-  inverse_text_color = "#FFFFFF", # white
-)
-```
-
 ```{r xaringan-extra, include=F}
 xaringanExtra::use_animate_css()
 xaringanExtra::embed_xaringan("https://brainworkup.github.io/fighton/#1")
@@ -111,7 +100,6 @@ xaringanExtra::use_extra_styles(
   hover_code_line = TRUE, #<<
   mute_unhighlighted_code = TRUE #<<
 )
-# xaringanExtra::use_progress_bar(color = "#0051BA", location = "top", height = "10px")
 ```
 
 name: title
@@ -132,6 +120,7 @@ background-color: #7899d4ff
 ### `r rmarkdown::metadata$role`
 
 ### `r rmarkdown::metadata$date`
+
 ]
 
 ---
@@ -141,10 +130,11 @@ class: middle, center
 
 ???
 
-We grew since 2018
+Our department has grown since 2018
 
 ---
-class: middle, center, inverse
+class: middle, center
+
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 If you cannot explain something in simple terms, you don't understand it.
 
@@ -155,18 +145,18 @@ If you cannot explain something in simple terms, you don't understand it.
 .center[![:scale 50%](images/jerry_maguire.gif)]
 
 ---
-class: left, middle
+class: middle
 type: exclaim
-
-What do I know about .big[ADHD]
-
-.right[![:scale 40%](images/dinotocat.png)]
-
-.footnote[.red.bold[*] Important footnote]
 
 [`r fontawesome::fa("github")` @brainworkup](https://github.com/brainworkup)
 [`r fontawesome::fa("twitter")` @brainworkup](https://twitter.com/brainworkup)   
 [`r fontawesome::fa("link")` brainworkup.io](https://brainworkup.io)
+
+What do I know about .big[ADHD]
+
+.right[![:scale 35%](images/dinotocat.png)]
+
+.footnote[.red.bold[*] Important footnote]
 
 ???
 
@@ -218,22 +208,30 @@ class: center middle
 
 ## stimulus boundness
 
+---
+class: section, middle
+
+.left[Left hand side content]
+
+.center[Middle content]
+
+.right[Right hand side content]
 
 ---
-class: middle center inverse
+class: section middle center
 
-##### .big[Clinical ADHD vs Cognitive ADHD]
+## .big[Clinical ADHD vs Cognitive ADHD]
 
-.pull-left.white[
-#### inattention
-#### hyperactivity
-#### impulsivity
+.pull-left[
+### inattention
+### hyperactivity
+### impulsivity
 ]
 
-.pull-right.white[
-#### working memory
-#### response variability
-#### stimulus boundness
+.pull-right[
+### working memory
+### response variability
+### stimulus boundness
 ]
 
 
@@ -302,28 +300,24 @@ class: inverse, middle
 ---
 name: bell
 class: left, middle, fullscale
-background-image: url(images/7-emot-laughing-crying.gif)
+background-image: url(https://gifs.joelglovier.com/crying/laughing-crying.gif)
 background-position: 50% 50%
 background-size: 100%
 
-## Emotional Control
+#### Emotional Control
 
 .pull-left[
-
 > **Emotion** `r emo::ji("fire")`
 >
 > **(Dys)Regulation**
 > 
-> **in**
+> in **ADHD**
 >
-> **ADHD:**
-> 
 > Not part of DSM/ICD diagnostic criteria 
 >
 > .big[BUT] ...
 >
 > ... a core feature of the disorder
-
 ]
 
 ???
@@ -334,10 +328,10 @@ This is recognized on most rating scales e.g., brown
 class: middle, center
 
 .frame[
-### Read these words as fast as you can
+### .fade[Read these words as fast as you can]
 ]
 
----
+--
 class: middle, center
 
 .frame[
@@ -433,9 +427,9 @@ This is how we test it
 name: agenda
 class: middle, center
 
-# Agenda
+## Agenda
 
-The .big-text[name] of this slide is {{ name }}.
+The .blue[name] of this slide is {{ name }}.
 ---
 class: middle center inverse animated slideInRight fadeOutLeft
 
@@ -458,8 +452,8 @@ knitr::include_graphics("images/plot_broad.png", auto_pdf = TRUE)
 ---
 class: inverse middle center
 
-### Highcharte`R` Drilldown
-### Z-scores (Mean = 0, SD = 1)
+#### Highcharte`R` Drilldown
+###### Z-scores (Mean = 0, SD = 1)
 
 ```{r}
 patient <- "Biggie"
@@ -691,16 +685,14 @@ p1
 ---
 name: snoop
 class: middle, right
-background-image: url(images/snoop.gif)
+background-image: url(https://gifs.joelglovier.com/favs/snoop-turning-the-wheel-big.gif)
 background-color: #FFFFFF
 background-size: auto
-font-family: metal-mania
 font-style: bold
 font-weight: 600
 
+.pull-right[.black[.bold[
 
-
-.pull-right.white[
 "There are three ways to ultimate success:
 
 The first way is to be kind.
@@ -708,45 +700,10 @@ The first way is to be kind.
 The second way is to be kind.
 
 The third way is to be kind."
-
 ]
-
+]
+]
 
 ---
 
 ![:scale 25%](images/daftpunktocat-guy.gif)
-
----
-<form class="pa4">
-  <fieldset id="favorite_movies" class="bn">
-    <legend class="fw7 mb2">Favorite Movies</legend>
-    <div class="flex items-center mb2">
-      <input class="mr2" type="checkbox" id="spacejam" value="spacejam">
-      <label for="spacejam" class="lh-copy">Space Jam</label>
-    </div>
-    <div class="flex items-center mb2">
-      <input class="mr2" type="checkbox" id="airbud" value="airbud">
-      <label for="airbud" class="lh-copy">Air Bud</label>
-    </div>
-    <div class="flex items-center mb2">
-      <input class="mr2" type="checkbox" id="hocuspocus" value="hocuspocus">
-      <label for="hocuspocus" class="lh-copy">Hocus Pocus</label>
-    </div>
-    <div class="flex items-center mb2">
-      <input class="mr2" type="checkbox" id="diehard" value="diehard">
-      <label for="diehard" class="lh-copy">Die Hard</label>
-    </div>
-    <div class="flex items-center mb2">
-      <input class="mr2" type="checkbox" id="primer" value="primer">
-      <label for="primer" class="lh-copy">Primer</label>
-    </div>
-    <div class="flex items-center mb2">
-      <input class="mr2" type="checkbox" id="proxy" value="proxy">
-      <label for="proxy" class="lh-copy">Hudsucker Proxy</label>
-    </div>
-    <div class="flex items-center mb2">
-      <input class="mr2" type="checkbox" id="homealone" value="homealone">
-      <label for="homealone" class="lh-copy">Home Alone</label>
-    </div>
-  </fieldset>
-</form>

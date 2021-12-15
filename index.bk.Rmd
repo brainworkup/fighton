@@ -10,7 +10,8 @@ date: "2021-12-21"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: ["assets/css/fighton-fonts.css", "assets/css/fighton-theme.css"]
+    #css: xaringan-themer2.css
+    css: ["default", "assets/css/fighton-fonts.css", "assets/css/fighton-theme.css"]
     chakra: libs/remark-latest.min.js
     nature:
       highlightStyle: monokai
@@ -76,6 +77,16 @@ knitr::opts_chunk$set(
 )
 ```
 
+```{r mono-accent, include=F}
+# theme/style
+style_mono_accent(
+  base_color = "#690f0d", # bright red
+  inverse_background_color = "#002B36", # dark dark blue
+  inverse_header_color = "#31b09e", # light aqua green
+  inverse_text_color = "#FFFFFF", # white
+)
+```
+
 ```{r xaringan-extra, include=F}
 xaringanExtra::use_animate_css()
 xaringanExtra::embed_xaringan("https://brainworkup.github.io/fighton/#1")
@@ -100,6 +111,7 @@ xaringanExtra::use_extra_styles(
   hover_code_line = TRUE, #<<
   mute_unhighlighted_code = TRUE #<<
 )
+# xaringanExtra::use_progress_bar(color = "#0051BA", location = "top", height = "10px")
 ```
 
 name: title
@@ -120,7 +132,6 @@ background-color: #7899d4ff
 ### `r rmarkdown::metadata$role`
 
 ### `r rmarkdown::metadata$date`
-
 ]
 
 ---
@@ -130,7 +141,7 @@ class: middle, center
 
 ???
 
-Our department has grown since 2018
+We grew since 2018
 
 ---
 class: middle, center, inverse
@@ -147,15 +158,15 @@ If you cannot explain something in simple terms, you don't understand it.
 class: left, middle
 type: exclaim
 
+What do I know about .big[ADHD]
+
+.right[![:scale 40%](images/dinotocat.png)]
+
+.footnote[.red.bold[*] Important footnote]
+
 [`r fontawesome::fa("github")` @brainworkup](https://github.com/brainworkup)
 [`r fontawesome::fa("twitter")` @brainworkup](https://twitter.com/brainworkup)   
 [`r fontawesome::fa("link")` brainworkup.io](https://brainworkup.io)
-
-What do I know about .big[ADHD]
-
-.right[![:scale 35%](images/dinotocat.png)]
-
-.footnote[.red.bold[*] Important footnote]
 
 ???
 
@@ -207,27 +218,19 @@ class: center middle
 
 ## stimulus boundness
 
----
-class: section
-
-.left[Left hand side content]
-
-.center[Middle content]
-
-.right[Right hand side content]
 
 ---
-class: middle center
+class: middle center inverse
 
 ##### .big[Clinical ADHD vs Cognitive ADHD]
 
-.pull-left[
+.pull-left.white[
 #### inattention
 #### hyperactivity
 #### impulsivity
 ]
 
-.pull-right[
+.pull-right.white[
 #### working memory
 #### response variability
 #### stimulus boundness
@@ -298,25 +301,29 @@ class: inverse, middle
 
 ---
 name: bell
-class: left, middle, fullscale, inverse
-background-image: url(https://gifs.joelglovier.com/crying/laughing-crying.gif)
+class: left, middle, fullscale
+background-image: url(images/7-emot-laughing-crying.gif)
 background-position: 50% 50%
 background-size: 100%
 
-### Emotional Control
+## Emotional Control
 
 .pull-left[
+
 > **Emotion** `r emo::ji("fire")`
 >
 > **(Dys)Regulation**
 > 
-> in **ADHD**
+> **in**
 >
+> **ADHD:**
+> 
 > Not part of DSM/ICD diagnostic criteria 
 >
 > .big[BUT] ...
 >
 > ... a core feature of the disorder
+
 ]
 
 ???
@@ -327,10 +334,10 @@ This is recognized on most rating scales e.g., brown
 class: middle, center
 
 .frame[
-.fade[### Read these words as fast as you can]
+### Read these words as fast as you can
 ]
 
---
+---
 class: middle, center
 
 .frame[
@@ -683,15 +690,17 @@ p1
 
 ---
 name: snoop
-class: middle, right, section
-background-image: url(https://gifs.joelglovier.com/favs/snoop-turning-the-wheel-big.gif)
+class: middle, right
+background-image: url(images/snoop.gif)
 background-color: #FFFFFF
 background-size: auto
+font-family: metal-mania
 font-style: bold
 font-weight: 600
 
-.pull-right[.white.bold[
 
+
+.pull-right.white[
 "There are three ways to ultimate success:
 
 The first way is to be kind.
@@ -699,16 +708,15 @@ The first way is to be kind.
 The second way is to be kind.
 
 The third way is to be kind."
+
 ]
-]
+
 
 ---
 
 ![:scale 25%](images/daftpunktocat-guy.gif)
 
 ---
-class: inverse
-
 <form class="pa4">
   <fieldset id="favorite_movies" class="bn">
     <legend class="fw7 mb2">Favorite Movies</legend>

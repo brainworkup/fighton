@@ -180,8 +180,8 @@ a:focus {
 
 /* MAIN BACKGROUND COLOR */
 .section {
-  background-color: #111111;
-  color: #FFFF00;
+  background-color: var(--near-black);
+  color: var(--gold);
 }
 
 .frame h1 {
@@ -191,9 +191,9 @@ a:focus {
 }
 
 .inverse {
-  background-color: #272822;
-  color: #d6d6d6;
-  text-shadow: 0 0 20px #333;
+  background-color: #11050bee;
+  color: #f8f1f1;
+  text-shadow: none;
 }
 
 .inverse h1,
@@ -554,7 +554,7 @@ div.FOO {
 .fat-font {
   font-family: Monoton;
   font-size: 600px;
-  color: chartreuse;
+  color: #7fff00;
 }
 
 p.a {
