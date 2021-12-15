@@ -11,7 +11,7 @@ output:
   xaringan::moon_reader:
     lib_dir: libs
     #css: xaringan-themer2.css
-    css: ["assets/css/fighton-fonts.css", "assets/css/fighton-theme.css"]
+    css: ["default", "assets/css/fighton-fonts.css", "assets/css/fighton-theme.css"]
     chakra: libs/remark-latest.min.js
     nature:
       highlightStyle: monokai
@@ -28,7 +28,7 @@ output:
       includePresenterNotes: yes
       countdown: 60000
       beforeInit: ["libs/macros.js"]
-    self_contained: true
+    self_contained: false
     anchor_sections: false
     seal: false
     includes:
@@ -220,8 +220,7 @@ class: center middle
 
 
 ---
-class: middle center
-color: white
+class: middle center inverse
 
 ##### .big[Clinical ADHD vs Cognitive ADHD]
 
@@ -404,26 +403,26 @@ This is how we test it
 class: middle, center
 
 .frame[
-## .blue[RED]
+### .blue[RED]
 ]
 
 --
 
 .frame[
-## .yellow[GREEN]
+### .yellow[GREEN]
 ]
 
 --
 
 .frame[
-## .red[BLUE] 
+### .red[BLUE] 
 ]
 
 
 --
 
 .frame[
-## .green[YELLOW]
+### .green[YELLOW]
 ]
 
 ???

@@ -61,21 +61,17 @@ Press c to clone the slides to a new browser window; slides in the two windows w
 
 Press h or ? again to exit the help page.
 
-- [ ]
+* [ ]
+* F90.1 attention-deficit/hyperactivity disorder inattentive type
 
-- F90.1 attention-deficit/hyperactivity disorder inattentive type
+*Exceptionally Low*
 
-_Exceptionally Low_
+* [ ]
+* list 1
+* list 2
+* list 3
 
-- [ ]
-
-- list 1
-
-- list 2
-
-- list 3
-
-_italics_
+*italics*
 **bold**
 
 ## fonts
@@ -90,8 +86,8 @@ ffmpeg -i daftpunktocat-thomas.gif daftpunktocat-thomas.mp4
 
 ffmpeg -i 7-emot-laughing-crying.gif -c vp9 -b:v 0 -crf 41 7-emot-laughing-crying.webm
 
-_At-Risk_
+*At-Risk*
 
-[[#fighton|tag.fighton]]
+\[\[\#fighton\|tag\.fighton\]\]
 
 ADHD: Neuropsychological assessment for diagnostic clarification and treatment planning

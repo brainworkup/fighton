@@ -178,10 +178,22 @@ a:focus {
   background-color: #d8228c;
 }
 
+/* MAIN BACKGROUND COLOR */
+.section {
+  background-color: #111111;
+  color: #FFFF00;
+}
+
+.frame h1 {
+  color: var(--independence);
+  padding-bottom: 1em !important;
+  border-bottom: 3px solid var(--cornflower-blue);
+}
+
 .inverse {
-  background-color: var(--white);
-  color: var(--near-black);
-  text-shadow: none;
+  background-color: #272822;
+  color: #d6d6d6;
+  text-shadow: 0 0 20px #333;
 }
 
 .inverse h1,
@@ -195,11 +207,11 @@ a:focus {
 }
 
 .inverse .remark-inline-code {
-  color: var(--dark-red);
+  color: var(--white);
 }
 
 .inverse a {
-  color: var(--orange);
+  color: var(--white);
 }
 
 .inverse a:hover {
@@ -302,7 +314,7 @@ tr:nth-child(even) {
 
 .title-slide h3 {
   font-family: "Alegreya", sans-serif;
-  font-weight: 400;
+  font-weight: 350;
   font-size: 1em;
   color: var(--near-white);
   text-transform: none;
@@ -317,17 +329,6 @@ tr:nth-child(even) {
   color: #fff;
 }
 
-/* MAIN BACKGROUND COLOR */
-.section {
-  background-color: var(--white);
-  color: var(--black);
-}
-
-.frame h1 {
-  color: var(--independence);
-  padding-bottom: 1em !important;
-  border-bottom: 3px solid var(--cornflower-blue);
-}
 
 /* Wider cols */
 
@@ -562,4 +563,8 @@ p.a {
 
 p.b {
   font: italic small-caps bold 12px/30px Georgia, serif;
+}
+
+.fade {
+  opacity: 0.66;
 }
