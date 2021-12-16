@@ -1,8 +1,0 @@
-scale,raw_score,score,percentile,range,ci_95,test,test_name,domain,subdomain,subdomain_narrow,domain_broad,domain_test,test_type,score_type,timed,absort
-Activation,25,87,99,Markedly atypical (very significant problem),81-93,brown_parent,Brown EF/A Parent,Behavioral/Emotional/Social,Executive Function,Activation,Behavior,Activation,rating_scale_parent,t_score,FALSE,BROWN-EFA_PARENT_01
-Focus,26,83,99,Markedly atypical (very significant problem),78-88,brown_parent,Brown EF/A Parent,Behavioral/Emotional/Social,Executive Function,Focus,Behavior,Focus,rating_scale_parent,t_score,FALSE,BROWN-EFA_PARENT_02
-Effort,22,79,99,Markedly atypical (very significant problem),74-84,brown_parent,Brown EF/A Parent,Behavioral/Emotional/Social,Executive Function,Effort,Behavior,Effort,rating_scale_parent,t_score,FALSE,BROWN-EFA_PARENT_03
-Emotion,20,76,98,Markedly atypical (very significant problem),69-83,brown_parent,Brown EF/A Parent,Behavioral/Emotional/Social,Executive Function,Emotion,Behavior,Emotion,rating_scale_parent,t_score,FALSE,BROWN-EFA_PARENT_04
-Memory,25,83,99,Markedly atypical (very significant problem),78-88,brown_parent,Brown EF/A Parent,Behavioral/Emotional/Social,Executive Function,Memory,Behavior,Memory,rating_scale_parent,t_score,FALSE,BROWN-EFA_PARENT_05
-Action,29,82,99,Markedly atypical (very significant problem),77-87,brown_parent,Brown EF/A Parent,Behavioral/Emotional/Social,Executive Function,Action,Behavior,Action,rating_scale_parent,t_score,FALSE,BROWN-EFA_PARENT_06
-Total Composite,147,85,99,Markedly atypical (very significant problem),82-88,brown_parent,Brown EF/A Parent,Behavioral/Emotional/Social,Executive Function,Total Composite,Behavior,Total Composite,rating_scale_parent,t_score,FALSE,BROWN-EFA_PARENT_07
