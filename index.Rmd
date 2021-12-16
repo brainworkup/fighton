@@ -317,7 +317,6 @@ background-size: 100%
 >
 > .big[BUT] ...
 >
-> ... a core feature of the disorder
 ]
 
 ???
@@ -328,30 +327,23 @@ This is recognized on most rating scales e.g., brown
 class: middle, center
 
 .frame[
-### .fade[Read these words as fast as you can]
+### Read these words as fast as you can
 ]
 
---
+---
 class: middle, center
 
 .frame[
 ### RED
 ]
 
---
-
 .frame[
 ### GREEN
 ]
 
---
-
 .frame[
 ### BLUE 
 ]
-
-
---
 
 .frame[
 ### YELLOW
@@ -370,20 +362,13 @@ class: middle, center
 ### .red[RED]
 ]
 
---
-
 .frame[
 ### .green[GREEN]
 ]
 
---
-
 .frame[
 ### .blue[BLUE] 
 ]
-
-
---
 
 .frame[
 ### .yellow[YELLOW]
@@ -391,31 +376,15 @@ class: middle, center
 
 ???
 
-This is how we test it
+Also how
 
 ---
 class: middle, center
 
 .frame[
-### .blue[RED]
-]
-
---
-
-.frame[
-### .yellow[GREEN]
-]
-
---
-
-.frame[
-### .red[BLUE] 
-]
-
-
---
-
-.frame[
+### .purple[RED]
+### .orange[GREEN]
+### .pink[BLUE] 
 ### .green[YELLOW]
 ]
 
