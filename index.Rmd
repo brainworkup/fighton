@@ -430,6 +430,39 @@ class: middle, center
 ## Agenda
 
 The .blue[name] of this slide is {{ name }}.
+
+---
+
+```{r results="asis"}
+cat("
+<style>
+table {
+      table-layout: auto;
+      width: 100%;
+      color: black;
+      font-size: 12px;
+      font-family: 'Roboto Condensed', 'Metrophobic', 'Aldrich';
+      break-inside: avoid;
+    }
+</style>
+")
+```
+
+```{r results="asis"}
+cat("
+<style>
+caption {
+      color: black;
+      font-weight: bold;
+      font-size: 14px;
+      font-family: 'Roboto Condensed', 'Metrophobic', 'Aldrich';
+    }
+</style>
+")
+```
+
+Schools cannot diagnose ADHD, other health/med
+
 ---
 class: middle center inverse animated slideInRight fadeOutLeft
 
