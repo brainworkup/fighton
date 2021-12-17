@@ -14,7 +14,8 @@
 body {
   font-family: 'Noto Sans', Prompt, sans-serif;
   font-weight: 400;
-  color: var(--white);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
 }
 
 .title {

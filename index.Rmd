@@ -10,7 +10,8 @@ date: "2021-12-21"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: ["assets/css/fighton-fonts.css", "assets/css/fighton-theme.css"]
+    #css: ["assets/css/fighton-fonts.css", "assets/css/fighton-theme.css"]
+    css: ["kunoichi", "ninjutsu"]
     chakra: libs/remark-latest.min.js
     nature:
       highlightStyle: monokai
@@ -54,6 +55,7 @@ library(crosstalk)
 library(manipulateWidget)
 library(tibble)
 library(svglite)
+library(gifski)
 
 ## knitr options
 options(htmltools.dir.version = FALSE)
@@ -78,7 +80,7 @@ knitr::opts_chunk$set(
 
 ```{r xaringan-extra, include=F}
 xaringanExtra::use_animate_css()
-xaringanExtra::embed_xaringan("https://brainworkup.github.io/fighton/#1")
+xaringanExtra::embed_xaringan("https://brainworkup.github.io/fighton/")
 xaringanExtra::use_tachyons()
 xaringanExtra::use_tile_view()
 xaringanExtra::use_broadcast()
@@ -142,11 +144,11 @@ If you cannot explain something in simple terms, you don't understand it.
 — Richard Feynman
 ]]
 
-.center[![:scale 50%](images/jerry_maguire.gif)]
+.center[![:scale 45%](images/jerry_maguire.gif)]
 
 ---
 class: middle
-type: exclaim
+<!-- type: exclaim -->
 
 [`r fontawesome::fa("github")` @brainworkup](https://github.com/brainworkup)
 [`r fontawesome::fa("twitter")` @brainworkup](https://twitter.com/brainworkup)   
@@ -211,16 +213,69 @@ class: center middle
 ---
 class: section, middle
 
+```{r}
+library(sass)
+variable <- "$body-bg: red;"
+rule <- "body { background-color: $body-bg; }"
+sass(input = list(variable, rule))
+```
+
+```{r}
+user_default <- list("body-bg" = "blue !default")
+default <- list("body-bg" = "red !default")
+sass(input = list(user_default, default, rule))
+```
+
 .left[Left hand side content]
 
 .center[Middle content]
 
 .right[Right hand side content]
 
+
+---
+class: split-two with-border
+
+.column.bg-main1[
+  .split-five[
+  .row.bg-main1[.content[
+    Row 1, Column 1 content.
+  ]]
+  .row.bg-main2[.content[
+    Row 2, Column 1 content.
+  ]]
+  .row.bg-main3[.content[
+    Row 3, Column 1 content.
+  ]]
+  .row.bg-main4[.content[
+    Row 4, Column 1 content.
+  ]]
+  .row.bg-main5[.content[
+    Row 5, Column 1 content.
+  ]]
+]]
+.column[.content[
+  Second column content.
+]]
+
 ---
 class: section middle center
 
-## .big[Clinical ADHD vs Cognitive ADHD]
+```{r}
+sass(
+  list(
+    variable,
+    sass_file("color-contrast.scss"),
+    "body {
+      background-color: $body-bg;
+      color: color-contrast($body-bg);
+    }"
+  )
+)
+
+```
+
+#### .big[Clinical ADHD vs Cognitive ADHD]
 
 .pull-left[
 ### inattention
