@@ -29,7 +29,7 @@ output:
       includePresenterNotes: yes
       countdown: 60000
       beforeInit: ["libs/macros.js"]
-    self_contained: true
+    self_contained: false
     anchor_sections: false
     seal: false
     includes:
