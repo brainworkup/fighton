@@ -1,0 +1,201 @@
+---
+title: "A.D.H.D."
+subtitle: "Neuropsychological assessment for diagnostic clarification and treatment planning"
+author: "Joey Trampush, Ph.D."
+role: "Della Martin Assistant Professor of Psychiatry"
+institute: 
+  - "USC Keck School of Medicine"
+  - "Department of Psychiatry and the Behavioral Sciences"
+date: "2021-12-21"
+output:
+  xaringan::moon_reader:
+    chakra: libs/remark-latest.min.js
+    css: ["kunoichi", "ninjutsu" , "assets/css/ninpo.css"]
+    seal: false
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF"
+)
+```
+
+```{r xaringan-extra, include=F}
+xaringanExtra::use_animate_css()
+xaringanExtra::embed_xaringan("https://brainworkup.github.io/fighton/")
+xaringanExtra::use_tachyons()
+xaringanExtra::use_tile_view()
+xaringanExtra::use_broadcast()
+xaringanExtra::use_scribble()
+xaringanExtra::use_panelset()
+xaringanExtra::use_webcam()
+xaringanExtra::style_panelset_tabs(font_family = "inherit")
+xaringanExtra::use_freezeframe()
+xaringanExtra::use_fit_screen()
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE, #<<
+  mute_unhighlighted_code = TRUE #<<
+)
+```
+
+name: title
+class: title-slide, left, middle
+background-image: url("images/daftpunktocat-thomas.gif")
+background-position: right
+background-size: contain
+background-color: #7899d4ff
+
+.pull-left[
+
+# `r rmarkdown::metadata$title`
+
+## `r rmarkdown::metadata$subtitle`
+
+### `r rmarkdown::metadata$author`
+
+### `r rmarkdown::metadata$role`
+
+### `r rmarkdown::metadata$date`
+
+]
+
+---
+background-image: url("images/daftpunktocat-guy.gif")
+
+# Level 1
+<br>
+## Level 2
+
+
+---
+name: snoop
+class: middle, right
+background-image: url(https://gifs.joelglovier.com/favs/snoop-turning-the-wheel-big.gif)
+background-color: #FFFFFF
+background-size: auto
+font-style: bold
+font-weight: 600
+
+.pull-right[.black[.bold[
+
+"There are three ways to ultimate success:
+
+The first way is to be kind.
+
+The second way is to be kind.
+
+The third way is to be kind."
+]
+]
+]
+
+
+---
+
+
+---
+class: middle, center
+
+### .big-text[Hello.]
+
+???
+
+Our department has grown since 2018
+
+---
+class: middle, center
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+If you cannot explain something in simple terms, you don't understand it.
+
+.tr[
+— Richard Feynman
+]]
+
+.center[![:scale 45%](images/jerry_maguire.gif)]
+
+---
+class: middle
+<!-- type: exclaim -->
+
+[`r fontawesome::fa("github")` @brainworkup](https://github.com/brainworkup)
+[`r fontawesome::fa("twitter")` @brainworkup](https://twitter.com/brainworkup)   
+[`r fontawesome::fa("link")` brainworkup.io](https://brainworkup.io)
+
+What do I know about .big[ADHD]
+
+.right[![:scale 35%](images/dinotocat.png)]
+
+.footnote[.red.bold[*] Important footnote]
+
+???
+
+80HD
+
+---
+class: middle, left
+
+## Data Science
+
+.left[
+
+![:scale 45%](images/computer.gif)
+
+]
+
+---
+class: center middle
+
+.big[1.]
+
+## inattention
+
+---
+class: center middle
+
+.big[2.]
+
+## hyperactivity
+
+---
+class: center middle
+
+.big[3.]
+
+## impulsivity
+
+---
+class: center middle
+
+.big[4.]
+
+## working memory
+
+---
+class: center middle
+
+.big[5.]
+
+## stimulus boundness
