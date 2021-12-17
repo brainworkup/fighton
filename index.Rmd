@@ -10,8 +10,9 @@ date: "2021-12-21"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    #css: ["assets/css/fighton-fonts.css", "assets/css/fighton-theme.css"]
-    css: ["kunoichi", "ninjutsu"]
+    css: ["assets/css/fighton-fonts.css", "assets/css/fighton-theme.css"]
+    #css: ["kunoichi", "ninjutsu" , "assets/ninpo.css"]
+    #css: ["chocolate.css", "chocolate-fonts.css"]
     chakra: libs/remark-latest.min.js
     nature:
       highlightStyle: monokai
@@ -232,9 +233,27 @@ sass(input = list(user_default, default, rule))
 
 .right[Right hand side content]
 
+---
+
+```{r}
+sass(sass_file("my-style.scss"))
+
+```
+
+
 
 ---
 class: split-two with-border
+
+```{r}
+layer1 <- sass::sass_layer(
+  functions = sass_file("color-contrast.scss"),
+  defaults = list("body-bg" = "black !default"),
+  rules = "body{background-color: $body-bg; color: color-contrast($body-bg)}"
+)
+sass::as_sass(layer1)
+```
+
 
 .column.bg-main1[
   .split-five[
