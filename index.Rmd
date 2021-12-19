@@ -12,7 +12,7 @@ date: "2021-12-21"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: ["xaringan-themer.css", "default", "assets/css/fighton-fonts.css", "assets/css/fighton-theme.css"]
+    css: ["default", "assets/css/fighton-fonts.css", "assets/css/fighton-theme.css"]
     chakra: libs/remark-latest.min.js
     nature:
       highlightStyle: monokai
@@ -79,20 +79,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r}
-style_mono_light(
-  extra_fonts = list(
-    google_font("Sofia"),
-    # Young Serif by uplaod.fr
-    "https://cdn.jsdelivr.net/gh/uplaod/YoungSerif/fonts/webfonts/fontface.css",
-  ),
-  extra_css = list(
-    ".title-slide h2" = list("font-family" = "Sofia"),
-    blockquote = list("font-family" = "youngserifregular")
-  )
-)
-```
-
 ```{r xaringan-extra, include=F}
 xaringanExtra::use_animate_css()
 xaringanExtra::embed_xaringan("https://brainworkup.github.io/fighton/")
@@ -113,23 +99,18 @@ xaringanExtra::use_extra_styles(
 
 name: title
 class: title-slide, left, middle
-background-image: url("images/daftpunktocat-thomas.gif")
+background-image: url("https://octodex.github.com/daftpunktocat-thomas/")
 background-position: right
 background-size: contain
 background-color: #7899d4ff
 
 .pull-left[
-
 # `r rmarkdown::metadata$title`
-
 ## `r rmarkdown::metadata$subtitle`
-
 ### `r rmarkdown::metadata$author`
-
 ### `r rmarkdown::metadata$role`
-
+### `r rmarkdown::metadata$institute`
 ### `r rmarkdown::metadata$date`
-
 ]
 
 ---
@@ -161,15 +142,14 @@ class: middle
 [`r fontawesome::fa("twitter")` @brainworkup](https://twitter.com/brainworkup)   
 [`r fontawesome::fa("link")` brainworkup.io](https://brainworkup.io)
 
-What do I know about .big[ADHD]
+What do I know about .big[ADHD]?
 
-.right[![:scale 35%](images/dinotocat.png)]
-
-.footnote[.red.bold[*] Important footnote]
+.right.middle[![:scale 35%](images/dinotocat.png)]
 
 ???
 
 80HD
+PATS preschool study
 
 ---
 class: middle, left
