@@ -74,6 +74,13 @@
   --washed-yellow: #fffceb;
   --washed-red: #ffdfdf;
 
+  /* USC web colors */
+  --usc-cardinal: #990000;
+  --usc-gold: #FFCC00;
+  --usc-black: #000000;
+  --usc-darkgray: #777777;
+  --usc-lightgray: #CCCCCC;
+  --usc-white: #FFFFFF;
 }
 
 .remark-slide-content p,
@@ -99,7 +106,7 @@ blockquote {
 
 .remark-slide-content {
   background-color: var(--near-black);
-  color: var(--gold); /* might not be necessary */
+  color: var(--white-90); /* might not be necessary */
 }
 
 .footnote {
@@ -171,7 +178,7 @@ a:focus {
 /* MAIN BACKGROUND COLOR */
 .section {
   background-color: var(--near-black);
-  color: var(--gold);
+  color: var(--white-90);
 }
 
 .frame h1 {
@@ -282,43 +289,42 @@ tr:nth-child(even) {
 }
 
 .title-slide h1 {
-  font-family: "Major Mono Display", serif;
+  font-family: 'Major Mono Display', monospace;
   color: var(--near-white);
-  font-size: 3em;
+  font-size: 2.5em;
   word-wrap: break-word;
   letter-spacing: 0.2rem;
   font-weight: 600;
-  margin-bottom: 1em !important;
+  margin-bottom: 0.5em !important;
 }
 
 .title-slide h2 {
-  font-family: "Major Mono Display", serif;
-  font-weight: 400;
-  font-size: 1.5em;
+  font-family: 'Major Mono Display', monospace;
+  font-weight: 500;
+  font-size: 1.2em;
   color: var(--near-white);
   text-shadow: none;
   font-style: italic;
-  line-height: 2em;
+  line-height: 0.5em;
   margin-bottom: 1em !important;
 }
 
 .title-slide h3 {
   font-family: "Alegreya", sans-serif;
-  font-weight: 350;
-  font-size: 1em;
+  font-weight: 200;
+  font-size: 0.5em;
   color: var(--near-white);
   text-transform: none;
-  /* line-height: 1.1em; */
+  line-height: 0.5em;
 }
 
 .title-slide a {
-  color: var(--near-black);
+  color: var(--near-white);
 }
 
 .title-slide a:hover {
-  color: #fff;
+  color: var(--pink);
 }
-
 
 /* Wider cols */
 
@@ -560,16 +566,6 @@ p.b {
 }
 
 /* Joey */
-
-.exclaim .reveal .state-background {
-  background: black;
-} 
-
-.exclaim .reveal h1,
-.exclaim .reveal h2,
-.exclaim .reveal p {
-  color: white;
-}
 
 .capitalize {
   text-transform: capitalize;

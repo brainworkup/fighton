@@ -1,13 +1,15 @@
 ---
 title: "A.D.H.D."
 subtitle: "Neuropsychological assessment for diagnostic clarification and treatment planning"
-author: 
-  - "Joey Trampush, PhD"
-  - "Ashraf Elmashat, MD"
-role: "Della Martin Assistant Professor of Psychiatry"
+author1: 
+  - "Joey W. Trampush, Ph.D."
+  - "Della Martin Assistant Professor of Psychiatry"  
+author2:
+  - "Ashraf Elmashat, M.D."
+  - "Professor of Psychiatry"
 institute: 
-  - "USC Keck School of Medicine"
   - "Department of Psychiatry and the Behavioral Sciences"
+  - "USC Keck School of Medicine"
 date: "2021-12-21"
 output:
   xaringan::moon_reader:
@@ -81,7 +83,7 @@ knitr::opts_chunk$set(
 
 ```{r xaringan-extra, include=F}
 xaringanExtra::use_animate_css()
-xaringanExtra::embed_xaringan("https://brainworkup.github.io/fighton/")
+# xaringanExtra::embed_xaringan("https://brainworkup.github.io/fighton/")
 xaringanExtra::use_tachyons()
 xaringanExtra::use_tile_view()
 xaringanExtra::use_broadcast()
@@ -95,20 +97,21 @@ xaringanExtra::use_extra_styles(
   hover_code_line = TRUE, #<<
   mute_unhighlighted_code = TRUE #<<
 )
+xaringanExtra::use_share_again()
 ```
 
 name: title
 class: title-slide, left, middle
-background-image: url("https://octodex.github.com/daftpunktocat-thomas/")
+background-image: url(images/daftpunktocat-thomas.gif)
 background-position: right
 background-size: contain
-background-color: #7899d4ff
+background-color: #990000
 
 .pull-left[
 # `r rmarkdown::metadata$title`
 ## `r rmarkdown::metadata$subtitle`
-### `r rmarkdown::metadata$author`
-### `r rmarkdown::metadata$role`
+### `r rmarkdown::metadata$author1`
+### `r rmarkdown::metadata$author2`
 ### `r rmarkdown::metadata$institute`
 ### `r rmarkdown::metadata$date`
 ]
@@ -116,14 +119,16 @@ background-color: #7899d4ff
 ---
 class: middle, center
 
-### .big-text[Hello.]
+## .big-text[Hello.]
 
 ???
 
 Our department has grown since 2018
 
 ---
+
 class: middle, center
+color: var(--red)
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 If you cannot explain something in simple terms, you don't understand it.
@@ -135,16 +140,17 @@ If you cannot explain something in simple terms, you don't understand it.
 .center[![:scale 45%](images/jerry_maguire.gif)]
 
 ---
-class: middle
+<!-- class: middle -->
 <!-- type: exclaim -->
-
-.bottom[[`r fontawesome::fa("github")` @brainworkup](https://github.com/brainworkup)]
-[`r fontawesome::fa("twitter")` @brainworkup](https://twitter.com/brainworkup)   
-[`r fontawesome::fa("link")` brainworkup.io](https://brainworkup.io)
+class: flex
 
 What do I know about .big[ADHD]?
 
 .right.middle[![:scale 35%](images/dinotocat.png)]
+
+[`r fontawesome::fa("github")` @brainworkup](https://github.com/brainworkup)
+[`r fontawesome::fa("twitter")` @brainworkup](https://twitter.com/brainworkup)   
+[`r fontawesome::fa("link")` brainworkup.io](https://brainworkup.io)
 
 ???
 
@@ -152,6 +158,7 @@ What do I know about .big[ADHD]?
 PATS preschool study
 
 ---
+
 class: middle, left
 
 ## Data Science
@@ -163,50 +170,43 @@ class: middle, left
 ]
 
 ---
+
 class: center middle
 
 .big[1.]
 ## inattention
 
 ---
+
 class: center middle
 
 .big[2.]
 ## hyperactivity
 
 ---
+
 class: center middle
 
 .big[3.]
 ## impulsivity
 
 ---
+
 class: center middle
 
 .big[4.]
 ## working memory
 
 ---
+
 class: center middle
 
 .big[5.]
 ## stimulus boundness
 
 ---
+
 class: section, middle
-
-```{r}
-library(sass)
-variable <- "$body-bg: red;"
-rule <- "body { background-color: $body-bg; }"
-sass(input = list(variable, rule))
-```
-
-```{r}
-user_default <- list("body-bg" = "blue !default")
-default <- list("body-bg" = "red !default")
-sass(input = list(user_default, default, rule))
-```
 
 .left[Left hand side content]
 
@@ -216,66 +216,9 @@ sass(input = list(user_default, default, rule))
 
 ---
 
-```{r}
-sass(sass_file("my-style.scss"))
-
-```
-
-
-
----
-class: split-two with-border
-
-```{r}
-layer1 <- sass::sass_layer(
-  functions = sass_file("color-contrast.scss"),
-  defaults = list("body-bg" = "black !default"),
-  rules = "body{background-color: $body-bg; color: color-contrast($body-bg)}"
-)
-sass::as_sass(layer1)
-```
-
-
-.column.bg-main1[
-  .split-five[
-  .row.bg-main1[.content[
-    Row 1, Column 1 content.
-  ]]
-  .row.bg-main2[.content[
-    Row 2, Column 1 content.
-  ]]
-  .row.bg-main3[.content[
-    Row 3, Column 1 content.
-  ]]
-  .row.bg-main4[.content[
-    Row 4, Column 1 content.
-  ]]
-  .row.bg-main5[.content[
-    Row 5, Column 1 content.
-  ]]
-]]
-.column[.content[
-  Second column content.
-]]
-
----
 class: section middle center
 
-```{r}
-sass(
-  list(
-    variable,
-    sass_file("color-contrast.scss"),
-    "body {
-      background-color: $body-bg;
-      color: color-contrast($body-bg);
-    }"
-  )
-)
-
-```
-
-#### .big[Clinical ADHD vs Cognitive ADHD]
+## Clinical ADHD vs Cognitive ADHD
 
 .pull-left[
 ### inattention
@@ -458,8 +401,10 @@ The .blue[name] of this slide is {{ name }}.
 ---
 name: gauss1
 class: middle center inverse animated slideInRight fadeOutLeft
+background-color: #FFFFFF
+background-size: auto
 
-### Distribution of Scores: _Population-level Interpretation_
+## Distribution of Scores: _Population-level Interpretation_
 
 ```{r gauss-plot1, fig.cap='Statistical classification of neuropsychological test scores in the general population.', fig.retina=3, fig.asp=0.5, out.width = '50%'}
 knitr::include_graphics("images/plot_narrow.png", auto_pdf = TRUE)
@@ -469,8 +414,10 @@ knitr::include_graphics("images/plot_narrow.png", auto_pdf = TRUE)
 
 name: gauss2
 class: middle center inverse animated slideInLeft fadeOutRight 
+background-color: #FFFFFF
+background-size: auto
 
-### Distribution of Scores: _Clinical Interpretation_
+## Distribution of Scores: _Clinical Interpretation_
 
 ```{r gauss-plot2, fig.cap='General clinical interpretation of performance for individual test scores and broader neuropsychological domains.', fig.retina=3, fig.asp=0.5, out.width = '50%'}
 # change these to match if necessary
@@ -479,13 +426,10 @@ knitr::include_graphics("images/plot_broad.png", auto_pdf = TRUE)
 
 ---
 
-name: drilldown
-class: top center
-
-## Highcharte`R` Drilldown
+## Cognitive Data
 
 ```{r patient}
-patient <- "SL"
+patient <- "Simone"
 ```
 
 ```{r echo=FALSE}
@@ -648,8 +592,6 @@ neurocog <-
 neurobehav <-
   readr::read_csv(here::here(patient, "neurobehav.csv"), show_col_types = FALSE)
 ```
-
-#### Drilldown Highcharter`R`
 
 ```{r drilldown-level1}
 ## Level 1
@@ -926,7 +868,6 @@ plot1
 
 ## Behavioral Data
 
-
 ```{r drilldown2-level1}
 ## Level 1
 ## Domain scores
@@ -1134,7 +1075,6 @@ ncog_level4_drill <-
   }) %>% unlist(recursive = FALSE)
 ```
 
-
 ```{r}
 thm_merge <- hc_theme_merge(
   hc_theme_monokai(),
@@ -1199,13 +1139,14 @@ plot1
 ```
 
 ---
+
 name: snoop
 class: middle, right
 background-image: url(https://gifs.joelglovier.com/favs/snoop-turning-the-wheel-big.gif)
 background-color: #FFFFFF
 background-size: auto
 font-style: bold
-font-weight: 600
+font-weight: 400
 
 .pull-right[.black[.bold[
 
@@ -1219,7 +1160,3 @@ The third way is to be kind."
 ]
 ]
 ]
-
----
-
-![:scale 25%](images/daftpunktocat-guy.gif)
