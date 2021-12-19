@@ -23,22 +23,22 @@
 }
 
 body {
-  font-family: 'National', Prompt, sans-serif;
+  font-family: 'Bitter', Prompt, sans-serif;
   font-weight: 400;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--near-black);
   color: var(--near-white);
 }
 
 h1 {
   font-family: 'Monoton', cursive;
-  font-weight: 500;
-  color: var(--near-white);
+  font-weightRTD: 600;
+  color: var(--header-color);
 }
 
 h2 {
   font-family: 'Monoton', cursive;
   font-weight: 300;
-  color: var(--near-white);
+  color: var(--header-color);
 }
 
 h3 {
@@ -64,15 +64,16 @@ h6 {
 
 .remark-code,
 .remark-inline-code {
-  font-family: 'Fira Code', monospace;
+  font-family: 'Fira Code', monospace, var(--code-font-family), Menlo, Consolas, Monaco, Liberation Mono,
+    Lucida Console;
 }
 
-@media print {
+/* @media print {
   body {
     font-family: 'Prompt', sans-serif;
     font-weight: 400;
-  }
-}
+  } 
+}*/
 
 .f1 {
   font-size: 3rem;

@@ -117,7 +117,10 @@ background-color: var(--usc-black)
 ]
 
 ---
-class: middle, center, f2
+
+name: hello
+class: middle, center
+background-color: var(--near-black)
 
 ## Hello.
 
@@ -127,14 +130,17 @@ Our department has grown since 2018
 
 ---
 
-What do I know about .big[ADHD]?
+background-color: var(--near-black)
 
-.right.middle[![:scale 35%](images/dinotocat.png)]
+What do we know about .big[ADHD]?
 
-[`r fontawesome::fa("github")` @brainworkup](https://github.com/brainworkup)
-[`r fontawesome::fa("twitter")` @brainworkup](https://twitter.com/brainworkup)   
-[`r fontawesome::fa("link")` brainworkup.io](https://brainworkup.io)
+.pull-left[
+- [`r fontawesome::fa("github")` @brainworkup](https://github.com/brainworkup)
+- [`r fontawesome::fa("twitter")` @brainworkup](https://twitter.com/brainworkup)   
+- [`r fontawesome::fa("link")` brainworkup.io](https://brainworkup.io)
+]
 
+.pull-right[![:scale 55%](images/dinotocat.png)]
 
 ???
 
@@ -144,6 +150,7 @@ PATS preschool study
 ---
 
 class: middle, center
+background-color: var(--near-black)
 
 .bg-near-black.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 If you cannot explain something in simple terms, you don't understand it.
@@ -156,9 +163,17 @@ If you cannot explain something in simple terms, you don't understand it.
 
 ---
 
+class: center, middle, section
+
+### Trajectory of ADHD
+
+Model of ADHD from which I work ...
+
+---
+
 class: section middle center
 
-## CLINICAL ADHD versus COGNITIVE ADHD
+## CLINICAL ADHD .red[vs.] COGNITIVE ADHD
 
 .pull-left[
 ### inattention
@@ -175,12 +190,15 @@ class: section middle center
 ---
 
 class: center middle
+background-color: var(--near-black)
 
 .big[1.]
 
 ## inattention
 
 ---
+
+background-color: var(--near-black)
 
 #### Processing Speed
 
@@ -196,6 +214,7 @@ class: center middle
 ---
 
 class: center middle
+background-color: var(--near-black)
 
 .big[2.]
 
@@ -203,17 +222,22 @@ class: center middle
 
 ---
 
+background-color: var(--near-black)
+
 ### something about hyperactivity
 
 ---
 
 class: center middle
+background-color: var(--near-black)
 
 .big[3.]
 
 ## impulsivity
 
 ---
+
+background-color: var(--near-black)
 
 #### Inhibitory Control
 
@@ -229,13 +253,16 @@ class: center middle
 ---
 
 class: middle, center
+background-color: var(--near-black)
 
 .frame[
 ### Read these words as fast as you can
 ]
 
 ---
+
 class: middle, center
+background-color: var(--near-black)
 
 .frame[
 ### RED
@@ -262,6 +289,7 @@ This is how we test it
 ---
 
 class: middle, center
+background-color: var(--near-black)
 
 .frame[
 ### .red[RED]
@@ -286,6 +314,7 @@ Also how
 ---
 
 class: middle, center
+background-color: var(--near-black)
 
 .frame[
 ### .purple[RED]
@@ -301,12 +330,15 @@ This is how we test it
 ---
 
 class: center middle
+background-color: var(--near-black)
 
 .big[4.]
 
 ## working memory
 
 ---
+
+background-color: var(--near-black)
 
 #### Working Memory
 
@@ -321,21 +353,25 @@ class: center middle
 
 ---
 
-class: inverse, center, middle
+class: center, middle
+background-color: var(--near-black)
 
 ## GWAS of Working Memory
 
-.middle[![:scale 60%](images/wm.gif)]
+.middle[![:scale 65%](images/wm.gif)]
 
 ---
 
 class: center middle
+background-color: var(--near-black)
 
 .big[5.]
 
 ## response variability
 
 ---
+
+background-color: var(--near-black)
 
 #### Response Variability
 
@@ -350,6 +386,7 @@ class: center middle
 ---
 
 class: center middle
+background-color: var(--near-black)
 
 .big[6.]
 
@@ -363,7 +400,7 @@ background-image: url(https://gifs.joelglovier.com/crying/laughing-crying.gif)
 background-position: 50% 50%
 background-size: 100%
 
-#### Emotional Control
+## Emotional Control
 
 .pull-left[
 > **Emotion** `r emo::ji("fire")`
@@ -385,9 +422,11 @@ This is recognized on most rating scales e.g., brown
 
 ---
 
-# Case Presentation
+background-color: var(--near-black)
 
-## "Simone"
+## Case Presentation
+
+### "Simone"
 
 1. Name
 1. Age
@@ -397,10 +436,10 @@ This is recognized on most rating scales e.g., brown
 
 name: gauss1
 class: middle center animated slideInRight fadeOutLeft
-background-color: var(--usc-cardinal)
+background-color: var(--near-black)
 background-size: auto
 
-## Distribution of Scores: _Population-level Interpretation_
+### Distribution of Scores: _Population-level Interpretation_
 
 ```{r gauss-plot1, fig.cap='Statistical classification of neuropsychological test scores in the general population.', fig.retina=3, fig.asp=0.5, out.width = '50%'}
 knitr::include_graphics("images/plot_narrow.png", auto_pdf = TRUE)
@@ -410,10 +449,10 @@ knitr::include_graphics("images/plot_narrow.png", auto_pdf = TRUE)
 
 name: gauss2
 class: middle center animated slideInLeft fadeOutRight 
-background-color: #FFFFFF
+background-color: var(--near-black)
 background-size: auto
 
-## Distribution of Scores: _Clinical Interpretation_
+### Distribution of Scores: _Clinical Interpretation_
 
 ```{r gauss-plot2, fig.cap='General clinical interpretation of performance for individual test scores and broader neuropsychological domains.', fig.retina=3, fig.asp=0.5, out.width = '50%'}
 # change these to match if necessary
@@ -422,7 +461,10 @@ knitr::include_graphics("images/plot_broad.png", auto_pdf = TRUE)
 
 ---
 
-## Cognitive Data
+class: animated slideInRight fadeOutLeft
+background-color: var(--near-black)
+
+### Cognitive Data
 
 ```{r patient}
 patient <- "Simone"
@@ -862,15 +904,18 @@ plot1
 
 ???
 
-These are her cognitive scores
-MOTOR
--motor impersistence
--sequencing vs tapping
--dominant vs nondominant hand dexterity; atypical laterlization
+- These are her cognitive scores
+## MOTOR
+- motor impersistence
+- sequencing vs tapping
+- dominant vs nondominant hand dexterity; atypical laterlization
 
 ---
 
-## Behavioral Data
+class: animated slideInLeft fadeOutRight 
+background-color: var(--near-black)
+
+### Behavioral Data
 
 ```{r drilldown2-level1}
 ## Level 1
@@ -881,7 +926,7 @@ nbhv1 <- neurobehav %>%
   dplyr::summarize(zMean = mean(z),
                    zPct = mean(percentile)) %>%
   dplyr::mutate(range = NA)
-nbhv1$zMean <- round(nbhv1$zMean, 2L)
+nbhv1$zMean <- round(nbhv1$zMean, 0L)
 nbhv1$zPct <- round(nbhv1$zPct, 0L)
 nbhv1 <-
   nbhv1 %>%
@@ -890,8 +935,13 @@ nbhv1 <-
       zMean >= 3 ~ "Markedly Elevated",
       zMean %in% 2:2.9 ~ "Significantly Elevated",
       zMean %in% 1:1.9 ~ "Mildly Elevated",
-      zMean %in% -1:0.9 ~ "WNL",
-      zMean %in% -1.1 ~ "Below Average",
+      zMean %in% -1:0.9 ~ "Average",
+      zMean <= -1.1 ~ "Below Average",
+      # zPct > 99 ~ "Markedly Elevated",
+      # zPct %in% 98:99 ~ "Significantly Elevated",
+      # zPct %in% 84:97 ~ "Mildly Elevated",
+      # zPct %in% 16:83 ~ "WNL",
+      # zPct <= 82 ~ "Below Average",
       TRUE ~ as.character(range)
     )
   )
@@ -926,17 +976,17 @@ nbhv_level2_drill <-
       mutate(range = NA)
     
     # round z-score to 1 decimal
-    nbhv2$zMean <- round(nbhv2$zMean, 2L)
+    nbhv2$zMean <- round(nbhv2$zMean, 0L)
     nbhv2$zPct <- round(nbhv2$zPct, 0L)
     nbhv2 <-
       nbhv2 %>%
       dplyr::mutate(
         range = dplyr::case_when(
-      zMean >= 3 ~ "Markedly Elevated",
-      zMean %in% 2:2.9 ~ "Significantly Elevated",
-      zMean %in% 1:1.9 ~ "Mildly Elevated",
-      zMean %in% -1:0.9 ~ "WNL",
-      zMean %in% -1.1 ~ "Below Average",
+          zMean >= 3 ~ "Markedly Elevated",
+          zMean %in% 2:2.9 ~ "Significantly Elevated",
+          zMean %in% 1:1.9 ~ "Mildly Elevated",
+          zMean %in% -1:0.9 ~ "Average",
+          zMean <= -1.1 ~ "Below Average",
           TRUE ~ as.character(range)
         )
       )
@@ -981,17 +1031,17 @@ nbhv_level3_drill <-
         mutate(range = NA)
       
       # round z-score to 1 decimal
-      nbhv3$zMean <- round(nbhv3$zMean, 2L)
+      nbhv3$zMean <- round(nbhv3$zMean, 0L)
       nbhv3$zPct <- round(nbhv3$zPct, 0L)
       nbhv3 <-
         nbhv3 %>%
         dplyr::mutate(
           range = dplyr::case_when(
-      zMean >= 3 ~ "Markedly Elevated",
-      zMean %in% 2:2.9 ~ "Significantly Elevated",
-      zMean %in% 1:1.9 ~ "Mildly Elevated",
-      zMean %in% -1:0.9 ~ "WNL",
-      zMean %in% -1.1 ~ "Below Average",
+            zMean >= 3 ~ "Markedly Elevated",
+            zMean %in% 2:2.9 ~ "Significantly Elevated",
+            zMean %in% 1:1.9 ~ "Mildly Elevated",
+            zMean %in% -1:0.9 ~ "Average",
+            zMean <= -1.1 ~ "Below Average",
             TRUE ~ as.character(range)
           )
         )
@@ -1037,17 +1087,17 @@ nbhv_level4_drill <-
           mutate(range = NA)
         
         # round z-score to 1 decimal
-        nbhv4$zMean <- round(nbhv4$zMean, 2L)
+        nbhv4$zMean <- round(nbhv4$zMean, 0L)
         nbhv4$zPct <- round(nbhv4$zPct, 0L)
         nbhv4 <-
           nbhv4 %>%
           dplyr::mutate(
             range = dplyr::case_when(
-      zMean >= 3 ~ "Markedly Elevated",
-      zMean %in% 2:2.9 ~ "Significantly Elevated",
-      zMean %in% 1:1.9 ~ "Mildly Elevated",
-      zMean %in% -1:0.9 ~ "WNL",
-      zMean %in% -1.1 ~ "Below Average",
+              zMean >= 3 ~ "Markedly Elevated",
+              zMean %in% 2:2.9 ~ "Significantly Elevated",
+              zMean %in% 1:1.9 ~ "Mildly Elevated",
+              zMean %in% -1:0.9 ~ "Average",
+              zMean <= -1.1 ~ "Below Average",
               TRUE ~ as.character(range)
             )
           )
@@ -1094,7 +1144,7 @@ plot1 <-
   hc_add_series(
     nbhv_level1_status,
     type = "bar",
-    name = "Neurobehavioral Rating Scale Scores",
+    name = "Behavioral Rating Scales",
     hcaes(x = name, y = y)) %>%
   hc_xAxis(
     type = "category",
@@ -1136,21 +1186,47 @@ plot1
 
 ???
 
-make 3 groups (parent, self, basc vs brown)
--ADLs very impaired
--collapsed across all domains is 1.2 SDs
+## Behavioral
+- make 3 groups (parent, self, basc vs brown)
+- ADLs very impaired
+- collapsed across all domains is 1.2 SDs
+
+---
+
+class: section
+
+## Summary
+
+- point 1
+- point 2
+- point 3
+
+---
+
+class: section
+
+# Header 1
+
+## Header 2
+
+### Header 3
+
+#### Header 4
+
+##### Header 5
+
+###### Header 6
 
 ---
 
 name: snoop
-class: middle, right
+class: middle, right, lbc, inverse
 background-image: url(https://gifs.joelglovier.com/favs/snoop-turning-the-wheel-big.gif)
-background-color: var(--usc-white)
-background-size: auto
-font-style: bold
-font-weight: 400
+background-color: var(--white)
+background-size: contain
+background-repeat: no-repeat
 
-.pull-right[.black[.bold[
+.pull-right[
 
 "There are three ways to ultimate success:
 
@@ -1159,4 +1235,5 @@ The first way is to be kind.
 The second way is to be kind.
 
 The third way is to be kind."
-]]]
+
+]

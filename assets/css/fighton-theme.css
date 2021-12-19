@@ -84,14 +84,14 @@
 
   /* Colors */
   --text-color: var(--near-white);
-  --header-color: var(--washed-green);
+  --header-color: var(--near-white);
   --background-color: var(--near-black);
   --link-color: var(--hot-pink);
   --text-bold-color: var(--washed-blue);
   --code-highlight-color: var(--light-purple);
-  --inverse-text-color: var(--navy);
-  --inverse-background-color: var(--light-yellow);
-  --inverse-header-color: var(--blue);
+  --inverse-text-color: var(--black);
+  --inverse-background-color: var(--white);
+  --inverse-header-color: var(--hot-pink);
   --inverse-link-color: var(--light-green);
   --title-slide-background-color: var(--lightest-blue);
   --title-slide-text-color: var(--white);
@@ -103,6 +103,7 @@
 
   --header-font-family: 'Monoton';
   --header-font-family-fallback: 'Yanone Kaffeesatz';
+  --base-font-size: medium;
 }
 
 html {
@@ -110,20 +111,19 @@ html {
 }
 
 body {
-  font-family: var(--text-font-family), var(--text-font-family-fallback),
+  /* font-family: var(--text-font-family), var(--text-font-family-fallback),
     var(--text-font-base);
-  font-weight: 300;
+  font-weight: 400; */
   color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-family: var(--header-font-family), var(--header-font-family-fallback);
   font-weight: 600;
   color: var(--header-color);
 }
-
 
 .title-slide h1 {
   font-family: 'Major Mono Display', monospace;
@@ -148,8 +148,8 @@ h3 {
 
 .title-slide h3 {
   font-family: "Alegreya", sans-serif;
-  font-weight: 50;
-  font-size: 0.2em;
+  font-weight: 200;
+  font-size: 0.4rem;
   color: var(--usc-lightgray);
   text-transform: none;
   line-height: 1em;
@@ -157,7 +157,7 @@ h3 {
 
 .title-slide h4 {
   font-family: "Alegreya", sans-serif;
-  font-weight: 50;
+  font-weight: 300;
   font-size: 0.2em;
   color: var(--usc-cardinal);
   text-transform: none;
@@ -207,7 +207,7 @@ blockquote {
   height: 100%;
 }
 
-.remark-slide-content h1 {
+/* .remark-slide-content h1 {
   font-size: var(--header-h1-font-size);
 }
 
@@ -217,7 +217,7 @@ blockquote {
 
 .remark-slide-content h3 {
   font-size: var(--header-h3-font-size);
-}
+} */
 
 .remark-code {
   color: var(--dark-pink);
@@ -229,21 +229,11 @@ blockquote {
   font-size: 1em;
 }
 
-
-.remark-code,
+/* .remark-code,
 .remark-inline-code {
   font-family: var(--code-font-family), Menlo, Consolas, Monaco, Liberation Mono,
     Lucida Console, monospace;
-}
-
-.remark-code {
-  font-size: var(--code-font-size);
-}
-
-.remark-inline-code {
-  font-size: var(--code-inline-font-size);
-  color: var(--washed-green);
-}
+} */
 
 .remark-slide-number {
   color: var(--washed-green);
@@ -277,8 +267,6 @@ a>code {
   padding-right: 4em;
   font-size: 0.9em;
 }
-
-
 
 img {
   margin-bottom: 1.5rem;
@@ -326,15 +314,6 @@ a:focus {
   color: var(--navy);
   text-decoration: underline;
 }
-
-
-
-
-
-
-
-
-
 
 /* MAIN BACKGROUND COLOR */
 .section {
@@ -475,7 +454,6 @@ tr:nth-child(even) {
   margin: 0;
 }
 
-
 /* Wider cols */
 
 .right-wide {
@@ -583,9 +561,9 @@ a.footer-link {
 
 /* Headers, body */
 
-h4 {
+/* h4 {
   font-size: 1.8em;
-}
+} */
 
 .emphasis {
   font-family: "Bitter";
@@ -612,27 +590,27 @@ h4 {
 }
 
 /* https://github.com/yihui/xaringan/wiki/Progressbar */
-/* .remark-slide-number {
+.remark-slide-number {
   position: inherit;
 } */
 
-/* .remark-slide-number .progress-bar-container {
+.remark-slide-number .progress-bar-container {
   position: absolute;
   bottom: 0;
   height: 8px;
   display: block;
   left: 0;
   right: 0;
-} */
+}
 
-/* .remark-slide-number .progress-bar {
+.remark-slide-number .progress-bar {
   height: 100%;
   background-color: var(--blue);
 }
 
 .title-slide .remark-slide-number .progress-bar-container {
   height: 1px;
-} */
+}
 
 hr {
   color: var(--lightest-blue);
@@ -749,10 +727,6 @@ table.dataTable.display tbody tr:hover {
   padding-top: 7rem;
 }
 
-@page {
-  margin: 0;
-}
-
 @media print {
   .remark-slide-scaler {
     width: 100% !important;
@@ -838,3 +812,9 @@ p.b {
 .capitalize {
   text-transform: capitalize;
   }
+
+.lbc {
+font-size: 0.2em;
+color: 'black';
+background-color: 'white'; 
+}
