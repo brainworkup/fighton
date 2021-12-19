@@ -83,6 +83,53 @@
   --usc-white: #FFFFFF;
 }
 
+.title-slide h1 {
+  font-family: 'Major Mono Display', monospace;
+  color: var(--usc-white);
+  font-size: 2.5em;
+  word-wrap: break-word;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5em !important;
+}
+
+.title-slide h2 {
+  font-family: 'Major Mono Display', monospace;
+  font-weight: 600;
+  font-size: 1.2em;
+  color: var(--usc-lightgray);
+  text-shadow: none;
+  font-style: italic;
+  line-height: 2em;
+  margin-bottom: 1em !important;
+}
+
+.title-slide h3 {
+  font-family: "Alegreya", sans-serif;
+  font-weight: 50;
+  font-size: 0.2em;
+  color: var(--usc-darkgray);
+  text-transform: none;
+  line-height: 1em;
+}
+
+.title-slide h4 {
+  font-family: "Alegreya", sans-serif;
+  font-weight: 50;
+  font-size: 0.2em;
+  color: var(--usc-gold);
+  text-transform: none;
+  line-height: 1em;
+}
+
+.title-slide a {
+  color: var(--near-white);
+}
+
+.title-slide a:hover {
+  color: var(--pink);
+}
+
 .remark-slide-content p,
 ul,
 ol,
@@ -188,7 +235,7 @@ a:focus {
 }
 
 .inverse {
-  background-color: var(--near-white);
+  background-color: var(--light-blue);
   color: var(--near-black);
   text-shadow: none;
 }
@@ -288,43 +335,6 @@ tr:nth-child(even) {
   margin: 0;
 }
 
-.title-slide h1 {
-  font-family: 'Major Mono Display', monospace;
-  color: var(--usc-gold);
-  font-size: 2.5em;
-  word-wrap: break-word;
-  letter-spacing: 0.2rem;
-  font-weight: 600;
-  margin-bottom: 0.5em !important;
-}
-
-.title-slide h2 {
-  font-family: 'Major Mono Display', monospace;
-  font-weight: 600;
-  font-size: 1.2em;
-  color: var(--usc-gold);
-  text-shadow: none;
-  font-style: italic;
-  line-height: 2em;
-  margin-bottom: 1em !important;
-}
-
-.title-slide h3 {
-  font-family: "Alegreya", sans-serif;
-  font-weight: 200;
-  font-size: 0.5em;
-  color: var(--usc-gold);
-  text-transform: none;
-  line-height: 1em;
-}
-
-.title-slide a {
-  color: var(--near-white);
-}
-
-.title-slide a:hover {
-  color: var(--pink);
-}
 
 /* Wider cols */
 

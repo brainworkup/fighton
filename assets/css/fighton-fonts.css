@@ -23,7 +23,7 @@
 }
 
 body {
-  font-family: 'Ubuntu', Prompt, sans-serif;
+  font-family: 'National', Prompt, sans-serif;
   font-weight: 400;
   /* background-color: rgba(0, 0, 0, 0.8); */
   color: var(--near-white);
@@ -58,7 +58,8 @@ h4, h5 {
 h6 {
   font-family: 'New Rocker', cursive;
   font-weight: 400;
-  color: var(--washed-green);
+  color: var(--washed-red);
+  font-size: 2em !important;
 }
 
 .remark-code,
