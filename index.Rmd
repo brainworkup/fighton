@@ -116,6 +116,8 @@ background-color: var(--usc-black)
 ### `r rmarkdown::metadata$date`
 ]
 
+.footer[images/2-Line_KeckSOMofUSC_CardOnBlack.jpg]
+
 ---
 class: middle, center
 
