@@ -13,7 +13,7 @@ date: "2021-12-21"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: ["default", "assets/css/fighton-fonts.css", "assets/css/fighton-theme2.css", "assets/css/fighton-theme.css"]
+    css: ["default", "assets/css/fighton-fonts.css", "assets/css/fighton-theme.css"]
     chakra: libs/remark-latest.min.js
     nature:
       highlightStyle: monokai
@@ -103,6 +103,7 @@ name: title
 class: title-slide, left, middle
 background-image: url(images/daftpunktocat-thomas.gif)
 background-position: right
+background-repeat: no-repeat
 background-size: contain
 background-color: var(--usc-black)
 
@@ -112,11 +113,11 @@ background-color: var(--usc-black)
 ### `r rmarkdown::metadata$author1`
 ### `r rmarkdown::metadata$author2`
 ### `r rmarkdown::metadata$institute`
-![:scale 50%](images/2-Line_KeckSOMofUSC_CardOnBlack.jpg)
+![:scale 55%](images/2-Line_KeckSOMofUSC_CardOnBlack.jpg)
 ]
 
 ---
-class: middle, center
+class: middle, center, f2
 
 ## Hello.
 
@@ -862,6 +863,10 @@ plot1
 ???
 
 These are her cognitive scores
+MOTOR
+-motor impersistence
+-sequencing vs tapping
+-dominant vs nondominant hand dexterity; atypical laterlization
 
 ---
 
@@ -1132,6 +1137,8 @@ plot1
 ???
 
 make 3 groups (parent, self, basc vs brown)
+-ADLs very impaired
+-collapsed across all domains is 1.2 SDs
 
 ---
 
