@@ -47,7 +47,7 @@
   --header-h3-font-size: 1.75rem;
 
   /* Colors */
-  --text-color: near-black;
+  --text-color: var(--near-black);
   --header-color: #690f0d;
   --background-color: #ffffff;
   --link-color: #690f0d;

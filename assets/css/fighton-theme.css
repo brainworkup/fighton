@@ -74,17 +74,6 @@
   --washed-yellow: #fffceb;
   --washed-red: #ffdfdf;
 
-  /* Non-Tachyons */
-  --independence: #344966ff;
-  --cornflower-blue: #7899d4ff;
-  --marigold: #fad662;
-  --china-rose: #b74f6fff;
-  --orchid-pink: #ffc6d9ff;
-  --cultured: #fcfaf9ff;
-  --ming: #246a73ff;
-  --cool-black: #202123;
-  --cool-white: #b8bcc2;
-  --primary-color: #ea80fc;
 }
 
 .remark-slide-content p,
@@ -110,6 +99,7 @@ blockquote {
 
 .remark-slide-content {
   background-color: var(--near-black);
+  color: var(--gold); /* might not be necessary */
 }
 
 .footnote {
@@ -175,7 +165,7 @@ a:focus {
 }
 
 .remark-code-line-highlighted {
-  background-color: #d8228c;
+  background-color: var(--light-red);
 }
 
 /* MAIN BACKGROUND COLOR */
@@ -191,8 +181,8 @@ a:focus {
 }
 
 .inverse {
-  background-color: #11050bee;
-  color: #f8f1f1;
+  background-color: var(--near-white);
+  color: var(--near-black);
   text-shadow: none;
 }
 
@@ -466,9 +456,9 @@ h4 {
 }
 
 /* https://github.com/yihui/xaringan/wiki/Progressbar */
-.remark-slide-number {
+/* .remark-slide-number {
   position: inherit;
-}
+} */
 
 /* .remark-slide-number .progress-bar-container {
   position: absolute;
@@ -568,3 +558,19 @@ p.b {
 .fade {
   opacity: 0.66;
 }
+
+/* Joey */
+
+.exclaim .reveal .state-background {
+  background: black;
+} 
+
+.exclaim .reveal h1,
+.exclaim .reveal h2,
+.exclaim .reveal p {
+  color: white;
+}
+
+.capitalize {
+  text-transform: capitalize;
+  }

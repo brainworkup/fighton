@@ -1,75 +1,80 @@
-@import url(https://fonts.googleapis.com/css?family=Latin+Modern+Mono&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap);
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,300;1,300;1,600&display=swap");
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Cabin:600,600i&display=swap);
-@import url(https://fonts.googleapis.com/css?family=New+Rocker);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
 
-
-body {
-  font-family: 'Noto Sans', Prompt, sans-serif;
-  font-weight: 400;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
+@font-face {
+  font-family: "National";
+  src: url("https://www.usc.edu/assets/fonts/NationalWeb-Regular.eot");
+  src: local(":)"),
+    url("https://www.usc.edu/assets/fonts/NationalWeb-Regular.woff")
+      format("woff"),
+    url("https://www.usc.edu/assets/fonts/NationalWeb-Regular.ttf")
+      format("truetype"),
+    url("https://www.usc.edu/assets/fonts/NationalWeb-Regular.svg")
+      format("svg");
+  font-weight: 500;
+  font-style: normal;
 }
 
 .title {
-  font-family: "Major Mono Display", serif;
-  font-weight: 500;
+  font-family: 'Major Mono Display', monospace;
+  font-weight: 400;
+  color: var(--white);
+}
+
+body {
+  font-family: 'Ubuntu', Prompt, sans-serif;
+  font-weight: 400;
+  /* background-color: rgba(0, 0, 0, 0.8); */
   color: var(--near-white);
 }
 
 h1 {
-  font-family: "Major Mono Display", serif;
+  font-family: 'Monoton', cursive;
   font-weight: 500;
   color: var(--near-white);
 }
 
 h2 {
-  font-family: "Monoton", serif;
+  font-family: 'Monoton', cursive;
   font-weight: 300;
   color: var(--near-white);
 }
 
 h3 {
-  font-family: "Latin Modern Mono", sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   text-transform: uppercase;
   font-weight: 300;
-  color: var(--white);
+  color: var(--near-white);
   font-size: 1.3em !important;
 }
 
-h4 {
-  font-family: "New Rocker", cursive;
+h4, h5 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight: 400;
-  color: var(--near-black);
-}
-
-h5 {
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  font-weight: 400;
-  color: var(--near-white);
+  color: var(--washed-red);
 }
 
 h6 {
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  font-weight: 300;
-  color: var(--near-white);
+  font-family: 'New Rocker', cursive;
+  font-weight: 400;
+  color: var(--washed-green);
 }
 
 .remark-code,
 .remark-inline-code {
-  font-family: "Fira Code", monospace;
+  font-family: 'Fira Code', monospace;
 }
 
 @media print {
   body {
-    font-family: "Prompt", sans-serif;
+    font-family: 'Prompt', sans-serif;
     font-weight: 400;
   }
 }

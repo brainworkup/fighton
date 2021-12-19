@@ -61,17 +61,17 @@ Press c to clone the slides to a new browser window; slides in the two windows w
 
 Press h or ? again to exit the help page.
 
-* [ ]
-* F90.1 attention-deficit/hyperactivity disorder inattentive type
+- [ ]
+- F90.1 attention-deficit/hyperactivity disorder inattentive type
 
-*Exceptionally Low*
+_Exceptionally Low_
 
-* [ ]
-* list 1
-* list 2
-* list 3
+- [ ]
+- list 1
+- list 2
+- list 3
 
-*italics*
+_italics_
 **bold**
 
 ## fonts
@@ -86,8 +86,110 @@ ffmpeg -i daftpunktocat-thomas.gif daftpunktocat-thomas.mp4
 
 ffmpeg -i 7-emot-laughing-crying.gif -c vp9 -b:v 0 -crf 41 7-emot-laughing-crying.webm
 
-*At-Risk*
+_At-Risk_
 
-\[\[\#fighton\|tag\.fighton\]\]
+[[#fighton|tag.fighton]]
 
 ADHD: Neuropsychological assessment for diagnostic clarification and treatment planning
+
+## Highcharter Themes
+
+### Themes
+
+Functions to customize the look of your chart.
+
+hc_theme()
+
+Creating highcharter themes
+hc_add_theme()
+
+Add themes to a highchart object
+hc_theme_merge()
+
+Merge themes
+hc_theme_538() hc_theme_sparkline_vb() hc_theme_tufte2()
+
+### Theme collection for highcharts
+
+hc_theme_alone()
+Alone theme for highcharts
+
+hc_theme_bloom()
+Bloomberg Graphics theme for highcharts
+
+hc_theme_chalk()
+Chalk theme for highcharts
+
+hc_theme_darkunica()
+Dark Unica theme for highcharts
+
+hc_theme_db()
+Dotabuff theme for highcharts
+
+hc_theme_economist()
+Economist theme for highcharts
+
+hc_theme_elementary()
+Elementary (OS) theme for highcharts
+
+hc_theme_ffx()
+Firefox theme for highcharts
+
+hc_theme_flat()
+Flat theme for highcharts
+
+hc_theme_flatdark()
+Flatdark theme for highcharts
+
+hc_theme_ft()
+Financial Times theme for highcharts
+
+hc_theme_ggplot2()
+ggplot2 theme for highcharts
+
+hc_theme_google()
+Google theme for highcharts
+
+hc_theme_gridlight()
+Grid Light theme for highcharts
+
+hc_theme_handdrawn()
+Hand Drawn theme for highcharts
+
+hc_theme_hcrt()
+Highcharter theme for highcharts
+
+hc_theme_monokai()
+Monokai theme for highcharts
+
+hc_theme_null()
+Null theme for highcharts
+
+hc_theme_sandsignika()
+Sand Signika theme for highcharts
+
+hc_theme_smpl()
+Simple theme for highcharts
+
+hc_theme_sparkline()
+Sparkline theme for highcharts
+
+hc_theme_superheroes()
+Superheroes theme for highcharts
+
+hc_theme_tufte()
+Tufte theme for highcharts
+
+plot %>%
+hc_chart(
+borderColor = "#EBBA95",
+borderRadius = 10,
+borderWidth = 2,
+backgroundColor = list(
+linearGradient = c(0, 0, 500, 500),
+stops = list(
+list(0, "rgb(255, 255, 255)"),
+list(1, "rgb(200, 200, 255)")
+)
+)
+)
