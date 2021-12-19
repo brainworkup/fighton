@@ -105,7 +105,7 @@ class: title-slide, left, middle
 background-image: url(images/daftpunktocat-thomas.gif)
 background-position: right
 background-size: contain
-background-color: #990000
+background-color: var(--usc-black)
 
 .pull-left[
 # `r rmarkdown::metadata$title`
@@ -128,9 +128,8 @@ Our department has grown since 2018
 ---
 
 class: middle, center
-color: var(--red)
 
-.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.bg-near-black.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 If you cannot explain something in simple terms, you don't understand it.
 
 .tr[
@@ -142,7 +141,7 @@ If you cannot explain something in simple terms, you don't understand it.
 ---
 <!-- class: middle -->
 <!-- type: exclaim -->
-class: flex
+<!-- class: flex -->
 
 What do I know about .big[ADHD]?
 
@@ -156,63 +155,6 @@ What do I know about .big[ADHD]?
 
 80HD
 PATS preschool study
-
----
-
-class: middle, left
-
-## Data Science
-
-.left[
-
-![:scale 45%](images/computer.gif)
-
-]
-
----
-
-class: center middle
-
-.big[1.]
-## inattention
-
----
-
-class: center middle
-
-.big[2.]
-## hyperactivity
-
----
-
-class: center middle
-
-.big[3.]
-## impulsivity
-
----
-
-class: center middle
-
-.big[4.]
-## working memory
-
----
-
-class: center middle
-
-.big[5.]
-## stimulus boundness
-
----
-
-class: section, middle
-
-.left[Left hand side content]
-
-.center[Middle content]
-
-.right[Right hand side content]
 
 ---
 
@@ -232,25 +174,14 @@ class: section middle center
 ### stimulus boundness
 ]
 
+---
+
+class: center middle
+
+.big[1.]
+## inattention
 
 ---
-class: inverse, middle
-
-### Neurocognitive deficits related to adhd
-
-.panelset[
-.panel[.panel-name[Working Memory]
-
-#### Working Memory
-
-- Remembering things short term memory
-
-- Verbal information
-
-- Nonverbal information
-
-- "mind's eye"
-]
 
 .panel[.panel-name[Processing Speed]
 
@@ -266,19 +197,21 @@ class: inverse, middle
 
 ]
 
-.panel[.panel-name[Response Variability]
+---
 
-#### Response Variability
+class: center middle
 
-- Reaction time variability
+.big[2.]
+## hyperactivity
 
-- Response consistency
+---
 
-- Attentional drift
+class: center middle
 
-- Impulsive responding
+.big[..3..]
+## impulsivity
 
-]
+---
 
 .panel[.panel-name[Inhibitory Control]
 
@@ -293,35 +226,9 @@ class: inverse, middle
 - Impulsive responding
 
 ]
-]
 
 ---
-name: bell
-class: left, middle, fullscale
-background-image: url(https://gifs.joelglovier.com/crying/laughing-crying.gif)
-background-position: 50% 50%
-background-size: 100%
 
-#### Emotional Control
-
-.pull-left[
-> **Emotion** `r emo::ji("fire")`
->
-> **(Dys)Regulation**
-> 
-> in **ADHD**
->
-> Not part of DSM/ICD diagnostic criteria 
->
-> .big[BUT] ...
->
-]
-
-???
-
-This is recognized on most rating scales e.g., brown
-
----
 class: middle, center
 
 .frame[
@@ -354,6 +261,7 @@ class: middle, center
 This is how we test it
 
 ---
+
 class: middle, center
 
 .frame[
@@ -377,6 +285,7 @@ class: middle, center
 Also how
 
 ---
+
 class: middle, center
 
 .frame[
@@ -391,14 +300,111 @@ class: middle, center
 This is how we test it
 
 ---
-name: agenda
-class: middle, center
 
-## Agenda
+class: center middle
 
-The .blue[name] of this slide is {{ name }}.
+.big[4.]
+## working memory
 
 ---
+
+.panelset[
+.panel[.panel-name[Working Memory]
+
+#### Working Memory
+
+- Remembering things short term memory
+
+- Verbal information
+
+- Nonverbal information
+
+- "mind's eye"
+]
+
+---
+
+# GWAS of Working Memory
+
+Grant to study WM
+
+![](images/wm.gif)
+
+---
+
+class: center middle
+
+.big[6.]
+## response variability
+
+---
+
+.panel[.panel-name[Response Variability]
+
+#### Response Variability
+
+- Reaction time variability
+
+- Response consistency
+
+- Attentional drift
+
+- Impulsive responding
+
+]
+
+---
+
+class: center middle
+
+.big[...5...]
+## stimulus boundness
+
+---
+
+name: bell
+class: left, middle, fullscale
+background-image: url(https://gifs.joelglovier.com/crying/laughing-crying.gif)
+background-position: 50% 50%
+background-size: 100%
+
+## Emotional Control
+
+.pull-left[
+> **Emotion** `r emo::ji("fire")`
+>
+> **(Dys)Regulation**
+> 
+> in **ADHD**
+>
+> Not part of DSM/ICD diagnostic criteria 
+>
+> .big[BUT] ...
+>
+]
+
+???
+
+This is recognized on most rating scales e.g., brown
+
+
+---
+
+name: data-science
+class: middle, left
+
+## Data Science
+
+.left[
+![:scale 45%](images/computer.gif)
+]
+
+.right[
+The .blue[name] of this slide is {{ name }}.
+]
+
+---
+
 name: gauss1
 class: middle center inverse animated slideInRight fadeOutLeft
 background-color: #FFFFFF

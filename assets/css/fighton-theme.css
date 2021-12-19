@@ -182,9 +182,9 @@ a:focus {
 }
 
 .frame h1 {
-  color: var(--independence);
+  color: var(--light-green);
   padding-bottom: 1em !important;
-  border-bottom: 3px solid var(--cornflower-blue);
+  border-bottom: 3px solid var(--light-blue);
 }
 
 .inverse {
@@ -212,7 +212,7 @@ a:focus {
 }
 
 .inverse a:hover {
-  color: var(--cool-black);
+  color: var(--near-black);
 }
 
 /* Two-column layout */
@@ -290,7 +290,7 @@ tr:nth-child(even) {
 
 .title-slide h1 {
   font-family: 'Major Mono Display', monospace;
-  color: var(--near-white);
+  color: var(--usc-gold);
   font-size: 2.5em;
   word-wrap: break-word;
   letter-spacing: 0.2rem;
@@ -300,12 +300,12 @@ tr:nth-child(even) {
 
 .title-slide h2 {
   font-family: 'Major Mono Display', monospace;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.2em;
-  color: var(--near-white);
+  color: var(--usc-gold);
   text-shadow: none;
   font-style: italic;
-  line-height: 0.5em;
+  line-height: 2em;
   margin-bottom: 1em !important;
 }
 
@@ -313,9 +313,9 @@ tr:nth-child(even) {
   font-family: "Alegreya", sans-serif;
   font-weight: 200;
   font-size: 0.5em;
-  color: var(--near-white);
+  color: var(--usc-gold);
   text-transform: none;
-  line-height: 0.5em;
+  line-height: 1em;
 }
 
 .title-slide a {
