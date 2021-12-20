@@ -1220,11 +1220,12 @@ class: section
 ---
 
 name: snoop
-class: middle, right, lbc, inverse
+class: middle, right, lbc
 background-image: url(https://gifs.joelglovier.com/favs/snoop-turning-the-wheel-big.gif)
-background-color: var(--white)
-background-size: contain
-background-repeat: no-repeat
+background-color: #FFFFFF
+background-size: auto
+font-style: bold
+font-weight: 600
 
 .pull-right[
 
@@ -1235,5 +1236,4 @@ The first way is to be kind.
 The second way is to be kind.
 
 The third way is to be kind."
-
 ]
