@@ -193,7 +193,7 @@ class: section middle center
 
 ---
 
-class: center middle
+class: left middle
 background-color: var(--near-black)
 
 
@@ -201,30 +201,32 @@ background-color: var(--near-black)
 
 ## inattention
 
---
-
 ![:scale 35%](images/distracted-dog.gif)
 
 
-???
+--
 
-- notes
-
----
-
+```
 class: center middle
-background-color: var(--near-black)
+```
 
 .big[2.]
 ## hyperactivity
 
----
+--
 
-class: center middle
-background-color: var(--near-black)
+```
+class: right middle
+```
 
 .big[3.]
 ## impulsivity
+
+???
+
+###### Notes
+- 1 
+- two 
 
 ---
 
@@ -237,7 +239,7 @@ background-color: var(--near-black)
 
 ---
 
-class: animate zoomIn zoomOut center middle
+class: middle center animated slideInUp slideOutDown
 background-color: var(--near-black)
 
 
@@ -252,10 +254,8 @@ This is how we test it
 
 ---
 
-class: animate zoomIn zoomOut center middle
+class: middle center animated slideInRight fadeOutLeft
 background-color: var(--near-black)
-
-
 
 ### .red[RED]
 ### .green[GREEN]
@@ -269,9 +269,8 @@ Also how
 
 ---
 
-class: animate zoomIn zoomOut center middle
+class: middle center animated slideInLeft fadeOutRight
 background-color: var(--near-black)
-
 
 ### .purple[RED]
 ### .orange[GREEN]
@@ -300,9 +299,10 @@ background-color: var(--near-black)
 
 ---
 
-class: center, middle
-background-color: var(--near-black)
+name: rtsd
+class: middle
 
+.left-column[
 #### Consistency in Speed of Information Processing
 
 - Reaction time variability
@@ -312,19 +312,17 @@ background-color: var(--near-black)
 - Attentional drift
 
 - Impulsive responding
+]
 
----
-
-name: rtsd
-class: center, middle
+.right-column[
 ### RTSD as a biomarker of ADHD
 
-![:scale 50%](images/halperin-2008.png)
-
+![:scale 70%](images/halperin-2008.png)
+]
 
 ---
 
-class: center middle
+class: center, middle
 background-color: var(--near-black)
 
 .big[4.]
@@ -333,36 +331,45 @@ background-color: var(--near-black)
 
 ---
 
-class: center, middle
+class: middle, center
 background-color: var(--near-black)
 
-### Attentional Fluency/Cognitive Proficiency
+## Attentional Fluency
+
+#### Cognitive Proficiency
 
 .pull-left[
-
-#### Processing Speed
+### Processing Speed
 
 - Rate of test taking
+
 - Rate of speed of information processing
+
 - Some other description
+
 - Fourth layer
 ]
 
 .pull-right[
-
-#### Working Memory
+### Working Memory
 
 - Remembering things short term memory
+
 - Verbal information
+
 - Nonverbal information
+
 - "mind's eye"
 ]
 
 ---
 
-### Complex Working Memory as a Biomarker of ADHD
+class: middle
+#### Complex Working Memory as a Biomarker of ADHD
 
-![:scale 50%](images/trampush_devsci.png)
+.left[![:scale 50%](images/trampush_devsci.png)]
+
+.right[![:scale 50%](images/trampush_devsci_fig1.png)]
 
 ---
 
@@ -370,8 +377,11 @@ class: center, middle
 
 ## GWAS of Working Memory
 
-.middle[![:scale 65%](images/wm.gif)]
+Currently funded to conduct large-scale molecular genetic analysis of working memory in >25,000 people, >70,000 phenotypes, and >293,000,000 genetic variants
 
+.left[![:scale 45%](images/wm.gif)]
+
+.right[![:scale 45%](images/gwm_fig1.png)]
 
 ---
 
@@ -1202,23 +1212,8 @@ class: center, middle
 
 ## Follow-up from Mom
 
-![mom](images/mom_note.png)
+![:scale 70%](images/mom_note.png)
 
----
-
-class: section
-
-# Header 1
-
-## Header 2
-
-### Header 3
-
-#### Header 4
-
-##### Header 5
-
-###### Header 6
 
 ---
 
@@ -1232,11 +1227,11 @@ background-size: auto
 
 "There are three ways to ultimate success:
 
-The first way\br is to be kind.
+The first way\n is to be kind.
 
-The second way\br is to be kind.
+The second way\n is to be kind.
 
-The third way\br is to be kind."
+The third way\n is to be kind."
 
 ]
 
