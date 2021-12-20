@@ -193,16 +193,10 @@ blockquote {
   padding: 1em;
 }
 
-/* .remark-slide-content {
-  background-color: var(--near-black);
-  color: var(--white-90); /* might not be necessary */
-}
-
-*/
-
 /* copied from fighton-theme2 in case doesn't work */
 .remark-slide-content {
-  background-color: var(--background-color);
+  background-color: var(--near-black);
+  color: var(--near-white); /* might not be necessary */
   font-size: 1rem;
   padding: 16px 64px 16px 64px;
   width: 100%;
@@ -321,7 +315,7 @@ a:focus {
 /* MAIN BACKGROUND COLOR */
 .section {
   background-color: var(--near-black);
-  color: var(--white-90);
+  color: var(--near-white);
 }
 
 .frame h1 {
@@ -377,7 +371,6 @@ a:focus {
 .title-slide .remark-slide-number {
   display: none;
 }
-
 
 /* Two-column layout */
 .left-column {
@@ -752,7 +745,7 @@ table.dataTable.display tbody tr:hover {
 }
 
 .bg-base {
-  background-color: var(--base);
+  background-color: var(--near-black);
 }
 
 .white {
@@ -760,7 +753,7 @@ table.dataTable.display tbody tr:hover {
 }
 
 .bg-white {
-  background-color: var(--white);
+  background-color: var(--near-white);
 }
 
 .black {

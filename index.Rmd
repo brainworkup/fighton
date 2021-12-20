@@ -81,8 +81,7 @@ knitr::opts_chunk$set(
 ```
 
 ```{r xaringan-extra, include=F}
-xaringanExtra::use_animate_css()
-# xaringanExtra::embed_xaringan("https://brainworkup.github.io/fighton/")
+xaringanExtra::use_animate_css(minified = FALSE, xaringan = TRUE)
 xaringanExtra::use_tachyons()
 xaringanExtra::use_tile_view()
 xaringanExtra::use_broadcast()
@@ -130,25 +129,6 @@ Our department has grown since 2018
 
 ---
 
-background-color: var(--near-black)
-
-What do we know about .big[ADHD]?
-
-.pull-left[
-- [`r fontawesome::fa("github")` @brainworkup](https://github.com/brainworkup)
-- [`r fontawesome::fa("twitter")` @brainworkup](https://twitter.com/brainworkup)   
-- [`r fontawesome::fa("link")` brainworkup.io](https://brainworkup.io)
-]
-
-.pull-right[![:scale 55%](images/dinotocat.png)]
-
-???
-
-80HD
-PATS preschool study
-
----
-
 class: middle, center
 background-color: var(--near-black)
 
@@ -163,6 +143,26 @@ If you cannot explain something in simple terms, you don't understand it.
 
 ---
 
+class: middle
+background-color: var(--near-black)
+
+What do we know about .big[ADHD]?
+
+.pull-left[
+- [`r fontawesome::fa("github")` @brainworkup](https://github.com/brainworkup)
+- [`r fontawesome::fa("twitter")` @brainworkup](https://twitter.com/brainworkup)   
+- [`r fontawesome::fa("link")` brainworkup.io](https://brainworkup.io)
+]
+
+.pull-right[![:scale 70%](images/dinotocat.png)]
+
+???
+
+80HD
+PATS preschool study
+
+---
+
 class: center, middle, section
 
 ### Developmental Trajectory of ADHD
@@ -171,7 +171,7 @@ This is the model of ADHD from which I work ...
 
 --
 
-
+![:scale 80%](images/halperin_schulz.png)
 
 ---
 
@@ -196,33 +196,35 @@ class: section middle center
 class: center middle
 background-color: var(--near-black)
 
+
 .big[1.]
+
 ## inattention
 
 --
 
-.big[2.]
-## hyperactivity
+![:scale 35%](images/distracted-dog.gif)
 
---
 
-.big[3.]
-## impulsivity
+???
+
+- notes
 
 ---
 
+class: center middle
 background-color: var(--near-black)
 
-#### Inhibitory Control
+.big[2.]
+## hyperactivity
 
-- Go/No-Go performance
+---
 
-- Core DSM symptom (impulsivity)
+class: center middle
+background-color: var(--near-black)
 
-- Something else ...
-
-- Impulsive responding
-
+.big[3.]
+## impulsivity
 
 ---
 
@@ -235,26 +237,14 @@ background-color: var(--near-black)
 
 ---
 
-class: middle, center
+class: animate zoomIn zoomOut center middle
 background-color: var(--near-black)
 
-.frame[
+
 ### RED
-]
-
-.frame[
 ### GREEN
-]
-
-.frame[
 ### BLUE 
-]
-
-.frame[
 ### YELLOW
-
-
-]
 
 ???
 
@@ -262,24 +252,16 @@ This is how we test it
 
 ---
 
-class: middle, center
+class: animate zoomIn zoomOut center middle
 background-color: var(--near-black)
 
-.frame[
+
+
 ### .red[RED]
-]
-
-.frame[
 ### .green[GREEN]
-]
-
-.frame[
 ### .blue[BLUE] 
-]
-
-.frame[
 ### .yellow[YELLOW]
-]
+
 
 ???
 
@@ -287,19 +269,25 @@ Also how
 
 ---
 
-class: middle, center
+class: animate zoomIn zoomOut center middle
 background-color: var(--near-black)
 
-.frame[
+
 ### .purple[RED]
 ### .orange[GREEN]
 ### .pink[BLUE] 
 ### .green[YELLOW]
-]
+
 
 ???
 
 This is how we test it
+
+---
+
+class: center, middle
+
+### paper on the CAARS adult adhd
 
 ---
 
@@ -312,6 +300,7 @@ background-color: var(--near-black)
 
 ---
 
+class: center, middle
 background-color: var(--near-black)
 
 #### Consistency in Speed of Information Processing
@@ -326,9 +315,11 @@ background-color: var(--near-black)
 
 ---
 
+name: rtsd
+class: center, middle
 ### RTSD as a biomarker of ADHD
 
-![Halperin-2008](images/halperin-2008.png)
+![:scale 50%](images/halperin-2008.png)
 
 
 ---
@@ -342,45 +333,40 @@ background-color: var(--near-black)
 
 ---
 
+class: center, middle
 background-color: var(--near-black)
+
+### Attentional Fluency/Cognitive Proficiency
 
 .pull-left[
 
 #### Processing Speed
 
 - Rate of test taking
-
 - Rate of speed of information processing
-
 - Some other description
-
 - Fourth layer
 ]
 
-.pull-right [
+.pull-right[
 
 #### Working Memory
 
 - Remembering things short term memory
-
 - Verbal information
-
 - Nonverbal information
-
 - "mind's eye"
-
 ]
 
 ---
 
-### RTSD as a biomarker of ADHD
+### Complex Working Memory as a Biomarker of ADHD
 
-![Trampush-2013](images/trampush_devsci.png)
+![:scale 50%](images/trampush_devsci.png)
 
 ---
 
 class: center, middle
-background-color: var(--near-black)
 
 ## GWAS of Working Memory
 
@@ -1212,6 +1198,14 @@ class: section
 
 ---
 
+class: center, middle
+
+## Follow-up from Mom
+
+![mom](images/mom_note.png)
+
+---
+
 class: section
 
 # Header 1
@@ -1238,10 +1232,15 @@ background-size: auto
 
 "There are three ways to ultimate success:
 
-The first way is to be kind.
+The first way\br is to be kind.
 
-The second way is to be kind.
+The second way\br is to be kind.
 
-The third way is to be kind."
+The third way\br is to be kind."
 
 ]
+
+???
+
+- Mr Rogers
+[](https://jasonstcyr.com/2019/11/27/building-trust-have-you-been-kind-today/)
