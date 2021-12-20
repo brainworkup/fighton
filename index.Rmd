@@ -523,9 +523,9 @@ class: middle, left
 - behavioral immaturity
 - defiance
 - attention/executive problems
-- reading/learning difficulties.
+- reading/learning difficulties
 
-* Purpose of eval was (shockingly) to clarify diagnoses and assist with educational and treatment planning
+* Purpose of eval was (shockingly:rofl:) to clarify diagnoses and assist with educational and treatment planning
 
 ---
 
@@ -537,7 +537,7 @@ class: middle
 
 - She defies parent requests, engages her parents and sister in frequent arguments and periodic acts of aggression, and commits serious rule violations (e.g., lying, stealing).
 
-- Her parents struggle with discipline and feel frustrated.
+- Parents struggle with discipline and feel frustrated.
 
 - Behaviorally, she acts "immature" and will throw unprovoked tantrums.
 
@@ -547,7 +547,7 @@ class: middle
 
 #### ...continued 
 
-- Her parents describe her as having a "lack of executive functioning skills," including an unawareness for how loud she is talking, "squeals" to annoy people, has poor body and voice control, and is defiant.
+- Parents describe Scout as having a "lack of executive functioning skills," including an unawareness for how loud she is talking, "squeals" to annoy people, has poor body and voice control, and is defiant.
 
 - She is forgetful; e.g., forgetting a set of instructions "two-seconds later" such as her nightly bedtime routine.
 
@@ -605,7 +605,7 @@ class: middle
 
 - Product of a planned, 42-week pregnancy (11 days late) delivered via .fat-font[planned home birth].
 
-- Pregnancy was notable for Rh incompatibility.
+- Preg notable for Rh incompatibility
 
 - She was delivered after 4.5 hours of labor weighing 7 lb., 2 oz.
 
@@ -633,13 +633,13 @@ class: middle
 
 - Mom has had concerns with Scout's poor posture/musculoskeletal stability and is accident prone ("she's falling and tripping all the time").
 
-- She bites her finger nails throughout the day.
+- Bites her finger nails throughout the day
 
-- She gets chronic blood noses.
+- Gets chronic blood noses
 
-- **She is far sighted and has prescription eye glasses for reading, but does not like to wear them and refuses to do so at times.**
+- Scout is far sighted and has prescription eye glasses for reading, but does not like to wear them and .fat-font[refuses] to do so at times.
 
-- Paternal family history includes ADHD and dyslexia.
+- Paternal family psych history of .fat-font[ADHD] and .fat-font[dyslexia]
 
 ---
 
@@ -647,35 +647,58 @@ class: middle
 
 #### Academics
 
-- Fourth grade in a public elementary school in Santa Monica area
+- Fourth grade in a public elementary school
+
 - School is excruciatingly challenging for Scout much of the time.
+
 - She gets "lost" doing her schoolwork and constantly feels overwhelmed.
+
 - She sometimes refuses to turn in her assignments and/or tests because she either didn't start them, didn't finish them, or didn't understand what was expected of her.
+
 - She daydreams a lot in school and is always worrying about what everyone thinks.
+
 - IEP for reading and attention problems since end of 2nd grade
 
+---
+
 - She has to "log out" of class for tutoring each day on Zoom.
+
 - She "hates" being singled out everyday to leave class for an hour to work with her reading tutor.
+
 - She is supposed to keep a reading log of her IEP work but won't do it.
+
 - Even at home, Scout gets frustrated when doing her homework, yet will not let her mother help her.
 
+---
+
 - Performing well-below grade level in reading, writing, and spelling.
+
 - She writes complete sentences and formulates basic paragraphs, but makes frequent errors in capitalization and punctuation.
+
 - In math, Scout is performing below grade level, suspected to be due to her difficulty in reading the word problems.
+
 - When she is prompted to read carefully, or sits with a teacher, she performs better in math.
+
 - Without these supports, Scout is careless and unmotivated.
+
 - Similarly, in Social Studies and Science, she performs below grade level, because the reading is difficult for her.
+
 - When teacher reads or supports her reading, she is better able to grasp the concepts.
+
 - The cumulative impact of her school difficulties has crushed Scout's self-esteem and feelings of competency.
 
 ---
 
 #### Behavioral/Emotional/Social
 
-- At one point in second grade (\~2019), Scout threatened to kill herself in what seemed to be related to her feelings of school inadequacy.
-- She began seeing the school counselor for therapy at Franklin.
+- At one point in second grade (~2019), Scout .fat-font[threatened to kill herself] in what seemed to be related to her feelings of school inadequacy.
+
+- She began seeing the school counselor for therapy
+
 - Scout recalls seeing her therapist at school and found it to be helpful.
+
 - She has not seen any other outside counselor or psychologist.
+
 - Scout relates well to her peers and is quite social.
 
 ---
@@ -694,16 +717,16 @@ However, her mother reported the following:
 
 #### Family
 
-- Lives with her biological parents and older sister on west side of LA
+- Lives with her biological parents and older sister
 
 - Mom graduated from high school and is employed as an on-set florist and prop stylist
 
-- Dad has an MFA and is a film editor.
+- Dad has an MFA and is a film editor
 
 - Her parents work opportunities were reduced during the early part of the COVID-19 pandemic and struggled financially for a while, but are now back on track and working steadily.
 
 - Scout and her sister get along okay most of the time, but not always.
->"They love each other but have a very competitive relationship. When they get along... it's beautiful when they fight... it's all tears."
+>"They love each other but have a very competitive relationship. When they get along... it's beautiful ... when they fight... it's all tears."
 
 - Family is planning to move up to Oregon in the next year
 
@@ -715,35 +738,44 @@ Mom made this comment about some of Scout's behavior at home:
 
 ---
 
-#### Prior Testing
+### Behavioral Observations
 
-A copy of a summary of her IEP noted:
-
-> "Scout presents with limited strength, vitality and alertness, including a heightened alertness to environmental stimuli, that results in limited alertness with respect to the educational environment. This appears to be due to significant inattentive and hyperactive-impulsive/distractible behaviors, as well as difficulty with executive functioning in the school setting. These characteristics appear to be adversely affecting Scout's educational performance in her ability to decode words, and to organize tasks and materials. Therefore, Scout meets the eligibility criteria for Other Health Impairment (OHI) at this time."
-
----
-
-#### Behavioral Observations
+#### Testing
 
 - Scout was seen in-person @ PBHS @ UPC
+
 - Evaluated across two 4-hour testing sessions scheduled a week apart
+
 - Brought several stuffed dolls (Yoda) and various other items (her "blanky") with her from home.
-- Physically, Scout is exceptionally tall (\>90th percentile in height), thin, and pretty for her age group.
+
+- Physically, Scout is exceptionally tall (>90th percentile in height), thin, and pretty for her age group.
+
 - Interpersonally, she is friendly and engaging, and it was easy to establish rapport
+
 - Spontaneous language is easy to elicit from her, as she is talkative and social, and hyper-expressive.
+
 - Receptive language comprehension is variable.
+
 - On multiple occasions she misheard what was said to her (e.g., twice, when she was supposed to repeat "8" she substituted "J" and then "A" for 8).
+
 - She unknowingly confabulates a lot (i.e., makes up words and phrases that are unique to her mental lexicon such as "fratten" and "confrunkled" and "quimping").
+
 - She uses "filler words" a lot such as "umm yeah," as if she goes blank for a second when trying to think of what to say and loses her train of thought briefly.
+
 - Her fine-motor dexterity is an area of weakness for her, as is motor persistence; she stood up a lot during testing because it was hard for her to sit still seated for extended periods of time.
 
 ---
 
 - It is difficult for Scout to stay on topic.
+
 - She often comments about events/ideas/thoughts unrelated to the topic of interest and/or task at hand.
+
 - It distracts her and makes it difficult for her to complete tasks efficiently, especially when she has a time limit set.
+
 - For example, in the middle of a 1-minute word fluency task, one of her responses triggered an approximate 20" tangent about something that happened last Christmas.
+
 - Struggles to pick up on nonverbal social cues when subtly being redirected back to task using nonverbal gesturing, requiring more exaggerated and direct gestures.
+
 - "stimulus-boundednesss"
 
 ---
@@ -751,16 +783,23 @@ A copy of a summary of her IEP noted:
 #### Child Interview
 
 - Scout expressed wide ranging but predominantly negative feelings about everything we discussed over two days of testing.
-- She is open and honest about her school difficulties.
-- She "hates" having to leave Zoom everyday for an hour to work with her reading tutor.
+
+- Very open and honest about her school difficulties.
+
+- "hates" having to leave Zoom everyday for an hour to work with her reading tutor.
 It makes her feel bad about herself and she wants no part of her IEP.
-- She said her peers "make fun of me for my IEP." She said her teacher "hates me" and "won't call on me" on Zoom.
-- Scout said she "panics" before all of her tests because she is usually unprepared/didn't study.
-- She fights a lot with her older sister, who calls her "a boys name" to irritate her when they are fighting.
-- She openly said she can be a "very naughty child" and is "only good about 1 day a week." 
-- She said she gets "excluded" by her friends sometimes, and said, "sometimes I feel like I"m not good enough." 
-- She has a "boyfriend" named Hunter who is "cute, funny and puts a smile on my face."
-- She loves her dog "Franky" who is "the only one who is nice to her."
+
+- Said her peers "make fun of me for my IEP." She said her teacher "hates me" and "won't call on me" on Zoom.
+
+- "panics" before all of her tests because she is usually unprepared/didn't study.
+
+- Openly said she can be a .fat-font["very naughty child"] and is "only good about 1 day a week." 
+
+- Gets "excluded" by her friends sometimes, and said, "sometimes I feel like I"m not good enough." 
+
+- Has a "boyfriend" named Hunter who is "cute, funny and puts a smile on my face."
+
+- Loves her dog "Franky" who is "the only one who is nice to her."
 
 ---
 
@@ -1521,7 +1560,7 @@ plot1
 
 ---
 
-#### Diagnostic Impression
+### Diagnostic Impression
 
 - F90.2 Attention-deficit/hyperactivity disorder, combined type
 
@@ -1531,10 +1570,11 @@ plot1
 
 - F43.25 Adjustment Disorder with mixed disturbance of emotions and conduct
 
--   Rule out Oppositional defiant disorder
--   Rule out Conduct disorder
--   Rule out Disruptive mood dysregulation disorder
--   Rule out Developmental coordination disorder (dyspraxia)
+
+- Rule out Oppositional defiant disorder
+- Rule out Conduct disorder
+- Rule out Disruptive mood dysregulation disorder
+- Rule out Developmental coordination disorder (dyspraxia)
 
 
 ---
@@ -1563,7 +1603,7 @@ background-size: contain
 
 ### Follow-Up from Mom ...
 
-![:scale 70%](images/mom_note.png)
+![:scale 50%](images/mom_note.png)
 
 ???
 
