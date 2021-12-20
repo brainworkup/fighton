@@ -1621,11 +1621,11 @@ background-size: auto
 
 "There are three ways to ultimate success:
 
-The first way\l is to be kind.
+The first way is to be kind.
 
-The second way\l is to be kind.
+The second way is to be kind.
 
-The third way\l is to be kind."
+The third way is to be kind."
 
 ]
 
