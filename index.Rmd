@@ -151,7 +151,7 @@ Richard Feynman was an American theoretical physicist, known for his work in the
 
 class: middle
 
-What do I know about .big[ADHD]???
+What do I know about .big[ADHD]?
 
 .footnote[
 [`r fontawesome::fa("github")` @brainworkup](https://github.com/brainworkup)
@@ -163,11 +163,11 @@ What do I know about .big[ADHD]???
 
 ???
 
-80HD
-PATS preschool study
+## 80HD
+- PATS preschool study
+
 
 ---
-
 class: center, middle, section
 
 .frame[
@@ -192,11 +192,11 @@ class: center, middle
 ### Cognitive Development in Preschoolers At-Risk for ADHD
 
 .pull-left[
-![:scale 80%](images/ajp_2013.png)
+![:scale 100%](images/ajp_2013.png)
 ]
 
 .pull-right[
-![:scale 80%](images/ajp_2013_fig1.png)
+![:scale 70%](images/ajp_2013_fig1.png)
 ]
 
 ???
@@ -231,9 +231,6 @@ class: center, middle
 
 `paper on the CAARS adult adhd`
 
-```
-paper on the CAARS adult adhd
-```
 ---
 
 class: center, middle, inverse, f2
@@ -262,11 +259,11 @@ How .fat-font[much] and how .fat-font[fast] ...
 #### Working Memory
 
 - Verbal WM
-  - Maintenace/manipulation of information in conscious awareness
-  - Fluency of retrieval of information from long-term memory
+  - Maintaining verbal information in conscious awareness
+  - Fluently retrieving information from LTM
 - Nonverbal WM
   - "Mind's eye"
-  - Episodic future thinking
+  - "Episodic future thinking"
 ]
 
 .left.pull-right[
@@ -287,23 +284,22 @@ How .fat-font[much] and how .fat-font[fast] ...
 name: devsci
 class: center, middle
 
-.frame[
-`Working Memory`
-`Dopamine Genes`
-`Remission of ADHD`
-]
+#### Working Memory
+#### Dopamine Genes
+#### Remission of ADHD
 
-.pull-left[![:scale 90%](images/trampush_devsci.png)]
 
-.pull-right[![:scale 70%](images/trampush_devsci_fig1.png)]
+.pull-left[![:scale 100%](images/trampush_devsci.png)]
+
+.pull-right[![:scale 80%](images/trampush_devsci_fig1.png)]
 
 ---
 
 class: center, middle
 
-## GWAS of Working Memory Grant
+### GWAS of Working Memory Grant
 
-Currently funded to conduct large-scale genome-wide association study (GWAS) of working memory in .blue[**>25,000 people**] & .blue[**>70,000 WM phenotypes**], & .blue[**>293,000,000 genetic variants**]
+Currently funded by NIMH to conduct large-scale genome-wide association study (GWAS) of working memory in **.blue[>25,000 people]** & .blue[**>70,000 WM phenotypes**], & .blue[**>293,000,000 genetic variants**]
 
 .pull-left[
   ![:scale 100%](images/wm.gif)
@@ -319,7 +315,7 @@ Currently funded to conduct large-scale genome-wide association study (GWAS) of 
 ---
 
 name: rtsd
-class: middle
+class: bottom, left
 
 .left-column[
 ### RTSD as a biomarker of lifelong ADHD
@@ -333,7 +329,7 @@ class: middle
 ]
 
 .right-column[
-![:scale 75%](images/halperin-2008.png)
+![:scale 85%](images/halperin-2008.png)
 ]
 
 ---
@@ -347,20 +343,34 @@ background-color: var(--near-black)
 
 ---
 
-**Stimulus-boundedness**:
+**Stimulus-boundedness in ADHD**:
 
->...is an inappropriate response to a salient or nonsalient environmental or internal stimulus. 
-> For example:
->- unsolicited reading of nearby text
+--
+
+>...is an inappropriate response to a salient or nonsalient environmental or internal stimulus during cognitive/neuropsychological testing. Environmentally dependent behaviors occur often and cannot be easily redirected and/or environmental dependency makes task completion very difficult, e.g.:
+
+--
+
 >- environmental dependency (e.g., picking up a pen from the table and writing/fidgeting)
->- excessive attention to irrelevant objects (e.g., picking up objects from floor)
->- during cognitive testing, writing or drawing on a model or adjacent stimulus
->- closing in on a stimulus or being distracted by adjacent stimuli
->- overtalkativeness, expressing everything that comes to mind
->
-> Environmentally dependent behaviors occur often and cannot be easily redirected and/or environmental dependency makes task completion very difficult
 
-.footnote[NIH EXAMINER Behavior Rating Scale]
+--
+
+>- excessive attention to irrelevant objects (e.g., picking up objects from floor)
+
+--
+
+>- during cognitive testing, writing or drawing on a model or adjacent stimulus
+
+--
+
+>- closing in on a stimulus or being distracted by adjacent stimuli
+
+--
+
+>- overtalkativeness, expressing everything that comes to mind
+
+
+.footnote.small.red[NIH EXAMINER Behavior Rating Scale]
 
 ???
 
@@ -405,41 +415,35 @@ This is recognized on most rating scales e.g., brown
 
 ---
 
-**Managing Frustration and Modulating Emotions**
+**Managing Frustration and Modulating Emotions in ADHD**
 
 --
-
 >Individuals w/ ADHD often have difficulty with regulating emotional reactions .yellow[**to the extent that they take over much of what the individuals are thinking or doing**]. 
 
 --
-
 >Although the DSM-5 does not recognize any symptoms related to emotion management as an aspect of ADHD, many with the disorder describe chronic difficulties managing:
 
 --
-
 >- frustration, anger, worry, disappointment, desire, and other emotions
 
 --
-
-> They find it very difficult to put their emotions into perspective and get on with what they need to do.
-
---
-
->.yellow[**Many speak as though these emotions, when experienced, take over their thinking the way a computer virus might infect a computer and make it impossible for them to attend to anything else**].
+>- excessive irritability, sensitivity to criticism, overwhelming nervousness and worry, and unhappiness
 
 --
-
->Examples: excessive irritability, sensitivity to criticism, overwhelming nervousness and worry, and unhappiness.
+>They find it very difficult to put their emotions into perspective and get on with what they need to do.
 
 --
+>Many speak as though these emotions, when experienced, take over their thinking the way a computer virus might infect a computer and make it impossible for them to attend to anything else.
 
-.footnote[Brown Executive Function/Attention Scales]
+.footnote.small.right[Brown Executive Function/Attention Scales]
 
 ---
 
 class: center, middle
 
 ## Case Presentation
+
+![alt](images/adhd.jpg)
 
 ---
 
@@ -466,9 +470,8 @@ class: middle
 ---
 
 name: gauss1
-class: middle center animated slideInRight fadeOutLeft
-background-color: var(--near-black)
-background-size: auto
+class: middle center
+background-size: contain
 
 ### Distribution of Scores: _Population-level Interpretation_
 
@@ -479,9 +482,8 @@ knitr::include_graphics("images/plot_narrow.png", auto_pdf = TRUE)
 ---
 
 name: gauss2
-class: middle center animated slideInLeft fadeOutRight 
-background-color: var(--near-black)
-background-size: auto
+class: middle center 
+background-size: contain
 
 ### Distribution of Scores: _Clinical Interpretation_
 
@@ -1234,8 +1236,8 @@ class: section
 
 ---
 
-class: center, middle
-background-size: container
+class: center, top
+background-size: contain
 
 `Postscript`
 
@@ -1259,11 +1261,11 @@ background-size: auto
 
 "There are three ways to ultimate success:
 
-The first way is to be kind.
+The first way\l is to be kind.
 
-The second way is to be kind.
+The second way\l is to be kind.
 
-The third way is to be kind."
+The third way\l is to be kind."
 
 ]
 

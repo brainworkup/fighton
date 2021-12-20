@@ -1,4 +1,4 @@
-/*
+/* 
    Tachyons
    COLOR VARIABLES
    Grayscale
@@ -76,11 +76,11 @@
 
   /* USC web colors */
   --usc-cardinal: #990000;
-  --usc-gold: #FFCC00;
+  --usc-gold: #ffcc00;
   --usc-black: #000000;
   --usc-darkgray: #777777;
-  --usc-lightgray: #CCCCCC;
-  --usc-white: #FFFFFF;
+  --usc-lightgray: #cccccc;
+  --usc-white: #ffffff;
 
   /* Colors */
   --text-color: var(--near-white);
@@ -101,8 +101,8 @@
   --white: var(--white);
   --black: var(--black);
 
-  --header-font-family: 'Monoton';
-  --header-font-family-fallback: 'Yanone Kaffeesatz';
+  --header-font-family: "Monoton";
+  --header-font-family-fallback: "Yanone Kaffeesatz";
   --base-font-size: medium;
 }
 
@@ -126,9 +126,9 @@ h2 {
 } */
 
 .title-slide h1 {
-  font-family: 'Major Mono Display', monospace;
+  font-family: "Major Mono Display", monospace;
   color: var(--usc-gold);
-  font-size: 2.5em;
+  font-size: 3.5em;
   word-wrap: break-word;
   letter-spacing: 0.2rem;
   font-weight: 600;
@@ -136,9 +136,9 @@ h2 {
 }
 
 .title-slide h2 {
-  font-family: 'Major Mono Display', monospace;
+  font-family: "Major Mono Display", monospace;
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1.5em;
   color: var(--usc-cardinal);
   text-shadow: none;
   font-style: italic;
@@ -247,7 +247,7 @@ strong {
 }
 
 a,
-a>code {
+a > code {
   color: var(--link-color);
   text-decoration: none;
 }
@@ -354,7 +354,7 @@ a:focus {
 }
 
 .inverse a,
-.inverse a>code {
+.inverse a > code {
   color: var(--inverse-link-color);
 }
 
@@ -423,7 +423,7 @@ a:focus {
   width: 47%;
 }
 
-.pull-right+* {
+.pull-right + * {
   clear: both;
 }
 
@@ -575,10 +575,6 @@ a.footer-link {
   letter-spacing: 0.1em;
 }
 
-.big-text {
-  font-size: 2.8em !important;
-}
-
 .shadow-text {
   text-shadow: 2px 2px 0.5em var(--red);
   color: var(--yellow);
@@ -715,7 +711,7 @@ table.dataTable.display tbody tr:hover {
 }
 
 /* Slide Header Background for h1 elements */
-.remark-slide-content.header_background>h1 {
+.remark-slide-content.header_background > h1 {
   display: block;
   position: absolute;
   top: 0;
@@ -790,9 +786,15 @@ div.FOO {
 }
 
 .big-text {
+  font-size: 2.8em !important;
+  font-style: italic;
+  color: rgb(136, 248, 71);
+}
+
+/* .big-text {
   font-size: 3em !important;
   line-height: 3em;
-}
+} */
 
 .fat-font {
   font-family: Monoton;

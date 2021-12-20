@@ -45,8 +45,8 @@ h3 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   text-transform: uppercase;
   font-weight: 400;
-  /* color: var(--near-white); */
-  font-size: 1.5em !important;
+  color: var(--near-white);
+  /* font-size: 1.5em !important; */
 }
 
 h4, h5 {
