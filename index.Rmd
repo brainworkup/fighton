@@ -231,15 +231,24 @@ class: center, middle
 
 `paper on the CAARS adult adhd`
 
-![:scale 50%](images/caars_fig1.png)
+.pull-left[
+![:scale 80%](images/caars_fig1.png)
+]
 
-![:scale 50%](images/caars_fig2.png)
+.pull-right[
+![:scale 70%](images/caars_fig2.png)
+]
+
+---
+
+
+class: center
 
 ![:scale 50%](images/caars_fig3.png)
 
 ---
 
-class: center, middle, inverse, f2
+class: center, middle, f2
 
 `Executive Dysfunction in ADHD`
 
@@ -441,13 +450,13 @@ This is recognized on most rating scales e.g., brown
 
 --
 
->They find it very difficult to put their emotions into perspective and get on with what they need to do.
+>- They find it very difficult to put their emotions into perspective and get on with what they need to do.
 
 --
 
 >Many speak as though these emotions, when experienced, take over their thinking the way a computer virus might infect a computer and make it impossible for them to attend to anything else.
 
-.footnote.small.right[Brown Executive Function/Attention Scales]
+.footnote.small.red[Brown Executive Function/Attention Scales]
 
 ---
 
@@ -506,69 +515,118 @@ cat("
 
 ---
 
-class: middle, center
+class: middle, left
 
 ### Reason for Referral
 
 * Scout presented for neuropsychological evaluation to determine her cognitive, academic, and emotional strengths and weaknesses.
-* She was referred by her parents for behavioral and academic concerns, including behavioral immaturity, defiance, attention/executive problems, and reading/learning difficulties.
-* The purpose of the evaluation was to clarify diagnoses and assist with educational and treatment planning.
+
+* Referred by her parents for behavioral and academic concerns, including:
+
+- behavioral immaturity
+- defiance
+- attention/executive problems
+- reading/learning difficulties.
+
+* Purpose of eval was (shockingly) to clarify diagnoses and assist with educational and treatment planning
 
 ---
 
-class: center
+class: middle, left
 
 ### Background
 
 - Scout requires frequent redirection and strong reinforcements and consequences in order to manage her behavior.
+
 - She defies parent requests, engages her parents and sister in frequent arguments and periodic acts of aggression, and commits serious rule violations (e.g., lying, stealing).
+
 - Her parents struggle with discipline and feel frustrated.
+
 - Behaviorally, she acts "immature" and will throw unprovoked tantrums.
+
 - Her parents describe her as having a "lack of executive functioning skills," including an unawareness for how loud she is talking, "squeals" to annoy people, has poor body and voice control, and is defiant.
+
 - She is forgetful; e.g., forgetting a set of instructions "two-seconds later" such as her nightly bedtime routine.
+
 - **Scout has only recently started to look both ways before crossing the street consistently**
 
 ---
 
+#### ...continued 
+
 - Scout has a tendency to impulsively say things to others that are not true.
+
 - For example, for unbeknownst reasons, she told folks that her dog had died, which was untrue.
+
 - She has been accused of stealing on multiple occasions, behavior her mother said started to emerge around age 6.
+
 - She has allegedly stolen money multiple times, stolen her mothers shampoo, her grandmother's lipstick, and her sister's belongings.
+
 - She has been accused of stealing money from a friends house (\$50), an accusation Mrs. Scout feels is very much unfounded.
 
 ---
 
+#### ...continued 
+
 - In a separate incident, last year, she told her school psychologist/therapist her older sister "parents me" and that her parents "spank" her when she gets in trouble.
+
 - She returned to class and repeated it to her teacher.
+
 - A report was filed with child protective services (CPS) and the investigation was tabled.
+
 - Her mother sometimes wonders if Scout has a "conscious" about the things she does and way she behaves at times.
 
 ---
 
+#### ...continued 
+
 - Finally, Scout presents with a number of cognitive and learning difficulties (described in more detail below).
+
 - Her school IEP evaluation indicated a probable learning disorder in reading, and difficulties with attention and behavioral regulation.
+
 - The fallout has been unwanted negative attention for Scout because she is required to leave class every day for tutoring, which is source of constant distress for her and of questionable benefit to her at this point.
+
+---
 
 ### Relevant History
 
 #### Developmental/Medical
 
 - Product of a planned, 42-week pregnancy (11 days late) delivered via planned home birth.
+
 - Pregnancy was notable for Rh incompatibility.
+
 - She was delivered after 4.5 hours of labor weighing 7 lb., 2 oz.
+
 - **Mom described it as "a short but intense natural delivery" that required the umbilical cord to stay connected until it was done pumping blood from mom to baby.**
+
+---
+
+#### ...continued
+
 - S/p delivery complications included mild jaundice without phototherapy.
+
 - Major developmental milestones (e.g., standing, walking, uttering first words, speaking in short sentences) were reached within expected time frames.
+
 - Tantrums, loud screaming, and irritability emerged within the first four years as a toddler.
+
 - Mom concerned with Scout's eating habits, as she can be a picky eater and is underweight.
 
 ---
 
+#### ...continued
+
 - Mom has had concerns with Scout's poor posture/musculoskeletal stability and is accident prone ("she's falling and tripping all the time").
+
 - She bites her finger nails throughout the day.
+
 - She gets chronic blood noses.
+
 - **She is far sighted and has prescription eye glasses for reading, but does not like to wear them and refuses to do so at times.**
+
 - Paternal family history includes ADHD and dyslexia.
+
+---
 
 #### Academics
 
@@ -607,29 +665,38 @@ class: center
 
 However, her mother reported the following:
 
-> "She has tendency to lie, to make up little fibs to look smarter, more cool or get the attention. Then her friends find out its not true and they get upset with her. Or, Scout interrupts them when they are talking, she wants to change the rules to the game. She loves talking to and hanging out with adults, but loves playing with younger kids because she is in control. They look up to her and Scout can be the 'mommy.' She usually wants to be the leader of her peer group."
+>"She has tendency to lie, to make up little fibs to look smarter, more cool or get the attention. Then her friends find out its not true and they get upset with her. Or, Scout interrupts them when they are talking, she wants to change the rules to the game. 
+>She loves talking to and hanging out with adults, but loves playing with younger kids because she is in control. They look up to her and Scout can be the 'mommy.' She usually wants to be the leader of her peer group."
 
-> "Scout has a huge heart! She cares strongly for the family dog-he is the only one that can help her calm down. They sleep together every night. She has a strong energy. People love talking with her, think she's funny and engaging. Scout loves giving compliments (whether they are genuine or she knows that it will make them like her more) again though... a strength. She has a lot of empathy for her peers/friends when they get hurt or are left out. She has been praised from teachers for her sweet nature."
+--
+
+>"Scout has a huge heart! She cares strongly for the family dog-he is the only one that can help her calm down. They sleep together every night. 
+>She has a strong energy. People love talking with her, think she's funny and engaging. Scout loves giving compliments (whether they are genuine or she knows that it will make them like her more) again though... a strength. She has a lot of empathy for her peers/friends when they get hurt or are left out. She has been praised from teachers for her sweet nature."
 
 ---
 
 #### Family
 
 - Lives with her biological parents and older sister on west side of LA
+
 - Mom graduated from high school and is employed as an on-set florist and prop stylist
+
 - Dad has an MFA and is a film editor.
+
 - Her parents work opportunities were reduced during the early part of the COVID-19 pandemic and struggled financially for a while, but are now back on track and working steadily.
-- Scout's family is planning to move up to Oregon in the next year.
 
 - Scout and her sister get along okay most of the time, but not always.
-- Per Mom:
 >"They love each other but have a very competitive relationship. When they get along... it's beautiful when they fight... it's all tears."
+
+- Family is planning to move up to Oregon in the next year
 
 ---
 
 Mom made this comment about some of Scout's behavior at home:
 
-> "Scout does odd things sometimes... like she doesn't think. For instance, pull on her curtains and make the support come off the wall (9 years old) use a marker and write all over her dresser (9 years old) come in my room and take clothing or jewelry without asking then lie that she took it, not flush her toilet for days, has to be reminded to brush her teeth, puts chewed gum on her bookshelf, the list goes on. And Alex and I get upset with her so much we can see it's wearing on her spirit."
+> "Scout does odd things sometimes... like she doesn't think. For instance, pull on her curtains and make the support come off the wall (9 years old); use a marker and write all over her dresser (9 years old); come in my room and take clothing or jewelry without asking then lie that she took it, not flush her toilet for days, has to be reminded to brush her teeth, puts chewed gum on her bookshelf, the list goes on. And Dad and I get upset with her so much we can see it's wearing on her spirit."
+
+---
 
 #### Prior Testing
 
@@ -677,26 +744,6 @@ It makes her feel bad about herself and she wants no part of her IEP.
 - She said she gets "excluded" by her friends sometimes, and said, "sometimes I feel like I"m not good enough." 
 - She has a "boyfriend" named Hunter who is "cute, funny and puts a smile on my face."
 - She loves her dog "Franky" who is "the only one who is nice to her."
-
----
-
-#### Diagnostic Impression
-
--   F90.2 Attention-deficit/hyperactivity disorder, combined type
--   F81.0 Specific reading disorder (decoding and fluency)
--   F81.81 Disorder of written expression (spelling)
--   F43.25 Adjustment Disorder with mixed disturbance of emotions and conduct
--   Rule out Oppositional defiant disorder
--   Rule out Conduct disorder
--   Rule out Disruptive mood dysregulation disorder
--   Rule out Developmental coordination disorder (dyspraxia)
-
-
----
-
-class: center, middle
-
-## Referral to Dr. Elmashat ...
 
 ---
 
@@ -1454,6 +1501,31 @@ plot1
 - make 3 groups (parent, self, basc vs brown)
 - ADLs very impaired
 - collapsed across all domains is 1.2 SDs
+
+---
+
+#### Diagnostic Impression
+
+- F90.2 Attention-deficit/hyperactivity disorder, combined type
+
+- F81.0 Specific reading disorder (decoding and fluency)
+
+- F81.81 Disorder of written expression (spelling)
+
+- F43.25 Adjustment Disorder with mixed disturbance of emotions and conduct
+
+-   Rule out Oppositional defiant disorder
+-   Rule out Conduct disorder
+-   Rule out Disruptive mood dysregulation disorder
+-   Rule out Developmental coordination disorder (dyspraxia)
+
+
+---
+
+class: center, middle
+
+## Referral to Dr. Elmashat ...
+
 
 ---
 
