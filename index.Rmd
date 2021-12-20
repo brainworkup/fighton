@@ -227,9 +227,7 @@ class: section middle center
 
 class: center, middle
 
-### paper on the CAARS adult adhd
-
-`paper on the CAARS adult adhd`
+### Recent paper on the CAARS adult ADHD RS
 
 .pull-left[
 ![:scale 80%](images/caars_fig1.png)
