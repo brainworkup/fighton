@@ -148,7 +148,7 @@ background-color: var(--near-black)
 
 What do we know about .big[ADHD]?
 
-.pull-left[
+.bottom.pull-left[
 - [`r fontawesome::fa("github")` @brainworkup](https://github.com/brainworkup)
 - [`r fontawesome::fa("twitter")` @brainworkup](https://twitter.com/brainworkup)   
 - [`r fontawesome::fa("link")` brainworkup.io](https://brainworkup.io)
@@ -167,11 +167,36 @@ class: center, middle, section
 
 ### Developmental Trajectory of ADHD
 
-This is the model of ADHD from which I work ...
-
 --
 
+This is the model of ADHD from which I work ...
+
 ![:scale 80%](images/halperin_schulz.png)
+
+???
+#### Notes
+- note 
+- note
+
+---
+
+class: center, middle
+
+### Cognitive Development in Preschoolers At-Risk for ADHD
+
+.pull-left[
+![:scale 60%](images/ajp_2013.png)
+]
+
+.pull-right[
+![:scale 40%](images/ajp_2013_fig1.png)
+]
+
+???
+
+#### Notes
+- note 
+- note
 
 ---
 
@@ -187,100 +212,9 @@ class: section middle center
 
 .pull-right[
 ### attentional fluency
-### response variability
-### stimulus boundness
+### stimulus-boundness
+### emotion regulation
 ]
-
----
-
-class: left middle
-background-color: var(--near-black)
-
-
-.big[1.]
-
-## inattention
-
-![:scale 35%](images/distracted-dog.gif)
-
-
---
-
-```
-class: center middle
-```
-
-.big[2.]
-## hyperactivity
-
---
-
-```
-class: right middle
-```
-
-.big[3.]
-## impulsivity
-
-???
-
-###### Notes
-- 1 
-- two 
-
----
-
-class: middle, center
-background-color: var(--near-black)
-
-.frame[
-### Read these words as fast as you can
-]
-
----
-
-class: middle center animated slideInUp slideOutDown
-background-color: var(--near-black)
-
-
-### RED
-### GREEN
-### BLUE 
-### YELLOW
-
-???
-
-This is how we test it
-
----
-
-class: middle center animated slideInRight fadeOutLeft
-background-color: var(--near-black)
-
-### .red[RED]
-### .green[GREEN]
-### .blue[BLUE] 
-### .yellow[YELLOW]
-
-
-???
-
-Also how
-
----
-
-class: middle center animated slideInLeft fadeOutRight
-background-color: var(--near-black)
-
-### .purple[RED]
-### .orange[GREEN]
-### .pink[BLUE] 
-### .green[YELLOW]
-
-
-???
-
-This is how we test it
 
 ---
 
@@ -290,42 +224,17 @@ class: center, middle
 
 ---
 
+class: center, middle, inverse, f2
+
+`Executive Dysfunction in ADHD`
+
+Three core areas ... 
+
+---
+
 class: center middle
-background-color: var(--near-black)
 
-.big[5.]
-
-## response variability
-
----
-
-name: rtsd
-class: middle
-
-.left-column[
-#### Consistency in Speed of Information Processing
-
-- Reaction time variability
-
-- Response consistency
-
-- Attentional drift
-
-- Impulsive responding
-]
-
-.right-column[
-### RTSD as a biomarker of ADHD
-
-![:scale 70%](images/halperin-2008.png)
-]
-
----
-
-class: center, middle
-background-color: var(--near-black)
-
-.big[4.]
+.big[1.]
 
 ## attentional fluency
 
@@ -336,61 +245,124 @@ background-color: var(--near-black)
 
 ## Attentional Fluency
 
-#### Cognitive Proficiency
+How .fat-font[much] and how .fat-font[fast] ...
 
-.pull-left[
-### Processing Speed
-
-- Rate of test taking
-
-- Rate of speed of information processing
-
-- Some other description
-
-- Fourth layer
-]
-
-.pull-right[
+.left.pull-left[
 ### Working Memory
 
-- Remembering things short term memory
+- Verbal WM
+  - Maintenace & manipulation of information in conscious awareness
+  - Fluency of retrieval of information from long-term memory
 
-- Verbal information
-
-- Nonverbal information
-
-- "mind's eye"
+- Nonverbal WM
+  - "Mind's eye"
+  - Episodic future thinking
 ]
+
+.left.pull-right[
+### Processing Speed/Variability
+
+- Regulating alertness
+
+- Sustaining effort during repetitive, boring tasks
+
+- Adjusting processing speed
+
+- Completing tasks
+
+- Maintaining performance consistency
+]
+
+???
+- EFT: this is why planning is impaired
 
 ---
 
 class: middle
-#### Complex Working Memory as a Biomarker of ADHD
 
-.left[![:scale 50%](images/trampush_devsci.png)]
+### Simple vs Complex Working Memory in ADHD
 
-.right[![:scale 50%](images/trampush_devsci_fig1.png)]
+.pull-left[![:scale 35%](images/trampush_devsci.png)]
+
+.pull-right[![:scale 35%](images/trampush_devsci_fig1.png)]
 
 ---
 
 class: center, middle
 
-## GWAS of Working Memory
+### GWAS of Working Memory
 
-Currently funded to conduct large-scale molecular genetic analysis of working memory in >25,000 people, >70,000 phenotypes, and >293,000,000 genetic variants
+Currently funded to conduct large-scale molecular genetic analysis of working memory in .blue[**>25,000 people**], .blue[**>70,000 WM phenotypes**], and .blue[**>293,000,000 genetic variants**]
 
-.left[![:scale 45%](images/wm.gif)]
+.pull-left[
+  ![:scale 35%](images/wm.gif)
+]
 
-.right[![:scale 45%](images/gwm_fig1.png)]
+.pull-right[
+  ![:scale 35%](images/gwm_fig1.png)
+]
 
 ---
 
-class: center middle
+name: rtsd
+class: middle
+
+.left-column[
+### WM and RTSD as biomarkers of ADHD
+
+- Reaction time variability
+
+- Response (in)consistency
+  - in anything really ...
+  
+- Speed of information processing
+
+- Attentional drift
+  - elongated RTs
+
+- Impulsive responding
+  - fast RTs
+]
+
+.right-column[
+![:scale 75%](images/halperin-2008.png)
+]
+
+---
+
+class: center, middle
 background-color: var(--near-black)
 
-.big[6.]
+.big[2.]
 
-## stimulus boundness
+## stimulus-boundness
+
+---
+
+>Stimulus-boundedness:
+
+>...is an inappropriate response to a salient environmental stimulus. 
+>
+>Such behaviors could include
+> - unsolicited reading of nearby text
+> - environmental dependency (e.g., picking up a pen from the table and writing
+> - eating food from someone else’s plate)
+> - excessive attention to irrelevant objects (e.g., picking up objects from floor)
+> - echolalia/echopraxia
+> - during cognitive testing, writing or drawing on a model or adjacent stimulus
+>
+>The occurrence of even one instance of stimulus-boundedness warrants a mild rating. Examples of “moderate” include closing in on a stimulus or being distracted by adjacent stimuli and these behaviors result in clearly impaired performance. Environmentally dependent behaviors occur often and subject cannot be easily redirected. Subjects whose environmental dependency makes task completion very difficult would be rated as severe.
+
+.footnote[NIH EXAMINER Behavior Rating Scale]
+
+---
+
+class: center, middle
+background-color: var(--near-black)
+
+.big[3.]
+
+## emotional/affective regulation
 
 ---
 
@@ -422,9 +394,28 @@ This is recognized on most rating scales e.g., brown
 
 ---
 
-background-color: var(--near-black)
+>Emotion: Managing Frustration and Modulating Emotions
+
+>The Emotion cluster addresses difficulties individuals may have with regulating emotional reactions **to the extent that they take over much of what the individuals are thinking or doing**. 
+>
+>Although the DSM-5 does not recognize any symptoms related to emotion management as an aspect of ADHD, many with the disorder describe chronic difficulties managing frustration, anger, worry, disappointment, desire, and other emotions. 
+>They find it very difficult to put their emotions into perspective and get on with what they need to do.
+>
+>**Many speak as though these emotions, when experienced, take over their thinking the way a computer virus might infect a computer and make it impossible for them to attend to anything else**. 
+>
+>Items in this cluster involve queries about excessive irritability, sensitivity to criticism, overwhelming nervousness and worry, and unhappiness.
+
+.footnote[Brown Executive Function/Attention Scales]
+
+---
+
+class: center, middle
 
 ## Case Presentation
+
+---
+
+class: middle
 
 ### "Scout"
 
@@ -434,8 +425,15 @@ background-color: var(--near-black)
 
 ???
 
-874. Scout
-875. SL
+- 874. Scout
+- 875. SL
+
+---
+
+### Background
+
+- History
+- Anti-vacinnation
 
 ---
 
@@ -1209,11 +1207,15 @@ class: section
 ---
 
 class: center, middle
+background-size: container
 
-## Follow-up from Mom
+### Follow-Up from Mom ...
 
 ![:scale 70%](images/mom_note.png)
 
+???
+
+- mom emailed about 2-3 months later 
 
 ---
 
@@ -1227,11 +1229,11 @@ background-size: auto
 
 "There are three ways to ultimate success:
 
-The first way\n is to be kind.
+The first way is to be kind.
 
-The second way\n is to be kind.
+The second way is to be kind.
 
-The third way\n is to be kind."
+The third way is to be kind."
 
 ]
 
