@@ -13,7 +13,7 @@ date: "2021-12-21"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: ["default", "assets/css/fighton-fonts.css", "assets/css/fighton-theme.css"]
+    css: ["assets/css/fighton-fonts.css", "assets/css/fighton-theme.css"]
     chakra: libs/remark-latest.min.js
     nature:
       highlightStyle: monokai
@@ -147,13 +147,13 @@ class: middle
 
 What do we know about .big[ADHD]?
 
-.footnote.pull-left[
+.footnote[
 [`r fontawesome::fa("github")` @brainworkup](https://github.com/brainworkup)
 [`r fontawesome::fa("twitter")` @brainworkup](https://twitter.com/brainworkup)   
 [`r fontawesome::fa("link")` brainworkup.io](https://brainworkup.io)
 ]
 
-.pull-right[![:scale 75%](images/dinotocat.png)]
+.pull-right[![:scale 55%](images/dinotocat.png)]
 
 ???
 
@@ -181,16 +181,16 @@ This is the model of ADHD from which I work ...
 
 ---
 
-class: center, middle, inverse
+class: center, middle
 
 ### Cognitive Development in Preschoolers At-Risk for ADHD
 
 .pull-left[
-![:scale 60%](images/ajp_2013.png)
+![:scale 80%](images/ajp_2013.png)
 ]
 
 .pull-right[
-![:scale 40%](images/ajp_2013_fig1.png)
+![:scale 80%](images/ajp_2013_fig1.png)
 ]
 
 ???
@@ -243,7 +243,7 @@ class: center middle
 
 class: middle, center
 
-### Attentional Fluency
+### Attentional Fluency = Working Memory + Processing Speed
 
 How .fat-font[much] and how .fat-font[fast] ...
 
@@ -275,7 +275,13 @@ How .fat-font[much] and how .fat-font[fast] ...
 
 name: devsci
 
-### Working memory skills are influenced by genetic variation in dopamine receptor genes and correlate with symptom remission in ADHD 
+.frame[
+### Working Memory
+### Dopamine Genes
+### Remission of ADHD 
+]
+
+--
 
 .pull-left[![:scale 70%](images/trampush_devsci.png)]
 
@@ -285,21 +291,25 @@ name: devsci
 
 class: center, middle
 
-### GWAS of Working Memory
+## GWAS of Working Memory
 
-Currently funded to conduct large-scale molecular genetic analysis of working memory in .blue[**>25,000 people**], .blue[**>70,000 WM phenotypes**], and .blue[**>293,000,000 genetic variants**]
+Currently funded to conduct large-scale genome-wide association study (GWAS) of working memory in .blue[**>25,000 people**], .blue[**>70,000 WM phenotypes**], and .blue[**>293,000,000 genetic variants**]
 
 .pull-left[
-  ![:scale 65%](images/wm.gif)
+  ![:scale 80%](images/wm.gif)
 ]
 
 .pull-right[
-  ![:scale 65%](images/gwm_fig1.png)
+  ![:scale 75%](images/gwm_fig1.png)
 ]
+
+???
+- interested in students to work on project
 
 ---
 
 name: rtsd
+class: center, middle
 
 .left-column[
 ### RTSD as a biomarker of lifelong ADHD
@@ -330,17 +340,16 @@ background-color: var(--near-black)
 
 >**Stimulus-boundedness**:
 >
->...is an inappropriate response to a salient environmental stimulus. 
->
->Such behaviors could include
+>...is an inappropriate response to a salient or nonsalient environmental or internal stimulus. 
+> For example:
 >- unsolicited reading of nearby text
->- environmental dependency (e.g., picking up a pen from the table and writing
->- eating food from someone else’s plate)
+>- environmental dependency (e.g., picking up a pen from the table and writing/fidgeting)
 >- excessive attention to irrelevant objects (e.g., picking up objects from floor)
->- echolalia/echopraxia
 >- during cognitive testing, writing or drawing on a model or adjacent stimulus
 >- closing in on a stimulus or being distracted by adjacent stimuli
->- environmentally dependent behaviors occur often and subject cannot be easily redirected and/or environmental dependency makes task completion very difficult
+>- overtalkativeness, expressing everything that comes to mind
+>
+> Environmentally dependent behaviors occur often and cannot be easily redirected and/or environmental dependency makes task completion very difficult
 
 .footnote[NIH EXAMINER Behavior Rating Scale]
 
@@ -389,13 +398,16 @@ This is recognized on most rating scales e.g., brown
 
 >**Managing Frustration and Modulating Emotions**
 >
->The Emotion cluster addresses difficulties individuals may have with regulating emotional reactions .yellow[**to the extent that they take over much of what the individuals are thinking or doing**]. 
+>Individuals w/ ADHD often have difficulty with regulating emotional reactions .yellow[**to the extent that they take over much of what the individuals are thinking or doing**]. 
 >
->Although the DSM-5 does not recognize any symptoms related to emotion management as an aspect of ADHD, many with the disorder describe chronic difficulties managing frustration, anger, worry, disappointment, desire, and other emotions. They find it very difficult to put their emotions into perspective and get on with what they need to do.
+>Although the DSM-5 does not recognize any symptoms related to emotion management as an aspect of ADHD, many with the disorder describe chronic difficulties managing:
+>- frustration, anger, worry, disappointment, desire, and other emotions
+>
+> They find it very difficult to put their emotions into perspective and get on with what they need to do.
 >
 >.yellow[**Many speak as though these emotions, when experienced, take over their thinking the way a computer virus might infect a computer and make it impossible for them to attend to anything else**]. 
 >
->Example items: excessive irritability, sensitivity to criticism, overwhelming nervousness and worry, and unhappiness.
+>Examples: excessive irritability, sensitivity to criticism, overwhelming nervousness and worry, and unhappiness.
 
 .footnote[Brown Executive Function/Attention Scales]
 

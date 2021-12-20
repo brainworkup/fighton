@@ -139,7 +139,7 @@ h2 {
   font-family: 'Major Mono Display', monospace;
   font-weight: 600;
   font-size: 1.2em;
-  color: var(--usc-white);
+  color: var(--usc-cardinal);
   text-shadow: none;
   font-style: italic;
   line-height: 2em;
@@ -341,7 +341,8 @@ a:focus {
 }
 
 .inverse .remark-inline-code {
-  color: var(--white);
+  background-color: var(--dark-green);
+  color: #fff;
 }
 
 .inverse a {
