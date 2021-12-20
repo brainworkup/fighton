@@ -151,7 +151,7 @@ Richard Feynman was an American theoretical physicist, known for his work in the
 
 class: middle
 
-What do I know about .big[ADHD]?
+What do we know about .big[ADHD]?
 
 .footnote[
 [`r fontawesome::fa("github")` @brainworkup](https://github.com/brainworkup)
