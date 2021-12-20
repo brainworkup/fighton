@@ -165,15 +165,19 @@ If you cannot explain something in simple terms, you don't understand it.
 
 class: center, middle, section
 
-### Trajectory of ADHD
+### Developmental Trajectory of ADHD
 
-Model of ADHD from which I work ...
+This is the model of ADHD from which I work ...
+
+--
+
+
 
 ---
 
 class: section middle center
 
-## CLINICAL ADHD .red[vs.] COGNITIVE ADHD
+## Clinical ADHD .red[vs.] Cognitive ADHD
 
 .pull-left[
 ### inattention
@@ -182,7 +186,7 @@ class: section middle center
 ]
 
 .pull-right[
-### working memory
+### attentional fluency
 ### response variability
 ### stimulus boundness
 ]
