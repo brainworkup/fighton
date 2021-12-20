@@ -1,0 +1,13 @@
+scale,raw_score,sum_subtest,score,range,ci_95,test,test_name,domain,subdomain,narrow,timed,verbal,pass,test_type,score_type,absort,description
+Afghanistan,1999,cases,745,"",,ktea3,KTEA-3,Academic Skills,"","","","","",npsych_test,standard_score,KTEA-3_1,""
+Afghanistan,1999,population,19987071,"",,ktea3,KTEA-3,Academic Skills,"","","","","",npsych_test,standard_score,KTEA-3_2,""
+Afghanistan,2000,cases,2666,"",,ktea3,KTEA-3,Academic Skills,"","","","","",npsych_test,standard_score,KTEA-3_3,""
+Afghanistan,2000,population,20595360,"",,ktea3,KTEA-3,Academic Skills,"","","","","",npsych_test,standard_score,KTEA-3_4,""
+Brazil,1999,cases,37737,"",,ktea3,KTEA-3,Academic Skills,"","","","","",npsych_test,standard_score,KTEA-3_5,""
+Brazil,1999,population,172006362,"",,ktea3,KTEA-3,Academic Skills,"","","","","",npsych_test,standard_score,KTEA-3_6,""
+Brazil,2000,cases,80488,"",,ktea3,KTEA-3,Academic Skills,"","","","","",npsych_test,standard_score,KTEA-3_7,""
+Brazil,2000,population,174504898,"",,ktea3,KTEA-3,Academic Skills,"","","","","",npsych_test,standard_score,KTEA-3_8,""
+China,1999,cases,212258,"",,ktea3,KTEA-3,Academic Skills,"","","","","",npsych_test,standard_score,KTEA-3_9,""
+China,1999,population,1272915272,"",,ktea3,KTEA-3,Academic Skills,"","","","","",npsych_test,standard_score,KTEA-3_10,""
+China,2000,cases,213766,"",,ktea3,KTEA-3,Academic Skills,"","","","","",npsych_test,standard_score,KTEA-3_11,""
+China,2000,population,1280428583,"",,ktea3,KTEA-3,Academic Skills,"","","","","",npsych_test,standard_score,KTEA-3_12,""

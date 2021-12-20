@@ -1,6 +1,0 @@
-scale,raw_score,score,percentile,range,ci_95,test,test_name,domain,subdomain,narrow,pass,verbal,timed,test_type,score_type,absort,description
-Math Computation,27,87,19,Low-Average,80 - 94,wrat5,WRAT-5,Academic Skills,Math,Math Decoding,Simultaneous,Nonverbal,Timed,npsych_test,standard_score,wrat5_math computation_1,paper-and-pencil math calculation
-Spelling,25,82,12,Low-Average,74 - 90,wrat5,WRAT-5,Academic Skills,Writing,Writing Decoding,Successive,Verbal,Untimed,npsych_test,standard_score,wrat5_spelling_2,spelling words from dictations
-Word Reading,31,82,12,Low-Average,74 - 90,wrat5,WRAT-5,Academic Skills,Reading,Reading Decoding,Successive,Verbal,Untimed,npsych_test,standard_score,wrat5_word reading_3,word reading/decoding on a word recognition test
-Sentence Comprehension,21,94,34,Average,86 - 102,wrat5,WRAT-5,Academic Skills,Reading,Reading Comprehension,Successive,Verbal,Untimed,npsych_test,standard_score,wrat5_sentence comprehension_4,reading passage comprehension
-Reading Composite,176,87,19,Low-Average,81 - 93,wrat5,WRAT-5,Academic Skills,Reading,General Reading,Successive,Verbal,Untimed,npsych_test,standard_score,wrat5_reading composite_5,general reading performance

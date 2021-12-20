@@ -197,46 +197,16 @@ class: center middle
 background-color: var(--near-black)
 
 .big[1.]
-
 ## inattention
 
----
-
-background-color: var(--near-black)
-
-#### Processing Speed
-
-- Rate of test taking
-
-- Rate of speed of information processing
-
-- Some other description
-
-- Fourth layer
-
-
----
-
-class: center middle
-background-color: var(--near-black)
+--
 
 .big[2.]
-
 ## hyperactivity
 
----
-
-background-color: var(--near-black)
-
-### something about hyperactivity
-
----
-
-class: center middle
-background-color: var(--near-black)
+--
 
 .big[3.]
-
 ## impulsivity
 
 ---
@@ -336,13 +306,58 @@ This is how we test it
 class: center middle
 background-color: var(--near-black)
 
-.big[4.]
+.big[5.]
 
-## working memory
+## response variability
 
 ---
 
 background-color: var(--near-black)
+
+#### Consistency in Speed of Information Processing
+
+- Reaction time variability
+
+- Response consistency
+
+- Attentional drift
+
+- Impulsive responding
+
+---
+
+### RTSD as a biomarker of ADHD
+
+![Halperin-2008](images/halperin-2008.png)
+
+
+---
+
+class: center middle
+background-color: var(--near-black)
+
+.big[4.]
+
+## attentional fluency
+
+---
+
+background-color: var(--near-black)
+
+.pull-left[
+
+#### Processing Speed
+
+- Rate of test taking
+
+- Rate of speed of information processing
+
+- Some other description
+
+- Fourth layer
+]
+
+.pull-right [
 
 #### Working Memory
 
@@ -354,6 +369,13 @@ background-color: var(--near-black)
 
 - "mind's eye"
 
+]
+
+---
+
+### RTSD as a biomarker of ADHD
+
+![Trampush-2013](images/trampush_devsci.png)
 
 ---
 
@@ -364,28 +386,6 @@ background-color: var(--near-black)
 
 .middle[![:scale 65%](images/wm.gif)]
 
----
-
-class: center middle
-background-color: var(--near-black)
-
-.big[5.]
-
-## response variability
-
----
-
-background-color: var(--near-black)
-
-#### Response Variability
-
-- Reaction time variability
-
-- Response consistency
-
-- Attentional drift
-
-- Impulsive responding
 
 ---
 
@@ -430,11 +430,16 @@ background-color: var(--near-black)
 
 ## Case Presentation
 
-### "Simone"
+### "Scout"
 
 1. Name
 1. Age
 1. Grade
+
+???
+
+874. Scout
+875. SL
 
 ---
 
@@ -471,7 +476,7 @@ background-color: var(--near-black)
 ### Cognitive Data
 
 ```{r patient}
-patient <- "Simone"
+patient <- "Scout"
 ```
 
 ```{r echo=FALSE}
