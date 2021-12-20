@@ -219,7 +219,7 @@ class: section middle center
 
 .pull-right[
 ### attentional fluency
-### stimulus-boundness
+### stimulus-boundedness
 ### emotion regulation
 ]
 
@@ -352,7 +352,7 @@ background-color: var(--near-black)
 
 .big[2.]
 
-## stimulus-boundness
+## stimulus-boundedness
 
 ---
 
@@ -428,7 +428,7 @@ This is recognized on most rating scales e.g., brown
 
 ---
 
-**Managing Frustration and Modulating Emotions in ADHD**
+**Managing Frustration and Modulating Emotions in ADHD** (Brown Executive Function/Attention Scales)
 
 --
 
@@ -454,7 +454,6 @@ This is recognized on most rating scales e.g., brown
 
 >Many speak as though these emotions, when experienced, take over their thinking the way a computer virus might infect a computer and make it impossible for them to attend to anything else.
 
-.footnote.small.red[Brown Executive Function/Attention Scales]
 
 ---
 
@@ -530,7 +529,7 @@ class: middle, left
 
 ---
 
-class: middle, left
+class: middle
 
 ### Background
 
@@ -542,13 +541,21 @@ class: middle, left
 
 - Behaviorally, she acts "immature" and will throw unprovoked tantrums.
 
+---
+
+class: middle
+
+#### ...continued 
+
 - Her parents describe her as having a "lack of executive functioning skills," including an unawareness for how loud she is talking, "squeals" to annoy people, has poor body and voice control, and is defiant.
 
 - She is forgetful; e.g., forgetting a set of instructions "two-seconds later" such as her nightly bedtime routine.
 
-- **Scout has only recently started to look both ways before crossing the street consistently**
+- Scout has only recently started to .fat-font[look both ways before crossing the street] consistently
 
 ---
+
+class: middle
 
 #### ...continued 
 
@@ -560,9 +567,11 @@ class: middle, left
 
 - She has allegedly stolen money multiple times, stolen her mothers shampoo, her grandmother's lipstick, and her sister's belongings.
 
-- She has been accused of stealing money from a friends house (\$50), an accusation Mrs. Scout feels is very much unfounded.
+- She has been accused of stealing money from a friends house ($50), an accusation Mrs. Scout feels is very much unfounded.
 
 ---
+
+class: middle
 
 #### ...continued 
 
@@ -576,6 +585,8 @@ class: middle, left
 
 ---
 
+class: middle
+
 #### ...continued 
 
 - Finally, Scout presents with a number of cognitive and learning difficulties (described in more detail below).
@@ -586,19 +597,23 @@ class: middle, left
 
 ---
 
+class: middle
+
 ### Relevant History
 
 #### Developmental/Medical
 
-- Product of a planned, 42-week pregnancy (11 days late) delivered via planned home birth.
+- Product of a planned, 42-week pregnancy (11 days late) delivered via .fat-font[planned home birth].
 
 - Pregnancy was notable for Rh incompatibility.
 
 - She was delivered after 4.5 hours of labor weighing 7 lb., 2 oz.
 
-- **Mom described it as "a short but intense natural delivery" that required the umbilical cord to stay connected until it was done pumping blood from mom to baby.**
+- Mom described it as "a short but intense natural delivery" that required the umbilical cord to stay connected until it was done pumping blood from mom to baby.
 
 ---
+
+class: middle
 
 #### ...continued
 
@@ -611,6 +626,8 @@ class: middle, left
 - Mom concerned with Scout's eating habits, as she can be a picky eater and is underweight.
 
 ---
+
+class: middle
 
 #### ...continued
 
@@ -625,6 +642,8 @@ class: middle, left
 - Paternal family history includes ADHD and dyslexia.
 
 ---
+
+class: middle
 
 #### Academics
 
