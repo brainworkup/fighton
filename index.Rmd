@@ -3,10 +3,10 @@ title: "A.D.H.D."
 subtitle: "Neuropsychological assessment for diagnostic clarification and treatment planning"
 author1: 
   - "Joey W. Trampush, Ph.D."
-  - "Della Martin Assistant Professor of Psychiatry"  
+  - "Della Martin Assistant Professor of Psychiatry and the Behavioral Sciences"  
 author2:
   - "Ashraf Elmashat, M.D."
-  - "Professor of Psychiatry"
+  - "Clinical Professor of Psychiatry and the Behavioral Sciences, Associate Medical Director of Keck Outpatient Psychiatry and Behavioral Health Services"
 institute: 
   - "Department of Psychiatry and the Behavioral Sciences"
 date: "2021-12-21"
@@ -96,6 +96,11 @@ xaringanExtra::use_extra_styles(
   mute_unhighlighted_code = TRUE #<<
 )
 xaringanExtra::use_share_again()
+# xaringanExtra::use_logo(
+#     image_url = "images/shield_gold.jpg",
+#         link_url = "https://usc.edu",
+#             position = xaringanExtra::css_position(top = "1em", right = "1em")
+# )
 ```
 
 name: title
@@ -112,6 +117,7 @@ background-color: var(--usc-black)
 ### `r rmarkdown::metadata$author1`
 ### `r rmarkdown::metadata$author2`
 ### `r rmarkdown::metadata$institute`
+### `r rmarkdown::metadata$date`
 ![:scale 60%](images/2-Line_KeckSOMofUSC_CardOnBlack.jpg)
 ]
 
@@ -719,16 +725,16 @@ However, her mother reported the following:
 
 - Lives with her biological parents and older sister
 
-- Mom graduated from high school and is employed as an on-set florist and prop stylist
+- Mom graduated from high school and is employed in the entertainment industry
 
-- Dad has an MFA and is a film editor
+- Dad has an MFA and is employed in the film industry
 
 - Her parents work opportunities were reduced during the early part of the COVID-19 pandemic and struggled financially for a while, but are now back on track and working steadily.
 
 - Scout and her sister get along okay most of the time, but not always.
 >"They love each other but have a very competitive relationship. When they get along... it's beautiful ... when they fight... it's all tears."
 
-- Family is planning to move up to Oregon in the next year
+- Family is planning to move out of state in the next year
 
 ---
 
