@@ -113,7 +113,7 @@ background-color: var(--usc-black)
 ### `r rmarkdown::metadata$author1`
 ### `r rmarkdown::metadata$author2`
 ### `r rmarkdown::metadata$institute`
-![:scale 55%](images/2-Line_KeckSOMofUSC_CardOnBlack.jpg)
+![:scale 60%](images/2-Line_KeckSOMofUSC_CardOnBlack.jpg)
 ]
 
 ---
@@ -1224,10 +1224,8 @@ class: middle, right, lbc
 background-image: url(https://gifs.joelglovier.com/favs/snoop-turning-the-wheel-big.gif)
 background-color: #FFFFFF
 background-size: auto
-font-style: bold
-font-weight: 600
 
-.pull-right[
+.lbc.pull-right[
 
 "There are three ways to ultimate success:
 
@@ -1236,4 +1234,5 @@ The first way is to be kind.
 The second way is to be kind.
 
 The third way is to be kind."
+
 ]

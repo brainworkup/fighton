@@ -149,10 +149,10 @@ h2 {
 .title-slide h3 {
   font-family: "Alegreya", sans-serif;
   font-weight: 200;
-  font-size: 0.4rem;
+  font-size: 1.4rem;
   color: var(--usc-lightgray);
   text-transform: none;
-  line-height: 1em;
+  /* line-height: 1em; */
 }
 
 .title-slide h4 {
@@ -824,25 +824,11 @@ p.b {
 }
 
 .lbc {
-  font-size: 20px;
   color: black;
   background-color: white;
 }
 
-.p {
-  color: black;
-}
-
-
-/* fighton-theme.css | file:///Users/joey/projects/fighton/assets/css/fighton-theme.css */
-
-.pull-right {
-  /* float: left; */
-  /* width: 47%; */
+.lbc.pull-right {
   float: right;
   width: 33%;
-}
-
-.black {
-  /* color: var(--black); */
 }
