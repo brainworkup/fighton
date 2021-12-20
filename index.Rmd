@@ -144,17 +144,16 @@ If you cannot explain something in simple terms, you don't understand it.
 ---
 
 class: middle
-background-color: var(--near-black)
 
 What do we know about .big[ADHD]?
 
-.bottom.pull-left[
-- [`r fontawesome::fa("github")` @brainworkup](https://github.com/brainworkup)
-- [`r fontawesome::fa("twitter")` @brainworkup](https://twitter.com/brainworkup)   
-- [`r fontawesome::fa("link")` brainworkup.io](https://brainworkup.io)
+.footnote.pull-left[
+[`r fontawesome::fa("github")` @brainworkup](https://github.com/brainworkup)
+[`r fontawesome::fa("twitter")` @brainworkup](https://twitter.com/brainworkup)   
+[`r fontawesome::fa("link")` brainworkup.io](https://brainworkup.io)
 ]
 
-.pull-right[![:scale 70%](images/dinotocat.png)]
+.pull-right[![:scale 75%](images/dinotocat.png)]
 
 ???
 
@@ -165,11 +164,13 @@ PATS preschool study
 
 class: center, middle, section
 
+.frame[
 ### Developmental Trajectory of ADHD
-
---
+]
 
 This is the model of ADHD from which I work ...
+
+--
 
 ![:scale 80%](images/halperin_schulz.png)
 
@@ -180,7 +181,7 @@ This is the model of ADHD from which I work ...
 
 ---
 
-class: center, middle
+class: center, middle, inverse
 
 ### Cognitive Development in Preschoolers At-Risk for ADHD
 
@@ -241,35 +242,29 @@ class: center middle
 ---
 
 class: middle, center
-background-color: var(--near-black)
 
-## Attentional Fluency
+### Attentional Fluency
 
 How .fat-font[much] and how .fat-font[fast] ...
 
 .left.pull-left[
-### Working Memory
+#### Working Memory
 
 - Verbal WM
-  - Maintenace & manipulation of information in conscious awareness
+  - Maintenace/manipulation of information in conscious awareness
   - Fluency of retrieval of information from long-term memory
-
 - Nonverbal WM
   - "Mind's eye"
   - Episodic future thinking
 ]
 
 .left.pull-right[
-### Processing Speed/Variability
+#### Processing Speed/Variability
 
 - Regulating alertness
-
 - Sustaining effort during repetitive, boring tasks
-
 - Adjusting processing speed
-
 - Completing tasks
-
 - Maintaining performance consistency
 ]
 
@@ -278,13 +273,13 @@ How .fat-font[much] and how .fat-font[fast] ...
 
 ---
 
-class: middle
+name: devsci
 
-### Simple vs Complex Working Memory in ADHD
+### Working memory skills are influenced by genetic variation in dopamine receptor genes and correlate with symptom remission in ADHD 
 
-.pull-left[![:scale 35%](images/trampush_devsci.png)]
+.pull-left[![:scale 70%](images/trampush_devsci.png)]
 
-.pull-right[![:scale 35%](images/trampush_devsci_fig1.png)]
+.pull-right[![:scale 70%](images/trampush_devsci_fig1.png)]
 
 ---
 
@@ -295,31 +290,25 @@ class: center, middle
 Currently funded to conduct large-scale molecular genetic analysis of working memory in .blue[**>25,000 people**], .blue[**>70,000 WM phenotypes**], and .blue[**>293,000,000 genetic variants**]
 
 .pull-left[
-  ![:scale 35%](images/wm.gif)
+  ![:scale 65%](images/wm.gif)
 ]
 
 .pull-right[
-  ![:scale 35%](images/gwm_fig1.png)
+  ![:scale 65%](images/gwm_fig1.png)
 ]
 
 ---
 
 name: rtsd
-class: middle
 
 .left-column[
-### WM and RTSD as biomarkers of ADHD
+### RTSD as a biomarker of lifelong ADHD
 
 - Reaction time variability
-
 - Response (in)consistency
-  - in anything really ...
-  
-- Speed of information processing
-
+  - in anything really
 - Attentional drift
-  - elongated RTs
-
+  - slow RTs
 - Impulsive responding
   - fast RTs
 ]
@@ -339,21 +328,25 @@ background-color: var(--near-black)
 
 ---
 
->Stimulus-boundedness:
-
+>**Stimulus-boundedness**:
+>
 >...is an inappropriate response to a salient environmental stimulus. 
 >
 >Such behaviors could include
-> - unsolicited reading of nearby text
-> - environmental dependency (e.g., picking up a pen from the table and writing
-> - eating food from someone else’s plate)
-> - excessive attention to irrelevant objects (e.g., picking up objects from floor)
-> - echolalia/echopraxia
-> - during cognitive testing, writing or drawing on a model or adjacent stimulus
->
->The occurrence of even one instance of stimulus-boundedness warrants a mild rating. Examples of “moderate” include closing in on a stimulus or being distracted by adjacent stimuli and these behaviors result in clearly impaired performance. Environmentally dependent behaviors occur often and subject cannot be easily redirected. Subjects whose environmental dependency makes task completion very difficult would be rated as severe.
+>- unsolicited reading of nearby text
+>- environmental dependency (e.g., picking up a pen from the table and writing
+>- eating food from someone else’s plate)
+>- excessive attention to irrelevant objects (e.g., picking up objects from floor)
+>- echolalia/echopraxia
+>- during cognitive testing, writing or drawing on a model or adjacent stimulus
+>- closing in on a stimulus or being distracted by adjacent stimuli
+>- environmentally dependent behaviors occur often and subject cannot be easily redirected and/or environmental dependency makes task completion very difficult
 
 .footnote[NIH EXAMINER Behavior Rating Scale]
+
+???
+
+- stems from frontal lobe damaged pts
 
 ---
 
@@ -362,7 +355,7 @@ background-color: var(--near-black)
 
 .big[3.]
 
-## emotional/affective regulation
+## emotional / affective  regulation
 
 ---
 
@@ -394,16 +387,15 @@ This is recognized on most rating scales e.g., brown
 
 ---
 
->Emotion: Managing Frustration and Modulating Emotions
-
->The Emotion cluster addresses difficulties individuals may have with regulating emotional reactions **to the extent that they take over much of what the individuals are thinking or doing**. 
+>**Managing Frustration and Modulating Emotions**
 >
->Although the DSM-5 does not recognize any symptoms related to emotion management as an aspect of ADHD, many with the disorder describe chronic difficulties managing frustration, anger, worry, disappointment, desire, and other emotions. 
->They find it very difficult to put their emotions into perspective and get on with what they need to do.
+>The Emotion cluster addresses difficulties individuals may have with regulating emotional reactions .yellow[**to the extent that they take over much of what the individuals are thinking or doing**]. 
 >
->**Many speak as though these emotions, when experienced, take over their thinking the way a computer virus might infect a computer and make it impossible for them to attend to anything else**. 
+>Although the DSM-5 does not recognize any symptoms related to emotion management as an aspect of ADHD, many with the disorder describe chronic difficulties managing frustration, anger, worry, disappointment, desire, and other emotions. They find it very difficult to put their emotions into perspective and get on with what they need to do.
 >
->Items in this cluster involve queries about excessive irritability, sensitivity to criticism, overwhelming nervousness and worry, and unhappiness.
+>.yellow[**Many speak as though these emotions, when experienced, take over their thinking the way a computer virus might infect a computer and make it impossible for them to attend to anything else**]. 
+>
+>Example items: excessive irritability, sensitivity to criticism, overwhelming nervousness and worry, and unhappiness.
 
 .footnote[Brown Executive Function/Attention Scales]
 

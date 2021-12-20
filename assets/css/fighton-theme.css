@@ -325,18 +325,19 @@ a:focus {
 }
 
 .inverse {
-  background-color: var(--inverse-background-color);
-  color: var(--inverse-text-color);
+  background-color: var(--dark-green);
+  color: #fff;
+  text-shadow: none;
 }
 
 .inverse h1,
 .inverse h2,
 .inverse h3 {
-  color: var(--inverse-header-color);
+  color: var(--light-blue);
 }
 
 .inverse h4 {
-  color: var(--white);
+  color: var(--light-green);
 }
 
 .inverse .remark-inline-code {
