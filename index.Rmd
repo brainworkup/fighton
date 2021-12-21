@@ -172,6 +172,12 @@ What do we know about .big[ADHD]?
 ## 80HD
 - PATS preschool study
 
+---
+
+## Mentors
+
+![alt](images/swanson_halperin_ahrq.png)
+
 
 ---
 class: center, middle, section
@@ -748,9 +754,7 @@ Mom made this comment about some of Scout's behavior at home:
 
 #### Testing
 
-- Scout was seen in-person @ PBHS @ UPC
-
-- Evaluated across two 4-hour testing sessions scheduled a week apart
+- Scout was seen in-person @ PBHS @ UPC, evaluated across two 4-hour testing sessions scheduled a week apart
 
 - Brought several stuffed dolls (Yoda) and various other items (her "blanky") with her from home.
 
