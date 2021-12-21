@@ -176,7 +176,7 @@ class: center, middle
 ]
 
 .pull-right[
-![:scale 70%](images/wigal_2003_fig1.png)
+![:scale 60%](images/wigal_2003_fig1.png)
 ]
 
 ---
@@ -205,7 +205,7 @@ class: center, middle, section
 
 ## Full Circle ...
 
-![:scale 70%](images/swanson_halperin_ahrq.png)
+![:scale 60%](images/swanson_halperin_ahrq.png)
 
 [ADHD AHRQ Update 2022](https://effectivehealthcare.ahrq.gov/products/adhd-update/systematic-review-2018)
 
@@ -374,10 +374,6 @@ background-color: var(--near-black)
 
 --
 
->- during cognitive testing, writing or drawing on a model or adjacent stimulus
-
---
-
 >- closing in on a stimulus or being distracted by adjacent stimuli
 
 --
@@ -454,7 +450,7 @@ This is recognized on most rating scales e.g., brown
 
 --
 
->Many speak as though these emotions, when experienced, take over their thinking the way a computer virus might infect a computer and make it impossible for them to attend to anything else.
+>- Many speak as though these emotions, when experienced, take over their thinking the way a computer virus might infect a computer and make it impossible for them to attend to anything else.
 
 
 ---
@@ -522,10 +518,10 @@ class: middle, left
 
 * Referred by her parents for behavioral and academic concerns, including:
 
-- behavioral immaturity
-- defiance
-- attention/executive problems
-- reading/learning difficulties
+  - behavioral immaturity
+  - defiance
+  - attention/executive problems
+  - reading/learning difficulties
 
 * Purpose of eval was (shockingly) to clarify diagnoses and assist with educational and treatment planning
 
@@ -699,7 +695,6 @@ Per mom:
 >Or, Scout interrupts them when they are talking, she wants to change the rules to the game. 
 >She loves talking to and hanging out with adults, but loves playing with younger kids because she is in control. They look up to her and Scout can be the 'mommy.' She usually wants to be the leader of her peer group."
 
---
 
 >"Scout has a huge heart! She cares strongly for the family dog-he is the only one that can help her calm down. They sleep together every night. 
 >She has a strong energy. People love talking with her, think she's funny and engaging. Scout loves giving compliments (whether they are genuine or she knows that it will make them like her more) again though... a strength. She has a lot of empathy for her peers/friends when they get hurt or are left out. She has been praised from teachers for her sweet nature."
@@ -721,8 +716,6 @@ class: middle
 - Scout and her sister get along okay most of the time, but not always.
 >"They love each other but have a very competitive relationship. When they get along... it's beautiful ... when they fight... it's all tears."
 
-- Family is planning to move out of state in the next year
-
 ---
 
 class: middle
@@ -731,7 +724,7 @@ class: middle
 
 Mom made this comment about some of Scout's behavior at home:
 
-> "Scout does odd things sometimes... like she doesn't think. For instance, pulled on her curtains and make the support come off the wall (9 years old); use a marker and write all over her dresser (9 years old); come in my room and take clothing or jewelry without asking then lie that she took it; .fat-font[not flush her toilet for days], has to be reminded to brush her teeth, puts chewed gum on her bookshelf, the list goes on. And Dad and I get upset with her so much we can see .fat-font[it's wearing on her spirit]."
+> "Scout does odd things sometimes... like she doesn't think. For instance, pulled on her curtains and make the support come off the wall (9 years old); use a marker and write all over her dresser (9 years old); come in my room and take clothing or jewelry without asking then lie that she took it; .fat-font[not flush her toilet for days]; has to be reminded to brush her teeth; puts chewed gum on her bookshelf; the list goes on. And Dad and I get upset with her so much we can see .fat-font[it's wearing on her spirit]."
 
 ---
 
@@ -745,7 +738,7 @@ class: middle
 
 - Brought several stuffed dolls (Yoda) and various other items (her "blanky") with her from home.
 
-- Physically, Scout is exceptionally tall (>90th percentile in height), thin, and pretty
+- Physically, Scout is exceptionally tall (>90th percentile in height), thin, pretty
 
 - Interpersonally, she is friendly and engaging, and it was easy to establish rapport
 
@@ -794,7 +787,7 @@ class: middle
 
 - Has a "boyfriend" named Hunter who is "cute, funny and puts a smile on my face."
 
-- Loves her dog "Franky" who is "the only one who is nice to her."
+- Loves her dog "Franky" who is "the only one who is nice to me."
 
 ---
 
@@ -1565,17 +1558,6 @@ plot1
 class: center, middle
 
 ## Referral to Dr. Elmashat ...
-
-
----
-
-class: section
-
-## Summary
-
-- point 1
-- point 2
-- point 3
 
 ---
 
