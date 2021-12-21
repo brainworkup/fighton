@@ -1,32 +1,47 @@
-# Production context:
-# All deploys from the main repository branch
-# will inherit these settings.
-[context.production]
-  command = "make production"
-  [context.production.environment]
-    ACCESS_TOKEN = "super secret"
-  # Deploys from main branch run this plugin in the build.
-  # Plugins context requires double brackets.
-  [[context.production.plugins]]
-    package = "@netlify/plugin-sitemap"
+[build]
+command = "hugo"
+publish = "public"
+[build.environment]
+HUGO_VERSION = "0.83.1"
 
-# Deploy Preview context:
-# All deploys generated from a pull/merge request
-# will inherit these settings.
-[context.deploy-preview.environment]
-  ACCESS_TOKEN = "not so secret"
-
-# Branch deploy context:
-# All deploys that are not from a pull/merge request
-# or from the production branch will inherit these settings.
+[context]
 [context.branch-deploy]
-  command = "make staging"
+command = "hugo -F -b $DEPLOY_PRIME_URL"
+[context.deploy-preview]
+command = "hugo -F -b $DEPLOY_PRIME_URL"
+[context.production]
+[context.production.environment]
+HUGO_ENV = "production"
 
-# Specific branch context:
-# Deploys from this branch will take these settings
-# and override their current ones.
-[context.feature]
-  command = "make feature"
+# # Production context:
+# # All deploys from the main repository branch
+# # will inherit these settings.
+# [context.production]
+#   command = "make production"
+#   [context.production.environment]
+#     ACCESS_TOKEN = "super secret"
+#   # Deploys from main branch run this plugin in the build.
+#   # Plugins context requires double brackets.
+#   [[context.production.plugins]]
+#     package = "@netlify/plugin-sitemap"
 
-[context."features/branch"]
-  command = "gulp"
+# # Deploy Preview context:
+# # All deploys generated from a pull/merge request
+# # will inherit these settings.
+# [context.deploy-preview.environment]
+#   ACCESS_TOKEN = "not so secret"
+
+# # Branch deploy context:
+# # All deploys that are not from a pull/merge request
+# # or from the production branch will inherit these settings.
+# [context.branch-deploy]
+#   command = "make staging"
+
+# # Specific branch context:
+# # Deploys from this branch will take these settings
+# # and override their current ones.
+# [context.feature]
+#   command = "make feature"
+
+# [context."features/branch"]
+#   command = "gulp"

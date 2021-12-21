@@ -95,12 +95,6 @@ xaringanExtra::use_extra_styles(
   hover_code_line = TRUE, #<<
   mute_unhighlighted_code = TRUE #<<
 )
-xaringanExtra::use_share_again()
-# xaringanExtra::use_logo(
-#     image_url = "images/shield_gold.jpg",
-#         link_url = "https://usc.edu",
-#             position = xaringanExtra::css_position(top = "1em", right = "1em")
-# )
 ```
 
 name: title
@@ -120,7 +114,6 @@ background-color: var(--usc-black)
 ### `r rmarkdown::metadata$date`
 ![:scale 60%](images/2-Line_KeckSOMofUSC_CardOnBlack.jpg)
 ]
-
 ---
 
 name: hello
@@ -138,7 +131,7 @@ Our department has grown since 2018
 class: middle, center
 background-color: var(--near-black)
 
-.bg-near-black.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.bg-near-light-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 If you cannot explain something in simple terms, you don't understand it.
 
 .tr[
@@ -165,7 +158,7 @@ What do we know about .big[ADHD]?
 [`r fontawesome::fa("link")` brainworkup.io](https://brainworkup.io)
 ]
 
-.pull-right[![:scale 55%](images/dinotocat.png)]
+.pull-right[![:scale 55%](https://octodex.github.com/images/dinotocat.png)]
 
 ???
 
@@ -174,21 +167,29 @@ What do we know about .big[ADHD]?
 
 ---
 
-## Mentors
+class: center, middle
 
-![alt](images/swanson_halperin_ahrq.png)
+### First pub
 
+.pull-left[
+![:scale 50%](images/wigal_2003.png)
+]
+
+.pull-right[
+![:scale 50%](images/wigal_2003_fig1.png)
+]
 
 ---
+
 class: center, middle, section
 
 .frame[
 ### Developmental Trajectory of ADHD
 ]
 
-This is the model of ADHD from which I work ...
-
 --
+
+This is the model of ADHD from which I work ...
 
 ![:scale 80%](images/halperin_schulz.png)
 
@@ -196,6 +197,13 @@ This is the model of ADHD from which I work ...
 #### Notes
 - note 
 - note
+
+---
+
+## Mentors
+
+![:scale 70%](images/swanson_halperin_ahrq.png)
+
 
 ---
 
@@ -537,7 +545,7 @@ class: middle, left
 - attention/executive problems
 - reading/learning difficulties
 
-* Purpose of eval was (shockingly:rofl:) to clarify diagnoses and assist with educational and treatment planning
+* Purpose of eval was (shockingly) to clarify diagnoses and assist with educational and treatment planning
 
 ---
 
