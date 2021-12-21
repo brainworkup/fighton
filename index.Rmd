@@ -176,7 +176,7 @@ class: center, middle
 ]
 
 .pull-right[
-![:scale 60%](images/wigal_2003_fig1.png)
+![:scale 50%](images/wigal_2003_fig1.png)
 ]
 
 ---
@@ -1185,7 +1185,7 @@ thm_merge <- hc_theme_merge(
 )
 ```
 
-```{r drilldown-plot, fig.cap='Highchart`R` Drilldown on Cognitive Scores', fig.width=12, fig.height=8, fig.retina=3, out.width = "100%"}
+```{r drilldown-plot, fig.cap='HighchartR Drilldown on Cognitive Scores', fig.width=12, fig.height=8, fig.retina=3, out.width = "100%"}
 # Tooltip
 x <- c("Name", "Score", "Percentile", "Range")
 y <- c("{point.name}", "{point.y}", "{point.y2}", "{point.range}")
@@ -1467,7 +1467,7 @@ thm_merge <- hc_theme_merge(
 )
 ```
 
-```{r drilldown2-plot, fig.cap='Highchart`R` Drilldown on Behavioral Ratings', fig.width=12, fig.height=8, fig.retina=3, out.width = "100%"}
+```{r drilldown2-plot, fig.cap='HighchartR Drilldown on Behavioral Ratings', fig.width=12, fig.height=8, fig.retina=3, out.width = "100%"}
 # Tooltip
 x <- c("Name", "Score", "Percentile", "Range")
 y <- c("{point.name}", "{point.y}", "{point.y2}", "{point.range}")
