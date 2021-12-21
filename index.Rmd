@@ -728,7 +728,7 @@ class: middle
 
 ### Family
 
-- Lives with her biological parents and older sister
+- Lives with her biological parents and older sister (14 yo)
 
 - Mom graduated from high school and is employed in the entertainment industry
 
@@ -749,7 +749,7 @@ class: middle
 
 Mom made this comment about some of Scout's behavior at home:
 
-> "Scout does odd things sometimes... like she doesn't think. For instance, pull on her curtains and make the support come off the wall (9 years old); use a marker and write all over her dresser (9 years old); come in my room and take clothing or jewelry without asking then lie that she took it, not flush her toilet for days, has to be reminded to brush her teeth, puts chewed gum on her bookshelf, the list goes on. And Dad and I get upset with her so much we can see it's wearing on her spirit."
+> "Scout does odd things sometimes... like she doesn't think. For instance, pulled on her curtains and make the support come off the wall (9 years old); use a marker and write all over her dresser (9 years old); come in my room and take clothing or jewelry without asking then lie that she took it; .fat-font[not flush her toilet for days], has to be reminded to brush her teeth, puts chewed gum on her bookshelf, the list goes on. And Dad and I get upset with her so much we can see .fat-font[it's wearing on her spirit]."
 
 ---
 
@@ -763,7 +763,7 @@ class: middle
 
 - Brought several stuffed dolls (Yoda) and various other items (her "blanky") with her from home.
 
-- Physically, Scout is exceptionally tall (>90th percentile in height), thin, and pretty for her age group.
+- Physically, Scout is exceptionally tall (>90th percentile in height), thin, and pretty
 
 - Interpersonally, she is friendly and engaging, and it was easy to establish rapport
 
@@ -777,31 +777,11 @@ class: middle
 
 - Receptive language comprehension is variable.
 
-- On multiple occasions she misheard what was said to her (e.g., twice, when she was supposed to repeat "8" she substituted "J" and then "A" for 8).
-
-- She unknowingly confabulates a lot (i.e., makes up words and phrases that are unique to her mental lexicon such as "fratten" and "confrunkled" and "quimping").
+- She unknowingly .fat-font[confabulates a lot] (i.e., makes up words and phrases that are unique to her mental lexicon such as "fratten" and "confrunkled" and "quimping").
 
 - She uses "filler words" a lot such as "umm yeah," as if she goes blank for a second when trying to think of what to say and loses her train of thought briefly.
 
-- Her fine-motor dexterity is an area of weakness for her, as is motor persistence; she stood up a lot during testing because it was hard for her to sit still seated for extended periods of time.
-
----
-
-class: middle
-
-#### ...continued
-
-- It is difficult for Scout to stay on topic.
-
-- She often comments about events/ideas/thoughts unrelated to the topic of interest and/or task at hand.
-
-- It distracts her and makes it difficult for her to complete tasks efficiently, especially when she has a time limit set.
-
-- For example, in the middle of a 1-minute word fluency task, one of her responses triggered an approximate 20" tangent about something that happened last Christmas.
-
-- Struggles to pick up on nonverbal social cues when subtly being redirected back to task using nonverbal gesturing, requiring more exaggerated and direct gestures.
-
-- "stimulus-boundednesss"
+- Fine-motor dexterity is an area of weakness, as is .fat-font[motor persistence]; she stood up constantly during testing because it was hard for her to sit still seated for extended periods of time.
 
 ---
 
@@ -819,6 +799,12 @@ It makes her feel bad about herself and she wants no part of her IEP.
 - Said her peers "make fun of me for my IEP." She said her teacher "hates me" and "won't call on me" on Zoom.
 
 - "panics" before all of her tests because she is usually unprepared/didn't study.
+
+---
+
+class: middle
+
+### Child Interview cont...
 
 - Openly said she can be a .fat-font["very naughty child"] and is "only good about 1 day a week." 
 
@@ -842,18 +828,6 @@ knitr::include_graphics("images/plot_narrow.png", auto_pdf = TRUE)
 
 ---
 
-name: gauss2
-class: middle center 
-background-size: contain
-
-### Distribution of Scores: _Clinical Interpretation_
-
-```{r gauss-plot2, fig.cap='General clinical interpretation of performance for individual test scores and broader neuropsychological domains.', fig.retina=3, fig.asp=0.5, out.width = '50%'}
-# change these to match if necessary
-knitr::include_graphics("images/plot_broad.png", auto_pdf = TRUE)
-```
-
----
 
 class: animated slideInRight fadeOutLeft
 background-color: var(--near-black)
