@@ -607,18 +607,6 @@ class: middle
 
 class: middle
 
-#### ...continued 
-
-- Finally, Scout presents with a number of cognitive and learning difficulties (described in more detail below).
-
-- Her school IEP evaluation indicated a probable learning disorder in reading, and difficulties with attention and behavioral regulation.
-
-- The fallout has been unwanted negative attention for Scout because she is required to leave class every day for tutoring, which is source of constant distress for her and of questionable benefit to her at this point.
-
----
-
-class: middle
-
 ## Relevant History
 
 ### Developmental/Medical
@@ -699,20 +687,6 @@ class: middle
 
 #### ...continued
 
-- Performing well-below grade level in reading, writing, and spelling.
-
-- She writes complete sentences and formulates basic paragraphs, but makes frequent errors in capitalization and punctuation.
-
-- In math, Scout is performing below grade level, suspected to be due to her difficulty in reading the word problems.
-
-- When she is prompted to read carefully, or sits with a teacher, she performs better in math.
-
-- Without these supports, Scout is careless and unmotivated.
-
-- Similarly, in Social Studies and Science, she performs below grade level, because the reading is difficult for her.
-
-- When teacher reads or supports her reading, she is better able to grasp the concepts.
-
 - The cumulative impact of her school difficulties has crushed Scout's self-esteem and feelings of competency.
 
 ---
@@ -737,9 +711,10 @@ class: middle
 
 #### ...continued
 
-However, her mother reported the following:
+Per mom:
 
->"She has tendency to lie, to make up little fibs to look smarter, more cool or get the attention. Then her friends find out its not true and they get upset with her. Or, Scout interrupts them when they are talking, she wants to change the rules to the game. 
+>"She has tendency to lie, to make up little fibs to look smarter, more cool, or get attention. Then her friends find out its not true and they get upset with her. 
+>Or, Scout interrupts them when they are talking, she wants to change the rules to the game. 
 >She loves talking to and hanging out with adults, but loves playing with younger kids because she is in control. They look up to her and Scout can be the 'mommy.' She usually wants to be the leader of her peer group."
 
 --
