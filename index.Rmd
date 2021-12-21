@@ -611,9 +611,9 @@ class: middle
 
 class: middle
 
-### Relevant History
+## Relevant History
 
-#### Developmental/Medical
+### Developmental/Medical
 
 - Product of a planned, 42-week pregnancy (11 days late) delivered via .fat-font[planned home birth].
 
@@ -657,7 +657,7 @@ class: middle
 
 class: middle
 
-#### Academics
+### Academics
 
 - Fourth grade in a public elementary school
 
@@ -673,6 +673,10 @@ class: middle
 
 ---
 
+class: middle
+
+#### ...continued
+
 - She has to "log out" of class for tutoring each day on Zoom.
 
 - She "hates" being singled out everyday to leave class for an hour to work with her reading tutor.
@@ -682,6 +686,10 @@ class: middle
 - Even at home, Scout gets frustrated when doing her homework, yet will not let her mother help her.
 
 ---
+
+class: middle
+
+#### ...continued
 
 - Performing well-below grade level in reading, writing, and spelling.
 
@@ -701,7 +709,9 @@ class: middle
 
 ---
 
-#### Behavioral/Emotional/Social
+class: middle
+
+### Behavioral/Emotional/Social
 
 - At one point in second grade (~2019), Scout .fat-font[threatened to kill herself] in what seemed to be related to her feelings of school inadequacy.
 
@@ -715,6 +725,10 @@ class: middle
 
 ---
 
+class: middle
+
+#### ...continued
+
 However, her mother reported the following:
 
 >"She has tendency to lie, to make up little fibs to look smarter, more cool or get the attention. Then her friends find out its not true and they get upset with her. Or, Scout interrupts them when they are talking, she wants to change the rules to the game. 
@@ -727,7 +741,9 @@ However, her mother reported the following:
 
 ---
 
-#### Family
+class: middle
+
+### Family
 
 - Lives with her biological parents and older sister
 
@@ -744,15 +760,21 @@ However, her mother reported the following:
 
 ---
 
+class: middle
+
+#### ...continued
+
 Mom made this comment about some of Scout's behavior at home:
 
 > "Scout does odd things sometimes... like she doesn't think. For instance, pull on her curtains and make the support come off the wall (9 years old); use a marker and write all over her dresser (9 years old); come in my room and take clothing or jewelry without asking then lie that she took it, not flush her toilet for days, has to be reminded to brush her teeth, puts chewed gum on her bookshelf, the list goes on. And Dad and I get upset with her so much we can see it's wearing on her spirit."
 
 ---
 
-### Behavioral Observations
+class: middle
 
-#### Testing
+## Behavioral Observations
+
+### Testing
 
 - Scout was seen in-person @ PBHS @ UPC, evaluated across two 4-hour testing sessions scheduled a week apart
 
@@ -761,6 +783,12 @@ Mom made this comment about some of Scout's behavior at home:
 - Physically, Scout is exceptionally tall (>90th percentile in height), thin, and pretty for her age group.
 
 - Interpersonally, she is friendly and engaging, and it was easy to establish rapport
+
+---
+
+class: middle
+
+#### ...continued
 
 - Spontaneous language is easy to elicit from her, as she is talkative and social, and hyper-expressive.
 
@@ -776,6 +804,10 @@ Mom made this comment about some of Scout's behavior at home:
 
 ---
 
+class: middle
+
+#### ...continued
+
 - It is difficult for Scout to stay on topic.
 
 - She often comments about events/ideas/thoughts unrelated to the topic of interest and/or task at hand.
@@ -790,7 +822,9 @@ Mom made this comment about some of Scout's behavior at home:
 
 ---
 
-#### Child Interview
+class: middle
+
+### Child Interview
 
 - Scout expressed wide ranging but predominantly negative feelings about everything we discussed over two days of testing.
 
