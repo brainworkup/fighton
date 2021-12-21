@@ -169,41 +169,15 @@ What do we know about .big[ADHD]?
 
 class: center, middle
 
-### First pub
+### First pub (2003)
 
 .pull-left[
-![:scale 50%](images/wigal_2003.png)
+![:scale 80%](images/wigal_2003.png)
 ]
 
 .pull-right[
-![:scale 50%](images/wigal_2003_fig1.png)
+![:scale 70%](images/wigal_2003_fig1.png)
 ]
-
----
-
-class: center, middle, section
-
-.frame[
-### Developmental Trajectory of ADHD
-]
-
---
-
-This is the model of ADHD from which I work ...
-
-![:scale 80%](images/halperin_schulz.png)
-
-???
-#### Notes
-- note 
-- note
-
----
-
-## Mentors
-
-![:scale 70%](images/swanson_halperin_ahrq.png)
-
 
 ---
 
@@ -227,6 +201,35 @@ class: center, middle
 
 ---
 
+class: center, middle, section
+
+## Full Circle ...
+
+![:scale 70%](images/swanson_halperin_ahrq.png)
+
+[ADHD AHRQ Update 2022](https://effectivehealthcare.ahrq.gov/products/adhd-update/systematic-review-2018)
+
+---
+
+class: center, middle, section
+
+.frame[
+### Developmental Trajectory of ADHD
+]
+
+--
+
+This is the model of ADHD from which I work ...
+
+![:scale 80%](images/halperin_schulz.png)
+
+???
+#### Notes
+- note 
+- note
+
+---
+
 class: section middle center
 
 ## Clinical ADHD .red[vs.] Cognitive ADHD
@@ -242,27 +245,6 @@ class: section middle center
 ### stimulus-boundedness
 ### emotion regulation
 ]
-
----
-
-class: center, middle
-
-### Recent paper on the CAARS adult ADHD RS
-
-.pull-left[
-![:scale 80%](images/caars_fig1.png)
-]
-
-.pull-right[
-![:scale 70%](images/caars_fig2.png)
-]
-
----
-
-
-class: center
-
-![:scale 50%](images/caars_fig3.png)
 
 ---
 
