@@ -581,11 +581,11 @@ class: middle
 
 - Scout has a tendency to impulsively say things to others that are not true.
 
-- For example, for unbeknownst reasons, she told folks that her dog had died, which was untrue.
+- For example, for unbeknownst reasons, she told folks that her .fat-font[dog had died], which was untrue.
 
 - She has been accused of stealing on multiple occasions, behavior her mother said started to emerge around age 6.
 
-- She has allegedly stolen money multiple times, stolen her mothers shampoo, her grandmother's lipstick, and her sister's belongings.
+- She has allegedly .fat-font[stolen money] multiple times, stolen her mothers shampoo, her grandmother's lipstick, and her sister's belongings.
 
 - She has been accused of stealing money from a friends house ($50), an accusation Mrs. Scout feels is very much unfounded.
 
