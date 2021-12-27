@@ -1,6 +1,0 @@
-scale,raw_score,score,percentile,range,ci_95,test,test_name,domain,subdomain,narrow,pass,verbal,timed,test_type,score_type,absort,description
-Nonsense Word Decoding,13,83,13,Low-Average,78 - 88,ktea3,KTEA-3,Academic Skills,Reading,Reading Decoding,Successive,Verbal,Untimed,npsych_test,standard_score,ktea3_nonsense word decoding_3,reading decoding
-Decoding Fluency,13,82,12,Low-Average,69 - 95,ktea3,KTEA-3,Academic Skills,Reading,Reading Fluency,Successive,Verbal,Timed,npsych_test,standard_score,ktea3_decoding fluency_10,reading/decoding fluency
-Academic Fluency Composite,,86,18,Low-Average,77 - 95,ktea3,KTEA-3,Academic Skills,Academic Fluency,Rate of Test-Taking,Successive,Verbal/Nonverbal,Timed,npsych_test,standard_score,ktea3_academic fluency composite_31,braod academic fluency
-Writing Fluency,31,110,75,High-Average,96 - 124,ktea3,KTEA-3,Academic Skills,Writing,Writing Fluency,Successive,Verbal,Timed,npsych_test,standard_score,ktea3_writing fluency_32,writing fluency
-Math Fluency,13,79,8,Below Average,68 - 90,ktea3,KTEA-3,Academic Skills,Math,Math Fluency,Simultaneous,Nonverbal,Timed,npsych_test,standard_score,ktea3_math fluency_33,math fluency
