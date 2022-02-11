@@ -1,0 +1,2 @@
+scale,raw_score,sum_subtest,score,range,ci_95,test,test_name,domain,subdomain,narrow,timed,verbal,pass,test_type,score_type,absort,description
+Academic Skills Battery (ASB) Composite,2000,2666,20595360,"",,ktea3,KTEA-3,Academic Skills,General Academic Skills,General Academic Skills,FALSE,Verbal,Sequential/Simultaneous,npsych_test,standard_score,KTEA-3_1,broad academic achievement
