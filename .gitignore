@@ -27,3 +27,5 @@ images/wais4.png/wais4.png.001.png
 .gitignore
 images/IMG_0015.PNG
 images/wais4.png.001.png
+/vault/
+/private/
