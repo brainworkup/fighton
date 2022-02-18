@@ -1,0 +1,10 @@
+scale,domain,raw_score,score,percentile,range,ci_95,test,test_name,subdomain,narrow,pass,verbal,timed,test_type,score_type,absort,description
+Symbol Span,VWM,26,10,50,Average,"",wms4,WMS-IV,Working Memory,Nonverbal Working Memory,Attention,Nonverbal,"",npsych_test,scaled_score,wms4_symbol span_1,nonverbal/visual working memory
+Logical Memory II,,,,,"","",wms4,WMS-IV,Verbal Memory,Verbal Delayed Recall,Sequential,Verbal,"",npsych_test,scaled_score,wms4_logical memory ii_2,memory for structured information presened orally (long-term retrieval)
+Verbal Paired Associates I,,,,,"","",wms4,WMS-IV,"","","","","",npsych_test,scaled_score,wms4_verbal paired associates i_3,""
+Verbal Paired Associates I,,,,,"","",wms4,WMS-IV,"","","","","",npsych_test,scaled_score,wms4_verbal paired associates i_4,""
+Designs I,,,,,"","",wms4,WMS-IV,"","","","","",npsych_test,scaled_score,wms4_designs i_5,""
+Designs II,,,,,"","",wms4,WMS-IV,"","","","","",npsych_test,scaled_score,wms4_designs ii_6,""
+Visual Reproduction I,,,,,"","",wms4,WMS-IV,Nonverbal Memory,Nonverbal Immediate Recall,Simultaneous,Nonverbal,"",npsych_test,scaled_score,wms4_visual reproduction i_7,immediate visual memory for abstract designs
+Visual Reproduction II,,,,,"","",wms4,WMS-IV,Nonverbal Memory,Nonverbal Delayed Recall,Simultaneous,Nonverbal,"",npsych_test,scaled_score,wms4_visual reproduction ii_8,long-term visual memory for abstract designs
+Spatial Addition,,,,,"","",wms4,WMS-IV,"","","","","",npsych_test,scaled_score,wms4_spatial addition_9,""

@@ -1,3 +1,4 @@
+version: 4
 useFMTitle: false
 useNoteTitleForLink: true
 mermaid: true
@@ -19,7 +20,7 @@ site:
         payload:
             - vault
             - wm
-version: 4
+            - vault
 commands:
     lookup:
         note:
@@ -27,6 +28,8 @@ commands:
             confirmVaultOnCreate: false
             leaveTrace: false
             bubbleUpCreateNew: true
+            vaultSelectionModeOnCreate: smart
+            fuzzThreshold: 0.2
     insertNote:
         initialValue: templates
     insertNoteLink:
@@ -37,6 +40,8 @@ commands:
     randomNote: {}
 workspace:
     vaults:
+        -
+            fsPath: vault
         -
             fsPath: wm
             remote:
@@ -65,7 +70,7 @@ workspace:
     maxNoteLength: 1000000
     enableUserTags: true
     enableHashTags: true
-    dendronVersion: 0.71.0
+    dendronVersion: 0.82.0
     task:
         name: ''
         dateFormat: ''
@@ -86,9 +91,11 @@ workspace:
             L: low
         todoIntegration: false
         createTaskSelectionType: selection2link
+    enableEditorDecorations: true
 preview:
     enableFMTitle: false
     enableNoteTitleForLink: true
     enableMermaid: true
     enablePrettyRefs: true
     enableKatex: true
+    automaticallyShowPreview: false
