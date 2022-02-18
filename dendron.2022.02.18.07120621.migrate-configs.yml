@@ -18,7 +18,6 @@ site:
     duplicateNoteBehavior:
         action: useVault
         payload:
-            - vault
             - wm
             - vault
 commands:
@@ -40,8 +39,6 @@ commands:
     randomNote: {}
 workspace:
     vaults:
-        -
-            fsPath: vault
         -
             fsPath: wm
             remote:

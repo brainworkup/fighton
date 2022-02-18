@@ -1,3 +1,0 @@
-﻿scale,raw_score,score,percentile,range,ci_95,test,test_name,domain,subdomain,narrow,pass,verbal,timed,test_type,score_type,absort,description
-RCFT Copy,32.5,32,4,Below Average,,rocf,Rey Complex Figure,Visual Perception/Construction,Visuoconstruction,Copying,Planning,Nonverbal,Untimed,npsych_test,t_score,ROCF_1,copy a complex abstract figure
-RCFT Memory,17,38,12,Low-Average,,rocf,Rey Complex Figure,Memory,Nonverbal Memory,Nonverbal Delayed Recall,Simultaneous,Nonverbal,Untimed,npsych_test,t_score,ROCF_2,recall and draw a complex figure after a long delay

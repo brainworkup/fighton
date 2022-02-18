@@ -4,4 +4,9 @@ build
 seeds
 .next
 pods/service-connections
-
+csv/
+private/
+Rmd/
+wm/
+private2/
+vault/
