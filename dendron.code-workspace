@@ -22,16 +22,16 @@
         "editor.suggest.showSnippets": true,
         "editor.tabCompletion": "on",
         "workbench.colorCustomizations": {
-            "activityBar.activeBackground": "#82dbce",
-            "activityBar.activeBorder": "#c56bd4",
-            "activityBar.background": "#82dbce",
+            "activityBar.activeBackground": "#b8d8f9",
+            "activityBar.activeBorder": "#f04f9e",
+            "activityBar.background": "#b8d8f9",
             "activityBar.foreground": "#15202b",
             "activityBar.inactiveForeground": "#15202b99",
-            "activityBarBadge.background": "#c56bd4",
+            "activityBarBadge.background": "#f04f9e",
             "activityBarBadge.foreground": "#15202b",
-            "sash.hoverBorder": "#82dbce"
+            "sash.hoverBorder": "#b8d8f9"
         },
-        "peacock.color": "#5bcfbf"
+        "peacock.color": "#89bff5"
     },
     "extensions": {
         "recommendations": [
